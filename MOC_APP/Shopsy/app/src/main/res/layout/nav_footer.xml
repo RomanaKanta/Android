@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/drawer_bg"
+    android:padding="@dimen/drawer_footer_padding"
+    >
+    <View
+        android:id="@+id/devider_view"
+        android:layout_width="@dimen/drawer_footer_gap"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+
+        />
+
+    <ImageView
+        android:id="@+id/image_setting"
+        android:layout_width="@dimen/drawer_footer_img_ht"
+        android:layout_height="@dimen/drawer_footer_img_ht"
+        android:src="@drawable/icon_settings"
+        android:layout_toRightOf="@id/devider_view"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageView
+        android:id="@+id/image_logout"
+        android:layout_width="@dimen/drawer_footer_img_ht"
+        android:layout_height="@dimen/drawer_footer_img_ht"
+        android:src="@drawable/logout"
+        android:layout_toLeftOf="@id/devider_view"
+        android:layout_centerVertical="true"
+        />
+
+
+</RelativeLayout>

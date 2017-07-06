@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/gallary_frame_image"
+        android:layout_width="@dimen/list_item_image_wt"
+        android:layout_height="@dimen/list_item_image_ht"
+        android:contentDescription="@string/app_name"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" />
+
+</LinearLayout>

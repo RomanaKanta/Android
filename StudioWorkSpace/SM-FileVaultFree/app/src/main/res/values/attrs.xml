@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FloatingActionButton">
+        <attr name="fab_colorPressed" format="color"/>
+        <attr name="fab_colorDisabled" format="color"/>
+        <attr name="fab_colorNormal" format="color"/>
+        <attr name="fab_icon" format="reference"/>
+        <attr name="fab_size" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr>
+        <attr name="fab_title" format="string"/>
+        <attr name="fab_stroke_visible" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="AddFloatingActionButton">
+        <attr name="fab_plusIconColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="FloatingActionsMenu">
+        <attr name="fab_addButtonColorPressed" format="color"/>
+        <attr name="fab_addButtonColorNormal" format="color"/>
+        <attr name="fab_addButtonSize" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr>
+        <attr name="fab_addButtonPlusIconColor" format="color"/>
+        <attr name="fab_addButtonStrokeVisible" format="boolean"/>
+        <attr name="fab_labelStyle" format="reference"/>
+        <attr name="fab_labelsPosition" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <attr name="fab_expandDirection" format="enum">
+            <enum name="up" value="0"/>
+            <enum name="down" value="1"/>
+            <enum name="left" value="2"/>
+            <enum name="right" value="3"/>
+        </attr>
+    </declare-styleable>
+    
+    <!-- seekBar -->
+    <declare-styleable name="CircularSeekBar">
+        <attr name="progress" format="integer"></attr>
+        <attr name="max" format="integer"></attr>
+        <attr name="move_outside_circle" format="boolean"></attr>
+        <attr name="maintain_equal_circle" format="boolean"></attr>
+        <attr name="use_custom_radii" format="boolean"></attr>
+        <attr name="lock_enabled" format="boolean"></attr>
+        <attr name="circle_x_radius" format="dimension" />
+        <attr name="circle_y_radius" format="dimension" />
+        <attr name="circle_stroke_width" format="dimension" />
+        <attr name="pointer_radius" format="dimension" />
+        <attr name="pointer_halo_width" format="dimension" />
+        <attr name="pointer_halo_border_width" format="dimension"></attr>
+        <attr name="circle_color" format="color"></attr>
+        <attr name="circle_progress_color" format="color"></attr>
+        <attr name="pointer_color" format="color"></attr>
+        <attr name="pointer_halo_color" format="color"></attr>
+        <attr name="pointer_halo_color_ontouch" format="color"></attr>
+        <attr name="pointer_alpha_ontouch" format="integer"></attr>
+        <attr name="start_angle" format="float"></attr>
+        <attr name="end_angle" format="float"></attr>
+        <attr name="circle_fill" format="color"></attr>
+    </declare-styleable>
+    
+    <declare-styleable name="MaterialEditText">
+    <!-- The base color of the line and the texts. Default is black. -->
+    <attr name="met_baseColor" format="color" />
+    <!-- The highlight color of the line, and the floating label if the highlightFloatingLabel is true. -->
+    <attr name="met_primaryColor" format="color" />
+    <!-- How the floating label should be shown. Default is none -->
+    <attr name="met_floatingLabel">
+      <enum name="none" value="0" />
+      <enum name="normal" value="1" />
+      <enum name="highlight" value="2" />
+    </attr>
+    <!-- The color for when something is wrong.(e.g. exceeding max characters) -->
+    <attr name="met_errorColor" format="color" />
+    <!-- Min characters count limit. 0 means no limit. -->
+    <attr name="met_minCharacters" format="integer" />
+    <!-- max Characters count limit. 0 means no limit. -->
+    <attr name="met_maxCharacters" format="integer" />
+    <!-- Whether to show the bottom ellipsis in singleLine mode -->
+    <attr name="met_singleLineEllipsis" format="boolean" />
+    <!-- Reserved bottom text lines count, no matter if there is some helper/error text. -->
+    <attr name="met_minBottomTextLines" format="integer" />
+    <!-- Helper text at the bottom -->
+    <attr name="met_helperText" format="string" />
+    <!-- Helper text color -->
+    <attr name="met_helperTextColor" format="color" />
+    <!-- Font of the paint used to draw accent texts -->
+    <attr name="met_accentTypeface" format="string" />
+    <!-- Font used on view -->
+    <attr name="met_typeface" format="string" />
+    <!-- Custom float label text -->
+    <attr name="met_floatingLabelText" format="string" />
+    <!-- spacing between the main text and the floating label -->
+    <attr name="met_floatingLabelPadding" format="dimension" />
+    <!-- Hide underline -->
+    <attr name="met_hideUnderline" format="boolean" />
+    <!-- Underline's color -->
+    <attr name="met_underlineColor" format="color" />
+    <!-- Auto validate -->
+    <attr name="met_autoValidate" format="boolean" />
+    <!-- Left icon -->
+    <attr name="met_iconLeft" format="reference" />
+    <!-- Right icon -->
+    <attr name="met_iconRight" format="reference" />
+    <!-- Padding between icon(s) and the main area. 8dp by default. -->
+    <attr name="met_iconPadding" format="dimension" />
+    <!-- Clear button -->
+    <attr name="met_clearButton" format="boolean" />
+    <!-- The floating label's text size. 12sp by default. -->
+    <attr name="met_floatingLabelTextSize" format="dimension" />
+    <!-- The floating label's text color. -1 by default. -->
+    <attr name="met_floatingLabelTextColor" format="color" />
+    <!-- The bottom texts' size. 12sp by default. -->
+    <attr name="met_bottomTextSize" format="dimension" />
+    <!-- Always show the floating label, instead of animating it in/out. False by default. -->
+    <attr name="met_floatingLabelAlwaysShown" format="boolean" />
+    <!-- Always show the helper text, no matter if the edit text is focused. False by default. -->
+    <attr name="met_helperTextAlwaysShown" format="boolean" />
+    <!-- Whether use animation to show/hide the floating label. True by default. -->
+    <attr name="met_floatingLabelAnimating" format="boolean"/>
+    <!-- Text color -->
+    <attr name="met_textColor" format="color" />
+    <!-- Hint Text Color -->
+    <attr name="met_textColorHint" format="color" />
+    <!-- Auto validate on focus lost. False by default. -->
+    <attr name="met_validateOnFocusLost" format="boolean"/>
+    <!-- Whether check the characters count at the beginning it's shown. True by default. -->
+    <attr name="met_checkCharactersCountAtBeginning" format="boolean"/>
+  </declare-styleable>
+    
+        <declare-styleable name="PinCodeView">
+        <attr name="lp_empty_pin_dot" format="integer" />
+        <attr name="lp_full_pin_dot" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="KeyboardButtonView">
+        <attr name="lp_keyboard_button_text" format="string" />
+        <attr name="lp_keyboard_button_image" format="integer" />
+        <attr name="lp_keyboard_button_ripple_enabled" format="boolean" />
+        <attr name="lp_pin_forgot_dialog_title" format="string" />
+        <attr name="lp_pin_forgot_dialog_content" format="string" />
+        <attr name="lp_pin_forgot_dialog_positive" format="string" />
+        <attr name="lp_pin_forgot_dialog_negative" format="string" />
+    </declare-styleable>
+    
+      <declare-styleable name="RippleView">
+        <attr name="rv_alpha" format="integer" />
+        <attr name="rv_framerate" format="integer"/>
+        <attr name="rv_rippleDuration" format="integer"/>
+        <attr name="rv_zoomDuration" format="integer" />
+        <attr name="rv_color" format="color" />
+        <attr name="rv_centered" format="boolean" />
+        <attr name="rv_type" format="enum">
+            <enum name="simpleRipple" value="0"/>
+            <enum name="doubleRipple" value="1"/>
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="rv_ripplePadding" format="dimension" />
+        <attr name="rv_zoom" format="boolean" />
+        <attr name="rv_zoomScale" format="float" />
+
+    </declare-styleable>
+    
+      <declare-styleable name="TypefaceView">
+        <attr name="tv_typeface" format="enum">
+            <enum name="roboto_regular" value="0"/>
+            <enum name="roboto_medium" value="1"/>
+            <enum name="roboto_light" value="2"/>
+            <enum name="roboto_bold" value="3"/>
+            <enum name="roboto_thin" value="4"/>
+        </attr>
+        <attr name="tv_html" format="boolean"/>
+    </declare-styleable>
+    
+    
+</resources>

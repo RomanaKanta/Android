@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+       <com.smartmux.textmemo.widget.AppTextViewAverinBlack
+     android:id="@+id/dig_title"  
+     android:layout_width="match_parent"  
+     android:layout_height="wrap_content"  
+     android:layout_marginTop="20dp"  
+     android:gravity="center"  
+     android:textColor="#50382e"  
+     android:textSize="22sp"  
+     android:textStyle="bold"  
+   />  
+   
+ 
+   
+   <ListView
+       android:id="@+id/listView_textsize"
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:layout_margin="20dp"
+       android:scrollbars="@null"
+      >
+
+   </ListView>
+       <Button
+       android:id="@+id/OkButton"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dip"
+       android:layout_marginRight="10dip"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="5dp"
+       android:text="@string/ok"
+       android:textColor="#FFFFFF"
+       android:background="@color/pink"
+       android:textStyle="bold" >
+  
+   </Button>
+
+         <!-- <com.smartmux.textmemo.widget.AppTextViewAverinBlack
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:text="ok"
+           android:visibility="gone" />  -->
+
+</LinearLayout>

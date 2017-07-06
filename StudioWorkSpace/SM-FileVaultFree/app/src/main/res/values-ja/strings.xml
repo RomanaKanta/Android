@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ファイルボールト</string>
+    <string name="purchase_dialog">無制限のフォルダを作成するフルバージョンをアップグレードしてください、無制限の写真、ビデオ、ノートとオーディオの確保</string>
+    
+    <!-- Action Bar action items -->
+    <!-- Photo List -->
+    <string name="action_pick_photo">写真を選択してください</string>
+    <string name="action_take_photo">写真を撮る</string>
+    
+    <!-- Video List -->
+    <string name="action_pick_video">ビデオを選択してください</string>
+    <string name="action_take_video">ビデオを取る</string>
+    
+    <!-- Folder List -->
+    <string name="action_new_folder">新規フォルダを作成してください</string>
+    
+    <!-- Note List -->
+    <string name="action_create_note">メモを作成する</string>
+    <string name="note_title">タイトル : </string>
+    <string name="note_no_title">タイトルなし</string>
+    <string name="save_menu_noteedit">保存</string>
+    <string name="delete_menu_noteedit">削除</string>
+    <string name="action_forget_password">Forgot</string>
+    
+    <!-- File Operations -->
+    <string name="delete_file">ファイルの削除 </string>
+    <string name="rename_file">ファイルの名前を変更</string>
+    <string name="share_file">共有ファイル</string>
+    
+    <!-- Audio Recorder items -->
+   	<string name="Recording">レコーディング</string>
+   	<string name="start">スタート </string>
+   	<string name="stop">停止 </string>
+   	<string name="play">プレイ</string>
+   	<string name="action_create_audio">オーディオの作成</string>
+   
+   	<string name="lock_info">パスワードを入力してください</string>
+   	
+    <string name="item_icon">Item_Icon</string>
+    <string name="item_name">Item_Name</string>
+    <string name="item_size">Item_Size</string>
+    <string name="item_date_time">Item_DateTime</string>
+    <string name="item_optional">Item_Optional</string>
+    
+    <!-- Common -->
+    <string name="cancel">キャンセル</string>
+    
+    <!-- User Registration items -->
+    <string name="registration">ユーザー登録</string>
+   	<string name="secret_question">秘密の質問を入力してください</string>
+   	<string name="secret_answer">回答を入力してください</string>
+   	<string name="secret_password">パスワードを入力してください(４桁)</string>
+   	<string name="secret_confirm_password">パスワードを確認してください</string>
+   	<string name="forgot_password">パスワードを忘れましたか？</string>
+   	<string name="wrong_password">答えは一致していません。</string>
+   	 
+   	<!-- Folder List -->
+   	<string name="folder_cannot_blank">フォルダ空白にすることはできません。</string>
+   	<string name="folder_already_exist">フォルダはすでに存在してあります。"</string>
+   	<string name="folder_creation_error">フォルダの作成エラー"</string>
+   	
+   	<!-- Folder List Cell -->
+   	<string name="photos">写真</string>
+   	<string name="videos">ビデオ</string>
+   	<string name="notes">ノート</string>
+   	<string name="audios">オーディオ</string>
+   	<string name="photos_0">写真(0)</string>
+   	<string name="videos_0">ビデオ(0)</string>
+   	<string name="notes_0">ノート(0)</string>
+   	<string name="audios_0">オーディオ(0)</string>
+   	<string name="create_folder_title">フォルダ名を入力してください</string>
+   	<string name="rename_folder">フォルダー名を変更</string>
+	<string name="delete_folder">フォルダを削除（元に戻すことはできません）</string>
+</resources>

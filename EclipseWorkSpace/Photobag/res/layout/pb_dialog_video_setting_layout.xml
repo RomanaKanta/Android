@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_video_compress_background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@drawable/dialog_video_compress_cross"
+        android:onClick="onCrossImageClik" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextShadowBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin_line"
+        android:text="@string/upload_main_btn_video_compress_setting"
+        android:textColor="@color/main_text_color"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:background="@drawable/dialog_video_compress_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout
+            android:id="@+id/layout_checkbox_video_compress_high"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:onClick="onVideoCompressSettingHigh" >
+
+	        <ImageView
+	            android:id="@+id/icon_checkbox_video_compress_high"
+	            android:layout_width="30dip"
+	            android:layout_height="30dip"
+	            android:src="@drawable/checkbox_off"
+	            android:contentDescription="@string/pb_null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:gravity="center"
+                style="@style/TextShadowBlack"
+				android:textColor="@color/main_text_color"
+				android:textSize="17sp"
+                android:text="@string/upload_main_btn_video_compress_high_quality" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_checkbox_video_compress_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:onClick="onVideoCompressSettingMedium" >
+
+	        <ImageView
+	            android:id="@+id/icon_checkbox_video_compress_medium"
+	            android:layout_width="30dip"
+	            android:layout_height="30dip"
+	            android:src="@drawable/checkbox_on"
+	            android:contentDescription="@string/pb_null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                style="@style/TextShadowBlack"
+				android:textColor="@color/main_text_color"
+				android:textSize="17sp"
+                android:text="@string/upload_main_btn_video_compress_medium_quality" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_checkbox_video_compress_low"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:clickable="true"
+            android:onClick="onVideoCompressSettingLow"  >
+            
+	        <ImageView
+	            android:id="@+id/icon_checkbox_video_compress_low"
+	            android:layout_width="30dip"
+	            android:layout_height="30dip"
+	            android:src="@drawable/checkbox_off"
+	            android:contentDescription="@string/pb_null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                style="@style/TextShadowBlack"
+				android:textColor="@color/main_text_color"
+				android:textSize="17sp"
+                android:text="@string/upload_main_btn_video_compress_low_quality"/>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

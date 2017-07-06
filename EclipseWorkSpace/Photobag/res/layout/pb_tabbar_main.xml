@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_content_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!--
+          com.kayac.photobag.activity.PBTabBarHeaderView
+         	android:layout_width="fill_parent"
+    		 android:layout_height="@dimen/layout_header_height"
+    		 android:id="@+id/tabHeader" /
+    -->
+
+    <com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/headerbar"
+        style="@style/pb_actionbar"
+        android:layout_alignParentTop="true" />
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/headerbar" >
+
+        <!--
+            RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" 
+                android:background="@color/tab_bg"/>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" 
+                android:layout_marginBottom="54dp"/>
+			</RelativeLayout
+        -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- "@dimen/main_tabbar_height" /> -->
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@android:id/tabs"
+                android:layout_weight="1"
+                android:background="@color/bg"
+                android:padding="0dp" />
+        </RelativeLayout>
+    </TabHost>
+
+    <LinearLayout
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerbar"
+        android:layout_marginTop="-10dp"
+        android:weightSum="4" >
+		 <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/notification_icon_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/notification_icon"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/notification_icon_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="10"
+                
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        
+       
+    </LinearLayout>
+
+</RelativeLayout>

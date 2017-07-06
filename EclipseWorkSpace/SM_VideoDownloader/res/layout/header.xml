@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/header_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <com.smartmux.videodownloader.lockscreen.utils.AppTextViewAverinBlack
+        android:id="@+id/header_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="header_title"
+        android:textColor="#000000"
+        android:textSize="18sp"/>
+
+    <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="header_sample"
+        android:textColor="@color/black_overlay"
+        android:textSize="@dimen/sample_text_size"/> -->
+
+</LinearLayout>
+

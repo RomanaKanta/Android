@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smartmux.shopsy.activity.FilterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:orientation="vertical">-->
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.smartmux.shopsy.widget.AppTextViewLatoBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_10"
+                    android:text="Price Range"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txt_size_18" />
+
+                <com.appyvet.rangebar.RangeBar xmlns:custom="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/rangeSeekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/price_bar_ht"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:layout_marginRight="@dimen/margin_20"
+                    custom:connectingLineColor="@color/colorPrimaryDark"
+                    custom:pinColor="@color/colorPrimaryDark"
+                    custom:pinMaxFont="10sp"
+                    custom:selectorColor="@color/colorPrimaryDark"
+                    custom:temporaryPins="false"
+                    custom:tickEnd="1000"
+                    custom:tickInterval="1"
+                    custom:tickStart="100" />
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--&gt;-->
+
+                <!--<com.smartmux.shopsy.widget.AppTextViewLatoLight-->
+                <!--android:id="@+id/min_range"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="min"-->
+                <!--android:textSize="@dimen/txt_size_16"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:padding="@dimen/margin_5"-->
+                <!--/>-->
+
+                <!--<com.smartmux.shopsy.widget.AppTextViewLatoLight-->
+                <!--android:id="@+id/max_range"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="max"-->
+                <!--android:textSize="@dimen/txt_size_16"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:padding="@dimen/margin_5"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--/>-->
+                <!--</RelativeLayout>-->
+
+
+                <!--</LinearLayout>-->
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray" />
+
+                <com.smartmux.shopsy.widget.AppTextViewLatoBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_10"
+                    android:text="Product Color"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txt_size_18" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewColorList"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/price_bar_ht"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:overScrollMode="never" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray" />
+
+                <com.smartmux.shopsy.widget.AppTextViewLatoBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_10"
+                    android:text="Product Size"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txt_size_18" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewSizeList"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/price_bar_ht"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:overScrollMode="never" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray" />
+
+                <com.smartmux.shopsy.widget.AppTextViewLatoBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_10"
+                    android:text="Brands"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txt_size_18" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewBrandList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/margin_20"
+                    android:layout_height="@dimen/round_btn_size" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/product_share"
+        android:layout_width="@dimen/round_btn_size"
+        android:layout_height="@dimen/round_btn_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@drawable/circle_shape"
+        android:padding="@dimen/margin_10">
+
+        <ImageView
+            android:layout_width="@dimen/round_image_size"
+            android:layout_height="@dimen/round_image_size"
+            android:layout_centerInParent="true"
+            android:src="@drawable/tick" />
+    </RelativeLayout>
+</RelativeLayout>

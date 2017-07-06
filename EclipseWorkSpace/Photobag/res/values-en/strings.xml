@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Do not translate. Duration format for duration < 1 hour -->
+    <string name="durationformatshort" translatable="true"><g id="format">%2$d:%5$02d</g></string>
+    <!-- Do not translate. Duration format for duration >= 1 hour -->
+    <string name="durationformatlong" translatable="true"><g id="format">%1$d:%3$02d:%5$02d</g></string>
+    <string name="app_name">Photobag</string>
+     <string name="password_notification_local">Password\"</string>
+    <string name="password_notification_local_download">receiving completed</string>
+    <string name="password_notification_local_upload">sending completed</string>
+	<string name="pb_download_download_complete_tv_talk">Photo receiving completed</string>
+    <string name="pb_download_downloading_tv_talk">Receiving, wait for a while</string>
+    <string name="pb_download_input_pass_exceeded_tv_talk">Get tired, lets take a break</string>
+    <string name="pb_download_input_pass_exceeded_password_message">Continuously 10 times password did not match, please try again after a while</string>
+    <string name="pb_download_input_pass_exceeded_password_countdown">Please wait more</string>
+    <string name="pb_download_input_pwd_tv">Please enter password</string>
+    <string name="pb_download_input_pwd_tv_talk">Teach secret\npassword</string>
+    <string name="pb_download_purchase_notice_tv_numofphoto">Photos</string>
+    <string name="pb_download_purchase_notice_tv_numofdownload">Received</string>
+    <string name="pb_download_purchase_notice_tv_purchasehoney">If honey is given to the bear \n you will be able to receive photobag again</string>
+    <string name="pb_download_purchase_notice_tv_talk_purchase">Feel the honey...</string>
+    <string name="pb_download_purchase_notice_tv_talk_no_honey"></string>
+    <string name="pb_download_purchase_notice_btn_purchase">Give honey</string>
+    <string name="pb_download_purchase_notice_btn_exchange_donguri">Exchange acorns with honey.</string>
+    <string name="pb_download_purchase_notice_btn_shop">Buy honey</string>
+    <string name="pb_download_purchase_notice_btn_cancel">Quit</string>
+    <string name="pb_download_purchase_notice_tv_albuminformation">This photobag has been expired</string>
+	<string name="pb_download_wrong_title">No Password Found</string>
+    <string name="pb_download_wrong_kuma">It seems different~</string>
+    <string name="pb_download_wrong_info">Entered password is wrong or password does not exist. Please try again\n</string>
+    <string name="pb_download_wrong_btn_text">Enter correct password</string>
+    <string name="pb_download_confirm_title">Notes</string>
+    <string name="pb_download_confirm_text_1">Please download after reading below notes and being agreed</string>
+    <string name="pb_download_confirm_text_21">This contents are copyright protected, can not be saved in smartphone device. Only possible to view through photobag</string>
+    <string name="pb_download_confirm_text_22">This contents are copyright protected and can not be saved in smartphone device. However, if save period is over, it will be removed automatically removed from apps. Only you be able to review through photobag within the period.</string>
+    <string name="pb_download_confirm_text_3">Contents save period</string>
+    <string name="pb_download_confirm_text_4">Agree with above</string>
+    <string name="pb_download_confirm_btn_purchase">Buy honey</string>
+    <string name="pb_download_confirm_btn_download">Receive photo</string>
+    <string name="pb_download_need_update_title">Unable to download</string>
+    <string name="pb_download_need_update_content">This password can be downloaded in latest version</string>
+    <string name="dl_btn_input_pwd_text">Download</string>
+    <string name="dl_btn_download_complete_text">Checkout photos</string>
+    <string name="btn_update_download_photos">Receive photos</string>
+    <string name="btn_update_not_now">For now keep doing fast</string>
+    <string name="pb_update_text">Photo has been added to this password. \n lets receive added photos</string>
+    <string name="pb_update_kuma_said">Somehow increased</string>
+    <string name="pb_dl_sdcard_checking_title">SD card is needed</string>
+    <string name="pb_dl_sdcard_checking_message">To save maximum volume of photos, SD card is needed. Please insert SD card and try again</string>
+    <string name="dl_alert_cannot_find_album_title">Could not find</string>
+    <string name="dl_alert_cannot_find_album_msg">Please confirm whether password is correct or not</string>
+    <string name="dl_alert_upload_unfinished_title">Preparing</string>
+    <string name="dl_alert_upload_unfinished_msg">Photo sending is not finished yet. Please try again after a while</string>
+    <string name="dl_alert_sdcard_missing_title">SD card is needed</string>
+    <string name="dl_alert_sdcard_missing_msg">To save maximum volume of photos, SD card is needed. Please insert SD card and try again</string>
+    <string name="dl_alert_sdcard_full_title">SD card memory is not sufficient</string>
+    <string name="dl_alert_sdcard_full_msg">SD card memory is not sufficient, Please try again after arranging SD card</string>
+    <string name="dl_alert_confirm_cancel_download_title">Would you like to cancel?</string>
+    <string name="dl_alert_confirm_cancel_download_msg">If cancelled, receiving will be interrupted.</string>        
+    <string name="dl_downloading_process_text">Downloading <xliff:g id="\" part="">%1$s</xliff:g>/<xliff:g id="\" total="">%2$s</xliff:g></string>
+    <string name="dl_alert_unfinish_album_title">Preparing</string>
+    <string name="dialog_password_error_title">Error</string>
+    <string name="screen_title_dowload_input_pwd">Receive photo</string>
+    <string name="screen_title_dowload_downloading_error">Receiving failed</string>
+    <string name="screen_title_dowload_downloading_complete">Receiving completed!</string>
+    <string name="screen_title_dowload_purchase_require">Expired</string>
+    <string name="screen_title_dowload_purchase_complete">Expire date extended</string>
+    <string name="screen_title_dowload_input_exceeded">Please wait for a while</string>
+    <string name="screen_title_dowload_update">Photo has been added</string>
+    <string name="err_desc_dowload_not_found">Could not find</string>
+    <string name="err_desc_dowload_unfinished">Photo sending is not finished yet. Please try again after a while</string>
+    <string name="err_desc_dowload_expired">Connection is broken. Unable to download.</string>
+    <string name="dialog_error_title">Error</string>
+    <string name="dialog_error_network_title">Network Error</string>
+    <string name="err_desc_password_your_pass">This password had been used before, please try another password.</string>
+    <string name="err_desc_password_taken">Currently this password can not be used, please try different word</string>
+    <string name="err_desc_password_to_short">Password is too short</string>
+    <string name="err_desc_password_to_long">Password is too long</string>
+    <string name="err_desc_password_invalid_characters">Unrecognised character is included</string>
+    <string name="err_desc_password_invalid_character_from_server">Below character cannot be used\n</string>
+    <string name="err_desc_password_public_not_found">Could not find appropriate photobag</string>
+    <string name="err_desc_password_public_not_finised">Uploading is not finished</string>
+    <string name="err_desc_password_public_not_yours">Can not enter into other people photobag</string>
+    <string name="err_desc_password_public_expired">Can not enter into expired photobag</string>
+    
+    <!-- Urenai Screen Text -->
+    <string name="back_text">Back</string>
+    <string name="urenai_url">http://photobag.in/</string>
+    <string name="screen_title_upload_choose_photo">Please select photo</string>
+    <string name="screen_title_upload_input_pwd">Decide password</string>
+    <string name="screen_title_upload_confirm_pass">Confirm password</string>
+    <string name="screen_title_uploading">Sending</string>
+    <string name="screen_title_confirm_pass_upload">Upload completed</string>
+    <string name="screen_title_select_addiblity">Add later</string>
+    <string name="upload_tab_main_title">Photo upload</string>
+    <string name="upload_main_bear_say">Can be sent of\nAny Amount!</string>
+    <string name="upload_main_text_guide">Choose photos and decide a secret code to send</string>
+    <string name="upload_main_btn_text"> Choose photos</string>
+    <string name="upload_main_btn_video_compress_setting">Video Quality Settings</string>
+    <string name="upload_main_btn_video_compress_high_quality">High Quality</string>
+    <string name="upload_main_btn_video_compress_medium_quality"> Medium Quality(Normal)</string>
+    <string name="upload_main_btn_video_compress_low_quality"> Low Quality</string>
+    <string name="download_main_btn_text_transfer_jet"> Download Via TransferJet</string>
+    <string name="upload_main_btn_text_transfer_jet"> Upload Into TransferJet</string>
+    <string name="upload_set_pass_bear_say">Interesting password,\nThink about it </string>
+    <string name="upload_set_pass_text_guide1">Chinese character, alphanumeric, symbol, anything can be used</string>
+    <string name="upload_set_pass_text_guide2">Please enter between 8 characters to 30 characters</string>
+    <string name="upload_set_pass_btn_text">Confirm password</string>
+    <string name="upload_confirm_pass_bear_say">Simple password can be easily\nunderstood by other people!</string>
+    <string name="upload_koukaibukuro_setting_bear_say"><![CDATA[<font color=\'red\'>If upload</font>" 
+          "<font color=\'#695C5C\'>to openbag</font>" 
+          "<font color=\'red\'>All users can  see contents<br> easily</font>" 
+          "<font color=\'#695C5C\'>as public post.<br></font>" 
+          "<font color=\'#695C5C\'>Please be careful about the setting of koukai<br>so that some content cannot be shared with All<br></font>" 
+          "<font color=\'#695C5C\'>Or,If posted violated image or video <br>we take action based on the agreement<br></font>]]></string>
+    <string name="upload_koukaibukuro_setting_bear_say_updated">Your friend could add\nimage easily?</string>
+    <string name="upload_confirm_pass_text_guide">Is it OK with below password?</string>
+    <string name="upload_koukaibukuro_setting_text_guide">Let\'s make one password for everyones pictures!</string>
+    <!-- <string name="upload_confirm_pass_complicate_btn">Make it complex</string> -->
+    <string name="upload_confirm_pass_ok_btn">OK</string>
+    <string name="upload_koukaibukuro_make_password_public_btn">Shared With public</string>
+    <string name="upload_koukaibukuro_make_password_not_public_btn">Not share to Public</string>    
+    <string name="upload_addibility_fukidashi_text">Want your friend to be\nable to add photos?</string>
+    <string name="upload_addibility_guide_text">Summarise everyones photo in one password</string>
+    <string name="upload_addibility_sub_guide_text">Person who knows password, will be able to add photos</string>
+    <string name="upload_addibility_no_button">Your own photo is OK</string>
+    <string name="upload_addibility_yes_button">Adding is OK</string>
+    <string name="dialog_change_pass_title">Password encrypted</string>
+    <string name="uploading_normal_bear_say">Sending\nwait for a while</string>
+    <string name="uploading_progress_text">Uploading # / $</string>
+    <string name="uploading_cancel_btn_text">Cancel</string>
+    <string name="uploading_retry_btn_text">Try Again</string>
+    <string name="uploading_error_text_guide">Please try again, where (mobile) network/wave is available</string>
+    <string name="uploading_error_bear_say">Try once again</string> 
+    <string name="dialog_cancel_upload_title">Would you like to cancel?</string>
+    <string name="dialog_cancel_upload_body">If cancelled, sending will be interrupted</string>
+    <string name="pb_gallery_btn_title">Send %s amount of photo</string>
+    <string name="dialog_network_error_title">Network error</string>
+    <string name="dialog_network_error_body">Confirm network condition, then please try again after a while</string>
+    <string name="tab_mnu_dowload_main">Download</string>
+    <string name="tab_mnu_upload_main">Upload</string>
+    <string name="tab_mnu_history_main">History</string>
+    <string name="tab_mnu_setting_main">Settings</string>
+    <string name="tab_mnu_my_page_main">My Page</string>
+    <string name="screen_title_setting_main">Settings</string>
+    <string name="screen_title_upload_main">Upload</string>
+    <string name="screen_title_history_main">History</string>
+    <string name="screen_title_my_page_main">My Page</string>
+    <!-- <string name="pb_dialog_version_title">新しいバージョン%sがあります。アップデートしますか？</string> -->
+    
+	<string name="pb_dialog_version_title">New version %s available.</string>
+    <string name="pb_dialog_version_message">Would you like to update?</string>
+    <string name="dialog_ok_btn">OK</string>
+    <string name="dialog_cancel_btn">Cancel</string>
+    <string name="pb_app_name">Photo Bag</string>
+    <string name="pb_btn_send_history">Sent</string>
+    <string name="pb_btn_delete_history">Delete</string>
+    <string name="pb_btn_inbox_history">Inbox</string>
+    <string name="pb_history_info_date">Received</string>
+    <string name="pb_history_info_honey_used">Honey Used</string>
+    <string name="pb_history_info_num_download">Receiving amount</string>
+    <string name="pb_history_item_number">Total Photos</string>
+    <string name="pb_btn_done">Done</string>
+    <string name="pb_btn_inbox">Inbox</string>
+    <string name="pb_btn_sent">Sent items</string>
+    <string name="pb_btn_cancel">Cancel</string>
+    <string name="pb_btn_OK">OK</string>
+    <string name="pb_btn_tweet">Send</string>
+    <string name="pb_btn_confirm_password">Confirm password</string>
+    <string name="pb_save_all_picture">Save all photos</string>
+    <string name="pb_add_photos">Add photos</string>
+    <string name="pb_btn_detail_delete_all">Delete All</string>
+    <string name="pb_btn_detail_delete_part">Delete after selecting</string>
+    <string name="pb_toast_detail_no_selection">Please select photos to be deleted</string>
+    <string name="pb_title_delete_photo">Would you like to delete?</string>
+    <string name="pb_title_detail_select">Select photo</string>
+    <string name="pb_title_detail_delete_confirm">Selected item will be deleted</string>
+    <string name="pb_title_detail_delete_complete">Deleted</string>
+    <string name="pb_title_detail_delete_fail">Deleting failed</string>
+    <string name="pb_title_cache_clear">Cache Clear</string>
+    <string name="pb_title_migration_code_error">Error getting Migration Code</string> 
+    <string name="pb_title_migration_code_verification_error">Migration Verification Error</string> 
+    <string name="pb_msg_detail_ad_link_confirm">Will be moved to designated link</string>
+    <string name="pb_msg_detail_delete_confirm">d Item will be deleted form password, is it OK?</string>
+    <string name="pb_msg_detail_delete_complete">Photo has been deleted form password, (Photo received from other user before deleting, will not be deleted)</string>
+    <string name="pb_msg_detail_delete_fail">Can not connect to server. Please try again after a while</string>
+    <string name="pb_msg_detail_delete_impossible">This password is already expired, Deleted from server</string>
+    <string name="pb_msg_detail_cannot_add">Unable to add photos to this password</string>
+    <string name="pb_msg_detail_cannot_save">For copyright protection, this contents can not be saved on smart phone. Can be viewed only from photo bag</string>
+    <string name="screen_title_confirm_pass_hitory">Confirm password</string>
+    <string name="screen_confirm_password_title_1">Confirm password</string>
+    <string name="screen_confirm_password_title_2">Teach password immediately to friend!</string>
+    <string name="screen_confirm_password_title_3">Inviting friends, honey will be increased to one extra</string>
+    <string name="screen_confirm_password_title_4">Pick up recommended password from officials</string>
+    <string name="screen_confirm_password_btn">Teach password</string>
+    <string name="screen_confirm_password_public_btn">Enter into recommended password</string>
+    <string name="screen_confirm_password_free_time">Remaining expiry date</string>
+    <string name="screen_confirm_password_btn_copy">Copy</string>
+    <string name="screen_confirm_password_btn_mail">Mail</string>
+    
+    <string name="screen_confirm_password_btn_nakamap">Teach via nakamap</string>
+    <string name="screen_confirm_password_btn_twitter">Tweet</string>
+    <string name="screen_confirm_password_btn_share">Send via other apps</string>
+    <string name="screen_confirm_password_btn_time">Edit</string>
+    <string name="screen_confirm_password_mail_subject">Delivering photos from friend</string>
+    <!-- <string name="screen_confirm_password_mail_content_1">Secret password</string>
+    <string name="screen_confirm_password_mail_content_2">Limit until\n</string>
+    <string name="screen_confirm_password_mail_content_3">Download [Photobag] for easily manipulation/exchange of big amount of photos\nhttp://photobag.in/ \n\n2:Photos sent by friends, also can be viewed by entering secret password\n</string> -->
+    
+    <string name="screen_confirm_password_mail_content_0">Photo/video has been uploaded.\n\n</string>
+    <string name="screen_confirm_password_mail_content_1">Secret password\"%1$s\" Watchword is: \"%2$s\" \n</string>
+    <string name="screen_confirm_password_mail_content_2">Limit until\n</string>
+    <string name="screen_confirm_password_mail_content_3">Download [Photobag] for easily manipulation/exchange of big amount of photos\nhttp://photobag.in/ \n\n2:Photos sent by friends, also can be viewed by entering secret password\n</string>
+    <string name="screen_confirm_password_mail_content_4">http://photobag.in/p/%s</string>
+    <string name="screen_confirm_password_mail_content_5"> \n\nCheck below for downloading Photobag!\n\n</string>
+    <string name="screen_confirm_password_mail_content_6"> ・AppStore\n</string>
+    <string name="screen_confirm_password_mail_content_7">https://itunes.apple.com/app/id490537814&amp;mt=8\n\n</string>
+    <string name="screen_confirm_password_mail_content_8"> ・GooglePlay\n</string>
+    <string name="screen_confirm_password_mail_content_9">https://play.google.com/store/apps/details?id=com.kayac.photobag\n</string>
+    
+    <string name="screen_confirm_password_nakamap_notify_title">Could not find nakamap apps</string>
+    <string name="screen_confirm_password_nakamap_notify_message">Would you like to install nakamap</string>
+    <string name="screen_confirm_password_nakamap_url">http://nakamap.com</string>
+    <string name="screen_confirm_password_pw_default">photobag</string>
+    <string name="screen_confirm_password_time_default">00:00:00</string>
+    <string name="screen_confirm_password_time_hint">Possible to change remaining time shortly</string>
+    <string name="pb_upload_confirm_title">Add Photos</string>
+    <string name="pb_upload_confirm_btn_text">Add photos</string>
+    <string name="pb_upload_confirm_check_hint">Please click red checkbox from the top</string>
+    <string name="pb_upload_confirm_info1">To prevent any loss/mischief,please understand below notes and cooperate</string>
+    <string name="pb_upload_confirm_info2">According to rules and regulation, in case of any offensive report on this photo, video contents, your account might be stopped and acquired points can be confiscated by the official</string>
+    <string name="pb_upload_confirm_info3">This photo is not making any offence to anyone, assuring above notes</string>
+    <string name="pb_content_delete_photo_inbox">Please note, photos not exist in galley can not be viewed</string>
+    <string name="pb_content_delete_photo_outbox">Delete photo from history. Also will be unable to download via this password.</string>
+    <string name="pb_content_cache_clear">Delete cache data.do\nyou agree?</string>
+    <string name="pb_content_migration_code_error">Could not able to get migration code from \nServer.</string>  
+    <string name="pb_local_save_expire_title">Reading period has ended</string>
+    <string name="pb_local_save_expire_content">Password %s reading period has ended</string>
+    <string name="screen_upload_choose_photo_no_photos_mess">There is no photo in gallery</string>
+    <string name="screen_upload_choose_photo_no_photos_select">Please choose photos</string>
+    <string name="pb_invitation_code">Invitation code</string>
+    <string name="pb_invitation_code_change">Nothing</string>
+    <string name="pb_version">Version</string>
+    <string name="pb_notification_ctrl">Notification Display</string>
+    <string name="pb_notification_on">ON </string>
+    <string name="pb_notification_off">OFF</string>
+    <string name="pb_version_change">1.1.3</string>
+    <string name="pb_terms">Terms of services</string>
+    <string name="pb_logout_twitter">Logout from Twitter</string>
+    <string name="pb_twitter">Tweet about photobag</string>
+    <string name="pb_Contact">Contact</string>
+    <string name="pb_faq">FAQ</string>
+    <string name="pb_faq_donguri_hoshii">Do you want Acorn?</string>
+    <string name="pb_setting_main_invite_group">Invite</string>
+    <string name="pb_input_invitation_code">Enter invitation code</string>
+    <string name="pb_invite">Teach invitation code to friend</string>
+    <string name="pb_title_confirm_password">Confirm passwor</string>
+    <string name="pb_btn_setting_input_code">Decided</string>
+    <string name="pb_title_setting_invite">Make invitation</string>
+    <string name="pb_setting_input_code_intruduction">Enter invitation code of invited friend. Presenting to you and your friends one extra honey</string>
+    <string name="pb_setting_invite_freeperiod_friend_hour">1s Time 2s invited person 3s bonus</string>
+    <string name="pb_setting_contact_detail_name">Name</string>
+    <string name="pb_setting_copytext_to_clipboard">Copy</string>
+    <string name="pb_other">Others</string>
+    <string name="pb_null"></string>
+    <string name="pb_setting_input_code_invitation_failed_title">Invitation failed</string>
+    <string name="pb_setting_input_code_invitation_failed_message">Already invited. We can not accept invitation for twice. If you insert own invitation code to other people, honey will get one extra</string>
+    <string name="pb_setting_input_code_invitation_failed_btn_ok">OK</string>
+    <string name="pb_setting_input_code_invitation_failed_btn_cance">Cancel</string>
+    <string name="pb_setting_contactdetail_sendmail_subject">Invitation of [photobag]</string>
+    <string name="pb_setting_contactdetail_sendsms">Photo exchange apps [photobag] for smart phone. Invitation code[http://photobag.in]: there is quite good things available</string>
+    <string name="pb_setting_contactdetail_sendmail_body_part1">Smart phone apps [photobag] for easily exchanging big amount of photos.http://photobag.in,Only by deciding password, photos can be exchanged easily Definitely Free Invitation code[ Input method of invitation code].Download apps from below UTL or QR code.\n http://photobag.in/.After starting up apps, from [Setting] menu Enter Invitation code,please input foobar one extra honey will be increased for both personEasily and big amount of photos exchange apps\n http://photobag.in/" </string>
+    <string name="pb_setting_url_faq">http://photobag.in/faq?platform=android&amp;version=1.0&amp;lang=en</string>
+    <string name="pb_password_length_url">http://photobag.in/wv/pswdlength.html?lang=en</string>
+    <string name="pb_setting_url_what_is_honey">http://photobag.in/faq?id=question-honey</string>
+    <string name="pb_setting_url_what_is_acorn">http://photobag.in/faq?id=question-acorn</string>
+    <string name="pb_setting_url_what_is_gold">http://photobag.in/faq?id=question-goldacorn</string>
+    <string name="pb_setting_url_faq_donguri_hoshii">http://photobag.in/acorn?n=%d&amp;lang=en</string>
+    <string name="pb_setting_url_faq_donguri_info">http://photobag.in/acorn/android?lang=en</string>
+    <string name="pb_setting_contactdetail_phone_title">Phone</string>
+    <string name="pb_setting_contactdetail_mail_title">Mail</string>
+    <string name="pb_setting_url_term_of_use">http://photobag.in/terms?lang=en</string>
+    <string name="pb_setting_invitecode_empty">Nothing</string>
+    <string name="pb_invitation_input_done">Invited</string>
+    <string name="pb_name_contact_isempty">Nothing</string>
+    <string name="pb_setting_main">If you invite friends, \n free saving time will be increased</string>
+    <string name="pb_report_it_msg">This Photo/Vedio is in violation of the Term and Condition of Photo Bag.</string>
+    <string name="pb_hint_ed_search_setting_invite">Search</string>
+    <string name="screen_title_settings_invite">Invite</string>
+    <string name="pb_setting_invite_choose_mail">Select from contact</string>
+    <string name="pb_setting_invite_choose_share"> Teach via other apps</string>
+    <string name="pb_setting_invite_choose_twitter">Tweet</string>
+    <string name="screen_title_settings_invite_detail">Invitation details</string>
+    <string name="screen_title_settings_invite_input_code">Enter invitation code</string>
+    <string name="err_desc_invite_code_title">Invite friend</string>
+    <string name="err_desc_invite_code_success">Invitation OK</string>
+    <string name="err_desc_invite_code_empty">Invitation code is not entered.Please enter invitation code</string>
+    <string name="err_desc_invite_code_already_input">Invitation code is already entered.Teach your own invitation code to friend and ask to enter that</string>
+    <string name="err_desc_invite_code_not_found">Please confirm invitation code</string>
+    <string name="err_desc_invite_user_not_found">Please confirm invitation code</string>
+    <string name="err_desc_invite_cant_yourself"> You can not invite yourself</string>
+    <string name="err_desc_invite_already_invited">Invitation code is already entered.Invitation code can not enter for twice</string>
+    <string name="pb_download_purchase_desc_first">Expiration date has been extended</string>
+    <string name="pb_download_purchase_desc_second">Photos expiration date has been extended\nReceiving of photo has been started</string>
+    <string name="pb_download_purchase_desc_third">MADA</string>
+    <string name="pb_download_purchase_complete_message">Only this time is special</string>
+    <!-- No translate -->
+    <string name="screen_gallery_no_photos_mess">No photos in gallery</string>
+    <string name="screen_gallery_photo_no_photos_select">Please select photo</string>
+    <string name="screen_title_dowload_downloading">Receiving</string>
+    <string name="pb_network_error_content">Could not connect to the internet</string>
+    <string name="pb_network_error">Could not connect to the internet</string>
+    <string name="pb_msg_no_conenction">Could not connect to the internet</string>
+    <string name="pb_imv_set_as">Save</string>
+    <string name="pb_imv_share">Share</string>
+    <string name="pb_imv_report_it">Report It</string>
+    <string name="pb_download_error_desc_text">Please try again, where (mobile) network/wave is available</string>
+    <string name="pb_download_error_bubble_text">Try once again</string>
+    <string name="pb_download_error_btn_retry_text">Once again</string>
+    <string name="pb_history_info_date_outbox">Sent Date</string>
+    <string name="pb_connecting">Connecting...</string>
+    <string name="pb_setting_contactweb_send_message">\nu:%s</string>
+    <string name="upload_confirm_pass_title">Password Confirmation</string>
+    <string name="upload_koukaibukuro_title">Koukaibukuro Setting</string>
+    <string name="upload_koukaibukuro_title_update">Photobag or Openbag</string>
+    
+    <string name="upload_select_photo_title">Please Select Photos</string>
+    <string name="upload_fail_title">Upload Failed</string>
+    <string name="upload_set_pass_title">Please input between 8 ~ 30 characters</string>
+    <string name="pn_notification_title_bar">Photo Bag Message</string>
+    <string name="pn_notification_btn_text">NEW</string>
+    <string name="pn_notification_content_title">Receive from server</string>
+    <string name="pb_setting_contact_mail">info@photobag.in</string>
+<!--     <string name="pb_setting_contact_mail">sawada@aircast.co.jp</string> -->
+    <string name="pb_setting_contact_code">0</string>
+    <string name="pb_apihelper_connecttimeout">No Internet Connection Available</string>
+    <string name="pb_apihelper_password_empty">Please Enter Password</string>
+    <string name="pb_apihelper_token_empty">There is no token. Please start apps when possible to connected to the internet</string>
+    <!-- string for tweet by twitter -->
+    <string name="tweet_dialog_title">Tweet</string>
+    <string name="tweet_started_photobag_success">Increased one extra honey as bonus</string>
+
+	<string name="tweet_started_photobag_content">Lets talk about started photobag using\nPresent one extra honey as bonus</string>
+    <string name="tweet_started_photobag_tutorial">Started photo bag Free recommended apps for exchanging photos, movies for smartphone Supported iPhone and Android\nhttp://photobag.in</string>
+    <string name="pb_dl_failed_post_started_photobag_text">Could not acquire honey by telling</string>
+    <string name="tweet_invite_friend_by_twitter_title">Tweet</string>
+    <string name="tweet_invite_friend_by_twitter_content">Lets exchange photo by free apps [photobag].If you download now, and input invitation code %s from settings, each others photo saving time will be increased 1 hour.Great deals\n http://photobag.in</string>
+    <string name="tweet_let_ur_friend_know_twitter_content">Delivering photo from friend\n secret password</string>
+    <string name="pb_dialog_fail_title">acquisition failed</string>
+    <string name="err_desc_invite_failed">Could not acquire honey by telling</string>
+    <string name="pb_billing_dl_err_title">Photo Bag</string>
+    <string name="pb_billing_dl_err_message">Could not start purchasing .Try once again</string>
+    <string name="pb_dl_login_twitter_username_text">User name</string>
+    <string name="pb_dl_login_twitter_pwd_text">Password</string>
+    <string name="pb_dl_already_post_started_photobag_tweet_text">Already acquired honey by telling.Presenting honey by telling only for the first time</string>
+    <string name="pb_dl_already_post_status_tweet_text">Already free saving time has been extended by telling</string>
+    <string name="pb_dl_post_status_tweet_ok_text">Tweet condition has been updated!</string>
+    <string name="pb_dl_check_username_pass_text">Please confirm registration message</string>
+    <string name="tweet_btn_post_tweet_text">Tweet</string>
+    <string name="pb_dl_failed_post_status_tweet_text">Tweet Failed</string>
+    <string name="pb_twitter_app_market_link">http://twitter.com/</string>
+    <string name="pb_dl_firstclick_message_title">Thank you very much</string>
+    <string name="pb_dl_firstclick_message_body">At first try receiving photo by [photobag]</string>
+    <string name="pb_dl_firstclick_magicphrase_defaulse">photobag</string>
+    <string name="pb_dl_firstclick_magicphrase_defaulse_other">photobag</string>
+    <string name="pb_post_twitter_wall_text">Photo has been uploaded by phtobagSecret password is[ %1$s (%2$s) ]\n#photobag\nhttp://photobag.in</string>
+    <string name="screen_confirm_password_twitter_notify_title">Could not find official Twitter app</string>
+    <string name="screen_confirm_password_twitter_notify_message">Want to install official Twitter apps</string>
+    <string name="pb_upload_compress_photo_failed">Error occurred duingd photo compression.Please close [photobag] once then try again</string>
+    <string name="pb_dl_logout_twitter_success">Logged out</string>
+    <string name="video_err">Could not play movie</string>
+    <string name="pb_file_not_found">File not found</string>
+    <!-- 20120426 add for support upload video feature S -->
+    <string name="pb_compress_resizing">Preparing upload</string>
+    <string name="pb_compress_resizing_only_video1">Prepare Uploading(</string>
+    <string name="pb_compress_resizing_only_image1">Prepare Uploading(</string>
+    <string name="pb_compress_resizing_only_video2">file)</string>
+    <string name="pb_compress_resizing_only_video3">number of video files are processing ... (</string>
+    <string name="pb_compress_resizing_only_image3">number of image files are processing ... (</string>
+    <string name="pb_compress_resizing_only_video4">)</string>
+    <string name="pb_compress_msg_compress_fail">Error occurred during photo compression.Please close [photobag] once then try again</string>
+    <string name="pb_choose_video_msg_file_too_long_title">Could not select</string>
+    <string name="pb_choose_video_msg_file_too_long_msg">Possible uploading length is over</string>
+    <string name="pb_upload_video_msg_file_too_long_title">Could not send movie</string>
+    <string name="pb_upload_video_msg_file_too_long_msg">Possible uploading length is over</string>
+    <!-- 20120426 add for support upload video feature E -->
+    <string name="pb_choose_file_fake_title">Invalid file</string>
+    <string name="pb_choose_file_fake_msg">Due to invalid file,could not select</string>
+    <string name="pb_choose_file_external_storage_title">External storage is low</string>
+    <string name="pb_choose_file_external_storage_msg">Due to insufficient of SD card memory, could not arrange.</string>
+    <!-- 20120612 bac honey setting UI -->
+    <string name="pb_text_in_honey_jar">Holding amount of honey</string>
+    <string name="pb_text_tutorial_help">Method of obtaining honey is here</string>
+    <string name="pb_text_tutorial_help_underline"><u> Method of obtaining honey is here</u></string>
+    <string name="pb_url_below_honey">http://photobag.in/faq?</string>
+    <!-- 20121405 HaiNT15 confirm public password S -->
+    <string name="pb_public_magic_phrase">Show many people after entering to recommended password</string>
+    <!-- 20121405 HaiNT15 confirm public password E -->
+    <!-- ban func -->
+    <string name="pb_password_banned_title">User Review</string>
+    <string name="pb_password_banned_context">There is a possibility of illegal download action in the past.If you do not have any idea about it,we are sorry and will confirm, please make an enquiry</string>
+    <string name="pb_your_honey">Holding number of honey</string>
+    <string name="pb_how_to_get_your_honey"><u>Method of obtaining honey is here</u></string>
+    <string name="share_with_nakamap_pre">Photo has been uploaded by photobag password is \n</string>
+    <string name="share_with_nakamap_aft">\nPhotobag apps can be downloaded from here\nhttps://play.google.com/store/apps/details?id=com.kayac.photobag</string>
+    <string name="useragent">Photobag</string>
+    <string name="honey_remain">Holding number of honey is: </string>
+    <string name="pb_text_in_honey_x">x</string>
+    <string name="pb_text_in_honey_default">0</string>
+    <string name="pb_upload_select_video_hint">It could take some time to send large movie</string>
+    <string name="pb_setting_new">Other Features</string>
+    <string name="pb_setting_mail_to_pc">Upload photos from PC</string>
+    <string name="pb_migration_header">Device Change</string>
+    <string name="pb_setting_my_migration_code">Migration Code　Confirmation</string>
+    <string name="pb_setting_license_title">License Information</string>
+    <string name="pb_setting_my_migration_code_verify">Data Migration</string>  
+    <string name="pb_setting_purchase">Exchange</string>
+    <string name="pb_setting_purchase_donguri">Play free games and collect acorns</string>
+    <string name="pb_setting_sending_mail">Go to mail send screen</string>
+    <string name="pb_setting_sending_merge_code_by_mail">Send Merge Code by Mail</string>
+    
+    <string name="pb_setting_mailtext_pre">Please input PC mail address in destination address and send contents as it is\n================================\n\nCan be sent big volume of photos via PC.Access this URL\'81\'49\n</string>
+    <string name="pb_setting_mailtext_pos">\n\nExpiration of above URL is 24 hours\nPlease send mail from apps, in case of expire date over\n\n\n\n\n\n\n\n Sent from android</string>
+    <string name="pb_setting_mailtext_error">Error occurred while connecting\n\nConfirm network condition and try again after a while</string>
+    <string name="pb_setting_mail_title">Photo Bag</string>
+    <string name="pb_setting_mail_intro">Send mail to the PC receivable mail address\nOpen URL from mail!</string>
+    <string name="pb_setting_mail_bear">Photos can be sent\nfrom PC also!</string>
+    <string name="screen_confirm_password_btn_facebook">Teach via Facebook</string>
+    <string name="pb_facebook_title">Submit photos</string>
+    <string name="pb_twitter_title">Twit Message</string>    
+    <string name="pb_facebook_btn_send">Submit</string>
+    <string name="pb_facebook_btn_cancel">Quit</string>
+    <string name="pb_facebook_btn_change">Change photo</string>
+    <string name="pb_twitter_btn_do_twit">Post twit</string>
+    <string name="pb_twitter_btn_do_facebook_post">Post to Facebook</string>
+    <string name="pb_twitter_progress_do_twitting">ツイート中。。。</string>
+    <string name="pb_twitter_toast_twit_done">Posted to Twitter!</string>
+    <string name="pb_facebook_over">Submitted!</string>
+    <string name="pb_facebook_text_pre">Photo has been uploaded via photobag.Download password is[</string>
+    <string name="pb_facebook_text_post">]</string>
+    <string name="pb_facebook_net_error">Submission failed,please try again after a while</string>
+    <string name="pb_facebook_auth_error">Permission seems to be expired,please take permission to try once again</string>
+     <string name="pb_facebook_app_not_exists">facebook application is not exists in device.</string>
+    <string name="donguri_text_underline"><u>Do you want acorn?</u></string>
+    <string name="back_to_my_page">My Page</string>
+    <string name="main_setting_title">Settings</string>
+    <!-- PAGE DOWNLOAD PURCHASE COMPLETE -->
+    <string name="pb_receive_text_third_description">Bear gave an acorn as a greet of honey amount of acorn can be confirmed from my page.</string>
+    <string name="pb_receive_text_third_description_trial">Acorn can not be received by test honey.When holding honey,acorn can be received by using honey with priority basis</string>
+    <string name="receive_honey_notif">Gave honey</string>
+    <string name="receive_trial_honey_notif">Gave test honey (no acorn)</string>
+    <string name="pb_receive_text_third_description_note">Note</string>
+    <!-- PAGE MY PAGE -->
+    <string name="pb_my_page_kumo_instruction">You can exchange with honey if you accumulate acorn</string>
+    <string name="pb_my_page_notification_donguri_pre">Acorn is</string>
+    <string name="pb_my_page_notification_donguri_post">Added 0 ~</string>
+    <string name="pb_my_page_honey_exchange_donguri_free_get">Get acorn now</string>
+    <string name="pb_my_page_button_trade_honey">Exchange with honey</string>
+    <string name="pb_my_page_button_trade_by_acorn">Go to acorn exchange place</string>
+    <string name="pb_my_page_button_setting">Settings Page</string>
+    <string name="hachimitsu_text_underline"><u>What is honey?</u></string>
+    <string name="hachimitsu_otameshi_text_pre">Try 0 : </string>
+    <string name="pb_my_page_exchange_intro">Exchange completed.Confirm honey has been increased</string>
+    <string name="pb_my_page_exchange_over">Exchange Completed.</string>
+    <string name="pb_my_page_honey_get">Got honey ~</string>
+    <string name="pb_my_page_acorn_get">Got acorn ~</string>
+    <string name="pb_my_page_gold_get">Got gold or acorn ~</string>
+    <string name="pb_my_page_sp_honey_get">Got test honey ~</string>
+    <string name="pb_my_page_text_honey_get">GET Honey</string>
+    <string name="pb_my_page_text_acorn_get">GET Acorn</string>
+    <string name="pb_my_page_text_gold_get">GET Golden Acorn</string>
+    <string name="pb_my_page_text_honey">Honey</string>
+    <string name="pb_my_page_text_otameshi">Honey Try Out</string>
+    <string name="pb_my_page_text_acorn">Acorn</string>
+    <string name="pb_my_page_text_gold">Golden Acorn</string>
+    <string name="pb_my_page_text_count">  Pieces</string>
+    <string name="pb_my_page_text_qmark">？</string>
+    <!-- PAGE EXCHANGE HONEY -->
+    <string name="pb_exchange_honey_title">Exchange Honey</string>
+    <string name="pb_exchange_honey_dialog_title">Exchange to Honey</string>
+    <string name="pb_exchange_honey_dialog_message_pre"></string>
+    <string name="pb_exchange_honey_dialog_message_post">Pieces will exchange with honey.Is it really OK?  </string>
+    <string name="pb_exchange_honey_button_trade">Exchange to Honey</string>
+    <string name="pb_exchange_honey_button_get_donguri">Get acorn now</string>
+    <string name="pb_exchange_honey_button_get_gold">Get Golden Acorn</string>
+    <string name="pb_exchange_honey_text_first_pre"></string>
+    <string name="pb_exchange_honey_text_first_post">Can be exchanged with 1 honey by %s</string>
+    <string name="pb_exchange_honey_text_calculate_first">No of holding %s</string>
+    <string name="pb_exchange_honey_text_calculate_second">No of %s use for exchange</string>
+    <string name="pb_exchange_honey_text_calculate_third">Remaining no of %s</string>
+    <string name="pb_exchane_honey_text_second_line_one_pre"></string>
+    <string name="pb_exchane_honey_text_second_line_one_post">Pieces can be exchanged with honey</string>
+    <string name="pb_exchane_honey_text_second_line_two">How many do you want to exchange?</string>   
+    <string name="pb_exchange_honey_not_enough_acorn">There is no acorn available for exchange</string>
+    <string name="pb_exchange_honey_not_enough_gold">There is no gold or acorn available for exchange</string>
+    <!-- PAGE EXCHANE LIST | GOODS -->
+    <string name="pb_exchange_acorn_title">Place of acorn exchange</string>
+    <string name="pb_exchange_acorn_empty">Please confirm network condition, then try again after a while</string>
+    <string name="pb_exchange_acorn_total_count">Possession number is %d</string>
+    <string name="pb_exchange_acorn_price"> Acorn</string>
+    <string name="pb_exchange_acorn_price_gold"> Golden Acorn</string>
+    <string name="pb_exchange_acorn_price_30d">30 Acorns</string>
+    <string name="pb_exchange_acorn_price_500g">500 Golden Acorns</string>
+    <string name="pb_exchange_acorn_price_1000g">1000 Golden Acorns</string>
+    <string name="pb_exchange_acorn_price_15g">15 Golden Acorns</string>
+    <string name="pb_exchange_acorn_price_500">500</string>
+    <string name="pb_exchange_acorn_price_1000">1,000</string>
+    <string name="pb_exchange_acorn_num_0">0</string>
+    <string name="pb_exchange_acorn_text_needed">Required gold or acorn</string>
+    <string name="pb_exchange_acorn_text_owned">Current gold or acorn</string>
+    <string name="pb_exchange_acorn_start">Exchange</string>
+    <string name="pb_exchange_acorn_confirm">Apply via mail</string>
+    <string name="pb_exchange_acorn_cancel">Cancel Exchange</string>
+    <string name="pb_exchange_acorn_sub_acorn">Exchange acorn</string>
+    <string name="pb_exchange_acorn_sub_gold">Exchange gold or acorn</string>
+    <string name="pb_exchange_acorn_link_acorn"><u>Get acorn</u></string>
+    <string name="pb_exchange_acorn_link_gold"><u>Get gold or acorn</u></string>
+    <string name="pb_exchange_acorn_confirm_itune">%d gold or acorn \n\n\n\niTunes gift code 500 yen</string>
+    <string name="pb_exchange_acorn_confirm_amazon">%d　gold or acorn\n\n\n\nAmazon gift code yen</string>
+    <string name="pb_exchange_acorn_email_itune">PhotobagGift_iTunes</string>
+    <string name="pb_exchange_acorn_email_amazon">PhotobagGift_amazon</string>
+    <string name="pb_exchange_acorn_not_enough">Insufficient acorn</string>
+    <string name="pb_exchange_gold_not_enough">Number is gold or acorn is insufficient</string>
+    <string name="pb_exchange_acorn_goods_honey">Honey</string>
+    <string name="pb_exchange_acorn_company_itune">iTunes K.K</string>
+    <string name="pb_exchange_acorn_goods_itune">iTunes gift code 500 yen</string>
+    <string name="pb_exchange_acorn_detail_amazon">Amazon.co.jp is not main promotional sponsor\n\n Regarding Amazon gift card regulation please confirm here http://www.amazon.co.jp/giftcard/tc Amazon Javari.jp Amazon.co.jp and Amazon.co.jp logo is  Amazon.com, Inc. and trademark of those connected companies\n\n  All the presents from this apps are conducting by AIRCAST K.K by their own,  and does not have any correlation with Apple Inc.</string>
+    <string name="pb_exchange_acorn_company_amazon">Amazon Japan KK</string>
+    <string name="pb_exchange_acorn_goods_amazon">Amazon gift code 1000</string>
+    <string name="pb_exchange_acorn_detail_itune">All the presents from this apps are conducting by AIRCAST K.K by their own,  and does not have any correlation with Apple Inc</string>
+
+	<string name="pb_exchange_acorn_goods_confirm">Application within every week wednesday, will publish by same week thursday.After publishing will be sent a notice mail by official, and to confirm the person himself, it is needed to upload the password provided by the official.Please not that, due to stock condition, publishing can be late.Moreover, if code was not received within 2 weeks after application, please make an enquiry from apps Whie sending mail, to avoid any mistakes, send mail without editing mail text</string>
+    <string name="pb_exchange_acorn_confirm_title">Want to exchange gold or acorn by below contents?</string> 
+    <string name="pb_exchange_acorn_confirm_extra">Application for gift exchanging will be finished by sending mail</string> 
+    <string name="pb_exchange_acorn_confirm_after">[Important] We will contact on same week thursday for all gift applications made by wednesday.Please note that, consumption of golds or acorns will be at the time when you handover a gift.When the mail sending has not been completed, you can not contact us for delivering gift\n\n</string> 
+    <string name="pb_exchange_acorn_ok_title">Shortage of gold or acorn</string>
+    <string name="pb_exchange_acorn_ok_content">Shortage of gold or acorn for exchanging</string>
+    <string name="pb_exchange_acorn_ok_button">OK</string>
+    <!-- HONEY SHOP -->
+    <string name="pb_honey_shop_title">Honey shop</string>
+    <string name="pb_honey_shop_intro_title">Displaying based on special commercial transaction act</string>
+    <string name="pb_honey_shop_btn_rule"><u>Displaying based on special commercial transaction act</u></string>
+    <string name="pb_honey_shop_btn_back">Return to honey shop</string>
+    <string name="pb_honey_shop_intro_msg">Displaying based on special commercial transaction act\n\nTrader AIRCAST KK\n\nAddress\n0025 Tokyo-to, Chioda-ku,Kanda sakuma-cho 3\n\nContact\ninfo@photobag.in\n\nManagement\nRepresentative Director be\n\nCharges\nAll digital target contents(Displayed price as per below contents\n\nMethod of payment\nAndroid user purchase viaGooglePlay, payment will be done\n\nPayment period\nBefore offering the contents\n\nProducts and service time\nAfter finishing payment procedures, we will provide contents immediately\n\nExpenses other than selling price\n communication charges(internet connection fees included\n\nCancel policy\nContents can not be returned or exchanged\n\nOperating environment\n Support above android version of 2.2.3\n\n</string>
+    
+    <string name="pb_honey_shop_honey_count" formatted="false">Holding honey %d pieces,Test %d pieces</string>
+    <string name="pb_honey_shop_btn_purchase">Purchase honey</string>
+    <string name="pb_honey_shop_item_btn_purchase">Purchase</string>
+    <string name="pb_honey_count_0">0</string>
+    <string name="pb_honey_shop_purchase_suc">Purchasing honey is successful</string>
+    <string name="pb_honey_shop_error_title">Communication error</string>
+    <string name="pb_honey_shop_error_default">Communication error occurred.Please open honey shop once again</string>
+    <string name="pb_honey_shop_error_extra">Communication error occurred.Please download once again</string>
+    <string name="pb_honey_shop_error_init">Communication error occurred.Please confirm account and google play condition</string>
+    <string name="pb_honey_shop_error_market_old">Update is required from play store</string>
+    <!-- Metaps -->
+    <string name="metapsLabelGoMarket">Download</string>
+    <string name="metapsLabelInstalled">Installation finished</string>
+    <string name="metapsLabelAppFree"></string>
+    <string name="metapsLabelRealCurrency"></string>
+    <string name="metapsOfferWallExplanation">Get points by downloading apps and service application</string>
+    <string name="metapsLabelOptionConfirm">Reconfirm result</string>
+    <string name="metapsLabelOptionFinish">Return to apps</string>
+    <string name="metapsMessageNetworkError">Network connection failed.Please start again after a while</string>
+    <string name="metapsMessageServerError">Reading information is failed.We are sorry for your trouble, please start again after a while</string>
+        
+    <!-- reward -->
+    <string name="pb_acorn_forest_title">Acorn Forest</string>
+    <!-- PAGE CHANGE INTERVAL TIME -->
+    <string name="pb_change_interval_photo_title">Setting expiration date</string>
+    <!-- PAGE NOTIFICATION LIST -->
+    <string name="pb_notification_title">Bear memo</string>
+    <!-- DIALOG PICKER -->
+    <string name="dialog_btn_complete">Finish</string>
+    <string name="pb_contact_report_term_violation">Report a Terms of Use violation</string>
+    
+    <!-- TIME EXPIRATION SETTINGS -->
+    <string name="pb_send_interval_time_settings">Set Date-Time Expiration</string>
+	<string name="pb_send_interval_time_duration">Time settings can be set between 0 hour to the expiration date remaining time.</string>
+	<string name="pb_send_interval_honey_info">Honey is used in photo bag that you have sent and receive an acorn. </string>
+	<string name="pb_send_interval_change_interval">Setting expiration date</string>
+	<string name="pb_send_interval_caution">※Date time can be reduced,it can not be extended.</string>
+	<string name="pb_button_ok">OK</string>
+	<string name="pb_button_cancel">Cancel</string>
+	<string name="pb_text_hours">Hours</string>
+	<string name="pb_text_mins">Mins</string>
+	<string name="pb_settings_expiration_completed">Time Expiration Settings Completed.</string>
+	<string name="pb_download_aikotoba_already_uptodate">No update available for this \nAIKOTOBA</string>
+	<string name="pb_clear_cache">Cache Clear</string>
+	<string name="pb_license_setting_text">License</string>
+  <string name="pb_migration_code">Migration Code</string>    
+   <string name="pb_migration_code_input">Input Migration Code</string>
+   <string name="pb_send_migration_code_verify">Execute data migration</string>    
+   <string name="pb_migration_code_warning">Warning:If you change the device,then there might risk to lose data.</string> 
+   <string name="pb_migration_code_verify_warning">Caution:\nIf you execute migration, your current honey acorn will be invaild\n Please be careful.</string> 	
+   <string name="pb_data_migration_start">Do you agree to start data migration?</string>
+   <string name="pb_data_migration_other_error">We are extremely sorry. Please try after a while.</string>  
+   
+   <string name="pb_alert_migration_honey_count">Trial honey:</string> 
+   <string name="pb_alert_migration_acorn_count">Acorn:</string>
+   <string name="pb_alert_migration_mapple_count">Honey:</string>
+   <string name="pb_alert_migration_goldacorn_count">Gold acorn:</string>
+   
+   <string name="pb_alert_own_migration_code_insert_kinshi">You could not input your own migration code.</string> 
+   
+   
+   <string name="pb_mail_migration_code_1">Warning ! Please read below carefully:\n</string> 
+   <string name="pb_mail_migration_code_2">Only data item is transferable, not application image or video.\n</string>
+   <string name="pb_mail_migration_code_3">The device receive data migration, data item will not increase,instead remove last data item and replace with new data item.\n</string>
+   <string name="pb_mail_migration_code_4">Please take backup your pictures and videos data.</string>
+   
+       <!-- Chat function -->
+	<string name="pb_chat_message_input_hint">Input message area</string>
+	<string name="chat_password_free_time">Remaining Time : </string>
+	<string name="chat_password_default_time_expired">00:00:00</string>
+	<string name="chat_input_character_limit">please input within 100 character</string>
+	
+	
+     <!-- Koukaibukuro function -->
+    <string name="pb_upload_koukaibukuro_dialog_publsh_passwd_confirmation_title">Confirmation Dialog</string>
+    <string name="pb_upload_koukaibukuro_dialog_publsh_passwd_confirmation_message">Do you really want to publish?</string> 
+    <string name="pb_upload_koukaibukuro_dialog_publsh_passwd_done_title">Finish Dialog</string> 
+    <string name="pb_upload_koukaibukuro_dialog_publsh_passwd_done_message">Password is published to public</string> 
+    
+    
+    <string name="pb_koukaisetting_message_1">Please help us to protect illegal post.</string>
+    <string name="pb_koukaisetting_message_2">Please help us to protect illegal post.</string>
+    <string name="pb_koukaisetting_checkbox_message">Please donot publish item which could hurt others emotions.</string>
+    
+  <string name="pb_chat_message_internet_offline_dialog_title">Communicateion Error</string>
+  <string name="pb_chat_message_internet_offline_dialog_message">Please confirm network status and please try after a while.</string>
+  
+   <!-- photobag exit dialog -->
+   <string name="app_exit_message">Do you really want to exit?</string>
+   
+   <!--  photobag download preview -->
+   <string name="pb_download_preview_tv_albuminformation">Can easily confirm image and video of passwords.</string>
+   <string name="pb_download_preview_tv_download">By tapping thumbnail, photo and video contents of the corresponding thumbnail can be seen.</string>
+   <string name="pb_download_preview_title">Confirm Download</string>
+  
+       <string name="pb_kumamemo_notification_text">Do not forget to memo!</string>
+       
+   <!-- photobag history item update type -->
+   <string name="review">REVIEW</string>
+   <string name="publish">OPEN</string>
+   <string name="reject">REJECT</string>
+   
+   <!-- Cache clear -->
+   <string name="cache_clear_toast">Cache cleared is done.</string>
+   
+   
+   <!-- Chat -->
+   <string name="chat_active_status_valid">Valid</string>
+   <string name="chat_active_status_end">End</string>
+   <string name="pb_buy_honey_together">Buy honey at once</string>
+    <string name="pb_buy_maple_result">Thanks for Purchasing Honey.\nNumber of honey owned: %d</string>
+   
+
+   <!-- Page honey exchange -->
+  <string name="pb_exchange_honey_dialog_message＿post">no. of honey will exchange. Do you really agree?</string>
+   
+  
+   <!-- kb string res -->
+    <!-- main page segmented button title -->
+
+    <string name="mainpage_segmented_title1">Arrival</string>
+    <string name="mainpage_segmented_title2">Ranking</string>
+    <string name="mainpage_segmented_title3">Recommend</string>
+
+    <!-- search page segmented button title -->
+
+    <string name="searchpage_segmented_title1">Order by new arrival</string>
+    <string name="searchpage_segmented_title2">Ranking</string>
+    <string name="searchpage_segmented_title3">Official Password</string>
+
+    <!-- my page segmented button title -->
+
+    <string name="mypage_segmented_title1">Inbox</string>
+    <string name="mypage_segmented_title2">Sent</string>
+    <string name="mypage_segmented_title3">Favourite</string>
+    
+    
+    <string name="main_page_title">Openbag</string>
+    <string name="search_page_title">Search</string>
+    <string name="my_page_title">MyPage</string>
+
+    <!-- exit titlr & mgs -->
+    <string name="exit_title">End</string>
+    <string name="exit_mgs">Will close the Openbag?</string>
+
+    <!-- download mgs -->
+    <string name="dl_mgs">Do you download the Password?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="fv_mgs">Add to favourite,\n
+will download later.</string>
+    <string name="fv_delete_mgs">Delete from favourite list</string>
+    <string name="fv_add">Add to favourite</string>
+    <string name="fv_delete">Delete from favourite</string>
+    
+    
+     <!-- text -->
+    <string name="donguri_button_text">Go to donguri exchange place</string>
+    <string name="nick_registration_button_text">Change Nickname</string>
+    <string name="search_button_text">Cancel</string>
+    <string name="search_no_item_found_txt"> items is not matched with any item for search result</string>
+
+     <!--    password download category -->
+ <string name="kb_open">OPEN</string>
+ <string name="kb_free">FREE</string>
+ 
+	 <string name="kb_buton_go_to_donguri_screen">Change Acorn</string>
+	 <string name="kb_nickname_exist">This nickname is already set.</string>
+	 <string name="kb_search_total_item">Total %d Passwords</string>
+	 <string name="kb_search_find_item">%d Results Found</string>
+	 <string name="kb_search_first_time">You can search password</string>
+	 <string name="kb_search_not_found">This password is not exist currently.</string>
+	 <string name="kb_search_whitespace">Invalid character is included in inputted nickname</string>
+	 <string name="kb_search_hint">Search</string>
+	 <string name="kb_empty_nickname_warning">Please enter your nick name.。</string>
+	 <string name="kb_history_info_sent_date">Sent Date</string>
+	 
+	 <string name="kb_nickname_change">Change Nickname</string>
+	 <string name="kb_nickname_hint">Nickname</string>
+	 <string name="kb_kumamemo_button_text">BearMemo</string>
+ 
+ 
+ <!--  pull to refresh -->
+ 
+    <!-- <string name="pull_to_refresh_pull_label">Pull to refresh...</string> -->
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading...</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh...</string>
+    
+    <!-- Twitter Configurations -->
+    <!-- <string name="twitter_callback">oauth://t4jsample</string>
+    <string name="twitter_consumer_key">oyAZiiG6Nfuq8RYR6fUK1WOR4</string>
+    <string name="twitter_consumer_secret">UKqaQtIbZE8bd0JMuxKuphy3I5Z2a4UQqprSxVXobDz8NTP2Yq</string> -->
+    <string name="twitter_callback">oauth://t4jsample</string>
+    <string name="twitter_consumer_key">jKkqSmfHcBjuazHP0f2w</string>
+    <string name="twitter_consumer_secret">5QyHAG0UUViuOEnjmgaqJkdRLo7xpBgLcClrZmmyjo</string>
+    <string name="twitter_oauth_verifier">oauth_verifier</string>
+    <string name="hello">Hello, </string>
+    
+       <!--  history item delete title -->
+   <string name="history_item_delete_title">Do you want to delete\nthe below item ?</string>
+   
+    <!-- <string name="facebook_app_id">779851855419788</string> -->
+    <string name="facebook_app_id">837896309631843</string>      
+    <string name="share">Share</string>
+    
+         <!-- License Text -->
+     <string name="pb_license1_text">This software includes the work that is distributed \n in the Apache License 2.0\nhttp://www.apache.org/license/License-2.0</string>
+     
+     <string name="pb_license2_text">This software includes the work that is distributed \n in the Apache License 2.0\nhttp://www.apache.org/license/License-2.0</string>
+    
+        <string name="pb_license3_text">
+<![CDATA[
+        * MultipleOrientationSlidingDrawer \n
+        Copyright(c) 2001 - 2012 Sileria, Inc.\n\n
+* FButton  \n
+Copyright {2014} {Le Van Hoang}\n\n
+* Facebook-Android  \n
+Copyright 2010-present Facebook.\n\n
+* kankan-wheel  \n
+Copyright 2010 Yuri Kanivets.
+         ]]>
+    </string>
+    
+    <string name="pb_network_not_available_general_message">Please check the network status, try again after a while.</string>     
+    <string name="pb_chat_tap_dialog_copy">Copy</string>
+    <string name="pb_chat_tap_dialog_download">Download</string>
+    
+     <string name="pb_PBWebViewPhotoContestActivity_screen_titile">Openbag Photocontest</string>
+     
+     <string name="pb_PBUploadKoukaibukuroActivity_go_to_photobag">Go To Photobag</string>
+     <string name="pb_PBUploadKoukaibukuroActivity_go_to_koukaibukuro">Go to Openbag</string>
+     
+      <string name="total_chat_item">Chat %ditem</string>
+      
+      
+       <string name="cancelled">Cancelled</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="ok">OK</string>
+    <string name="hello_user">Hello %1$s!</string>
+    <string name="success">Success</string>
+    <string name="successfully_posted_post">Post ID: %1$s</string>
+    <string name="error">Error</string>
+    <string name="status_update">Updating status for %1$s at %2$s</string>
+    <string name="photo_post">Photo Post</string>
+    <string name="you_picked">You picked:</string>
+    <string name="no_friends_selected">&lt;No friends selected&gt;</string>
+    <string name="no_place_selected">&lt;No place selected&gt;</string>
+    <string name="pick_seattle_place">Pick a Seattle Place</string>
+    <string name="exception">Exception: %1$s</string>
+    
+    
+    <!-- new share text -->
+     <string name="pb_post_twitter_wall_text_new"> I just uploaded some pictures in the PhotoBag. \nWatchword is [%1$s]  \nPassword: [%2$s] \nhttp://photobag.in/p/%3$s  \n※ If a password has been set, you will need a password entry at the time of receipt. \nClick here if you DL the photo bag app! https://play.google.com/store/apps/details?id=com.kayac.photobag</string>
+   <string name="twitter_post_text">I just uploaded some pictures with Photobag.\nWatchword is [ %1$s ]\nPassword:[ %2$s ]\n#photobag</string>
+</resources>

@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">E-Courier</string>
+
+    <string name="google_maps_api_key">AIzaSyBVx8XRyfFZYnBiW-DtAP2XEOym-d6m8fE</string>
+    <string name="google_server_key">AIzaSyCHo_f8MDYoV9f0tkx9axpj4J-qjt_PTfY</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!-- sign up & log in -->
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="name">Full Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="address">Address</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="create">Create</string>
+    <string name="photo">Add Photo</string>
+    <string name="register">Register</string>
+    <string name="forgot">Forgot Password? </string>
+
+    <!--  left drawer -->
+    <string name="arrange">Arrange Delivery</string>
+    <string name="status">Delivery Status</string>
+    <string name="favourites">Favourites</string>
+    <string name="history">History</string>
+    <string name="profile">Profile</string>
+    <string name="feedback">Feedback</string>
+    <string name="help">Help</string>
+    <string name="about_us">About Us</string>
+
+    <!--  feed back -->
+    <string name="feedback_intru">Please write your comment, we will get back to you soon.</string>
+    <string name="remaining_chars">Remaining chars [%d]</string>
+    <string name="network_error">Could not connect to the internet</string>
+
+    <!--  about us -->
+    <string name="app_version">Version 1.0</string>
+    <string name="contact_no">Contact Number</string>
+    <string name="website">Website</string>
+    <string name="office_address">House: #202, Road: #02, DOHS Baridhara, Dhaka - 1212, Bangladesh.</string>
+    <string name="office_contact">1234567890</string>
+    <string name="office_email">info@smartmux.com</string>
+    <string name="office_website">http://smartmux.com/</string>
+    <string name="email_client">No mail client installed on this device.</string>
+    <string name="net_con">No Internet Connection.</string>
+
+
+
+
+</resources>

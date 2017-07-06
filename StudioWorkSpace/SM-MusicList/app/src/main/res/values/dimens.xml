@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="parallax_image_height">320dp</dimen>
+    <dimen name="parallax_image_height_ancor">360dp</dimen>
+
+    <!-- Bottom control panel-->
+    <dimen name="bottom_control_panel">150dp</dimen>
+
+    <!-- wifi transfer -->
+    <dimen name="wifi_state_image_size">72dp</dimen>
+    <dimen name="wifi_state_image_top_mrgn">20dp</dimen>
+    <dimen name="wifi_state_text_size">18sp</dimen>
+    <dimen name="wifi_instruction_text_size">20sp</dimen>
+    <dimen name="wifi_instruction_text_top_mrgn">10dp</dimen>
+    <dimen name="wifi_btn_top_mrgn">20dp</dimen>
+    <dimen name="wifi_btn_bottom_mrgn">30dp</dimen>
+    <dimen name="wifi_btn_left_mrgn">50dp</dimen>
+    <dimen name="wifi_btn_text_size">16sp</dimen>
+    <dimen name="wifi_btn_size">54dp</dimen>
+    <dimen name="mrgn_left">25dp</dimen>
+    <dimen name="title_left_mrgn">18dp</dimen>
+
+
+</resources>

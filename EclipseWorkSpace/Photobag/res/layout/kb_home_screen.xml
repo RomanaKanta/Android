@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aircast.koukaibukuro.MainTabActivity" >
+
+    <RelativeLayout
+        android:id="@+id/home_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff" >
+
+        <Button
+            android:id="@+id/Button_actionbar_back"
+            android:layout_width="@dimen/kb_kumamemo_button_width"
+            android:layout_height="@dimen/kb_kumamemo_button_hight"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_kumamemo_button"
+            android:textColor="#ff7a61"
+            android:textSize="@dimen/actionbar_backtxt_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView_actionbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/a_open_logo" />
+
+        <TextView
+            android:id="@+id/textView_actionbar_rightside"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/close_round"
+            android:padding="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView_kumaMemoUpdateNumber"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/kb_kumamemo_notification_spacing"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/android_oval_shape"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView_settiongs"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/Button_actionbar_back"
+            android:src="@drawable/settings" />
+    </RelativeLayout>
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_topbar" >
+
+        <LinearLayout
+            android:id="@+id/lp_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/kb_main_tabbar_height"
+                    android:orientation="horizontal"
+                    android:tabStripEnabled="false" />
+            </HorizontalScrollView>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+        </LinearLayout>
+    </TabHost>
+
+    <LinearLayout
+        android:id="@+id/bodycontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/LinearLayout_ad_content"
+        android:layout_below="@android:id/tabhost"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_ad_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#000"
+        android:orientation="vertical" >
+
+        <com.ad_stir.webview.AdstirWebView
+            android:id="@+id/ad_content"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            media="MEDIA-e194dab6"
+            spot="1" />
+    </LinearLayout>
+
+</RelativeLayout>

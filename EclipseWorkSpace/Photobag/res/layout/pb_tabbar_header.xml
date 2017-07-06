@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tabsHeader"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/layout_header_height"
+    android:background="@color/header_bg"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/tabsTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Tab Name"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/lvLeftRightBtns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp" >
+
+           <!--   <Button
+            android:id="@+id/btnLeftBtn"
+            style="@style/btn_white_style"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pb_btn_height"
+            android:layout_gravity="left"
+            android:background="@drawable/btn_shape_orange"
+            android:text="Left" /> - -->
+            
+            <com.aircast.photobag.widget.FButton
+                android:id="@+id/btnLeftBtn"
+                style="@style/btn_white_style"
+                android:layout_width="60dp"
+                android:layout_height="@dimen/pb_btn_height"
+                android:layout_gravity="left"
+                android:text="Left"
+                app:buttonColor="#ff735a"
+                app:shadowEnabled="false" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_weight="1"
+            android:background="@color/transparent" />
+
+        <!--    <Button
+            android:id="@+id/btnRightBtn"
+            style="@style/btn_white_style"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pb_btn_height"
+            android:background="@drawable/btn_shape_orange"
+            android:text="Right" /> -->
+
+        <com.aircast.photobag.widget.FButton
+            android:id="@+id/btnRightBtn"
+            style="@style/btn_white_style"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/pb_btn_height"
+            android:text="Right"
+            app:buttonColor="#ff735a"
+            app:shadowEnabled="false" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lvCenterBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btnCLeftBtn"
+            style="@style/btn_white_style"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pb_btn_height"
+            android:background="@drawable/btn_shape_orange"
+            android:text="Center_Left" />
+
+        <Button
+            android:id="@+id/btnCRightBtn"
+            style="@style/btn_white_style"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pb_btn_height"
+            android:background="@drawable/btn_shape_orange"
+            android:text="Center_Right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/white" />
+
+</FrameLayout>

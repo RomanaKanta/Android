@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_window_focused="false" android:state_enabled="true"
+        android:drawable="@drawable/btn_hard" />
+    <!-- <item android:state_window_focused="false" android:state_enabled="false"
+        android:drawable="@drawable/btn_hard_normal_disable" /> -->
+    <item android:state_pressed="true" 
+        android:drawable="@drawable/btn_hard_o" />
+    <item android:state_focused="true" android:state_enabled="true"
+        android:drawable="@drawable/btn_hard_o" />
+    <item android:state_enabled="true"
+        android:drawable="@drawable/btn_hard" />
+    <item android:state_focused="true"
+        android:drawable="@drawable/btn_hard_o" />
+    <item
+         android:drawable="@drawable/btn_hard" />
+</selector>
+
+<!-- <selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item 
+		android:state_focused="true" 
+		android:state_pressed="false"
+		android:drawable="@drawable/button_pressed" />
+	<item 
+		android:state_focused="true" 
+		android:state_pressed="true"
+		android:drawable="@drawable/button_pressed" />
+	<item 
+		android:state_focused="false" 
+		android:state_pressed="true"
+		android:drawable="@drawable/button_pressed" />
+	<item
+	    android:state_enabled="false" 
+	    android:drawable="@drawable/button_pressed" 
+	    />
+	<item 
+		android:drawable="@drawable/btn_hard" />
+</selector> -->

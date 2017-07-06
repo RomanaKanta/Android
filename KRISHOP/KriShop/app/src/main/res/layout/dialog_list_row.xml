@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <com.ksproject.krishop.widget.AppTextViewLatoRegular
+        android:id="@+id/dialog_row_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:textSize="@dimen/txt_size_16"
+        android:textColor="@android:color/black"
+        android:padding="@dimen/txt_padding_5"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- @lent5 add Action bar #S -->
+    <color name="device_test_color">#000000</color>
+    <color name="actionbar_separator">#8B1A1A</color>
+    <color name="actionbar_title">#FFFFFF</color>
+    <color name="actionbar_background_start">#8B1A1A</color>
+    <color name="actionbar_background_end">#CD2626</color>
+    <color name="actionbar_background_item_pressed_start">#FF7F00</color>
+    <color name="actionbar_background_item_pressed_end">#EE7600</color>
+    <color name="actionbar_background_home_start">#00000000</color>
+    <color name="actionbar_background_home_end">#00000000</color>
+    <color name="actionbar_background_home_pressed_start">#88FF7F00</color>
+    <color name="actionbar_background_home_pressed_end">#88EE7600</color>
+    <!-- @lent5 add Action bar #E -->
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffff</color>
+    <color name="white_photobox_complete">#E8E8E8</color>
+    <color name="gray">#C8C8C8</color>
+    <color name="gray_honey">#a5a5a5</color>
+    <color name="gray_dark">#99767676</color>
+    <color name="gray_deep_dark">#ff767676</color>
+    <color name="sep_background">#D6DDD4</color>
+    <color name="blue">#770000ff</color>
+    <color name="black">#000000</color>
+    <color name="black_light">#464646</color>
+    <color name="brown">#a96e5c</color>
+    <color name="blue_dark">#364752</color>
+    <color name="blue_apple">#0053ff</color>
+    <color name="orange">#ff7f68</color>
+    <color name="header_bg">#88C8C8C8</color>
+    <color name="main_bg">#d8d8d8</color>
+    <color name="panel_stroke">#c9c9c9</color>
+    <color name="tab_bg">#222222</color>
+    <color name="tab_o_s_bg">#dd303030</color>
+    <color name="tab_o_e_bg">#dd565656</color>
+    <color name="tab_o_bg_stroke">#565656</color>
+    <color name="main_text_color">#695C5C</color>
+    <color name="pb_red_light">#C9C9C9</color>
+    <color name="pb_red_dark">#838383</color>
+
+    <!-- 20120208 NhatVT added more color S -->
+    <color name="solid_textColorHighlight">#ff087ae5</color>
+    <color name="pink">#F0D5DA</color>
+    <color name="red">#df00</color>
+    <color name="bg">#FFFFFF</color>
+
+    <drawable name="screen_background_black">#ff000000</drawable>
+    <drawable name="translucent_background">#e0000000</drawable>
+    <drawable name="transparent_background">#bfff</drawable>
+    <drawable name="transparent_drawable">#00000000</drawable>
+    <!-- 20120208 NhatVT added more color S -->
+
+    <color name="bg_color_video_duration">#6000</color>
+
+    <!-- 20120601 Bac honey bonus -->
+    <color name="honey_bonus_progress">#959595</color>
+
+    <!-- 20120601 Bac new Setting UI -->
+    <color name="setting_color_text">#A96F5B</color>
+    <color name="donguri_counter_color">#fa6450</color>
+    <color name="my_page_notification_bg_color">#dc514c</color>
+
+    <!-- color for flat button UI -->
+    <color name="fbutton_default_color">#3eadeb</color>
+    <color name="fbutton_default_shadow_color">#ff3493c8</color>
+    <color name="fbutton_color_turquoise">#1abc9c</color>
+    <color name="fbutton_color_green_sea">#16a085</color>
+    <color name="fbutton_color_emerald">#2ecc71</color>
+    <color name="fbutton_color_nephritis">#27ae60</color>
+    <color name="fbutton_color_peter_river">#3498db</color>
+    <color name="fbutton_color_belize_hole">#2980b9</color>
+    <color name="fbutton_color_amethyst">#9b59b6</color>
+    <color name="fbutton_color_wisteria">#8e44ad</color>
+    <color name="fbutton_color_wet_asphalt">#34495e</color>
+    <color name="fbutton_color_midnight_blue">#2c3e50</color>
+    <color name="fbutton_color_sun_flower">#f1c40f</color>
+    <color name="fbutton_color_orange">#f39c12</color>
+    <color name="fbutton_color_carrot">#e67e22</color>
+    <color name="fbutton_color_pumpkin">#d35400</color>
+    <color name="fbutton_color_alizarin">#e74c3c</color>
+    <color name="fbutton_color_pomegranate">#c0392b</color>
+    <color name="fbutton_color_clouds">#ecf0f1</color>
+    <color name="fbutton_color_silver">#bdc3c7</color>
+    <color name="fbutton_color_concrete">#95a5a6</color>
+    <color name="fbutton_color_asbestos">#7f8c8d</color>
+    <color name="fbutton_color_hard">#817269</color>
+    <color name="fbutton_color_shape_orange">#17cdee</color>
+    <color name="fbutton_color_shape_red">#935243</color>
+    <color name="fbutton_color_inactive">#333333</color>
+    <color name="fbutton_color_red_bg">#FF7867</color>
+    <color name="fbutton_color_red_bg_photobox">#17CDEE</color>
+    <color name="fbutton_color_inbox_sent_btn_on_off">#a2ebf8</color>
+    <color name="fbutton_color_brown">#965747</color>
+    <color name="fbutton_color_cancel">#C0C0C0</color>
+
+    <!--
+    <color name="gray_deep_dark">#ff767676</color>
+    <color name="kb_sep_background">#D6DDD4</color>
+    <color name="blue">#770000ff</color>
+    <color name="black">#000000</color>
+    <color name="black_light">#464646</color>
+    <color name="brown">#a96e5c</color>
+    <color name="blue_dark">#364752</color>
+    <color name="blue_apple">#0053ff</color>
+    <color name="orange">#ff7f68</color>
+    <color name="header_bg">#88C8C8C8</color>
+    <color name="main_bg">#d8d8d8</color>
+    <color name="panel_stroke">#c9c9c9</color>
+    <color name="tab_bg">#222222</color>
+    <color name="tab_o_s_bg">#dd303030</color>
+    <color name="tab_o_e_bg">#dd565656</color>
+    <color name="tab_o_bg_stroke">#565656</color>
+    <color name="main_text_color">#695C5C</color>
+    -->
+
+    <color name="fbutton_color_transparent">@android:color/transparent</color>
+    <color name="flatbutton_default_color">#ff7a61</color>
+
+    <!-- form kb -->
+
+
+    <!-- for segmented control button -->
+    <color name="radio_button_selected_color">#006AFF</color>
+    <color name="radio_button_unselected_color">@android:color/transparent</color>
+    <color name="kb_dialog_background">#444A50</color>
+    <color name="kb_dialog_no_button_color">#A3A3A3</color>
+    <color name="photobox_v1_btn_color">#17cdee</color>
+    <color name="tab_text_color">#1F62CD</color>
+    <color name="photobox_setting_tapped_color">#e1e5eb</color>
+    <color name="photobox_change_interval_time_text_color">#E8705F</color>
+
+    <!-- rifat add -->
+    <color name="yellow_background">#FFFAB9</color>
+    <color name="sky_background">#CCFFFF</color>
+    <color name="actionbar_background">#F7F7F5</color>
+    <color name="actionbar_text_color">#006AFF</color>
+    <color name="gray_background">#C9C8CE</color>
+    <color name="header_normal">#F6F6F6</color>
+    <color name="header_pressed">#F6F6F6</color>
+    <color name="menu_section_header">#FFDDDDDD</color>
+
+</resources>

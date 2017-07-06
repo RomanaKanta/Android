@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.smartux.photocollage"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 5
+        versionName "1.0.4"
+
+        manifestPlaceholders = [manifestApplicationId: "com.smartux.photocollage",
+                                onesignal_app_id: "b022fac1-9f3d-4e2a-b50f-e2b56936d0f0",
+                                onesignal_google_project_number: "542931567944"]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+
+    jcenter()
+    maven { url "https://jitpack.io" }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.android.support:recyclerview-v7:23.2.1'
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile files('libs/universal-image-loader-1.9.0.jar')
+    compile project(':library')
+    compile 'com.github.ParkSangGwon:TedPermission:v1.0.9'
+    compile 'com.onesignal:OneSignal:2.+@aar'
+    compile 'com.google.android.gms:play-services-gcm:+'
+    compile 'com.google.android.gms:play-services-analytics:+'
+    compile "com.google.android.gms:play-services-location:+"
+    compile 'org.adw.library:discrete-seekbar:1.0.1'
+
+}

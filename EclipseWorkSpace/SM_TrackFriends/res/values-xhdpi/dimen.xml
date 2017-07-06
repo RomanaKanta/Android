@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- dimens in values-xhdpi folder -->
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="map_height">770dp</dimen>
+    <dimen name="view_height">550dp</dimen>
+    <dimen name="fragment_height">280dp</dimen>
+    <dimen name="view_top_margin">53dp</dimen>
+    <dimen name="footer_height">60dp</dimen>
+    <dimen name="paddingBottom_of_header">3dp</dimen>
+    <dimen name="paddingLeft_of_header">5dp</dimen>
+    <dimen name="paddingRight_of_header">5dp</dimen>
+    <dimen name="paddingTop_of_header">5dp</dimen>
+    <dimen name="left_drawer_padding">13dp</dimen>
+    <dimen name="right_drawer_padding">3dp</dimen>
+    <dimen name="right_drawer_title_padding">10dp</dimen>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <EditText android:id="@+id/user_secret_question"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:hint="@string/secret_question"/>
+    
+    <EditText android:id="@+id/user_secret_answer"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:hint="@string/secret_answer"/>
+    
+    <EditText
+        android:id="@+id/user_secret_password"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:hint="@string/secret_password"
+        android:inputType="textPassword|number"
+        android:maxLength="4" />
+    
+    <EditText android:id="@+id/user_secret_confirm_password"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:hint="@string/secret_confirm_password"
+        android:inputType="textPassword|number"
+        android:maxLength="4"/>
+</LinearLayout>

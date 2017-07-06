@@ -1,0 +1,79 @@
+<resources>
+
+    <!-- xxxhdpi -->
+
+
+    <!-- Activity Collage -->
+    <dimen name="topbar_icon_left_mrgn">10dp</dimen>
+    <dimen name="topbar_icon_top_mrgn">12dp</dimen>
+    <dimen name="topbar_text_top_mrgn">12dp</dimen>
+    <dimen name="topbar_text_size">20sp</dimen>
+    <dimen name="bottombar_left_mrgn">10dp</dimen>
+    <dimen name="bottombar_right_mrgn">10dp</dimen>
+    <dimen name="frame_left_mrgn">5dp</dimen>
+    <dimen name="fake_view_wt">25dp</dimen>
+    <!--  -->
+    <dimen name="topbar_ht">100dp</dimen>
+    <dimen name="topbar_icon">45dp</dimen>
+    <dimen name="bottombar_ht">80dp</dimen>
+    <dimen name="frame_list_divider">15dp</dimen>
+    <dimen name="frame_panel_item_ht">80dp</dimen>
+    <dimen name="frame_panel_item_wt">60dp</dimen>
+    <dimen name="photo_width">146dp</dimen>
+    <dimen name="photo_height">146dp</dimen>
+    <dimen name="mrgn_left">25dp</dimen>
+
+    <!-- custom photo gallery -->
+    <dimen name="photo_width_selected">45dp</dimen>
+    <dimen name="photo_height_selected">45dp</dimen>
+    <dimen name="list_item_image_wt">80dp</dimen>
+    <dimen name="list_item_image_ht">100dp</dimen>
+    <dimen name="gallery_topbar_ht">55dp</dimen>
+    <dimen name="gallery_bottom_bar_ht">210dp</dimen>
+    <dimen name="gallery_bottom_text_layer_ht">30dp</dimen>
+    <dimen name="gallery_bottom_frame_layer_ht">100dp</dimen>
+    <dimen name="gallery_bottom_select_layer_ht">80dp</dimen>
+    <dimen name="gallery_bottom_select_item_layer">80dp</dimen>
+    <dimen name="gallery_bottom_delete_size">25dp</dimen>
+    <dimen name="gallery_selected_image_mrgn">10dp</dimen>
+
+    <!-- org.askerov.dynamicgrid -->
+    <dimen name="dgv_overlap_if_switch_straight_line">16dp</dimen>
+
+    <!-- Color -->
+    <dimen name="color_list_mrgn">5dp</dimen>
+    <dimen name="color_item_left_mrgn">20dp</dimen>
+    <dimen name="color_item_size">35dp</dimen>
+
+    <!--  -->
+
+    <dimen name="seekbar_layer_ht">70dp</dimen>
+    <dimen name="arrow_layer_wt">50dp</dimen>
+    <dimen name="seekbar_wt">290dp</dimen>
+    <dimen name="color_list_ht">90dp</dimen>
+
+    <!-- effect adapter -->
+    <dimen name="effect_list_ht">160dp</dimen>
+    <dimen name="effect_list_mrgn">6dp</dimen>
+    <dimen name="effect_item_size">42dp</dimen>
+    <!--  -->
+
+
+    <!-- frame -->
+    <dimen name="frame_list_wt">90dp</dimen>
+    <dimen name="frame_lock_size">32dp</dimen>
+    <dimen name="frame_list_mrgn">10dp</dimen>
+
+    <!-- com.yalantis.contextmenu.lib -->
+    <dimen name="menu_item_padding">1dp</dimen>
+    <dimen name="text_right_padding">28dp</dimen>
+    <dimen name="text_right_translation">8dp</dimen>
+    <dimen name="text_wrapper_right_margin">-8dp</dimen>
+    <dimen name="menu_text_size">18sp</dimen>
+    <dimen name="contextmenu_size">90dp</dimen>
+
+    <!-- font row -->
+    <dimen name="font_text_size">25sp</dimen>
+    <dimen name="font_text_mrgn">10dp</dimen>
+
+</resources>

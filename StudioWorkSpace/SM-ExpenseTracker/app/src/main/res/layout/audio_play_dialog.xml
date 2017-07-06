@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/**
+ * Copyright (c) 2012 Vinayak Solutions Private Limited 
+ * See the file license.txt for copying permission.
+*/     
+ -->
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/dialog_bg"
+	>
+                
+	<LinearLayout
+		android:id="@+id/time_details"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+                    
+        <Chronometer 
+        	android:id="@+id/time_details_chronometer"
+            android:textSize="50sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4d4d4d"/>
+                
+	</LinearLayout>
+                
+    <LinearLayout
+		android:id="@+id/voice_control_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@id/time_details"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        >
+                    
+		<Button
+			android:id="@+id/stop_button"
+          android:layout_width="wrap_content"
+            android:layout_height="@dimen/reminder_height"
+            android:gravity="center"
+            android:background="@drawable/sm_custom_button"
+            android:drawableLeft="@drawable/stop"
+            android:drawablePadding="5dp"
+            android:paddingLeft="@dimen/play_or_stop_padding_left_and_right"
+            android:paddingRight="@dimen/play_or_stop_padding_left_and_right"
+            android:text="@string/stop"
+            android:textStyle="bold"
+            android:textColor="@color/button_text_color"
+            android:layout_marginRight="18dp"
+            android:textSize="@dimen/play_or_stop_text_size" />
+                    
+		<Button
+			android:id="@+id/play_button"
+			                  android:layout_width="wrap_content"
+            android:layout_height="@dimen/reminder_height"
+            android:background="@drawable/sm_custom_button"
+            android:drawableLeft="@drawable/play"
+            android:drawablePadding="5dp"
+            android:paddingLeft="@dimen/play_or_stop_padding_left_and_right"
+            android:paddingRight="@dimen/play_or_stop_padding_left_and_right"
+            android:text="@string/play"
+             android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/play_or_stop_text_size"
+               android:layout_marginRight="18dp"
+            android:visibility="gone" />
+                    
+		<Button
+			android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/reminder_height"
+            android:layout_gravity="center"
+            android:background="@drawable/sm_custom_button"
+            android:paddingBottom="@dimen/reminder_padding_top_and_bottom"
+            android:paddingLeft="@dimen/reminder_padding_left_and_right"
+            android:paddingRight="@dimen/reminder_padding_left_and_right"
+            android:paddingTop="@dimen/reminder_padding_top_and_bottom"
+            android:text="Cancel"
+            android:textStyle="bold"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/reminder_text_size"
+            android:visibility="visible" />
+                    
+	</LinearLayout>
+                    
+</RelativeLayout>

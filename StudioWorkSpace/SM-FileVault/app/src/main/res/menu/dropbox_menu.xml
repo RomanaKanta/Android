@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/dropbox_logout"
+          android:icon="@drawable/logout"
+          android:alphabeticShortcut='s'
+          android:title=""
+          android:showAsAction="ifRoom|withText" />    
+
+</menu>

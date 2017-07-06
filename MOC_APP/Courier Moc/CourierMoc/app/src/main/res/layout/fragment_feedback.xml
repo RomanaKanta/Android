@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smartmux.couriermoc.utils.SoftKeyboardHandledLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/feedback_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/ImageView_feedback_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView_instracution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ImageView_feedback_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/feedback_intru"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editText_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_edittext_height"
+            android:layout_alignLeft="@+id/textView_instracution"
+            android:layout_below="@+id/textView_instracution"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_background"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@drawable/cursor_shape"
+            android:textSize="16sp"></EditText>
+
+        <EditText
+            android:id="@+id/editText_comment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_comment_height"
+            android:layout_alignLeft="@+id/editText_email"
+            android:layout_below="@+id/editText_email"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_background"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="Comments"
+            android:inputType="textMultiLine"
+            android:maxLength="400"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@drawable/cursor_shape"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView_number_of_character_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/editText_comment"
+            android:layout_below="@+id/editText_comment"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/button_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:text="@string/feedback" />
+    </RelativeLayout>
+
+</com.smartmux.couriermoc.utils.SoftKeyboardHandledLinearLayout>

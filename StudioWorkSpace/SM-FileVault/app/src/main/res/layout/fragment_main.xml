@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <ImageButton
+            android:id="@+id/buttonStartRecording"
+            android:layout_width="@dimen/record_button_width"
+            android:layout_height="@dimen/record_button_width"
+            android:background="@drawable/record_button" />
+
+        <ImageButton
+            android:id="@+id/buttonPauseRecording"
+            android:layout_width="@dimen/record_button_width"
+            android:layout_height="@dimen/record_button_height"
+            android:background="@drawable/start_record_button"
+            android:text="@string/button_pause_record"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/buttonPlayRecording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/button_play_record"
+        android:visibility="gone" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/frameLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:format="%s"
+        android:textColor="@color/pink"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+  
+
+    <com.smartmux.filevault.widget.AppTextViewAverinBlack
+        android:id="@+id/recording_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:text="@string/tap_status"
+        android:textColor="@color/gray"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

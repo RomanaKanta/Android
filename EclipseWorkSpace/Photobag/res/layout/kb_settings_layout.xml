@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context="com.aircast.koukaibukuro.MainTabActivity" >
+
+    <RelativeLayout
+        android:id="@+id/home_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/openid_actionbar_color" >
+
+            
+             <LinearLayout
+            android:id="@+id/content_kb_settings_back"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                  android:padding="0dip"
+                  android:clickable="false" 
+                android:src="@drawable/arrow_back" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/main_page_title"
+                 android:textSize="20dip"
+                   android:paddingLeft="3dip"
+                android:textStyle="bold"
+                android:textColor="@color/white" /> 
+            
+             <!--   <com.kayac.photobag.widget.actionbar.ScrollingTextView
+                android:id="@+id/actionbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="3dip"
+                android:paddingRight="5dip"
+                android:textSize="20dip"
+                android:textStyle="bold"
+                android:textColor="@color/actionbar_title"
+                android:lines="1"
+                 android:gravity="center_vertical"
+                android:scrollHorizontally="true"
+                android:ellipsize="marquee"
+                  android:text="@string/main_page_title"
+                android:marqueeRepeatLimit="marquee_forever"
+                /> -->
+
+        </LinearLayout>
+
+        <TextView android:text="設定"
+            android:id="@+id/TextView_kb_settings_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+             android:textSize="22dip"
+                android:textStyle="bold"
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/content_kb_settings_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="ニックネーム"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/kb_settings_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentRight="true"
+            android:text="クマさん"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:id="@+id/content_kb_settings_openid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:padding="10dp" >
+        
+         <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="ID認証情報を変更"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/right_arrow"
+            android:text=""
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+</LinearLayout>

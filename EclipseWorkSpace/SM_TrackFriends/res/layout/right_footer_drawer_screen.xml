@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/customborder"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_standard"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/buttonbackground"
+            android:text="@string/standard" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/buttonbackground" />
+
+        <Button
+            android:id="@+id/button_hybrid"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/buttonbackground"
+            android:text="@string/hybrid" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/buttonbackground" />
+
+        <Button
+            android:id="@+id/button_satalite"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/buttonbackground"
+            android:text="@string/satalite" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_show_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/White"
+        android:background="@drawable/botton_background"
+        android:text="@string/three_d_map" />
+
+    <Button
+        android:id="@+id/button_show_route"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/White"
+        android:background="@drawable/botton_background"
+        android:text="@string/show_route" />
+
+    <Button
+        android:id="@+id/button_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/White"
+        android:background="@drawable/botton_background"
+        android:text="@string/settings" />
+
+</LinearLayout>

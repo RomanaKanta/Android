@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#28993F"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/back_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/wifi_state_image_top_mrgn"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+        <ImageView
+            android:id="@+id/wifi_state_image"
+            android:layout_width="@dimen/wifi_state_image_size"
+            android:layout_height="@dimen/wifi_state_image_size"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_wifi_256" />
+
+        <TextView
+            android:id="@+id/wifi_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/wifi_state_text_size" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/wifi_transfer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/wifi_instruction_text_top_mrgn"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/instruction"
+            android:textColor="#000000"
+            android:textSize="@dimen/wifi_instruction_text_size" />
+
+        <TextView
+            android:id="@+id/ip_address"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/wifi_instruction_text_top_mrgn"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="@dimen/wifi_state_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/wifi_btn_bottom_mrgn"
+            android:layout_marginLeft="@dimen/wifi_btn_left_mrgn"
+            android:layout_marginRight="@dimen/wifi_btn_left_mrgn"
+            android:layout_marginTop="@dimen/wifi_btn_top_mrgn"
+            android:layout_weight="2"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/start_stop_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wifi_btn_size"
+                android:background="@drawable/wifi_btn_bg"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/start_stop_button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/wifi_btn_text_size"
+                android:textStyle="bold" />
+                </LinearLayout>
+        </LinearLayout>
+  
+    </LinearLayout>
+
+</LinearLayout>

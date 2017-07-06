@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/headerroundImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin_15"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rounded_krishop_logo" />
+
+
+            <com.ksproject.krishop.widget.AppTextViewLatoRegular
+                android:id="@+id/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/txt_view_bg"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="name"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txt_size_16"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/headerroundImage"
+                android:layout_marginRight="@dimen/margin_10"
+                />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

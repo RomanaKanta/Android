@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:id="@+id/fake_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/bottom_ht"
+        android:background="@color/folating_expand_transparent_background"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/crop_base_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_centerInParent="true" >
+
+        <com.edmodo.cropper.CropImageView
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cropImageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layout_resize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/resize_margin"
+            android:background="@color/menu_fragment_background"
+            android:orientation="vertical"
+            android:padding="@dimen/resize_pading" >
+
+            <com.smartmux.fotolibs.widget.AppTextView
+                android:id="@+id/resize_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/resize1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/pure_white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.smartmux.fotolibs.widget.AppTextView
+                    android:id="@+id/resize_original_wt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="@color/pure_white"
+                    android:textSize="@dimen/resize_text_size" />
+
+                <com.smartmux.fotolibs.widget.AppTextView
+                    android:id="@+id/resize_title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:text="@string/resize3"
+                    android:textColor="@color/pure_white"
+                    android:textSize="@dimen/resize_text_size" />
+
+                <com.smartmux.fotolibs.widget.AppTextView
+                    android:id="@+id/resize_original_ht"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="@color/pure_white"
+                    android:textSize="@dimen/resize_text_size" />
+            </LinearLayout>
+
+            <com.smartmux.fotolibs.widget.AppTextView
+                android:id="@+id/resize_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/resize2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/pure_white" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/resize_new_wt"
+                    android:layout_width="@dimen/textview_wt"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/resize_attach_image"
+                    android:background="@drawable/resize_textview_border"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:padding="5dp"
+                    android:textColor="@color/pure_white"
+                    android:textSize="@dimen/resize_text_size" >
+
+                    <requestFocus />
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/resize_attach_image"
+                    android:layout_width="@dimen/logo_ht"
+                    android:layout_height="@dimen/logo_ht"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="5dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/attachment_padding"
+                    android:src="@drawable/attachment" />
+
+                <ImageView
+                    android:id="@+id/resize_attach_close_image"
+                    android:layout_width="@dimen/attach_close"
+                    android:layout_height="@dimen/attach_close"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="5dp"
+                    android:background="@color/folating_expand_transparent_background"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/attachment_padding"
+                    android:src="@drawable/attach_close" />
+
+                <EditText
+                    android:id="@+id/resize_new_ht"
+                    android:layout_width="@dimen/textview_wt"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/resize_attach_image"
+                    android:background="@drawable/resize_textview_border"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:padding="5dp"
+                    android:textColor="@color/pure_white"
+                    android:textSize="@dimen/resize_text_size" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_ht"
+        android:layout_alignParentBottom="true"
+        android:background="@color/header_bg"
+        android:orientation="horizontal" >
+
+        <!-- <com.smartmux.fotolibs.widget.HorizontalListView -->
+        <!-- android:id="@+id/crop_listview" -->
+        <!-- android:layout_width="0dp" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_weight="3" -->
+        <!-- android:choiceMode="singleChoice" > -->
+        <!-- </com.smartmux.fotolibs.widget.HorizontalListView> -->
+
+        <android.support.v7.widget.RecyclerView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/crop_listview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:scrollbars="none" />
+
+        <RelativeLayout
+            android:id="@+id/crop_select_protion"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottom_ht"
+            android:layout_weight="1"
+            android:background="@color/color_1" >
+
+            <ImageView
+                android:id="@+id/crop_select_image"
+                android:layout_width="@dimen/list_item_image_wt"
+                android:layout_height="@dimen/list_item_image_ht"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:padding="5dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

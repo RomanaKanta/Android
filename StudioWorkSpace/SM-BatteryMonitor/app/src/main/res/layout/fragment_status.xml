@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dip"
+        android:indeterminateDrawable="@drawable/my_progress_indeterminate" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <com.smartmux.batterymonitor.progresscircle.ProgressCircle
+                    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/firstProgressBar"
+                    android:layout_width="@dimen/progress_ht_wt"
+                    android:layout_height="@dimen/progress_ht_wt"
+                    android:layout_centerInParent="true"
+                    ProgressWheel:barColor="@color/common_color"
+                    ProgressWheel:barLength="@dimen/progress_bar_length"
+                    ProgressWheel:barWidth="@dimen/progress_bar_width"
+                    ProgressWheel:rimColor="@color/rim_color"
+                    ProgressWheel:rimWidth="@dimen/progress_rim_width"
+                    ProgressWheel:spinSpeed="-1dp"
+                    ProgressWheel:textColor="#222222"
+                    ProgressWheel:textSize="14sp"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="@dimen/image_size"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/image_top_margin"
+                    android:contentDescription="@string/app_name" />
+
+                <com.smartmux.batterymonitor.widget.AppTextView
+                    android:id="@+id/first_Content_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageView1"
+                    android:layout_centerHorizontal="true"
+                   android:textColor="@color/White"
+                    android:textSize="@dimen/progress_text_size_mid" />
+
+                <com.smartmux.batterymonitor.widget.AppTextView
+                    android:id="@+id/power_For_First_Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/first_Content_TextView"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/progress_text_size_mid" />
+
+                <com.smartmux.batterymonitor.widget.AppTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/power_For_First_Content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/msg"
+                    android:textColor="@color/White"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="@dimen/image_size"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/image_top_margin"
+                    android:contentDescription="@string/app_name" />
+
+                <com.smartmux.batterymonitor.progresscircle.ProgressCircle
+                    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/secondProgressBar"
+                    android:layout_width="@dimen/progress_ht_wt"
+                    android:layout_height="@dimen/progress_ht_wt"
+                    android:layout_centerInParent="true"
+                    ProgressWheel:barColor="@color/common_color"
+                    ProgressWheel:barLength="@dimen/progress_bar_length"
+                    ProgressWheel:barWidth="@dimen/progress_bar_width"
+                    ProgressWheel:rimColor="@color/rim_color"
+                    ProgressWheel:rimWidth="@dimen/progress_rim_width"
+                    ProgressWheel:spinSpeed="-1dp"
+                    ProgressWheel:textColor="#222222"
+                    ProgressWheel:textSize="14sp"
+                    android:visibility="invisible" />
+
+                <com.smartmux.batterymonitor.widget.AppTextView
+                    android:id="@+id/second_Content_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageView2"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/progress_text_size_mid" />
+
+                <com.smartmux.batterymonitor.widget.AppTextView
+                    android:id="@+id/power_For_second_Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/second_Content_textView"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/progress_text_size_mid" />
+
+                <com.smartmux.batterymonitor.widget.AppTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/power_For_second_Content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/msg"
+                    android:textColor="@color/White"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="@dimen/image_size"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/image_top_margin"
+                    android:contentDescription="@string/app_name" />
+
+                <com.smartmux.batterymonitor.progresscircle.ProgressCircle
+                    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/thirdProgressBar"
+                    android:layout_width="@dimen/progress_ht_wt"
+                    android:layout_height="@dimen/progress_ht_wt"
+                    android:layout_centerInParent="true"
+                    ProgressWheel:barColor="@color/common_color"
+                    ProgressWheel:barLength="@dimen/progress_bar_length"
+                    ProgressWheel:barWidth="@dimen/progress_bar_width"
+                    ProgressWheel:rimColor="@color/rim_color"
+                    ProgressWheel:rimWidth="@dimen/progress_rim_width"
+                    ProgressWheel:spinSpeed="-1dp"
+                    ProgressWheel:textColor="#222222"
+                    ProgressWheel:textSize="14sp"
+                    android:visibility="invisible" />
+
+                <com.smartmux.batterymonitor.widget.AppTextView
+                    android:id="@+id/third_Content_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageView3"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/progress_text_size_mid" />
+
+                <com.smartmux.batterymonitor.widget.AppTextView
+                    android:id="@+id/power_For_third_Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/third_Content_textView"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/progress_text_size_mid" />
+
+                <com.smartmux.batterymonitor.widget.AppTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/power_For_third_Content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/White"
+                    android:text="@string/msg"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="@dimen/image_size"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/image_top_margin"
+                    android:contentDescription="@string/app_name" />
+
+                <com.smartmux.batterymonitor.progresscircle.ProgressCircle
+                    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/forthProgressBar"
+                    android:layout_width="@dimen/progress_ht_wt"
+                    android:layout_height="@dimen/progress_ht_wt"
+                    android:layout_centerInParent="true"
+                    ProgressWheel:barColor="@color/common_color"
+                    ProgressWheel:barLength="@dimen/progress_bar_length"
+                    ProgressWheel:barWidth="@dimen/progress_bar_width"
+                    ProgressWheel:rimColor="@color/rim_color"
+                    ProgressWheel:rimWidth="@dimen/progress_rim_width"
+                    ProgressWheel:spinSpeed="-1dp"
+                    ProgressWheel:textColor="#222222"
+                    ProgressWheel:textSize="14sp"
+                    android:visibility="invisible" />
+
+                <com.smartmux.batterymonitor.widget.AppTextView
+                    android:id="@+id/forth_Content_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageView4"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/progress_text_size_mid" />
+
+                <com.smartmux.batterymonitor.widget.AppTextView
+                    android:id="@+id/power_For_forth_Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/forth_Content_textView"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/progress_text_size_mid" />
+
+                <com.smartmux.batterymonitor.widget.AppTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/power_For_forth_Content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/msg"
+                    android:textColor="@color/White"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

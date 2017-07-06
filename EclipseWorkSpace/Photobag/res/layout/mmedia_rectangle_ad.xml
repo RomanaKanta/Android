@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mm="http://millennialmedia.com/android/schema"
+    android:id="@+id/mmedia_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+	<com.millennialmedia.android.MMAdView
+        android:id="@+id/adView"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        mm:width="300"
+        mm:height="250"
+        mm:apid="155262" />
+
+</RelativeLayout>

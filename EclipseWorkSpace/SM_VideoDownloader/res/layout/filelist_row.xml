@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1D1821" >
+
+    <CheckBox
+        android:id="@+id/checkBox_vdo"
+        android:layout_width="@dimen/icon_ht_wt"
+        android:layout_height="@dimen/icon_ht_wt"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@drawable/checkbox_selector"
+        android:text="" 
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/image_filethumb"
+        android:layout_width="@dimen/tab_ht"
+        android:layout_height="@dimen/tab_ht"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/margin_10"
+        android:layout_toRightOf="@+id/checkBox_vdo"
+        android:contentDescription="@string/files"
+        android:src="@drawable/tab_icon_file_up" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_50"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_toRightOf="@+id/image_filethumb"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textview_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/file_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textview_file_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/duration"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textview_file_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_toRightOf="@+id/textview_file_duration"
+                android:text="@string/size"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textview_file_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_time"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textview_file_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_toRightOf="@+id/textview_file_date"
+                android:text="@string/date_time"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_file_info"
+        android:layout_width="@dimen/icon_ht_wt"
+        android:layout_height="@dimen/icon_ht_wt"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/margin_15"
+        android:contentDescription="@string/files"
+        android:src="@drawable/info_button" />
+
+</RelativeLayout>

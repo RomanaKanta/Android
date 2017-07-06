@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    
+
+<com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/headerbar"
+        style="@style/pb_actionbar"
+        android:layout_alignParentTop="true" />
+                    
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerbar" >
+
+        <LinearLayout
+            android:id="@+id/lp_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/kb_main_tabbar_height"
+                    android:orientation="horizontal"
+                    android:tabStripEnabled="false" >
+                    
+                 
+                    </TabWidget>
+                
+                
+            </HorizontalScrollView>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+        </LinearLayout>
+    </TabHost>
+
+    <LinearLayout
+        android:id="@+id/bodycontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@android:id/tabhost"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    
+
+</RelativeLayout>

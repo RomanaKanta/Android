@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_main_color" >
+
+    <ImageView
+        android:id="@+id/imageView_icon"
+        android:layout_width="@dimen/action_bar_icon_image_ht"
+        android:layout_height="@dimen/action_bar_icon_image_ht"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/action_icon_left_mrgn"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/imageView_icon"
+        android:layout_marginLeft="@dimen/action_title_left_mrgn"
+        android:paddingLeft="3dp"
+        android:text="Note List"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+     <View 
+         android:id="@+id/fake_view"
+        android:layout_width="@dimen/action_icon_left_mrgn"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+       />
+   
+
+    <ImageView
+        android:id="@+id/imageView_search"
+        android:layout_width="@dimen/action_bar_image_ht"
+        android:layout_height="@dimen/action_bar_image_ht"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/fake_view"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_search" />
+
+    <ImageView
+        android:id="@+id/imageView_setting"
+        android:layout_width="@dimen/action_bar_image_ht"
+        android:layout_height="@dimen/action_bar_image_ht"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/action_menu_right_mrgn"
+        android:layout_toLeftOf="@id/imageView_search"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_settings" />
+
+    <ImageView
+        android:id="@+id/imageView_dropbox"
+        android:layout_width="@dimen/action_bar_image_ht"
+        android:layout_height="@dimen/action_bar_image_ht"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/action_menu_right_mrgn"
+        android:layout_toLeftOf="@id/imageView_setting"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_dropbox" />
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/header_ht"
+    android:background="@color/header_bg" >
+
+<!--     <ImageView -->
+<!--         android:id="@+id/imageview_logo" -->
+<!--         android:layout_width="@dimen/logo_wt" -->
+<!--         android:layout_height="@dimen/logo_ht" -->
+<!--         android:layout_alignParentLeft="true" -->
+<!--         android:layout_centerVertical="true" -->
+<!--         android:contentDescription="@string/app_name" -->
+<!--         android:padding="@dimen/logo_padding" -->
+<!--         android:src="@drawable/logo_small" /> -->
+
+<!--     <ImageView -->
+<!--         android:id="@+id/imageview_close" -->
+<!--         android:layout_width="@dimen/logo_wt" -->
+<!--         android:layout_height="@dimen/logo_ht" -->
+<!--         android:layout_alignParentLeft="true" -->
+<!--         android:layout_centerVertical="true" -->
+<!--         android:contentDescription="@string/app_name" -->
+<!--         android:padding="@dimen/logo_padding" -->
+<!--         android:src="@drawable/close" -->
+<!--         android:visibility="gone" /> -->
+
+<!--     <TextView -->
+<!--         android:id="@+id/textview_header" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_centerInParent="true" -->
+<!--         android:text="@string/header_title" -->
+<!--         android:textAppearance="?android:attr/textAppearanceLarge" -->
+<!--         android:textColor="#FFFFFF" /> -->
+
+<!--     <TextView -->
+<!--         android:id="@+id/textview_done" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentRight="true" -->
+<!--         android:layout_centerVertical="true" -->
+<!--         android:layout_marginRight="@dimen/logo_padding" -->
+<!--         android:text="@string/done" -->
+<!--         android:textAppearance="?android:attr/textAppearanceLarge" -->
+<!--         android:textColor="#FFFFFF" /> -->
+
+<!--     <ImageView -->
+<!--         android:id="@+id/imageview_done" -->
+<!--         android:layout_width="@dimen/logo_wt" -->
+<!--         android:layout_height="@dimen/logo_ht" -->
+<!--         android:layout_alignParentRight="true" -->
+<!--         android:layout_centerVertical="true" -->
+<!--         android:layout_marginRight="@dimen/logo_padding" -->
+<!--         android:contentDescription="@string/app_name" -->
+<!--         android:padding="@dimen/logo_padding" -->
+<!--         android:src="@drawable/done" -->
+<!--         android:visibility="gone" /> -->
+
+</RelativeLayout>

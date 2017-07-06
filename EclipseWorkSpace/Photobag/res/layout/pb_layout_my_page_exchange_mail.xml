@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg" >
+    
+    <com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/headerbar"
+        style="@style/pb_actionbar" />
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >        
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" > 
+    
+    
+    <LinearLayout 
+        android:id="@+id/layout_acorn_goods_header"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:background="@drawable/acorn_detail_bg"
+        android:orientation="vertical" >
+        
+        <TextView 
+            android:id="@+id/tv_acorn_goods_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/gray_deep_dark"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="@string/pb_exchange_acorn_goods_itune" />
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" >
+            
+            <ImageView
+                android:id="@+id/icon_acorn_mail_goods"
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/acorn_list_itune"
+                android:contentDescription="@string/pb_null" />
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/icon_acorn_mail_goods"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/gray_deep_dark"
+                android:textSize="16sp"
+                android:text="@string/pb_exchange_acorn_text_needed" />
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/icon_acorn_mail_goods"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/gray_deep_dark"
+                android:textSize="16sp"
+                android:text="@string/pb_exchange_acorn_text_owned" />
+            
+            <TextView 
+                android:id="@+id/tv_acorn_goods_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/gray_deep_dark"
+                android:textSize="16sp"
+                android:text="@string/pb_exchange_acorn_price_500" />
+            
+            <TextView 
+                android:id="@+id/tv_acorn_total_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/brown"
+                android:textSize="16sp"
+                android:text="@string/pb_exchange_acorn_num_0" />
+        </RelativeLayout>        
+    </LinearLayout>
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        
+        <LinearLayout 
+            android:id="@+id/layout_acorn_exchange_intro"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" >
+    
+            <TextView
+                android:id="@+id/tv_acorn_goods_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_margin="20dp"
+                android:textSize="14sp"
+                android:text="@string/pb_exchange_acorn_num_0"
+                android:textColor="@color/gray_deep_dark" />
+    
+            <!-- <Button
+                android:id="@+id/btn_acorn_start_exchange"
+                style="@style/TextShadowBlack"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/pb_btn_height"
+                android:layout_margin="20dp"
+                android:background="@drawable/btn_shape_orange"
+                android:gravity="center"
+                android:text="@string/pb_exchange_acorn_start"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" /> -->
+            <com.aircast.photobag.widget.FButton
+                android:id="@+id/btn_acorn_start_exchange"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/pb_btn_height"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:text="@string/pb_exchange_acorn_start"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:buttonColor="@color/fbutton_color_shape_orange"
+                app:shadowEnabled="false" />
+                
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/layout_acorn_exchange_confirm"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:gravity="center|top" >
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="15dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/gray_deep_dark"
+                android:text="@string/pb_exchange_acorn_confirm_title" />
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@drawable/my_page_02_separator" />
+            
+            <TextView
+                android:id="@+id/tv_acorn_confirm_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/gray_deep_dark"
+                android:text="@string/pb_exchange_gold_not_enough" />
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/my_page_02_separator" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textSize="14sp"
+                android:textColor="@color/gray_deep_dark"
+                android:text="@string/pb_exchange_acorn_goods_confirm" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textSize="13sp"
+                android:textColor="@color/red"
+                android:text="@string/pb_exchange_acorn_confirm_extra" />
+    
+            <!-- <Button
+                android:id="@+id/btn_acorn_confirm_exchange"
+                style="@style/TextShadowBlack"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/pb_btn_height"
+                android:layout_margin="20dp"
+                android:background="@drawable/btn_shape_orange"
+                android:gravity="center"
+                android:text="@string/pb_exchange_acorn_confirm"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" /> -->
+             <com.aircast.photobag.widget.FButton
+                android:id="@+id/btn_acorn_confirm_exchange"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/pb_btn_height"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:text="@string/pb_exchange_acorn_confirm"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:buttonColor="#ff735a"
+                app:shadowEnabled="false" />   
+                
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/layout_acorn_exchange_after"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:gravity="center|top" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textSize="14sp"
+                android:textColor="@color/gray_deep_dark"
+                android:text="@string/pb_exchange_acorn_confirm_after" />
+            
+            <!-- <Button
+                android:id="@+id/btn_acorn_exit"
+                style="@style/TextShadowBlack"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/pb_btn_height"
+                android:layout_margin="20dp"
+                android:background="@drawable/btn_shape_orange"
+                android:gravity="center"
+                android:text="@string/pb_exchange_acorn_ok_button"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />   -->          
+            <com.aircast.photobag.widget.FButton
+                android:id="@+id/btn_acorn_exit"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/pb_btn_height"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:text="@string/pb_exchange_acorn_ok_button"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:buttonColor="#ff735a"
+                app:shadowEnabled="false" />  
+                
+            
+        </LinearLayout>
+    </FrameLayout>
+    
+    </LinearLayout>   
+    </ScrollView>
+</LinearLayout>

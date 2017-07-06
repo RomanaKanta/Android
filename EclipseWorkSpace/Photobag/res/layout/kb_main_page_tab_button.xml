@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/mainpage_segmented_btn1"
+        android:layout_width="@dimen/pb_koukaibukuro_segment_control_width"
+        android:layout_height="@dimen/pb_koukaibukuro_segment_control_height"
+        android:layout_weight="1"
+        android:background="@drawable/radio_checked_left"
+        android:clickable="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/arrivalImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/a_open_new_3" />
+
+        <TextView
+            android:id="@+id/arrivalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pb_koukaibukuro_segment_control_margin_left"
+            android:text="@string/mainpage_segmented_title1"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainpage_segmented_btn2"
+        android:layout_width="@dimen/pb_koukaibukuro_segment_control_width"
+        android:layout_height="@dimen/pb_koukaibukuro_segment_control_height"
+        android:layout_weight="1"
+        android:background="@drawable/radio_unchecked_middle"
+        android:clickable="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/rankingImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/a_open_ranking_2_tab" />
+
+        <TextView
+            android:id="@+id/rankingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pb_koukaibukuro_segment_control_margin_left"
+            android:text="@string/mainpage_segmented_title2"
+            android:textColor="@color/radio_button_selected_color"
+            android:textStyle="bold" />
+    </LinearLayout>
+    
+     <LinearLayout
+         android:id="@+id/mainpage_segmented_btn3"
+         android:layout_width="@dimen/pb_koukaibukuro_segment_control_width"
+         android:layout_height="@dimen/pb_koukaibukuro_segment_control_height"
+         android:layout_weight="1"
+         android:background="@drawable/radio_unchecked_right"
+         android:clickable="true"
+         android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/recommendedImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_recommended_on_segment_enable" />
+
+        <TextView
+            android:id="@+id/recommendedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pb_koukaibukuro_segment_control_margin_left"
+            android:text="@string/mainpage_segmented_title3"
+            android:textColor="@color/radio_button_selected_color"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_main_color" >
+
+    <TextView
+        android:id="@+id/textView_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    <ImageView
+        android:id="@+id/imageView_share"
+        android:layout_width="@dimen/action_bar_image_ht"
+        android:layout_height="@dimen/action_bar_image_ht"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/action_icon_left_mrgn"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_share" />
+
+    <ImageView
+        android:id="@+id/imageView_rename"
+        android:layout_width="@dimen/action_bar_image_ht"
+        android:layout_height="@dimen/action_bar_image_ht"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/action_menu_right_mrgn"
+        android:layout_toLeftOf="@id/imageView_share"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_rename" />
+
+    <ImageView
+        android:id="@+id/imageView_delete"
+        android:layout_width="@dimen/action_bar_image_ht"
+        android:layout_height="@dimen/action_bar_image_ht"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/action_menu_right_mrgn"
+        android:layout_toLeftOf="@id/imageView_rename"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_delete" />
+
+</RelativeLayout>

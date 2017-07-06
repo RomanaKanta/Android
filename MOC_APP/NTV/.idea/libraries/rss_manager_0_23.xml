@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="rss-manager-0.23">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.crazyhitty.chdev.ks/rss-manager/0.23/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.crazyhitty.chdev.ks/rss-manager/0.23/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.crazyhitty.chdev.ks/rss-manager/0.23/c22fd1b254f2f0abcaafda29981d591b9c5d6725/rss-manager-0.23-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

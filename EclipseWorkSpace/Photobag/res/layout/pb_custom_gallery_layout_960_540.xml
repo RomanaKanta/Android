@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg" >
+
+    <com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/headerbar"
+        style="@style/pb_actionbar" />
+    <!-- include layout="@layout/pb_tabbar_header"/ -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:padding="0dip">
+
+        <GridView
+            android:id="@+id/PhoneImageGrid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="46dip"
+            android:layout_marginTop="46dip"
+            android:columnWidth="72dip"
+            android:gravity="center"
+            android:horizontalSpacing="7dp"
+            android:verticalSpacing="7dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="spacingWidth"
+            android:scrollbarStyle="outsideOverlay"/>
+
+        <!--
+        <LinearLayout
+            android:id="@+id/select_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/pb_btn_height"
+            android:layout_gravity="bottom"
+            android:layout_margin="0dip"
+            android:background="@drawable/btn_shape_orange_focusable"
+            android:gravity="center"
+            android:focusable="true"
+            android:padding="0dip" >
+
+            <TextView
+                android:id="@+id/select_btn_text"
+                style="@style/TextShadowBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/btn_ico_up"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        -->
+        <!--
+         <Button android:id="@+id/selectBtn"
+		        android:padding="0dip"
+		        android:layout_margin="0dip"
+		        android:layout_width="fill_parent" 
+		        android:layout_height="@dimen/pb_btn_height"
+		        android:layout_gravity="bottom"
+		        android:text="@string/screen_upload_choose_photo_btn" 
+		        style="@style/TextShadowBlack"
+		        android:background="@drawable/btn_shape_orange"
+		        android:textColor="@color/white"
+		        android:textStyle="bold"
+		        android:gravity="center"
+		        android:minWidth="200px" />
+        -->
+
+        <com.aircast.photobag.widget.FButton
+            android:id="@+id/select_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="0dip"
+            android:gravity="center"
+            android:padding="0dip"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:buttonColor="#ff735a"
+            app:shadowEnabled="false" />
+
+        <LinearLayout
+            android:id="@+id/ll_loading_panel_waiting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#8fff"
+            android:clickable="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ProgressBar
+                style="@style/costumLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

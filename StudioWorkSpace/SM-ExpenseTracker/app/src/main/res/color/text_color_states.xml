@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/**
+ * Copyright (c) 2012 Vinayak Solutions Private Limited 
+ * See the file license.txt for copying permission.
+*/     
+ -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+     <item android:state_pressed="true"
+           android:color="@color/white" />
+     <item android:state_focused="true"
+           android:color="@color/white" />
+     <item android:color="@color/black" />
+ 
+</selector>

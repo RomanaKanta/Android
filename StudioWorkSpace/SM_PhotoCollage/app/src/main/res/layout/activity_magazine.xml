@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_main_color">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/main_ImageView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_centerInParent="true"/>-->
+    <FrameLayout
+        android:id="@+id/rootlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/magazine_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/bottombar_ht"
+        android:layout_marginLeft="@dimen/mrgn_left"
+        android:layout_marginRight="@dimen/mrgn_left"
+        android:layout_marginTop="@dimen/topbar_ht" >
+
+
+        <RelativeLayout
+            android:id="@+id/main_ImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_gravity="center_horizontal" >
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/magazine_ImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:src="@drawable/cover1"/>
+    </FrameLayout>
+
+
+
+</RelativeLayout>

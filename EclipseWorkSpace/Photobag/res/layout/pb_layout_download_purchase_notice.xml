@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/headerbar"
+        style="@style/pb_actionbar"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/headerbar"
+        android:layout_marginTop="10dp"
+        android:overScrollMode="never"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/pb_download_purchase_notice_layout_margin_top_purchase_only"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/pb_download_purchase_notice_tv_albuminformation"
+                android:textColor="@color/main_text_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingRight="20dp" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/purchase_notice_thumb_click"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/imv_purchase_notice_thumb"
+                        android:layout_width="@dimen/pb_a02_b_bag_icon_inside_w"
+                        android:layout_height="@dimen/pb_a02_b_bag_icon_inside_h"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginBottom="@dimen/pb_purchase_notice_thumb_margin_bottom"
+                        android:layout_marginRight="@dimen/pb_purchase_notice_thumb_margin_right"
+                        android:layout_marginLeft="@dimen/pb_purchase_notice_thumb_margin_left"
+                        android:layout_marginTop="@dimen/pb_purchase_notice_thumb_margin_top"
+                        android:contentDescription="@string/pb_null" />
+
+                    <ImageView
+                        android:layout_width="@dimen/pb_a02_b_solid_bag_w"
+                        android:layout_height="@dimen/pb_a02_b_solid_bag_h"
+                        android:contentDescription="@string/pb_null"
+                        android:background="@drawable/icon_thumb" />
+                </FrameLayout>
+
+                <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+                    
+                   <FrameLayout
+	                    android:layout_width="120dp"
+	                    android:layout_height="28dp"
+	                    android:layout_gravity="bottom"
+	                    android:background="@drawable/pb_download_round_corner_bg"
+	                    android:layout_marginBottom="5dp" >
+	
+	                    <TextView
+	                        android:id="@+id/thumb_count_cache"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="bottom|center"
+	                        android:gravity="center"
+	                        android:singleLine="true"
+	                        android:textColor="@color/main_text_color"
+	                        android:textSize="13sp" />
+	
+
+	                </FrameLayout>
+                    
+
+	                
+	                <FrameLayout
+	                    android:layout_width="120dp"
+	                    android:layout_height="55dp"
+	                    android:layout_gravity="top"
+	                    android:background="@drawable/pb_download_round_corner_bg" >
+	                    <TextView
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="top|left"
+	                        android:gravity="left"
+	                        android:singleLine="true"
+	                        android:text="@string/pb_download_purchase_notice_tv_numofphoto"
+	                        android:textColor="@color/main_text_color"
+	                        android:textSize="13sp" />
+	
+	                    <TextView
+	                    	android:id="@+id/tv_purchase_notice_photo_count"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="top|right"
+	                        android:gravity="right"
+	                        android:singleLine="true"
+	                        android:text="0"
+	                        android:textColor="@color/main_text_color"
+	                        android:textSize="13sp" />
+	                    
+	                    <TextView
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="bottom|left"
+	                        android:gravity="left"
+	                        android:singleLine="true"
+	                        android:text="@string/pb_download_purchase_notice_tv_numofdownload"
+	                        android:textColor="@color/main_text_color"
+	                        android:textSize="13sp" />
+	
+	                    <TextView
+	                        android:id="@+id/tv_purchase_notice_downloaded_count"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="bottom|right"
+	                        android:gravity="right"
+	                        android:singleLine="true"
+	                        android:text="0"
+	                        android:textColor="@color/main_text_color"
+	                        android:textSize="13sp" />    
+	                </FrameLayout>
+	                
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pb_a02_b_bag_txt_desc_margin_top_purchase_only"
+                android:gravity="center"
+                android:text="@string/pb_download_purchase_notice_tv_purchasehoney"
+                android:textColor="@color/main_text_color" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" >
+
+                <ImageView
+                    android:id="@+id/img_purchase_kuma_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_honey"
+                    android:contentDescription="@string/pb_null"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/tv_purchase_kuma_word"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="17dp"
+                    android:gravity="center"
+                    android:text="@string/pb_download_purchase_notice_tv_talk_purchase"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="12sp" />
+            </FrameLayout>
+            
+            <FrameLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                
+                <LinearLayout 
+                    android:id="@+id/layout_purchase_have_honey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical" >
+                    
+                <!--     <Button
+                        android:id="@+id/btn_download_purchase_confirm"
+                        style="@style/TextShadowBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/pb_btn_height"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/pb_a02_b_bag_btn_margin_bottom"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="@dimen/pb_a02_b_bag_btn_margin_top"
+                        android:background="@drawable/btn_shape_honey"
+                        android:gravity="center"
+                        android:text="@string/pb_download_purchase_notice_btn_purchase"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                     -->
+                     <com.aircast.photobag.widget.FButton
+                        android:id="@+id/btn_download_purchase_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/pb_btn_height"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/pb_a02_b_bag_btn_margin_bottom"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="@dimen/pb_a02_b_bag_btn_margin_top"
+                        android:gravity="center"
+                        android:text="@string/pb_download_purchase_notice_btn_purchase"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:buttonColor="#935243"
+                        app:shadowEnabled="false" />
+                     
+                      <com.aircast.photobag.widget.FButton
+                        android:id="@+id/btn_download_purchase_buyMapelFromShop1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/pb_btn_height"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/pb_a02_b_bag_btn_margin_bottom"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:text="@string/pb_buy_honey_together"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:buttonColor="#935243"
+                        app:shadowEnabled="false" />
+         
+                     <!-- <Button
+                         android:id="@+id/btn_download_purchase_cancel"
+                         style="@style/TextShadowBlack"
+                         android:layout_width="match_parent"
+                         android:layout_height="@dimen/pb_btn_height"
+                         android:layout_gravity="center"
+                         android:layout_marginBottom="@dimen/pb_a02_b_bag_btn_margin_bottom"
+                         android:layout_marginLeft="20dp"
+                         android:layout_marginRight="20dp"
+                         android:background="@drawable/btn_shape_honey"
+                         android:gravity="center"
+                         android:text="@string/pb_download_purchase_notice_btn_cancel"
+                         android:textColor="@color/white"
+                         android:textSize="17sp"
+                         android:textStyle="bold" />  -->  
+                      
+                     <com.aircast.photobag.widget.FButton
+                         android:id="@+id/btn_download_purchase_cancel"
+                         android:layout_width="match_parent"
+                         android:layout_height="@dimen/pb_btn_height"
+                         android:layout_gravity="center"
+                         android:layout_marginBottom="@dimen/pb_a02_b_bag_btn_margin_bottom"
+                         android:layout_marginLeft="20dp"
+                         android:layout_marginRight="20dp"
+                         android:gravity="center"
+                         android:text="@string/pb_download_purchase_notice_btn_cancel"
+                         android:textColor="@color/white"
+                         android:textSize="17sp"
+                         android:textStyle="bold"
+                         app:buttonColor="#935243"
+                         app:shadowEnabled="false"
+                         android:visibility="gone" />      
+                                          
+                </LinearLayout>
+                
+                <LinearLayout 
+                    android:id="@+id/layout_purchase_no_honey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    
+                    <!-- 
+                         <Button
+                         android:id="@+id/btn_download_purchase_shop"
+                         style="@style/TextShadowBlack"
+                         android:layout_width="match_parent"
+                         android:layout_height="@dimen/pb_btn_height"
+                         android:layout_gravity="center"
+                         android:layout_marginBottom="@dimen/pb_a02_b_bag_btn_margin_bottom"
+                         android:layout_marginLeft="20dp"
+                         android:layout_marginRight="20dp"
+                         android:layout_marginTop="@dimen/pb_a02_b_bag_btn_margin_top"
+                         android:background="@drawable/btn_shape_honey"
+                         android:gravity="center"
+                         android:text="@string/pb_download_purchase_notice_btn_shop"
+                         android:textColor="@color/white"
+                         android:textSize="17sp"
+                         android:textStyle="bold" />
+                    
+                     -->
+                     <com.aircast.photobag.widget.FButton
+                         android:id="@+id/btn_download_purchase_shop"
+                         android:layout_width="match_parent"
+                         android:layout_height="@dimen/pb_btn_height"
+                         android:layout_gravity="center"
+                         android:layout_marginBottom="@dimen/pb_a02_b_bag_btn_margin_bottom"
+                         android:layout_marginLeft="20dp"
+                         android:layout_marginRight="20dp"
+                         android:layout_marginTop="@dimen/pb_a02_b_bag_btn_margin_top_purchase_only"
+                         android:gravity="center"
+                         android:text="@string/pb_download_purchase_notice_btn_shop"
+                         android:textColor="@color/white"
+                         android:textSize="17sp"
+                         android:textStyle="bold" 
+                         app:buttonColor="#935243"
+                         app:shadowEnabled="false"/>
+         
+                     
+                     <com.aircast.photobag.widget.FButton
+                        android:id="@+id/btn_download_purchase_buyMapelFromShop2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/pb_btn_height"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/pb_a02_b_bag_btn_margin_bottom"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:text="@string/pb_buy_honey_together"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:buttonColor="#935243"
+                        app:shadowEnabled="false" />
+                     <!-- 
+                         <Button
+                         android:id="@+id/btn_download_purchase_exchange"
+                         style="@style/TextShadowBlack"
+                         android:layout_width="match_parent"
+                         android:layout_height="@dimen/pb_btn_height"
+                         android:layout_gravity="center"
+                         android:layout_marginBottom="@dimen/pb_a02_b_bag_btn_margin_bottom"
+                         android:layout_marginLeft="20dp"
+                         android:layout_marginRight="20dp"
+                         android:background="@drawable/btn_shape_honey"
+                         android:gravity="center"
+                         android:text="@string/pb_download_purchase_notice_btn_exchange_donguri"
+                         android:textColor="@color/white"
+                         android:textSize="17sp"
+                         android:textStyle="bold" />  
+                      -->
+                     <com.aircast.photobag.widget.FButton
+                         android:id="@+id/btn_download_purchase_exchange"
+                         android:layout_width="match_parent"
+                         android:layout_height="@dimen/pb_btn_height"
+                         android:layout_gravity="center"
+                         android:layout_marginBottom="@dimen/pb_a02_b_bag_btn_margin_bottom"
+                         android:layout_marginLeft="20dp"
+                         android:layout_marginRight="20dp"
+                         android:gravity="center"
+                         android:text="@string/pb_download_purchase_notice_btn_exchange_donguri"
+                         android:textColor="@color/white"
+                         android:textSize="17sp"
+                         android:textStyle="bold"
+                         app:buttonColor="#935243"
+                         app:shadowEnabled="false" />                 
+                </LinearLayout>
+            </FrameLayout>      
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/frame_purchase_waiting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#c000"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="@style/costumLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.smartmux.filevaultfree"
+        minSdkVersion 11
+        targetSdkVersion 23
+        versionCode 8
+        versionName "1.7"
+
+        manifestPlaceholders = [manifestApplicationId: "com.smartmux.filevaultfree",
+                                onesignal_app_id: "8c9fde25-7c4e-4e4f-8c10-404655adbc60",
+                                onesignal_google_project_number: "600549611460"]
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+
+    maven { url "https://jitpack.io" }
+    jcenter()
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.android.support:recyclerview-v7:23.2.1'
+    compile 'com.android.support:cardview-v7:23.2.1'
+    compile 'com.onesignal:OneSignal:2.+@aar'
+    compile 'com.google.android.gms:play-services-gcm:+'
+    compile 'com.google.android.gms:play-services-analytics:+'
+    compile 'com.google.android.gms:play-services-location:+'
+    compile 'com.github.ParkSangGwon:TedPermission:v1.0.8'
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile files('libs/universal-image-loader-1.9.0.jar')
+    compile files('libs/dropbox-android-sdk-1.6.2.jar')
+    compile files('libs/adstirwebview.jar')
+    compile files('libs/commons-io-2.4.jar')
+    compile "com.googlecode.mp4parser:isoparser:1.0.2"
+    compile "com.github.lassana:continuous-audiorecorder:1.1.0"
+}

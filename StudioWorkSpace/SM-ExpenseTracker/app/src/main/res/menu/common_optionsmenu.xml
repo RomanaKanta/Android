@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/**
+ * Copyright (c) 2012 Vinayak Solutions Private Limited 
+ * See the file license.txt for copying permission.
+*/     
+ -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+	    android:id="@+id/generate_report"
+	    android:title="Generate Report"
+	    android:icon="@drawable/menuitem_generate_report"/>
+	<item 
+	    android:id="@+id/manage_favorite"
+	    android:title="Manage Favorites"
+	    android:icon="@drawable/menuitem_manage_favorite"/>
+	<item 
+	    android:id="@+id/settings"
+	    android:title="Settings"
+	    android:icon="@drawable/menuitem_settings"/>
+	<item 
+	    android:id="@+id/rate_app"
+	    android:title="Rate App"
+	    android:icon="@drawable/menuitem_reviews"/>
+</menu>

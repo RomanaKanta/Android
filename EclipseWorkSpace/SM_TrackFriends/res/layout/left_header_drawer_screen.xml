@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+     <TextView 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/title_of_header_left"
+       android:layout_gravity="center_horizontal"
+       android:gravity="center_horizontal"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       android:textColor="#000000"
+       android:background="#EBC6C6"
+       android:padding="@dimen/left_drawer_padding"
+        />
+    
+    
+  <ListView 
+      android:id="@+id/eventList"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:layout_margin="5dp"
+     
+      ></ListView>
+        
+   
+
+</LinearLayout>

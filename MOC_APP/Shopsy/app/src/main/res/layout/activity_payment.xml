@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical"
+    tools:context="com.smartmux.shopsy.activity.PaymentActivity">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@android:color/white"
+            android:padding="@dimen/margin_10"
+            >
+
+            <com.smartmux.shopsy.widget.AppTextViewLatoRegular
+                android:id="@+id/cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cart"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txt_size_16" />
+
+            <com.smartmux.shopsy.widget.AppTextViewLatoLight
+                android:id="@+id/total_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cart"
+                android:text="4 Items"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txt_size_12" />
+
+
+            <com.smartmux.shopsy.widget.AppTextViewLatoBold
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/margin_5"
+                android:text="$100"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/txt_size_16" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:layout_margin="@dimen/margin_10"
+            >
+
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/group_divider_color"
+                android:layout_margin="@dimen/margin_15"
+                android:layout_centerInParent="true"
+                />
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/paypal"
+                android:layout_margin="@dimen/margin_10"
+                android:layout_toLeftOf="@id/divider"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:src="@drawable/venmo"
+                android:layout_toRightOf="@id/divider"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <com.smartmux.shopsy.widget.AppButton
+        android:id="@+id/btn_pay_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay with CARD"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@color/group_divider_color"
+        android:layout_margin="@dimen/margin_10"
+        android:textSize="@dimen/txt_size_18"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/card_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_margin="@dimen/margin_10"
+        >
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Card Number"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Expiration"
+            android:inputType="date" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CVV"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <com.smartmux.shopsy.widget.AppButton
+        android:id="@+id/btn_buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buy - $100"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_bg_blue"
+        android:layout_margin="@dimen/margin_25"
+        android:textSize="@dimen/txt_size_18"
+        />
+    </LinearLayout>
+</LinearLayout>

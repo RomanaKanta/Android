@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/category_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/actionbar_background"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/back_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/button_back"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/TextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/button_back"
+                android:clickable="false"
+                android:text="@string/go_back"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/actionbar_text_color" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridView_catagory_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/RelativeLayout_settings_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_catagrory_item_title"
+        android:layout_margin="10dp"
+        android:focusable="true"
+        android:horizontalSpacing="5dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp" >
+    </GridView>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_settings_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/option_txt_background"
+        android:orientation="vertical"
+        android:padding="@dimen/tost_padding" >
+
+        <TextView
+            android:id="@+id/textView_settings_item_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/toggleButton_settings_item_two"
+            android:text="@string/settings_fav"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton_settings_item_two"
+            android:layout_width="@dimen/togglebutton_width"
+            android:layout_height="@dimen/togglebutton_height"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/settings_background_selector"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+        <TextView
+            android:id="@+id/textView_settings_item_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/toggleButton_settings_item_two"
+            android:layout_marginTop="5dp"
+            android:text="@string/settings_random"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton_settings_item_one"
+            android:layout_width="@dimen/togglebutton_width"
+            android:layout_height="@dimen/togglebutton_height"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/toggleButton_settings_item_two"
+            android:background="@drawable/settings_background_selector"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView_catagrory_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/category_topbar"
+        android:padding="5dp"
+        android:gravity="center"
+        android:text="@string/btn1_des"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

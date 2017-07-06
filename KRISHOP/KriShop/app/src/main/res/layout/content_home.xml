@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/app_bg"
+    android:id="@+id/root"
+    tools:context=".activity.HomeActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <com.ksproject.krishop.widget.AppTextViewLatoBold
+                android:id="@+id/action_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/txt_size_20"/>
+
+            <ImageView
+                android:id="@+id/menu_filter"
+                android:layout_width="@dimen/menu_img_ht"
+                android:layout_height="@dimen/menu_img_ht"
+                android:src="@drawable/filter"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/margin_15"
+                />
+
+            <RelativeLayout
+                android:layout_width="@dimen/cart_layer"
+                android:layout_height="@dimen/cart_layer"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/margin_15"
+                >
+
+            <ImageView
+                android:id="@+id/menu_cart"
+                android:layout_width="@dimen/menu_img_ht"
+                android:layout_height="@dimen/menu_img_ht"
+                android:src="@mipmap/ic_shopping_cart_white_24dp"
+                android:layout_centerInParent="true"
+                />
+
+                <com.ksproject.krishop.widget.AppTextViewLatoLight
+                    android:id="@+id/textview_count"
+                    android:layout_width="@dimen/cart_batch_ht"
+                    android:layout_height="@dimen/cart_batch_ht"
+                    android:text="5"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"
+                    android:background="@drawable/circle_shape"
+                    android:layout_alignParentRight="true"
+
+                    />
+
+            </RelativeLayout>
+
+
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+</LinearLayout>

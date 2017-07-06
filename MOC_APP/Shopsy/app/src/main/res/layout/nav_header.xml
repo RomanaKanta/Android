@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/drawer_bg"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/drawer_footer_padding"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+   <ImageView
+       android:layout_width="@dimen/drawer_hader_img"
+       android:layout_height="@dimen/drawer_hader_img"
+       android:src="@drawable/icon"
+       android:layout_gravity="center"
+       />
+
+   <com.smartmux.shopsy.widget.AppTextViewLatoBold
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="@android:color/white"
+       android:text="@string/title"
+       android:textSize="@dimen/txt_size_20"
+       android:padding="@dimen/txt_padding_5"
+       android:gravity="center"
+       android:layout_gravity="center"
+       />
+
+
+</LinearLayout>

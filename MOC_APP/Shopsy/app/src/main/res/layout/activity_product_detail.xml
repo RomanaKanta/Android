@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/top_layer"
+            layout="@layout/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:id="@+id/content_discription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top_layer">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="70dp">
+
+                <include
+                    layout="@layout/content_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="315dp"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_centerHorizontal="true" />
+
+
+                <com.smartmux.shopsy.widget.AppTextViewLatoBold
+                    android:id="@+id/product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:padding="5dp"
+                    android:text="Product Name"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/txt_size_16" />
+
+
+                <com.smartmux.shopsy.widget.AppTextViewLatoRegular
+                    android:id="@+id/product_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:gravity="left"
+                    android:padding="@dimen/txt_padding_5"
+                    android:text="product descriptionproduct descriptionproduct descriptionproduct descriptionproduct descriptionproduct descriptionproduct descriptionproduct descriptionproduct descriptionproduct descriptionproduct descriptionproduct description"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txt_size_14" />
+
+
+                <com.smartmux.shopsy.widget.AppTextViewLatoRegular
+                    android:id="@+id/product_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/txt_padding_5"
+                    android:text="Size"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/txt_size_18"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/content_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/app_bg">
+
+            <com.smartmux.shopsy.widget.AppTextViewLatoBold
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:padding="@dimen/txt_padding_5"
+                android:text="price"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/txt_size_16" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/margin_10"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/product_share"
+                    android:layout_width="@dimen/round_btn_size"
+                    android:layout_height="@dimen/round_btn_size"
+                    android:background="@drawable/circle_shape"
+                    android:padding="@dimen/margin_10">
+
+                    <ImageView
+                        android:layout_width="@dimen/round_image_size"
+                        android:layout_height="@dimen/round_image_size"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/facebook_icon_white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/product_fav"
+                    android:layout_width="@dimen/round_btn_size"
+                    android:layout_height="@dimen/round_btn_size"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:background="@drawable/circle_shape"
+                    android:padding="@dimen/margin_10">
+
+                    <ImageView
+                        android:layout_width="@dimen/round_fav_size"
+                        android:layout_height="@dimen/round_fav_size"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/favourite_icon_white" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.ortiz.touch.TouchImageView
+        android:id="@+id/imageView_zoom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:background="@color/zoom_bg"
+        android:contentDescription="@string/app_name"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

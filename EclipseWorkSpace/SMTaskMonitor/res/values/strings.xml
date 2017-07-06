@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Task Monitor</string>
+    <string name="w_main_processes">Processes</string>
+    <string name="w_main_memory">Memory</string>
+    <string name="w_processes_dead">DEAD</string>
+    <string name="w_processes_dead_notification">Process dead</string>
+    <string name="w_processes_title">Processes</string>
+    <string name="w_processes_empty">Ouch! There was some problem when retrieving the system processes.</string>
+    <string name="w_processes_first_time">You can remove a process from the list by performing a long click on its label.</string>
+	<string name="w_processes_select_some_process">Please select some process(es).</string>
+	<string name="menu_record_description">Starts recording memory and CPU parameters in the background</string>
+	<string name="menu_stop_record">Stop and save</string>
+	<string name="menu_settings_description">Opens Settings panel</string>
+	<string name="menu_close">Close</string>
+	<string name="button_ok">OK</string>
+	<string name="button_cancel">Cancel</string>
+	<string name="button_reset">Reset to Defaults</string>
+	<string name="graphic_update_interval">Update interval</string>
+	<string name="graphic_paused">Graphic paused</string>
+	<string name="graphic_recording">Recording&#8230;</string>
+	<string name="interval_read">Read interval:</string>
+	<string name="interval_update">Update interval:</string>
+	<string name="interval_width">Graphic interval width:</string>
+	<string name="tab_main">Main</string>
+	<string name="tab_main_alert_ok">OK</string>
+	<string name="tab_show">Show/Record</string>
+	<string name="tab_show_select_all">Select All</string>
+	<string name="tab_show_unselect_all">Unselect All</string>
+	<string name="read_interval_text">Read parameters every:</string>
+	<string name="read_interval_prompt">Read interval (s):</string>
+	<string name="update_interval_text">Update labels and graphic every:</string>
+	<string name="update_interval_prompt">Update interval (s):</string>
+	<string name="width_interval_text">Graphic interval width:</string>
+	<string name="width_interval_prompt">Width interval (dp):</string>
+	<string name="p_cpuusage">CPU usage</string>
+	<string name="p_cputotalusage">Total CPU usage</string>
+	<string name="p_cpuanothermonitor">Task Monitor</string>
+	<string name="p_memtotal">Memory</string>
+	<string name="p_memused">Mem used</string>
+	<string name="p_memavailable">Mem available</string>
+	<string name="p_memfree">MemFree</string>
+	<string name="p_cached">Cached</string>
+	<string name="p_threshold">Threshold</string>
+	<string name="p_kb">- kB</string>
+	<string name="p_percentage">-%</string>
+    <string name="about_feedback_text">Write or edit your review</string>
+    <string name="about_feedback_button">Task Monitor on Google Play</string>
+    <string name="about_gnugpl_text">GNU General Public License v3</string>
+    <string name="about_gnugpl_link">https://gnu.org/licenses/gpl.html</string>
+    <string name="cd_paramter_status_icon">Parameter status icon</string>
+    <string name="content_description_logo_app">Logo app</string>
+     <string name="dialog_yes_btn">Yes</string>
+      <string name="dialog_no_btn">No</string>
+    
+</resources>

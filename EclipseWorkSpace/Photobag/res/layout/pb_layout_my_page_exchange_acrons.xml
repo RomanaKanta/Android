@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- D-01 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainScreen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    tools:context=".activity.PBMyPageHoneyExchangeActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ads_space" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pb_exchange_honey_text_first_pre"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/gray_deep_dark"
+                     >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textViewExchangeRateHoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:text="@string/pb_exchange_acorn_num_0"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/text_exchange_honey_rate_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pb_exchange_honey_text_first_post"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/gray_deep_dark" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/image_acorn_thumb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/my_page_02_acrons_ten" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/my_page_02_arrow_exchange" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/my_page_02_honey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/round_corner_background_light"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp" >
+
+                    <TextView
+                        android:id="@+id/text_exchange_honey_count_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left"
+                        android:text="@string/pb_exchange_honey_text_calculate_first"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/gray_deep_dark" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tvTotalDonguri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:text="@string/pb_exchange_acorn_num_0"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/gray_deep_dark" >
+                    </TextView>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/my_page_02_separator" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp" >
+
+                    <TextView
+                        android:id="@+id/text_exchange_honey_count_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left"
+                        android:text="@string/pb_exchange_honey_text_calculate_second"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/gray_deep_dark" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tvMaxExchangeDonguri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:text="@string/pb_exchange_acorn_num_0"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/gray_deep_dark" >
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp" >
+
+                    <TextView
+                        android:id="@+id/text_exchange_honey_count_third"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left"
+                        android:text="@string/pb_exchange_honey_text_calculate_third"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/gray_deep_dark" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tvRemainderDonguri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:text="@string/pb_exchange_acorn_num_0"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/gray_deep_dark" >
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal|bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="@string/pb_exchane_honey_text_second_line_one_pre"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/gray_deep_dark" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tvMaxExchangeDonguriRed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:text="@string/pb_exchange_acorn_num_0"
+                        android:textColor="@color/red"
+                        android:textSize="20sp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="@string/pb_exchane_honey_text_second_line_one_post"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/gray_deep_dark" >
+                    </TextView>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/pb_exchane_honey_text_second_line_two"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gray_deep_dark" >
+                </TextView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/popUpItem"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_round_shape_white" >
+
+                <TextView
+                    android:id="@+id/textPopUpItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="75dp"
+                    android:text="@string/pb_exchange_acorn_num_0"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gray_deep_dark" />
+
+                <ImageView
+                    android:id="@+id/imageViewPopUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/btn_my_page_dropdown" />
+            </RelativeLayout>
+
+            <!-- <Button
+                android:id="@+id/buttonHoneyExchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_shape_brown"
+                android:text="@string/pb_exchange_honey_button_trade"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" /> -->
+                
+            <com.aircast.photobag.widget.FButton
+                android:id="@+id/buttonHoneyExchange"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/pb_exchange_honey_button_trade"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" 
+                app:buttonColor="@color/fbutton_color_brown"
+                app:shadowEnabled="false" />    
+
+            <!-- <Button
+                android:id="@+id/buttonGetFreeDonguri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_shape_brown"
+                android:text="@string/pb_exchange_honey_button_get_donguri"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" /> -->
+                
+            <com.aircast.photobag.widget.FButton
+                android:id="@+id/buttonGetFreeDonguri"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="40dip"
+                android:text="@string/pb_exchange_honey_button_get_donguri"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" 
+                app:buttonColor="@color/fbutton_color_brown"
+                app:shadowEnabled="false"/>
+                
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/mask"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="#0000"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <include layout="@layout/iphone_number_picker" />
+
+    <LinearLayout
+        android:id="@+id/ads_space"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actionBar"
+        android:orientation="vertical"
+        android:background="@color/black"
+        android:visibility="gone" >
+
+        <com.ad_stir.webview.AdstirWebView 
+	        media="MEDIA-e194dab6"
+	       spot="1"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/actionBar"
+        style="@style/pb_actionbar"
+        android:layout_alignParentTop="true" >
+   </com.aircast.photobag.widget.actionbar.ActionBar>
+
+</RelativeLayout>

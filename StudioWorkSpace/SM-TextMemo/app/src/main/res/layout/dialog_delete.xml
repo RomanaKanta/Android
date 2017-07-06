@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_main_color"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <com.smartmux.textmemo.widget.AppTextViewAverinBlack
+            android:id="@+id/header_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Delete"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!--
+         <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="header_sample"
+        android:textColor="@color/black_overlay"
+        android:textSize="@dimen/sample_text_size"/>
+        -->
+
+    </LinearLayout>
+
+    <com.smartmux.textmemo.widget.AppTextViewAverinLight
+        android:id="@+id/alert_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/delete_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+</com.smartmux.textmemo.widget.AppTextViewAverinLight>
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/no_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight=".5"
+            android:background="@drawable/button_corner"
+            android:text="No"
+            android:textColor="@color/white" />
+         <Button
+            android:id="@+id/yes_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight=".5"
+            android:background="@drawable/button_corner"
+            android:text="Yes"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    -->
+
+</LinearLayout>

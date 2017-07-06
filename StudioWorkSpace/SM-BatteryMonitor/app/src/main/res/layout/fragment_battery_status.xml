@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:paddingTop="10dp" 
+    android:orientation="vertical" >
+    
+    
+
+        <ImageView
+            android:id="@+id/chargeimage"
+            android:layout_width="@dimen/battery_width"
+            android:layout_height="@dimen/battery_height"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/battery_image_padding"
+            android:src="@drawable/smile"
+            android:layout_marginLeft="@dimen/left_margin_image"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chargeimage"
+             android:layout_marginLeft="@dimen/left_margin_image"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin" >
+
+            <com.smartmux.batterymonitor.widget.AppTextView
+                android:id="@+id/textview_label_technology"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_technology"
+                 android:paddingLeft="@dimen/tech_padding_left"
+                 android:textColor="@color/White"/>
+
+             <com.smartmux.batterymonitor.widget.AppTextView
+                android:id="@+id/textview_text_technology"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/White"/>
+        </LinearLayout>
+
+        <com.smartmux.batterymonitor.widget.AppTextView
+            android:id="@+id/textview_text_current_chargingstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_margin_of_charge_stage"
+            android:layout_toRightOf="@+id/chargeimage"
+            android:paddingLeft="@dimen/left_margin_state"
+            android:textColor="@color/White"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <com.smartmux.batterymonitor.widget.AppTextView
+            android:id="@+id/textView_battery_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_text_current_chargingstate"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_toRightOf="@+id/chargeimage"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@android:color/white" />
+
+
+        <com.smartmux.batterymonitor.widget.AppTextView
+            android:id="@+id/textview_text_remainingtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_battery_percentage"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_toRightOf="@+id/chargeimage"
+            android:textColor="@color/White"
+           android:textSize="@dimen/text_size_mid"/>
+
+        <com.smartmux.batterymonitor.widget.AppTextView
+            android:id="@+id/textview_text_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_text_remainingtime"
+            android:layout_marginLeft="@dimen/left_margin_tmp"
+            android:layout_toRightOf="@+id/chargeimage"
+            android:textColor="@color/White"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </RelativeLayout>
+    
+

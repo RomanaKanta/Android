@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+   <com.smartmux.widget.AppTextView
+        android:id="@+id/forecastday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+      android:layout_marginTop="10dp"
+        android:layout_gravity="top"
+        android:textColor="#ffffff"
+        android:text="Simple String List"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/condIcon"
+        android:layout_width="@dimen/weather_condition_icon_size"
+        android:layout_height="@dimen/weather_condition_icon_size"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:src="@drawable/clear" />
+
+    <com.smartmux.widget.AppTextView
+        android:id="@+id/forecastTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+         android:layout_gravity="bottom"
+        android:text="Simple String List"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

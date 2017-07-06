@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dip"
+    android:background="@drawable/list_item_default">
+
+    <ImageView
+        android:id="@+id/itemIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dip"
+        android:contentDescription="@string/item_icon"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/itemTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="20dip"
+        android:layout_toRightOf="@id/itemIcon"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="@string/item_name"
+        android:textSize="16sp" 
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/itemSize"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemTitle"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/itemIcon"
+        android:gravity="center_vertical"
+        android:text="@string/item_size"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/itemDateTime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemSize"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/itemIcon"
+        android:gravity="center_vertical"
+        android:text="@string/item_date_time"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/itemOptional"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemDateTime"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/itemIcon"
+        android:gravity="center_vertical"
+        android:text="@string/item_optional"
+        android:textSize="12sp" />
+</RelativeLayout> 

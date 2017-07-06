@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/headerbar"
+        style="@style/pb_actionbar" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" 
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/pb_download_complete_screen_layout_margin_top">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/pb_a03_anim_margin_top"
+            android:background="@drawable/kuma07"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="@dimen/pb_a03_bubble_margin_left"
+            android:layout_marginBottom="@dimen/pb_a03_bubble_margin_top"
+            android:gravity="center"
+            android:textColor="@color/main_text_color"
+            android:text="@string/pb_download_download_complete_tv_talk" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/pb_a03_confirm_button_margin_bottom"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingLeft="40.0dp"
+        android:paddingRight="40.0dp" >
+
+        <!--
+             <Button
+            android:id="@+id/btn_dl_download_complete"
+            style="@style/TextShadowBlack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pb_btn_height"
+            android:layout_gravity="bottom"
+            android:background="@drawable/btn_shape_orange"
+            android:gravity="center"
+            android:text="@string/dl_btn_download_complete_text"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+        -->
+
+        <com.aircast.photobag.widget.FButton
+            android:id="@+id/btn_dl_download_complete"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pb_btn_height"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="@string/dl_btn_download_complete_text"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:buttonColor="#ff735a"
+            app:shadowEnabled="false" />
+        
+    </LinearLayout>
+
+    <LinearLayout 
+        android:id="@+id/layout_reward_forest"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/black" >
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:contentDescription="@string/pb_null"
+            android:src="@drawable/reward_bg" />
+    </LinearLayout>
+</FrameLayout>

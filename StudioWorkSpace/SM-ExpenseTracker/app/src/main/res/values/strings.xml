@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/**
+ * Copyright (c) 2012 Vinayak Solutions Private Limited 
+ * See the file license.txt for copying permission.
+*/     
+ -->
+<resources>
+
+    <string name="app_name">Expense Tracker</string>
+    <string name="version">Version 1.0</string>
+    <string name="unknown">0</string>
+    <string name="text">1</string>
+    <string name="camera">2</string>
+    <string name="voice">3</string>
+    <string name="favorite_entry">4</string>
+    <string name="sublist_thisweek">5</string>
+    <string name="sublist_thismonth">6</string>
+    <string name="sublist_thisyear">7</string>
+    <string name="sublist_all">8</string>
+    <string name="unfinished_textentry">Unfinished Text Entry</string>
+    <string name="unknown_entry">Unknown Entry</string>
+    <string name="unfinished_cameraentry">Unfinished Camera Entry</string>
+    <string name="unfinished_voiceentry">Unfinished Voice Entry</string>
+    <string name="unknown_location">Unknown location</string>
+    
+    <!-- Sync Page -->
+    <string name="signin">Sign in</string>
+    <string name="signup">Sign up</string>
+    
+    <!-- Default SyncBit Values -->
+    <string name="syncbit_synced">1</string>
+    <string name="syncbit_created">2</string>
+    <string name="syncbit_updated">3</string>
+    <string name="syncbit_deleted">4</string>
+    <string name="syncbit_conflict">5</string>
+    <string name="syncbit_not_synced">6</string>
+    
+    <!-- XML Text -->
+    <string name="no_expenses_text">No expenses available to show, Please add expenses</string>
+    <string name="favorite_selection_text">Choose an entry to add to expenses</string>
+    <string name="search">Search</string>
+    
+    <string name="finished_textentry">Text Entry</string>
+    <string name="finished_cameraentry">Camera Entry</string>
+    <string name="finished_voiceentry">Voice Entry</string>
+    
+    <!-- Flurry Events -->
+    <string name="generate_report">Generate Report</string>
+    <string name="save_reminder">Save Reminder</string>
+    <string name="fav_from_new">Favorite From New</string>
+    <string name="fav_from_show">Favorite From Show</string>
+    <string name="rate_app">Rate App from Menu</string>
+    <string name="delete_dialog_shown">Delete Dialog Shown</string>
+    <string name="add_expenses_from_listing">Add Expenses From Listing</string>
+    <string name="delete_dialog_checkbox_status">Delete Dialog CheckBox Status</string>
+    <string name="dialog_opened_to">Dialog Opened To</string>
+    <string name="date_changed">Date Changed</string>
+    <string name="graph_changed_using_textview">Navigating Graph Using Header</string>
+    <string name="deleting_using_context_menu">Deleting Using Context Menu</string>
+    <string name="editing_using_context_menu">Editing Using Context Menu</string>
+    <string name="edit_entry">Edit Entry</string>
+    <string name="edit_fav">Edit Favorite</string>
+    <string name="new_entry">New Entry</string>
+    <string name="audio_recording_time">Audio Recording Time</string>
+    <string name="expense_listing_activity">Expense Listing Activity</string>
+    <string name="page_opened_to_edit_favorite">Page Opened to edit Favorite</string>
+    <string name="creating_new_entry_using_favorite">Creating New Entry Using Favorite</string>
+    <string name="generate_report_activity">Generate Report Activity</string>
+    <string name="home_screen">Home Screen</string>
+    <string name="preference_delete_dialog">Preference Delete Dialog</string>
+    
+    <!-- Toast Text -->
+    <string name="entry_discarded">Discarded</string>
+    
+    <!-- Activity Title -->
+    <string name="manage_favorites">Manage Favorites</string>
+    <string name="edit_favorite">Edit Favorite</string>
+    
+    <!-- Preferences Key -->
+    <string name="pref_key_delete_dialog">prefKeyDeleteDialog</string>
+    <string name="pref_key_token">prefKeyToken</string>
+    <string name="pref_key_sync_user_id">prefKeyUserId</string>
+    <string name="pref_key_set_up_sync">prefSetUpSync</string>
+    <string name="pref_key_sync_name">prefSyncName</string>
+    <string name="pref_key_sync_email">prefSyncEmail</string>
+    <string name="pref_key_sync_password">prefKeySyncPassword</string>
+    <string name="pref_key_flash_res_id">prefKeyFlashResId</string>
+    <string name="pref_key_run_first_time">prefKeyRunFirstTime</string>
+    <string name="pref_key_sync_timestamp">prefKeySyncTimeStamp</string>
+    
+    <!-- Preferences Title-->
+    <string name="delete_dialog_title">Show delete confirmation dialog</string>
+    <string name="sync_pref_title">Set Up Sync</string>
+        
+    <!-- Dialog Text -->
+    <string name="delete_dialog_text">Delete this entry?</string>
+    <string name="ok">OK</string>
+    <string name="backpress_new_entry_text">Discard this entry?</string>
+    <string name="backpress_edit_entry_text">Discard the changes?</string>
+    <string name="unfinish_fav_text">Unfinished entry, Discard this entry?</string>
+    <string name="cancel">Cancel</string>
+    <string name="date_picker_dialog_error_message">Future dates are not allowed</string>
+    
+    <!-- Dialog Title -->
+    <string name="confirm_discard">Confirm Discard</string>
+    <string name="confirm_delete">Confirm Delete</string>
+    
+    <!-- Tab Index -->
+    <string name="tab_thisweek">This Week</string>
+    <string name="tab_thismonth">This Month</string>
+    <string name="tab_thisyear">This Year</string>
+    <string name="tab_all">All</string>
+    
+    <!-- title for the dialog showing the error of camera hardware -->
+    <string name="camera_error_title">Camera error</string>
+
+    <!-- message for the dialog showing the error of camera hardware -->
+    <string name="cannot_connect_camera">Cannot connect to camera.</string>
+
+    <!-- alert to the user to that an SD card must be installed before using the camera -->
+    <string name="no_storage">Please insert an SD card before using the camera.</string>
+
+    <!-- alert to the user to that the SD card is too full to complete the operation -->
+    <string name="not_enough_space">Your SD card is full.</string>
+
+    <!-- alert to the user to that the SD card is being disk-checked -->
+    <string name="preparing_sd">Preparing SD card\u2026</string>
+
+    <string name="details_ok">OK</string>
+    
+    <!-- Name of the button in the date/time picker to accept the date/time change -->
+    <string name="date_time_set">Set</string>
+    
+    <string name="amount">amount</string>
+    <string name="description">description</string>
+    
+    
+    <string name="save_entry">Save Entry</string>
+    <string name="delete">Delete</string>
+    <string name="update_entry">Update</string>
+    <string name="edit">Edit</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="record">Record</string>
+       <string name="add_expense">Add expenses to today</string>
+       <string name="add_expense_plus">+ Add Expense</string>
+</resources>

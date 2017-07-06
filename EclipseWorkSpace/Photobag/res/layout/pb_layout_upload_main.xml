@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/upload_main"
+   android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/bg" >
+                  
+	<ScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:background="@color/bg"
+	    android:layout_gravity="center_horizontal" >
+	    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+            android:layout_height="wrap_content"            
+            android:orientation="vertical" >">
+
+		   <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                
+                    
+               <FrameLayout
+                    android:id="@+id/view_kuma_no_internet_upload"                     
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:visibility="gone"
+                    >
+                   
+                     <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@null"
+                        android:background="@drawable/pic_b_01"
+                        android:layout_marginRight="8dp"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:layout_width="@dimen/dl_input_bubble_text_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|center"
+                        android:layout_marginTop="@dimen/dl_sent_bubble_text_margin_top"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/upload_main_bear_say"
+                        android:textColor="@color/main_text_color"
+                        android:textSize="12sp" />
+                </FrameLayout>
+                
+                <FrameLayout
+                    android:id="@+id/webview_upload_screen_layout_for_kuma"                     
+                    android:layout_width="320dp"
+                    android:layout_height="175dp" 
+                    android:background="#00000000" >
+                   
+                    <WebView
+	                    android:id="@+id/webview_upload_screen_for_kuma"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="fill_parent" />
+                </FrameLayout>    
+                
+
+                
+                <!-- <View 
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" /> -->
+            </LinearLayout>
+		
+
+		   
+		    <TextView
+		        android:layout_marginTop="15dip"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:textColor="@color/main_text_color"
+		        android:textSize="@dimen/dl_input_bubble_text_size"
+		        android:text="@string/upload_main_text_guide" />
+		
+		    <!--
+                 <LinearLayout
+		        android:id="@+id/btn_send_pictures"		        
+		        android:layout_width="fill_parent"
+		        android:layout_height="@dimen/pb_btn_height"
+		        android:layout_marginTop="32dip"
+		        android:layout_marginLeft="32dip"
+		        android:layout_marginRight="32dip"
+		        android:background="@drawable/btn_shape_orange_focusable"
+		        android:gravity="center" >
+
+		        <TextView
+		            style="@style/TextShadowBlack"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:drawableLeft="@drawable/btn_ico_up"
+		            android:drawablePadding="5dp"
+		            android:text="@string/upload_main_btn_text"
+		            android:textColor="@color/white"
+		            android:textSize="17sp"
+		            android:textStyle="bold" />
+
+		        </LinearLayout>
+            -->
+
+            <com.aircast.photobag.widget.FButton
+                android:id="@+id/btn_send_pictures"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/pb_btn_height"
+                android:layout_marginLeft="38dip"
+                android:layout_marginRight="38dip"
+                android:layout_marginTop="32dip"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:buttonColor="#ff735a"
+                app:shadowEnabled="false" />
+		        
+		     <LinearLayout
+		        android:id="@+id/btn_dialog_video_compress_setting"		        
+		        android:layout_width="fill_parent"
+		        android:layout_height="@dimen/pb_btn_height"
+		        android:layout_marginTop="32dip"
+		        android:layout_marginLeft="32dip"
+		        android:layout_marginRight="32dip"
+		        android:background="@drawable/btn_shape_video_compress_focusable"
+		        android:gravity="center"
+		        android:visibility="gone" >
+
+		        <TextView
+		            style="@style/TextShadowBlack"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:drawablePadding="5dp"
+		            android:text="@string/upload_main_btn_video_compress_setting"
+		            android:textColor="@color/white"
+		            android:textSize="17sp"
+		            android:textStyle="bold" />
+
+		    </LinearLayout>     
+		    <!-- TransferJet Upload Button -->
+		    <!--
+		    <LinearLayout
+		        android:id="@+id/btn_send_pictures_transferjet"
+		        android:layout_width="fill_parent"
+		        android:layout_height="@dimen/pb_btn_height"
+		        android:layout_marginTop="10dip"
+		        android:layout_marginLeft="32dip"
+		        android:layout_marginRight="32dip"
+		        android:layout_marginBottom="32dip"
+		        android:background="@drawable/btn_shape_tj_focusable"
+		        android:gravity="center" >
+
+		        <TextView
+		            style="@style/TextShadowBlack"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:drawableLeft="@drawable/btn_ico_tj"
+		            android:drawablePadding="5dp"
+		            android:text="@string/upload_main_btn_text_transfer_jet"
+		            android:textColor="@color/white"
+		            android:textSize="17sp"
+		            android:textStyle="bold" />
+		    </LinearLayout>
+	    	-->
+	    </LinearLayout>
+	</ScrollView>
+
+    <LinearLayout 
+        android:id="@+id/layout_upload_ad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black" >
+        <com.ad_stir.webview.AdstirWebView 
+	        media="MEDIA-e194dab6"
+	       spot="1"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
+    

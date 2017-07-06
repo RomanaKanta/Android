@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Watch Out</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="newgame">New Game</string>
+    <string name="continu">Continue</string>
+    <string name="intru">Introduction</string>
+    <string name="level1">Level 1</string>
+    <string name="level2">Level 2</string>
+    <string name="level3">Level 3</string>
+    <string name="level4">Level 4</string>
+    <string name="level5">Level 5</string>
+    <string name="alart">If you start new game, all previous progress will be romoved. </string>
+    <string name="sure"> Are you sure ? </string>
+    <string name="win">YOU WIN</string>
+    <string name="lost">YOU ARE CRASHED</string>
+    <string name="ok">OKAY</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+
+</resources>

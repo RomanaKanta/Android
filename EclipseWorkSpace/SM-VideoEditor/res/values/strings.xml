@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VideoEditor</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+     <string name="action_next">Next</string>
+        <string name="action_trim">Trim</string>
+        
+        <string name="accessibility_time_bar">Video player time bar</string>
+          <string name="loading_video">Loading video\u2026</string>
+          
+          <string name="accessibility_review_retake">Review retake</string>
+    <!-- The button to play the video. [CHAR LIMIT = NONE] -->
+    <string name="accessibility_play_video">Play video</string>
+    <!-- The button to pause the video. [CHAR LIMIT = NONE] -->
+    <string name="accessibility_pause_video">Pause video</string>
+    <!-- The button to reload the video. [CHAR LIMIT = NONE] -->
+    <string name="accessibility_reload_video">Reload video</string>
+    <!-- The time bar of the media player. [CHAR LIMIT = NONE] -->
+
+</resources>

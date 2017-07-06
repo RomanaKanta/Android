@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/headerbar"
+        style="@style/pb_actionbar" />
+    
+    <LinearLayout 
+        android:id="@+id/layout_acorn_forest_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:visibility="gone" >
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:contentDescription="@string/pb_null"
+            android:src="@drawable/reward_bg" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <WebView
+            android:id="@+id/pb_webview_photo_contest"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/ll_loading_panel_waiting"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="#8fff"
+            android:clickable="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ProgressBar
+                style="@style/costumLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </LinearLayout>
+    </FrameLayout>
+    
+    <!-- <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black" >
+        <com.ad_stir.webview.AdstirWebView 
+	        media="MEDIA-e194dab6"
+	       spot="1"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content" />
+    </LinearLayout> -->
+</LinearLayout>

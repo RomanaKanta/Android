@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/**
+ * Copyright (c) 2012 Vinayak Solutions Private Limited 
+ * See the file license.txt for copying permission.
+*/     
+ -->
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="5dp"
+    android:background="@color/background_color"
+	android:id="@+id/new_entry_icons_grid"
+    >    		
+	<!-- text and voice button -->
+	<LinearLayout
+	    android:id="@+id/home_text_voice"
+   		android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+   		android:layout_marginBottom="40dp"
+   		android:gravity="center"
+   		>
+
+		<Button
+		    android:id="@+id/home_text"
+		    android:layout_width="@dimen/home_icon_width_and_height"
+		    android:layout_height="@dimen/home_icon_width_and_height"
+		    android:layout_marginRight="@dimen/home_icon_margins"
+		    android:background="@drawable/home_text_icon_states" />
+  		    
+ 		<Button
+   		    android:id="@+id/home_voice"
+   		    android:layout_width="@dimen/home_icon_width_and_height"
+		    android:layout_height="@dimen/home_icon_width_and_height"
+   		    android:background="@drawable/home_record_icon_states" 
+   		    android:layout_marginLeft="@dimen/home_icon_margins" />
+ 	</LinearLayout>
+ 		
+	<!-- camera and favorite button -->    
+    <LinearLayout
+	    android:id="@+id/home_camera_favorites"
+   		android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+   		
+   		android:gravity="center" 
+   		>
+   		<Button
+       		android:id="@+id/home_camera"
+       		  android:layout_width="@dimen/home_icon_width_and_height"
+		    android:layout_height="@dimen/home_icon_width_and_height"
+       		android:background="@drawable/home_camera_icon_states" 
+       		android:layout_marginRight="@dimen/home_icon_margins" />
+
+   		<Button
+       		android:id="@+id/home_favorite"
+       	  android:layout_width="@dimen/home_icon_width_and_height"
+		    android:layout_height="@dimen/home_icon_width_and_height"
+       		android:background="@drawable/home_favorite_icon_states"
+       		android:layout_marginLeft="@dimen/home_icon_margins"  />
+ 	</LinearLayout>
+</LinearLayout>

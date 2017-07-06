@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aircast.photobag.widget.PBVideoControllerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/player_bg"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/btn_video_play_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_play" />
+
+    <TextView
+        android:id="@+id/tv_video_remaining_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4:00" />
+
+    <SeekBar
+        android:id="@+id/video_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:maxHeight="@dimen/pb_video_seekbar_height"
+        android:minHeight="@dimen/pb_video_seekbar_height"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:progressDrawable="@drawable/drawable_video_seekbar"
+        android:thumb="@drawable/seekbar_handle" />
+
+    <TextView
+        android:id="@+id/tv_video_elapsed_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="-0:50" />
+
+</com.aircast.photobag.widget.PBVideoControllerView>

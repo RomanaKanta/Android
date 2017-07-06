@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+       <com.ksproject.krishop.widget.AppTextViewLatoBold
+     android:id="@+id/dig_title"  
+     android:layout_width="match_parent"  
+     android:layout_height="wrap_content"  
+     android:layout_margin="20dp"
+     android:gravity="center"  
+     android:textColor="@color/colorPrimaryDark"
+           android:text="Type"
+     android:textSize="22sp"  
+     android:textStyle="bold"  
+   />
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/colorPrimaryDark"
+           />
+
+       <include layout="@layout/contant_list"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="@dimen/margin_5"
+           />
+   
+
+
+</LinearLayout>

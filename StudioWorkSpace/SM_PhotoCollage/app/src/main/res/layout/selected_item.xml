@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:background="@color/app_main_color" >
+
+    <ImageView
+        android:id="@+id/image_selected"
+        android:layout_width="@dimen/photo_width_selected"
+        android:layout_height="@dimen/photo_height_selected"
+       android:layout_marginLeft="@dimen/gallery_selected_image_mrgn"
+       android:layout_gravity="center_vertical"
+        android:background="@drawable/img_border"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="@dimen/gallery_bottom_delete_size"
+        android:layout_height="@dimen/gallery_bottom_delete_size"
+        android:layout_gravity="left"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/delete" />
+
+</FrameLayout>

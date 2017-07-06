@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/textView_catagrory_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <GridView
+        android:id="@+id/gridView_catagory_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/RelativeLayout_settings_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_catagrory_item_title"
+        android:focusable="true"
+        android:horizontalSpacing="5dp"
+        android:numColumns="3"
+        android:verticalSpacing="10dp" >
+
+    </GridView>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_settings_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:background="@drawable/option_txt_background"
+        android:orientation="vertical" >
+
+               <com.smartmux.androidapp.view.SegmentedGroup
+        android:id="@+id/segemnted_level"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+         android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+                   <RadioButton
+                       android:id="@+id/segmented_btn_level_easy"
+                       style="@style/RadioButton"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:checked="true"
+                       android:gravity="center"
+                       android:text="@string/easy"
+                       android:textColor="@color/radio_text_color"
+                       android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/segmented_btn_level_medium"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:gravity="center"
+            android:text="@string/medium"
+            android:textColor="@color/radio_text_color"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/segmented_btn_level_difficult"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:gravity="center"
+            android:text="@string/diffcult"
+            android:textColor="@color/radio_text_color"
+            android:textStyle="bold" />
+
+    </com.smartmux.androidapp.view.SegmentedGroup>
+    
+                            <com.smartmux.androidapp.view.SegmentedGroup
+        android:id="@+id/segemnted_type"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+         android:layout_alignParentLeft="true"
+        android:layout_below="@id/segemnted_level"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/segmented_btn_front"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/front"
+            android:textColor="@color/radio_text_color"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/segmented_btn_rear"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:gravity="center"
+            android:text="@string/rear"
+            android:textColor="@color/radio_text_color"
+            android:textStyle="bold" />
+
+    </com.smartmux.androidapp.view.SegmentedGroup>
+
+         <ToggleButton
+             android:id="@+id/toggleButton_settings_item_two"
+             android:layout_width="wrap_content"
+             android:layout_height="30dp"
+             android:layout_alignParentRight="true"
+             android:layout_below="@id/segemnted_type"
+             android:text=""
+             android:textOff=""
+             android:textOn="" />
+
+         <TextView
+             android:id="@+id/textView_settings_item_two"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_below="@id/segemnted_type"
+             android:layout_marginTop="5dp"
+             android:text="Settings Item Two"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+
+             
+      
+
+    </RelativeLayout>
+
+</RelativeLayout>

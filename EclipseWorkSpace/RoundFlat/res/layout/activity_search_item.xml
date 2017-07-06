@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical" >
+    
+<RelativeLayout 
+    android:id="@+id/search_root_topbar"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/actionbar_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_search_root_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/back_search_content"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:clickable="true" >
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/TextView_back_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/button_back"
+            android:clickable="false"
+            android:text="@string/go_back"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/actionbar_text_color"
+             />
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/textView_top_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="@string/search_top"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/actionbar_text_color"
+        android:textStyle="bold"       
+        android:visibility="gone" />
+
+</RelativeLayout>
+
+    <EditText
+        android:id="@+id/editText_item_search"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/search_content_background"
+        android:gravity="left"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:textCursorDrawable="@null"
+     >
+    </EditText>
+
+    <ListView
+        android:id="@+id/listView_searchitem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#141414</color>
+    <color name="colorPrimaryDark">@color/colorPrimary</color>
+    <color name="colorAccent">#f2d05e</color>
+
+    <color name="light_gray">#E5E5E5</color>
+    <color name="gray">#CCC</color>
+    <color name="list_row_selected">#78c8e6</color>
+
+    <!-- lock -->
+
+    <color name="dark_grey_color">#4a636f</color>
+    <color name="light_blue_500">#03a9f4</color>
+    <color name="blue_gray">#4b636f</color>
+
+    <!-- <color name="light_gray">#f0f6f9</color> -->
+    <color name="dark_gray">#9baab2</color>
+    <color name="light_gray_bar">#eaf2f5</color>
+    <color name="rippelColor">#FFFFFF</color>
+    <color name="text_color">#000000</color>
+    <color name="LDialogs_transparent">#00000000</color>
+    <color name="LDialogs_dim_lighter_gray">#80E0E0E0</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+  <!--   <color name="pink">#554e44</color>
+    <color name="pink_pressed">#221f1b</color> -->
+ 
+    <color name="pink">#50382e</color>
+    <color name="pink_pressed">#614b42</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+    <color name="text_color_text">#29252C</color>
+    <color name="transparent">#00000000</color>
+    <color name="list_highlight">#ff9999</color>
+    <color name="indigo_500">#3f51b5</color>
+    <color name="indigo_700">#303f9f</color>
+    <color name="cyan_500">#00bcd4</color>
+    <color name="sep_background">#D6DDD4</color>
+    <color name="app_main_color">#50382e</color>
+  <color name="black">#000000</color>
+    <!-- AlertDIalog -->
+    <color name="card_shadow">#D4D4D4</color>
+    <color name="black_overlay">#60000000</color>
+    <color name="white_overlay">#40FFFFFF</color>
+    <color name="primary">#EF5350</color>
+    <color name="secondary">#B71C1C</color>
+    <color name="overlay_light">#F8F8F8</color>
+    <color name="green">#267732</color>
+    <color name="rec_text">#EE000E</color>
+    <color name="action_mode_top_bar">#725f57</color>
+    <color name="folating_expand_transparent_background"> #90000000</color>
+    <color name="pincode_round_fill_color">#F5F5A8 </color>
+    <color name="login_screen_text_color">#F5F5A8 </color>
+
+</resources>

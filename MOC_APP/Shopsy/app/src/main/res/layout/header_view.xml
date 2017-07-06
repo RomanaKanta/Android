@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/app_bg"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/content_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/banner_ht"
+        android:orientation="vertical" />
+
+    <!--<com.flyco.tablayout.SlidingTabLayout-->
+    <!--android:id="@+id/sliding_tab"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/tab_ht"-->
+    <!--android:background="@android:color/white"-->
+    <!--tl:tl_indicator_color="@color/colorPrimary"-->
+    <!--tl:tl_indicator_height="@dimen/tab_ht"-->
+    <!--tl:tl_textSelectColor="@android:color/white"-->
+    <!--tl:tl_textUnselectColor="@android:color/black"-->
+    <!--tl:tl_tab_padding="@dimen/tab_txt_padding"-->
+    <!--tl:tl_textsize="18sp"-->
+    <!--android:layout_margin="10dp"-->
+    <!--/>-->
+
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:id="@+id/pager"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context="activity.BrandDetailActivity"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/catagory_ht"
+        android:layout_marginTop="@dimen/margin_5"
+        android:padding="@dimen/margin_5">
+
+        <com.smartmux.shopsy.widget.AppButton
+            android:id="@+id/btn_recent"
+            android:layout_width="@dimen/catagory_btn_wt"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"
+            android:background="@drawable/button_bg_white"
+            android:gravity="center"
+            android:text="RECENT" />
+
+        <com.smartmux.shopsy.widget.AppButton
+            android:id="@+id/btn_advice"
+            android:layout_width="@dimen/catagory_btn_wt"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/btn_recent"
+            android:background="@drawable/button_bg_white"
+            android:gravity="center"
+            android:text="ADVICE" />
+
+        <com.smartmux.shopsy.widget.AppButton
+            android:id="@+id/btn_popular"
+            android:layout_width="@dimen/catagory_btn_wt"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/btn_recent"
+            android:background="@drawable/button_bg_white"
+            android:gravity="center"
+            android:text="POPULAR" />
+
+    </RelativeLayout>
+</LinearLayout>

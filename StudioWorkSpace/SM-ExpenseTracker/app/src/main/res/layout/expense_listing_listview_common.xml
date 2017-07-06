@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/**
+ * Copyright (c) 2012 Vinayak Solutions Private Limited 
+ * See the file license.txt for copying permission.
+*/     
+ -->
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:background="@drawable/listing_row_states">
+	
+	<!-- ListView -->
+	<ListView 
+		android:id="@+id/expense_listing_listview"
+	   	android:layout_height="fill_parent"
+	   	android:layout_width="fill_parent"
+	   	android:cacheColorHint="@android:color/transparent" 
+	   	android:divider="@drawable/list_divider"
+	   	android:scrollbars="none"
+	   	android:footerDividersEnabled="false"/>
+
+	<!-- Body if no list item -->
+    <RelativeLayout
+        android:id="@+id/expense_listing_listview_no_item"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+		android:gravity="center"
+		android:visibility="gone"
+	
+		 >
+         
+        <TextView
+            android:id="@+id/expense_listing_listview_no_item_textview"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="@string/no_expenses_text"
+            android:textSize="16dip"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            android:id="@+id/expense_listing_listview_no_item_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/reminder_height"
+            android:layout_below="@+id/expense_listing_listview_no_item_textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/sm_custom_button"
+            android:paddingBottom="@dimen/reminder_padding_top_and_bottom"
+            android:paddingLeft="@dimen/reminder_padding_left_and_right"
+            android:paddingRight="@dimen/reminder_padding_left_and_right"
+            android:paddingTop="@dimen/reminder_padding_top_and_bottom"
+            android:text="@string/add_expense_plus"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/reminder_text_size"
+            android:textStyle="bold" />
+        
+	</RelativeLayout>
+</RelativeLayout>

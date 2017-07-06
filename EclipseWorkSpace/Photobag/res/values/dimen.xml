@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 20120221 NhatVT modify layout #S -->
+    <!-- TAB BAR -->
+    <dimen name="main_tabbar_height">45dp</dimen>
+    <dimen name="main_tab_item_text_size">11sp</dimen>
+    <dimen name="main_tab_item_text_margin_bottom">3dp</dimen>
+    
+    <!-- ACTION BAR -->
+    <dimen name="actionbar_height">45dp</dimen>
+    <dimen name="actionbar_item_height">40dp</dimen>
+    <dimen name="actionbar_item_width">40dp</dimen>
+    
+        
+    <dimen name="tab_widget_height">72dp</dimen>
+    <dimen name="tab_widget_padding">7dp</dimen>
+    <dimen name="layout_header_height">60dp</dimen>
+    <dimen name="history_list_space">10dp</dimen>
+    <dimen name="history_list_margin">10dp</dimen>
+    <dimen name="image_thumbnail_width">70dip</dimen>
+    <dimen name="image_thumbnail_height">70dip</dimen>
+    <dimen name="pb_setting_cell_margin_horizontal">10dp</dimen>
+    <dimen name="pb_setting_cell_text_size">16dp</dimen>
+    <dimen name="pb_setting_cell_text_size_invite">20dp</dimen>
+    <dimen name="pb_setting_cell_tsize_invite_detail">15sp</dimen>
+    <dimen name="pb_setting_cell_linerlayout_size_invite">15dp</dimen>
+    <dimen name="st_text_acron_count_size">34sp</dimen>
+
+    <dimen name="pb_b06_layout_margin_top">25dp</dimen>
+    <dimen name="pb_b06_layout_margin_center">20dp</dimen>
+    <dimen name="pb_b06_layout_free_time_height">75dp</dimen>
+    <dimen name="pb_b06_layout_margin">20dp</dimen>
+    <dimen name="pb_b06_layout_margin_leftright">18dp</dimen>
+    <dimen name="pb_upload_confirm_tv_medium">17sp</dimen>
+    <dimen name="pb_upload_confirm_tv_small">15sp</dimen>
+
+    <dimen name="ul_input_bubble_text_size">13sp</dimen>
+    
+    <dimen name="pb_btn_height">45dip</dimen>
+    
+    <dimen name="pb_video_seekbar_height">10dp</dimen>
+    <dimen name="pb_a02_ll_margin_top">70dp</dimen>
+    
+    <!-- 20120613 Bac -->
+    <dimen name="st_bear_lie_margin">20dp</dimen>
+    <dimen name="st_padding_top_text_in_popup">8dp</dimen>
+    <dimen name="st_padding_left_x_symbol">5dp</dimen>
+    <dimen name="st_padding_right_x_symbol">5dp</dimen>
+    <dimen name="st_x_symbol_size">30sp</dimen>
+    <dimen name="st_text_honey_count_size">45sp</dimen>
+    <dimen name="st_padding_right_honey_count">20dp</dimen>
+    <dimen name="st_padding_between_honey_item">5dp</dimen>
+    <dimen name="st_margin_bound_honey_view">-10dp</dimen>
+    <dimen name="st_text_popup_size">12sp</dimen>
+    <dimen name="st_padding_bottom_x_symbol">5dp</dimen>
+    <dimen name="st_margin_right_popup">15dp</dimen>
+    
+    <!--  Purchase Complete Screen -->
+    <dimen name="pb_dl_complete_text_xpos">30dp</dimen>
+    
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+   <dimen name="activity_vertical_margin">16dp</dimen>
+   <dimen name="activity_vertical_margin_line">5dp</dimen>
+   
+    <!--  Flat button -->
+    <dimen name="fbutton_default_conner_radius">2dp</dimen>
+    <dimen name="fbutton_default_padding_left">10dp</dimen>
+    <dimen name="fbutton_default_padding_right">10dp</dimen>
+    <dimen name="fbutton_default_padding_top">5dp</dimen>
+    <dimen name="fbutton_default_padding_bottom">5dp</dimen>
+    <dimen name="fbutton_default_shadow_height">4dp</dimen>
+    <dimen name="demo_button_min_width">140dp</dimen>
+    <dimen name="demo_button_min_height">50dp</dimen>
+    
+    <dimen name="pb_password_confirm_sns_buttonlist_margin_top">20dip</dimen>
+    <dimen name="pb_download_wrong_password_screen_text_margin_top">65dp</dimen>
+    <dimen name="pb_download_purchase_complete_screen_text_margin_top">60dp</dimen>
+    <dimen name="pb_honey_kuma_text_margin_right">20dp</dimen>
+    <dimen name="pb_upload_error_cancel_send_layout_margin_top">32dp</dimen>
+    
+    <!-- from kb -->
+    
+    
+    <!-- TAB BAR -->
+    <dimen name="kb_main_tabbar_height">45dp</dimen>
+    <dimen name="kb_main_tab_item_text_size">11sp</dimen>
+    <dimen name="kb_main_tab_item_text_margin_bottom">3dp</dimen>
+    
+    <dimen name="radio_button_conner_radius">5dp</dimen>
+    
+    <dimen name="kb_listview_thumb_and_content_spacing">10dp</dimen>
+    <dimen name="kb_kumamemo_notification_spacing">32dp</dimen>
+    <dimen name="kb_kumamemo_button_width">24dp</dimen>
+    <dimen name="kb_kumamemo_button_hight">24dp</dimen>
+    
+    <!-- Listview Design -->
+    <dimen name="kb_honey_icon_margin_right">30dp</dimen>
+    <dimen name="kb_honey_icon_margin_right_ranking">18dp</dimen>
+    
+     <!-- Chat number of message  -->
+    <dimen name="text_view_notification_size_for_onedigit">20sp</dimen>
+    <dimen name="text_view_notification_size_for_twodigit">21sp</dimen>
+    <dimen name="text_view_notification_size_for_threedigit">22sp</dimen>
+    <!--    dialog plus -->
+      <dimen name="default_center_margin">16dp</dimen>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+<rotate
+    android:duration="1850"
+    android:fromDegrees="-4"
+    android:repeatCount="infinite"
+    android:repeatMode="reverse"
+    android:interpolator="@android:anim/linear_interpolator"
+    android:toDegrees="4" />
+<translate
+    android:fromXDelta="0"
+    android:toXDelta="0"
+    android:fromYDelta="0"
+    android:toYDelta="1"
+    android:repeatCount="infinite"
+    android:repeatMode="reverse"
+    android:interpolator="@android:anim/linear_interpolator"
+    android:duration="1500" />
+
+</set>

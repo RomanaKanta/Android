@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/action_bar_background"
+            android:title="@string/app_name"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.flyco.tablayout.SegmentTabLayout
+        android:id="@+id/segment_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        tl:tl_bar_color="@android:color/white"
+        tl:tl_bar_stroke_color="@color/colorPrimary"
+        tl:tl_bar_stroke_width="0dp"
+        tl:tl_indicator_anim_enable="true"
+        tl:tl_indicator_bounce_enable="false"
+        tl:tl_indicator_color="@color/colorPrimary"
+        tl:tl_indicator_corner_radius="0dp"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textBold="true"
+        tl:tl_textSelectColor="@android:color/white"
+        tl:tl_textUnselectColor="@color/colorPrimary"
+        tl:tl_textsize="16sp" />
+
+    <TextView
+        android:id="@+id/textview_parcel_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

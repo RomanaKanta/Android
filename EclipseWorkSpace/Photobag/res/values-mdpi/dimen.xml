@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- DOWNLOAD SCREEN - input password -->
+
+    <dimen name="dl_input_bubble_animate_width">160dp</dimen>
+    <dimen name="dl_input_bubble_animate_height">180dp</dimen>
+    
+    <dimen name="dl_sent_bubble_animate_width">160dp</dimen>
+    <dimen name="dl_sent_bubble_animate_height">180dp</dimen>
+    
+    <dimen name="dl_input_bubble_animate_margin_top">25dp</dimen>
+    <dimen name="dl_input_bubble_text_width">130dp</dimen>
+    <dimen name="dl_input_bubble_text_margin_top">20dp</dimen>
+    <dimen name="dl_input_bubble_text_margin_top_upload_only">20dp</dimen>
+    <dimen name="dl_input_bubble_text_margin_top_no_internet">20dp</dimen>
+    <dimen name="dl_sent_bubble_text_margin_top">15dp</dimen>
+    <dimen name="dl_input_bubble_text_size">13sp</dimen>
+    <dimen name="ul_main_screen_buble_text_size">12sp</dimen>
+    <dimen name="dl_input_text_one_size">14sp</dimen>
+    <dimen name="dl_input_text_two_size">14sp</dimen>
+    <!-- 20120221 NhatVT modify layout #E -->
+
+    <dimen name="pb_a02_b_solid_bag_w">124dp</dimen>
+    <dimen name="pb_a02_b_solid_bag_h">124dp</dimen>
+    <dimen name="pb_a02_b_bag_icon_inside_w">62dp</dimen>
+    <dimen name="pb_a02_b_bag_icon_inside_h">62dp</dimen>
+    <dimen name="pb_a02_b_bag_btn_margin_top">6dp</dimen>
+    <dimen name="pb_a02_b_bag_btn_margin_top_purchase_only">6dp</dimen>
+    <dimen name="pb_download_purchase_notice_layout_margin_top_purchase_only">6dp</dimen>
+    <dimen name="pb_a02_b_bag_btn_margin_bottom">13dp</dimen>
+    <dimen name="pb_a02_b_bag_txt_desc_margin_top">1dp</dimen>
+    <dimen name="pb_a02_b_bag_txt_desc_margin_top_purchase_only">1dp</dimen>
+    <dimen name="pb_a02_all_padding_top">0dp</dimen>
+    <dimen name="pb_a02_text_smell_margin_left">117dp</dimen>
+    <dimen name="pb_a02_text_smell_margin_top">65dp</dimen>
+    <dimen name="pb_a02p_buble_marginleft">30dp</dimen>
+
+    <!-- input invite code -->
+    <dimen name="pb_d03_btn_margin_bottom">11dp</dimen>
+    <dimen name="pb_d03_edt_margin_top">2dp</dimen>
+    <dimen name="pb_a03_anim_margin_bottom">115dp</dimen>
+    <dimen name="pb_a03_b_bubble_margin_bottom">225dp</dimen>
+    <dimen name="pb_a03_b_bubble_margin_left">10dp</dimen>
+    <dimen name="pb_a03_text_desc1_margin_bottom">35dp</dimen>
+    <dimen name="pb_a03_text_desc2_margin_bottom">320dp</dimen>
+    
+    <dimen name="pb_a03e_text_img_margin_bottom">140dp</dimen>
+    <dimen name="pb_a03e_text_bubble_margin_bottom">240dp</dimen>
+    <dimen name="pb_a03e_text_bubble_margin_left">30dp</dimen>
+    <dimen name="pb_a03e_text_desc_margin_bottom">350dp</dimen>
+
+	<dimen name="pb_a02_cp_text_count_margin_bottom">70dp</dimen>
+	<dimen name="pb_a02_cp_text_desc_margin_bottom">120dp</dimen>
+	<dimen name="pb_a02_cp_anim_margin_bottom">180dp</dimen>
+	<dimen name="pb_a02_cp_bubble_margin_bottom">250dp</dimen>
+	<dimen name="pb_a02_ll_margin_top">105dp</dimen>
+
+    <dimen name="pb_a03_anim_margin_top">130dp</dimen>
+    <dimen name="pb_a03_anim_setting_mail_text_margin_bottom">130dp</dimen>
+    <dimen name="pb_a03_bubble_margin_top">285dp</dimen>
+    <dimen name="pb_a03_bubble_margin_left">10dp</dimen>
+    <dimen name="pb_a02_b_bubble_margin_top">125dp</dimen>
+    <dimen name="pb_a02_bubble_margin_top">155dp</dimen>
+    <dimen name="pb_a02_bubble_text_margin_top">313dp</dimen>
+    <dimen name="pb_a02_bubble_text_margin_left">65dp</dimen>
+    <dimen name="dl_input_bubble_layout_pad_bottom">20dp</dimen>
+    <dimen name="pb_a02_bubble_button_margin_top">10dp</dimen>
+    <dimen name="pb_a02_lv_button_margin_bottom">30dp</dimen>
+	<dimen name="pb_pc_setting_kuma_margin_bottom">300dp</dimen>
+	<dimen name="pb_pc_setting_kuma_text_margin_bottom">480dp</dimen>
+    
+    <dimen name="pb_b01_bubble_margin_top">10dp</dimen>
+    <dimen name="pb_b01_text_margin_top">35dp</dimen>
+    <dimen name="pb_b03_bubble_margin_top">28dp</dimen>
+    <dimen name="pb_b03_bubble_margin_bottom">10dp</dimen>
+    <dimen name="pb_b03_bubble_margin_top_layout">35dp</dimen>
+    <dimen name="pb_b03_bubble_height">200dip</dimen>
+    <dimen name="pb_b04_bubble_margin_top">30dp</dimen>
+    <dimen name="pb_b04_button_margin_top">32dip</dimen>
+    <dimen name="pb_b04_button_margin_top_koukaibukuro">20dip</dimen>
+    
+    <dimen name="pb_b04_text_margin">5dip</dimen>
+    
+    <dimen name="pb_b05_layout_button_margin_top">32dp</dimen>
+    <dimen name="pb_b05_layout_bubble_margin_top">50dp</dimen>
+    <dimen name="pb_b05_layout_bubble_margin_top_adv_adstir">20dp</dimen>
+    
+    <dimen name="pb_b05_layout_bubble_margin_bottom">20dp</dimen>
+    
+        
+    <dimen name="pb_b05_layout_bubble_error_margin_top">5dp</dimen>
+    <dimen name="pb_b05_layout_bubble_error_margin_bottom">5dp</dimen>
+    
+    <dimen name="pb_b05_layout_progress_width">200dip</dimen>
+    <dimen name="pb_b05_layout_bubble_height">150dip</dimen>
+    <dimen name="pb_b05_layout_bubble_text_padding_right">75dip</dimen>
+    <dimen name="pb_b05_layout_bubble_text_height">80dip</dimen>
+    <dimen name="pb_b06_layout_margin_top">4dp</dimen>
+    <dimen name="pb_b06_layout_margin_center">7dp</dimen>
+    <dimen name="pb_b06_layout_free_time_height">75dp</dimen>
+    <dimen name="pb_b06_layout_margin_leftright">22dp</dimen>
+    <dimen name="pb_upload_confirm_tv_medium">17sp</dimen>
+    <dimen name="pb_upload_confirm_tv_small">15sp</dimen>
+    
+    <dimen name="pb_video_seekbar_height">8dp</dimen>
+    
+    <!-- 20120613 Bac -->
+    <dimen name="st_bear_lie_margin">20dp</dimen>
+    <dimen name="pb_chat_bubble_width">100dip</dimen>
+        <dimen name="pb_upload_cancel_button_margin_top">45dip</dimen>
+    
+    <dimen name="pb_a03_confirm_button_margin_bottom">70dp</dimen>
+    <dimen name="pb_downloading_screen_kumaanimation01_text_margin_top">40dp</dimen>
+    <dimen name="pb_setting_migration_code_layout_margin_top">125dp</dimen>
+    <dimen name="pb_setting_migration_code_verification_layout_margin_top">125dp</dimen>
+    <dimen name="pb_add_image_waring_screen_margin_top">30dip</dimen>
+    
+    <dimen name="pb_password_confirm_sns_buttonlist_margin_top">20dip</dimen>
+    <dimen name="pb_timer_setting_layout_margin_top">18dip</dimen>
+    <dimen name="pb_download_wrong_password_screen_text_margin_top">65dp</dimen>
+    <dimen name="pb_download_purchase_complete_screen_text_margin_top">60dp</dimen>
+    <dimen name="pb_upload_error_cancel_send_layout_margin_top">32dp</dimen>
+    <dimen name="pb_upload_error_textview_error_layout_margin_top">32dip</dimen>
+    
+    <dimen name="pb_upload_progress_margin_top">15dip</dimen>
+    <dimen name="pb_upload_progress_margin_bottom">7dip</dimen>
+    
+        
+    <dimen name="pb_purchase_notice_thumb_margin_top">40.5dp</dimen>
+    <dimen name="pb_purchase_notice_thumb_margin_bottom">20dp</dimen>
+    <dimen name="pb_purchase_notice_thumb_margin_left">20dp</dimen>
+    <dimen name="pb_purchase_notice_thumb_margin_right">31dp</dimen>
+    
+    <dimen name="pb_purchase_complete_trial_honey_give_layout_height">63dp</dimen>
+    <dimen name="pb_purchase_complete_trial_honey_give_layout_width">282dp</dimen>
+    
+    <!-- Listview dialog Design -->
+    <dimen name="kb_dialog_height">135dp</dimen>
+    <dimen name="kb_dialog_width">205dp</dimen>
+    <dimen name="kb_dialog_textsize">11sp</dimen>
+    
+    <!-- Matomegai screen design -->
+    <dimen name="pb_purchase_web_view_height">470dp</dimen>
+    
+    <!-- My Page main design -->
+    <dimen name="pb_mypage_buttongo_to_honey_shop_margin_top">5dp</dimen>
+    <dimen name="pb_mypage_buttongo_to_honey_shop_button_height">40dp</dimen>
+    
+        <!-- Download add screen -->
+    <dimen name="pb_download_bubble_margin_left_margin_bottom">310dp</dimen>
+    
+      <dimen name="pb_share_screen_secret_text_margin_top">0dp</dimen>
+</resources>

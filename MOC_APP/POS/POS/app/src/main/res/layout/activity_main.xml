@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.smartmux.pos.activity.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".35"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Supplier Report"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:visibility="gone"
+            />
+
+        <com.flyco.tablayout.SegmentTabLayout
+            android:id="@+id/segment_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            tl:tl_bar_color="@color/colorAccent"
+            tl:tl_indicator_color="@color/colorPrimary"
+            tl:tl_indicator_anim_enable="true"
+            tl:tl_indicator_bounce_enable="false"
+            tl:tl_indicator_corner_radius="0dp"
+            tl:tl_bar_stroke_color="@color/colorPrimary"
+            tl:tl_bar_stroke_width="0dp"
+            tl:tl_textSelectColor="@color/text_primary"
+            tl:tl_textUnselectColor="@color/text_secondary"
+            tl:tl_textBold="true"
+            tl:tl_textsize="16sp"
+            tl:tl_tab_space_equal="true"/>
+
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+    </LinearLayout>
+
+<android.support.v4.widget.Space
+    android:layout_width="10dp"
+    android:layout_height="match_parent" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="@string/fragment_cash"
+        android:layout_weight=".65"
+        android:name="com.smartmux.pos.fragment.CashFragment"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/home_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/openid_actionbar_color" >
+
+        <TextView
+            android:id="@+id/textView_openid_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="22dip"
+            android:text="ID認証" />
+
+        <LinearLayout
+            android:id="@+id/content_openid_back"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal" >
+            
+             <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                  android:padding="0dip"
+                  android:clickable="false" 
+                android:src="@drawable/arrow_back" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="もどる"
+                 android:textSize="20dip"
+                   android:paddingLeft="3dip"
+                android:textStyle="bold"
+                android:textColor="@color/white" /> 
+
+           <!--  <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="もどる"
+                android:textColor="@color/white" /> -->
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/textView_openid_share_type_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:text="ID認証を行います。\n下記から認証方法を選択してください。"
+            android:textColor="@color/black" />
+
+        <com.aircast.photobag.widget.FButton
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/button_share_type_mail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pb_btn_height"
+            android:layout_alignLeft="@+id/textView_openid_share_type_title"
+            android:layout_below="@+id/textView_openid_share_type_title"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/shape_share_type_background"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/openid_share_mail"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:buttonColor="@color/openid_share_type_mail"
+            app:shadowEnabled="false" />
+
+       <com.facebook.widget.LoginButton
+            xmlns:facebook="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pb_btn_height"
+            android:layout_alignLeft="@+id/button_share_type_mail"
+            android:layout_below="@+id/button_share_type_mail"
+            android:layout_marginTop="20dp"
+            android:textSize="17sp"
+            facebook:login_text="@string/openid_share_facebook" /> 
+
+      <com.aircast.photobag.widget.FButton
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/button_share_type_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/button_share_type_mail"
+            android:layout_below="@+id/button_share_type_mail"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_share_type_background"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/openid_share_facebook"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:buttonColor="@color/openid_share_type_facebook"
+            app:shadowEnabled="false" /> 
+
+        <LinearLayout
+            android:id="@+id/ll_loading_panel_waiting"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:background="#8fff"
+            android:clickable="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ProgressBar
+                style="@style/costumLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

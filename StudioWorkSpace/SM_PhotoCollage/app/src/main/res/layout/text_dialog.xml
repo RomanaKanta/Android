@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_main_color" >
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout_text_options"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_option_layout_ht"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/edit_text_options"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_option_layout_ht"
+            android:background="@color/folating_expand_transparent_background"
+            android:visibility="gone" >
+        <ImageView
+            android:id="@+id/Imageview_layout_close"
+            android:layout_width="@dimen/text_option_close_ht"
+            android:layout_height="@dimen/text_option_close_ht"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/menu_icon_close" />
+
+        <com.smartux.photocollage.widget.AppHeaderTextView
+            android:id="@+id/tv_action_done"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_option_close_ht"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="@string/crop__done"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <!-- <RelativeLayout -->
+        <!-- android:id="@+id/layout_input" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_below="@+id/Imageview_layout_close"> -->
+        <!-- </RelativeLayout> -->
+
+        <EditText
+            android:id="@+id/et_bubble_input"
+            android:layout_centerInParent="true"
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:layout_margin="20dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:inputType="text"
+            android:singleLine="false"
+            android:textColor="@color/black"/>
+            </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/recycler_text_font_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/text_font_list_mrgn"
+            android:scrollbars="vertical"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recycler_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottombar_ht"
+        android:layout_below="@id/layout_text_options"
+        android:scrollbars="horizontal" />
+
+
+</RelativeLayout>

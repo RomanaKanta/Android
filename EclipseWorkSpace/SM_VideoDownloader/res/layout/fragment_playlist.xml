@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#241E2B"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_bookmark_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#302A36"
+        android:paddingBottom="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_10" >
+
+            <TextView
+            android:id="@+id/textView_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/delete_playlist"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" 
+            android:visibility="gone"/>
+        
+        <TextView
+            android:id="@+id/textView_title_playlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/playlist"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textview_playlist_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_5"
+            android:text="@string/edit"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_create_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/list_row_margin"
+        android:background="@drawable/playlist_botton_background"
+        android:text="@string/create_playlist"
+        android:textColor="#ffffff" />
+
+    <ListView
+        android:id="@+id/listview_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/list_row_margin" >
+    </ListView>
+
+</LinearLayout>

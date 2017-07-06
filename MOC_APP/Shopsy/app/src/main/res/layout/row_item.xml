@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/thumb_grid_width"
+    android:layout_height="@dimen/thumb_grid_height"
+    android:layout_gravity="center_horizontal"
+    android:background="@android:color/white"
+    android:padding="@dimen/margin_5"
+    >
+
+
+    <com.smartmux.shopsy.widget.AppTextViewLatoRegular
+        android:id="@+id/pro_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$40"
+        android:textColor="@color/colorPrimaryDark"
+        android:padding="@dimen/txt_padding_5"
+        android:textSize="@dimen/txt_size_14"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        />
+
+    <com.smartmux.shopsy.widget.AppTextViewLatoLight
+        android:id="@+id/pro_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description Description DescriptionDescription"
+        android:maxLines="2"
+        android:textColor="@android:color/black"
+        android:paddingLeft="@dimen/txt_padding_5"
+        android:textSize="@dimen/txt_size_12"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@id/pro_price"
+        />
+
+    <com.smartmux.shopsy.widget.AppTextViewLatoBold
+        android:id="@+id/pro_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shoes"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/txt_size_14"
+        android:padding="@dimen/txt_padding_5"
+        android:gravity="left"
+        android:layout_above="@id/pro_description"
+        />
+
+    <ImageView
+        android:id="@+id/pro_thumb"
+        android:layout_width="@dimen/row_img_ht"
+        android:layout_height="@dimen/row_img_ht"
+        android:src="@drawable/image"
+       android:layout_centerHorizontal="true"
+
+        />
+
+
+
+
+
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--&gt;-->
+        <!--<com.smartmux.shopsy.widget.AppTextViewLatoRegular-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="250"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:padding="@dimen/txt_padding_5"-->
+            <!--android:textSize="@dimen/txt_size_15"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:drawableLeft="@mipmap/favourite_icon"-->
+            <!--android:drawablePadding="@dimen/txt_padding_5"-->
+            <!--/>-->
+
+        <!--<com.smartmux.shopsy.widget.AppTextViewLatoRegular-->
+            <!--android:id="@+id/pro_price"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="$40"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:padding="@dimen/txt_padding_5"-->
+            <!--android:textSize="@dimen/txt_size_15"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--/>-->
+
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

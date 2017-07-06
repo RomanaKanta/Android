@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+
+    <View
+        android:id="@+id/view_gap"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="1dp"/>
+
+    <Button
+        android:id="@+id/btn_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:text="User"
+        android:layout_above="@id/view_gap"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/btn_driver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:layout_below="@id/view_gap"
+        android:text="Courier Boy"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:layout_margin="20dp" />
+
+
+</RelativeLayout>

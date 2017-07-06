@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:baselineAligned="false" >
+
+    <ImageView
+        android:id="@+id/thumbAlbum"
+        android:layout_width="0dp"
+        android:layout_height="96dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1.5"
+        android:contentDescription="@string/app_name" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="96dp"
+        android:layout_weight="2" >
+
+        <TextView
+            android:id="@+id/bengaliTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/app_theme"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/bengaliTitle"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/app_theme"
+            android:textSize="15sp" />
+        
+        <TextView
+            android:id="@+id/artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/title"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/app_theme"
+            android:textSize="15sp" />
+        
+        <TextView
+            android:id="@+id/totalSongs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/artist"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/app_theme"
+            android:textSize="15sp" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

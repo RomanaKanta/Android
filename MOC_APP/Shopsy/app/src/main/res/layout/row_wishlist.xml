@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/wish_row_ht"
+    android:background="@android:color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/item_row"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/margin_8"
+        >
+
+        <ImageView
+            android:id="@+id/wish_image"
+            android:layout_width="@dimen/wish_row_img_ht"
+            android:layout_height="@dimen/wish_row_img_ht"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="1dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image"
+            />
+
+        <RelativeLayout
+            android:id="@+id/wish_row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/wish_image"
+            android:layout_marginLeft="@dimen/margin_5"
+            >
+
+            <com.smartmux.shopsy.widget.AppTextViewLatoRegular
+                android:id="@+id/product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="Shirt"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txt_size_16" />
+
+            <com.smartmux.shopsy.widget.AppTextViewLatoBold
+                android:id="@+id/brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:text="@string/app_name"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txt_size_12" />
+
+
+            <com.smartmux.shopsy.widget.AppTextViewLatoBold
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/margin_5"
+                android:text="Tk 104.00"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/txt_size_12" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+    <!--<View-->
+        <!--android:id="@+id/item_divider"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginLeft="@dimen/margin_25"-->
+        <!--android:layout_marginRight="@dimen/margin_10"-->
+        <!--android:background="@color/group_divider_color"-->
+        <!--android:layout_alignParentBottom="true"/>-->
+
+    <RelativeLayout
+        android:id="@+id/item_row_delete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="gone"
+        >
+
+        <com.smartmux.shopsy.widget.AppTextViewLatoBold
+            android:id="@+id/undo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/txt_padding_5"
+            android:layout_margin="@dimen/margin_10"
+            android:text="Cancel"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_size_16" />
+
+        <com.smartmux.shopsy.widget.AppTextViewLatoBold
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/txt_padding_5"
+            android:layout_margin="@dimen/margin_10"
+            android:text="Delete"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_size_16" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

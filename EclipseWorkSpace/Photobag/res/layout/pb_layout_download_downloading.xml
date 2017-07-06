@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/headerbar"
+        style="@style/pb_actionbar" />
+
+    <RelativeLayout
+        android:id="@+id/layout_downloading"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/headerbar"
+        android:layout_above="@+id/layout_downloading_screen_adv"
+        android:layout_height="match_parent" >
+
+        <FrameLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/linearlayout_0" >
+            
+            <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/kumaanimation01"
+	            android:layout_marginLeft="@dimen/pb_download_adv_imageview_margin_left"
+	            android:scaleType="fitCenter"
+	            android:visibility="visible" />
+             <TextView
+	            android:layout_width="@dimen/pb_download_adv_textview_width"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center|top"
+	            android:layout_marginTop="@dimen/pb_download_adv_textview_margin_top"
+	            android:layout_marginLeft="@dimen/pb_download_adv_textview_margin_left"
+	            android:text="@string/pb_download_downloading_tv_talk"
+	            android:textColor="@color/main_text_color" />
+            
+              <LinearLayout 
+		        android:id="@+id/layout_uploading_screen_adv"
+		        android:layout_gravity="center"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		        
+		        <com.ad_stir.webview.AdstirWebView 
+		            android:id="@+id/_screen_adv"
+			        media="MEDIA-e194dab6"
+			       spot="3"
+			       adsize="300,250"
+			       android:layout_width="wrap_content"
+			       android:layout_height="wrap_content" /> 
+	    </LinearLayout>
+	      
+		</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearlayout_0"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="40.0dp"
+            android:paddingRight="40.0dp"
+            android:layout_marginTop="5dp" 
+            android:layout_marginBottom="@dimen/pb_downloading_screen_layout0_margin_bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <ProgressBar
+                    android:id="@+id/progressBar2"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_downloading_status"
+                    style="@style/TextShadowLight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/dl_downloading_process_text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_bar_downloading_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pb_a02_bubble_button_margin_top"
+                android:gravity="center" >
+
+                <!-- <Button
+                    android:id="@+id/btn_dl_downloading_cancel"
+                    style="@style/TextShadowBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/pb_btn_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_shape_cancel"
+                    android:gravity="center"
+                    android:text="@string/pb_btn_cancel"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" /> -->
+                    
+                <com.aircast.photobag.widget.FButton
+                    android:id="@+id/btn_dl_downloading_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/pb_btn_height"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/pb_btn_cancel"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:buttonColor="#C0C0C0"
+                   app:shadowEnabled="false" />    
+                   
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_downloading_error"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/headerbar"
+        android:layout_above="@+id/layout_downloading_ad"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/framelayout_0"
+            android:gravity="center"
+            android:text="@string/pb_download_error_desc_text"
+            android:textColor="@color/main_text_color" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/framelayout_0"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/linearlayout_1">
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/kuma09"
+	            android:scaleType="fitCenter" />
+	        <TextView
+	            android:layout_width="150dp"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center|left"
+	            android:layout_marginLeft="22dp"
+	            android:layout_marginBottom="16dp"
+	            android:text="@string/pb_download_error_bubble_text"
+	            android:textColor="@color/main_text_color" />
+		</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearlayout_1"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="40.0dp"
+            android:paddingRight="40.0dp"
+            android:layout_marginTop="5dp" 
+            android:layout_marginBottom="@dimen/pb_downloading_screen_layout0_margin_bottom" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <ProgressBar
+                    android:id="@+id/progressBar2"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_download_error_status"
+                    style="@style/TextShadowLight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/dl_downloading_process_text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/main_text_color" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_bar_download_error_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center" >
+
+                <!-- <Button
+                    android:id="@+id/btn_dl_download_error_cancel"
+                    style="@style/TextShadowBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/pb_btn_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_shape_cancel"
+                    android:gravity="center"
+                    android:text="@string/pb_btn_cancel"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" /> -->
+              <com.aircast.photobag.widget.FButton
+                    android:id="@+id/btn_dl_download_error_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/pb_btn_height"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/pb_btn_cancel"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" 
+                    app:buttonColor="#C0C0C0"
+                   app:shadowEnabled="false"/>      
+
+                <View
+                    android:layout_width="7dp"
+                    android:layout_height="@dimen/pb_btn_height" />
+
+                <!-- <Button
+                    android:id="@+id/btn_dl_downloading_retry"
+                    style="@style/TextShadowBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/pb_btn_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_shape_orange"
+                    android:gravity="center"
+                    android:text="@string/pb_download_error_btn_retry_text"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" /> -->
+                    
+                 <com.aircast.photobag.widget.FButton
+                    android:id="@+id/btn_dl_downloading_retry"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/pb_btn_height"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/pb_download_error_btn_retry_text"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:buttonColor="#ff735a"
+                    app:shadowEnabled="false"  />
+                 
+                 
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout 
+        android:id="@+id/layout_downloading_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/black" >
+        
+        <com.ad_stir.webview.AdstirWebView 
+	        media="MEDIA-e194dab6"
+	       spot="1"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

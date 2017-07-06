@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical" >
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/kb_navigation_drawer_item_layout_margin_left"
+        android:layout_marginRight="@dimen/kb_navigation_drawer_item_layout_margin_right"
+        android:layout_marginTop="@dimen/kb_navigation_drawer_item_layout_margin_top"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/a_itember_acron" />
+
+            <TextView
+                android:id="@+id/textView112"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="X"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#999999" />
+
+            <TextView
+                android:id="@+id/textView113"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ff0000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/a_itember_honey" />
+
+            <TextView
+                android:id="@+id/textView122"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="X"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#999999" />
+
+            <TextView
+                android:id="@+id/textView123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ff0000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView131"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/acron_gold_lib" />
+
+            <TextView
+                android:id="@+id/textView132"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="X"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#999999" />
+
+            <TextView
+                android:id="@+id/textVie133"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ff0000" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/kb_navigation_drawer_gotodonguri_layout_margin_left"
+        android:layout_marginRight="@dimen/kb_navigation_drawer_gotodonguri_layout_margin_right"
+        android:layout_marginTop="@dimen/kb_navigation_drawer_gotodonguri_layout_margin_top"
+        android:orientation="vertical" >
+        
+	    <com.aircast.photobag.widget.FButton
+	        android:id="@+id/button_donguri"
+	        android:layout_width="match_parent"
+	        android:layout_height="30dp"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginBottom="5dip"
+	        app:buttonColor="@color/flatbutton_default_color"
+	        android:padding="10dp"
+	        android:text="@string/kb_buton_go_to_donguri_screen"
+	        android:textColor="#fff"
+	        app:shadowEnabled="false"/>
+	    
+	   <com.aircast.photobag.widget.FButton
+	        android:id="@+id/button_goto_matomegaipage"
+	        android:layout_width="match_parent"
+	        android:layout_height="30dp"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginBottom="5dip"
+	        app:buttonColor="@color/flatbutton_default_color"
+	        android:padding="10dp"
+	        android:text="@string/pb_buy_honey_together"
+	        android:textColor="#fff"
+	        app:shadowEnabled="false"/>
+	    
+	       <!--  app:lib_shadowEnabled="false" 
+	         app:lib_buttonColor="@color/flatbutton_default_color"/> -->
+    </LinearLayout>
+    
+</LinearLayout>

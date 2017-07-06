@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainpage_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+<!--     <LinearLayout
+        android:id="@+id/registration_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/kb_mypage_nickname" />
+    </LinearLayout> -->
+
+    <com.aircast.koukaibukuro.widget.SegmentedGroup
+        android:id="@+id/radioGroup_mypage"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+       android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/mypage_segmented_btn1"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/mypage_segmented_title1"
+            android:textColor="@color/radio_text_color"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/mypage_segmented_btn2"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:gravity="center"
+            android:text="@string/mypage_segmented_title2"
+            android:textColor="@color/radio_text_color"
+            android:textStyle="bold" />
+
+        <!--
+             <RadioButton
+            android:id="@+id/mypage_segmented_btn3"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:checked="false"
+            android:text="@string/mypage_segmented_title3"
+            android:textColor="@color/radio_text_color"
+            android:textStyle="bold" />
+        -->
+
+    </com.aircast.koukaibukuro.widget.SegmentedGroup>
+
+    <!--
+     <Button
+    android:id="@+id/button_opt_share_type"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/radioGroup_mypage"
+    android:layout_centerHorizontal="true"
+      android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:padding="10dp"
+    android:background="@drawable/shape_share_type_background"
+    android:text="@string/mypage_share_type_title" />
+    -->
+
+   <!--  <com.kayac.photobag.widget.FButton
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/button_opt_share_type"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/radioGroup_mypage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_share_type_background"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/mypage_share_type_title"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:buttonColor="@color/openid_share_type_button"
+        app:shadowEnabled="false" /> -->
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#D6DDD4" />
+
+    <LinearLayout
+        android:id="@+id/pull_to_refresh_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/view1"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/pull_listView_common"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#0000"
+            android:divider="#00000000"
+            android:dividerHeight="0dp"
+            android:fadingEdgeLength="0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/radioGroup_mypage"
+        layout="@layout/kb_common_screen" />
+
+</RelativeLayout>

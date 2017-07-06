@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_resize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/seekbar_padding"
+        android:background="@color/folating_expand_transparent_background"
+        android:orientation="vertical"
+        android:padding="@dimen/magrin_10" >
+
+        <com.smartmux.fotolibs.widget.AppTextView
+            android:id="@+id/resize_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/resize1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/pure_white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.smartmux.fotolibs.widget.AppTextView
+                android:id="@+id/resize_original_wt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="640"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/pure_white" />
+
+            <com.smartmux.fotolibs.widget.AppTextView
+                android:id="@+id/resize_title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/resize3"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/pure_white" />
+
+            <com.smartmux.fotolibs.widget.AppTextView
+                android:id="@+id/resize_original_ht"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="1136"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/pure_white" />
+        </LinearLayout>
+
+        <com.smartmux.fotolibs.widget.AppTextView
+            android:id="@+id/resize_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/resize2"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/pure_white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.smartmux.fotolibs.widget.AppTextView
+                android:id="@+id/resize_new_wt"
+                android:layout_width="@dimen/textview_wt"
+                android:layout_height="wrap_content"
+                android:background="@drawable/resize_textview_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="640"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/pure_white" />
+
+            <com.smartmux.fotolibs.widget.AppTextView
+                android:id="@+id/resize_title4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/resize3"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/pure_white" />
+
+            <com.smartmux.fotolibs.widget.AppTextView
+                android:id="@+id/resize_new_ht"
+                android:layout_width="@dimen/textview_wt"
+                android:layout_height="wrap_content"
+                android:background="@drawable/resize_textview_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="1136"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/pure_white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

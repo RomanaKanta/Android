@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White" >
+
+    <!-- <fragment -->
+    <!-- android:id="@+id/header" -->
+    <!-- android:name="com.smartmux.trackfriends.fragment.FragmentHeader" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_weight="1" /> -->
+
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/headerbackground"
+        android:paddingBottom="@dimen/paddingBottom_of_header"
+        android:paddingLeft="@dimen/paddingLeft_of_header"
+        android:paddingRight="@dimen/paddingRight_of_header"
+        android:paddingTop="@dimen/paddingTop_of_header" >
+
+        <TextView
+            android:id="@+id/textView_mideltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Event Title Goes to Here" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageView_headerRightImage"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/notification" />
+
+        <TextView
+            android:id="@+id/textView_batch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/imageView_headerRightImage"
+            android:layout_alignTop="@+id/imageView_headerRightImage"
+            android:background="@drawable/batch_background"
+            android:padding="2dp"
+            android:text="13"
+            android:textColor="@color/White"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageView_headerLeftImage"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/profile" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/maplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/downlayout"
+        android:layout_below="@+id/toplayout"
+        android:layout_centerHorizontal="true" >
+
+        <!-- <fragment -->
+        <!-- android:id="@+id/map" -->
+        <!-- android:name="com.google.android.gms.maps.MapFragment" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="match_parent" /> -->
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.smartmux.trackfriends.fragment.FragmentMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <!-- <fragment -->
+    <!-- android:id="@+id/footer" -->
+    <!-- android:name="com.smartmux.trackfriends.fragment.FragmentFooter" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_weight="1" /> -->
+
+    <RelativeLayout
+        android:id="@+id/downlayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/White"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/imageView_footerLeftImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/invite_friend" >
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageView_footerRightImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/map_info" >
+        </ImageView>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewsetting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/view_top_margin"
+        android:background="@color/viewbackground"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/settingportion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <fragment
+            android:id="@+id/settingoption"
+            android:name="com.smartmux.trackfriends.fragment.FragmentSetting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fragment_height" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewevent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/view_top_margin"
+        android:background="@color/viewbackground"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/eventportion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <fragment
+            android:id="@+id/eventoption"
+            android:name="com.smartmux.trackfriends.fragment.FragmentEvent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fragment_height" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp" >
+
+        <FrameLayout
+            android:id="@+id/thumbContent"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/thumbRadio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon"
+                android:contentDescription="@string/app_name"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:adjustViewBounds="true" />
+
+            <com.smartmux.banglaebook.plus.util.ProgressWheel
+                android:id="@+id/progressBar_Downloding"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                ProgressWheel:barColor="@color/app_theme"
+                ProgressWheel:probarLength="10dp"
+                ProgressWheel:barWidth="10dp"
+                ProgressWheel:circleColor="#00000000"
+                ProgressWheel:rimColor="#803b3b3b"
+                ProgressWheel:rimWidth="10dp"
+                ProgressWheel:spinSpeed="-1dp"
+                ProgressWheel:text=""
+                ProgressWheel:textColor="@color/app_theme"
+                ProgressWheel:textSize="14sp"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/textView_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/thumbContent"
+            android:orientation="vertical" >
+            
+             <TextView
+            android:id="@+id/textview_read_numberofpages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:text="number of pages"
+             android:textColor="@color/app_text_color"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/authorname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:singleLine="true"
+                  android:text="author name"
+                android:textColor="@color/app_text_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bengaliTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:singleLine="true"
+                  android:text="bangla title"
+                android:textColor="@color/app_text_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:singleLine="true"
+                  android:text="english title"
+                android:textColor="@color/app_text_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/pdfPages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:singleLine="true"
+                  android:text="PDF pages"
+                android:textColor="@color/app_text_color"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/icon_book_info"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            android:src="@drawable/book_info" />
+       
+    </RelativeLayout>
+
+</RelativeLayout>

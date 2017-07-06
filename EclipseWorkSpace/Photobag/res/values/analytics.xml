@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--  トラッキングID  UA-57145458-1 -->
+	<!--  トラッキングID  UA-56530944-1 last used ID -->
+	<!--  トラッキングID  Photobag / PhotoBag-Android default view -->
+	<!-- <string name="ga_trackingId">UA-57145458-1</string>  -->
+	<!-- new ID introduced in version 2_7_5..limit crossed  -->
+	<string name="ga_trackingId">UA-57145458-4</string> 
+	<!-- Activityの自動トラッキング  --> 
+	<bool name="ga_autoActivityTracking">true</bool>
+	<!-- Exceptionのトラッキング --> 
+	<bool name="ga_reportUncaughtExceptions">true</bool>
+	<!-- Enable debug --> 
+	<bool name="ga_debug">true</bool>
+	<!-- Log Level -->
+    <string name="ga_logLevel">verbose</string>
+	
+</resources>

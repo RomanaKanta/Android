@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/home_ht">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_row_top_ht"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <com.ksproject.krishop.widget.AppTextViewLatoBold
+            android:id="@+id/txt_catagory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crop"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_size_20"
+            android:padding="@dimen/txt_padding_10"
+            android:layout_centerVertical="true"
+            />
+
+        <com.ksproject.krishop.widget.AppTextViewLatoRegular
+            android:id="@+id/txt_see_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See All"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/txt_size_16"
+            android:padding="@dimen/txt_padding_5"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/white"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin_5"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewList"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_row_list_ht"
+        android:layout_gravity="center">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

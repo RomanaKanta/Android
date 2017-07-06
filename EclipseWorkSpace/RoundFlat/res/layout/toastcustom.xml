@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toastcustom"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/toastbg" >
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_margin="5dip" -->
+    <!-- android:orientation="horizontal" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content"> -->
+    <!-- <ImageView -->
+    <!-- android:layout_width="40dp" -->
+    <!-- android:layout_height="40dp" -->
+    <!-- android:src="@drawable/ic_launcher"/> -->
+    <!-- <LinearLayout -->
+    <!-- android:orientation="vertical" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:gravity="center"> -->
+
+    <TextView
+        android:id="@+id/texttoast"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:paddingTop="@dimen/margin_5"
+        android:paddingBottom="@dimen/margin_5"
+        android:paddingLeft="@dimen/tost_padding"
+        android:paddingRight="@dimen/tost_padding"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+
+</LinearLayout>

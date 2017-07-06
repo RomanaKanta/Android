@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+         android:id="@+id/adstir_space"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+         android:background="#000000"
+        android:orientation="vertical" >
+        
+          <com.ad_stir.webview.AdstirWebView 
+	        media="MEDIA-9a4e6d76"
+	       spot="1"
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/server_control_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+           <TextView
+               style="?android:attr/textAppearanceMedium"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="30dp"
+               android:singleLine="true"
+               android:text="@string/wifi_state" />
+
+        <TextView
+            android:id="@+id/wifi_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi_state"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:padding="5px"
+            style="?android:attr/textAppearanceSmall"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/wifi_state_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/wifi_state4" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/wifi_backup" />
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:id="@+id/server_control_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adstir_space"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/instruction_pre"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/instruction_pre"
+            android:visibility="gone"
+            style="?android:attr/textAppearanceSmall" />
+        <TextView
+            android:id="@+id/instruction"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/instruction"
+            style="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/ip_address"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:minWidth="150px"
+            android:layout_gravity="center_horizontal"
+            android:background="#3cc34b"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:textSize="32px"
+            android:gravity="center"
+            android:layout_marginTop="15px"
+            android:paddingLeft="15px"
+            android:paddingRight="15px"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:id="@+id/start_stop_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20px"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20px"
+            android:background="@drawable/btn_bottom_last"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/start_stop_button_text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="28px"
+                android:drawablePadding="10px"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

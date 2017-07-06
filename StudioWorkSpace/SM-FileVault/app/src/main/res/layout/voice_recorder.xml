@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".AudioRecorder" >
+ 
+   
+    
+
+        <ImageButton
+            android:id="@+id/buttonPlay"
+            android:layout_width="@dimen/record_button_width"
+            android:layout_height="@dimen/record_button_width"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+             android:onClick="play"
+            android:background="@drawable/play_button" />
+
+      
+    <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonPlay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:format="%s"
+        android:textColor="@color/pink"
+        android:textSize="50sp"
+        android:textStyle="bold"
+           />
+ <com.smartmux.filevault.widget.AppTextViewAverinBlack
+      android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonPlay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:text="@string/tap_status"
+        android:textColor="@color/gray"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <!-- <ImageView
+        android:id="@+id/imageView_mic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/mic" /> -->
+
+    <!-- <Chronometer
+        android:id="@+id/record_chronometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/audio_bottom_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="#c2d2d7"
+        android:textSize="40sp"
+        android:visibility="invisible"
+         /> -->
+
+<!--     <RelativeLayout
+        android:id="@+id/audio_bottom_content"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageButton
+            android:id="@+id/buttonStop"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_effect"
+            android:contentDescription="@string/stop"
+            android:onClick="stop"
+            android:src="@drawable/pause_button"
+            android:text="@string/stop" />
+
+        <ImageButton
+            android:id="@+id/buttonRecord"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:contentDescription="@string/start"
+            android:onClick="start"
+            android:src="@drawable/record_button"
+            android:text="@string/start" />
+        
+         
+
+        <ImageButton
+            android:id="@+id/buttonPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:contentDescription="@string/play"
+            android:onClick="play"
+            android:src="@drawable/play_button"
+            android:text="@string/play" />
+
+    </RelativeLayout>
+ -->
+   <!--  <ImageButton
+            android:id="@+id/buttonPlay"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+           android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/play_button"
+            android:contentDescription="@string/play"
+            android:onClick="play"
+            android:layout_marginBottom="20dp"
+            android:text="@string/play" /> -->
+    <!-- <com.devadvance.circulartest.CircularSeekBar
+        android:id="@+id/seekBar_audio"
+        android:layout_width="225dp"
+        android:layout_height="225dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+      /> -->
+
+        <!--  
+        app:start_angle="270"
+		app:end_angle="270"
+		app:circle_x_radius="100"
+		app:circle_y_radius="100"
+		app:use_custom_radii="true"
+		app:progress="25"
+		app:max="100"
+		app:pointer_alpha_ontouch="100"
+		app:pointer_color="#0174DF"
+		app:pointer_halo_color="#880174DF"--> 
+		     
+
+</RelativeLayout>

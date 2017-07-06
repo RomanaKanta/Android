@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/**
+ * Copyright (c) 2012 Vinayak Solutions Private Limited 
+ * See the file license.txt for copying permission.
+*/     
+ -->
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/unknown_entry_dialog_bg"
+    >
+    
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbar_bg" 
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/unknown_entry_dialog_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text Entry"
+            android:textSize="20dip"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+        
+    </RelativeLayout>
+    
+    <!-- Date and location Bar -->
+    <RelativeLayout  
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/date_bar_bg_wo_shadow"
+        android:gravity="center"
+        > 
+        
+		<TextView
+            android:id="@+id/unknown_entry_dialog_location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="unknown location"
+            android:textColor="@color/black"
+            android:textSize="14dip"
+            android:gravity="center"
+            android:layout_marginBottom="1dip"
+            android:layout_marginLeft="15dip"
+            android:ellipsize="end"
+            android:layout_marginRight="7dip"
+            android:singleLine="true" />        
+        
+    </RelativeLayout>
+    
+	<include 
+        layout="@layout/dialog_home_icons"
+        android:layout_width="fill_parent" />
+    
+	<LinearLayout
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+    	android:orientation="horizontal"
+    	android:layout_gravity="center_horizontal"
+    	android:padding="10dip">
+    	<Button 
+    	    android:id="@+id/unknown_entry_dialog_cancel"
+    		 android:layout_width="wrap_content"
+            android:layout_height="@dimen/reminder_height"
+            android:layout_gravity="center"
+            android:background="@drawable/sm_custom_button"
+            android:paddingBottom="@dimen/reminder_padding_top_and_bottom"
+            android:paddingLeft="@dimen/reminder_padding_left_and_right"
+            android:paddingRight="@dimen/reminder_padding_left_and_right"
+            android:paddingTop="@dimen/reminder_padding_top_and_bottom"
+            android:text="Cancel"
+            android:textStyle="bold"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/reminder_text_size"
+            android:layout_marginRight="18dp"
+    	    />
+    	
+    	<Button 
+        	android:id="@+id/unknown_entry_dialog_delete"
+    		android:layout_width="wrap_content"
+            android:layout_height="@dimen/reminder_height"
+            android:layout_gravity="center"
+            android:background="@drawable/sm_custom_button"
+            android:paddingBottom="@dimen/reminder_padding_top_and_bottom"
+            android:paddingLeft="@dimen/reminder_padding_left_and_right"
+            android:paddingRight="@dimen/reminder_padding_left_and_right"
+            android:paddingTop="@dimen/reminder_padding_top_and_bottom"
+            android:text="Delete"
+            android:textStyle="bold"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/reminder_text_size" />
+    	   
+    </LinearLayout>
+</LinearLayout>

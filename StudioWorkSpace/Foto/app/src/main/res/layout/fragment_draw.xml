@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <FrameLayout
+        android:id="@+id/body_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/draw_layer"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/import_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name" >
+        </ImageView>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/draw_layer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/draw_bottom_ht"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/header_bg" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/circle_layer_left_mrgn"
+            android:layout_toLeftOf="@+id/circleContainer"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <!-- <com.smartmux.photoeditor.widget.ColorPickerSeekBar -->
+            <!-- android:id="@+id/colorPickerSeekBar" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentLeft="true" -->
+            <!-- android:layout_alignParentTop="true" -->
+            <!-- android:layout_marginTop="5dp" -->
+            <!-- android:thumb="@drawable/button_seek_thumb" /> -->
+
+            <SeekBar
+                android:id="@+id/colorPickerSeekBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/seekbar_mrgn"
+                android:thumb="@drawable/button_seek_thumb" />
+
+            <SeekBar
+                android:id="@+id/stroke_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/seekbar_mrgn"
+                android:progressDrawable="@drawable/draw_seek_bar"
+                android:thumb="@drawable/button_seek_thumb" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/circleContainer"
+            android:layout_width="@dimen/draw_circle_wt"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/header_bg"
+            android:padding="@dimen/circle_layer_pad" >
+
+            <com.smartmux.foto.widget.DrawCircle
+                android:id="@+id/drawCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+    </com.smartmux.foto.widget.DrawCircle>
+
+            <ImageView
+                android:id="@+id/image_erasr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/btn_eraser"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

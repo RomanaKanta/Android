@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/download_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/bg" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout_download_main"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"            
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                    
+                <FrameLayout
+                    android:id="@+id/view_kuma_no_internet_download"                     
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                     <ImageView
+                        android:layout_width="@dimen/dl_input_bubble_animate_width"
+                        android:layout_height="@dimen/dl_input_bubble_animate_height"
+                        android:layout_gravity="center"
+                        android:contentDescription="@null"
+                        android:background="@drawable/kuma01"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:layout_width="@dimen/dl_input_bubble_text_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|center"
+                        android:layout_marginTop="@dimen/dl_input_bubble_text_margin_top_no_internet"
+                        android:gravity="center"
+                        android:text="@string/pb_download_input_pwd_tv_talk"
+                        android:textColor="@color/main_text_color"
+                        android:textSize="12sp" /> 
+                </FrameLayout>    
+                
+                <FrameLayout
+                    android:id="@+id/webview_download_screen_layout_for_kuma"                     
+                    android:layout_width="320dp"
+                    android:layout_height="175dp"
+                    android:background="#00000000"
+                     >
+                    <!-- android:layout_weight="0.3" --> 
+                    
+                    <WebView
+	                    android:id="@+id/webview_download_screen_for_kuma"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="fill_parent" />
+
+                    <!-- <ImageView
+                        android:layout_width="@dimen/dl_input_bubble_animate_width"
+                        android:layout_height="@dimen/dl_input_bubble_animate_height"
+                        android:layout_gravity="center|top"
+                        android:background="@drawable/contest_icon"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:layout_width="@dimen/dl_input_bubble_text_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|center"
+                        android:layout_marginTop="@dimen/dl_input_bubble_text_margin_top"
+                        android:gravity="center"
+                        android:text="@string/pb_download_input_pwd_tv_talk"
+                        android:textColor="@color/main_text_color"
+                        android:textSize="12sp" /> -->
+                </FrameLayout>
+            
+                <!-- <ImageView 
+                    android:id="@+id/forest_thumb_download_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:contentDescription="@null"
+                    android:src="@drawable/thumb_forest" 
+                    android:layout_weight="0.3" /> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/framelayout_0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="40.0dp"
+                android:paddingRight="40.0dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:visibility="gone"
+                    style="@style/TextShadowLight"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/pb_download_input_pwd_tv"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="14sp" />
+
+                <!-- <EditText
+                    android:id="@+id/edt_dl_pwd_get_img"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:hint="@string/pb_download_input_pwd_tv"
+                    android:textSize="16dp"
+                    android:singleLine="true" >
+                </EditText> -->
+                <EditText
+                    android:id="@+id/edt_dl_pwd_get_img"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/pb_btn_height"
+                    android:layout_marginBottom="20dp"
+                    android:hint="@string/pb_download_input_pwd_tv"
+                    android:textSize="16dp"
+                    android:background="@drawable/backwithborder"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"
+    				android:paddingRight="10dp" >
+            </EditText>
+
+               <!--  <EditText
+                    android:id="@+id/edt_dl_pwd_secret_digit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/pb_btn_height"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/backwithborder"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:visibility="gone"
+                    android:textSize="14dp" >
+
+                </EditText> -->
+
+                <!--
+                <LinearLayout
+                    android:id="@+id/btn_dl_input_get_img"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/pb_btn_height"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/btn_shape_orange_focusable"
+                    android:focusable="true"
+                    android:gravity="center" >
+
+                    <TextView
+                        style="@style/TextShadowBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/btn_ico_dl"
+                        android:gravity="center"
+                        android:drawablePadding="5dp"
+                        android:text="@string/dl_btn_input_pwd_text"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                -->
+
+                <com.aircast.photobag.widget.FButton
+                    android:id="@+id/btn_dl_input_get_img1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/pb_btn_height"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:buttonColor="#ff735a"
+                    app:shadowEnabled="false" />
+                
+                 <!-- TransferJet Download Button -->
+                <LinearLayout
+                    android:id="@+id/btn_input_get_img_transferJet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/pb_btn_height"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/btn_shape_tj_focusable"
+                    android:focusable="true"
+                    android:gravity="center" >
+
+                    <TextView
+                        style="@style/TextShadowBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/btn_ico_tj"
+                        android:gravity="center"
+                        android:drawablePadding="5dp"
+                        android:text="@string/download_main_btn_text_transfer_jet"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.aircast.photobag.widget.FButton
+             android:id="@+id/btn_dl_input_get_img2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/pb_btn_height"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="38dip"
+            android:layout_marginRight="38dip"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:buttonColor="#ff735a"
+            app:shadowEnabled="false" 
+             />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/layout_download_ad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+                  
+	    <WebView
+		    android:id="@+id/webview"
+		    android:layout_width="wrap_content"
+		    android:scrollbars="none"
+		    android:layout_height="32dp"
+		    android:layout_marginBottom="8dp"
+		    android:layout_gravity="bottom|center_horizontal|center_vertical"
+		    android:background="@color/bg" />
+	    <LinearLayout
+            android:id="@+id/ads_space"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:orientation="vertical" >
+            <com.ad_stir.webview.AdstirWebView 
+	           media="MEDIA-e194dab6"
+	           spot="1"
+	           android:layout_width="fill_parent"
+	           android:layout_height="wrap_content" />
+        </LinearLayout>
+	    <LinearLayout 
+            android:id="@+id/layout_reward_forest"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/black"
+            android:visibility="gone" >
+            <ImageView 
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/pb_null"
+                android:src="@drawable/reward_bg" />
+        </LinearLayout>
+	</LinearLayout>
+</LinearLayout>

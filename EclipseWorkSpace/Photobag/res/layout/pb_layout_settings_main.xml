@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- D-01 -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".activity.PBSettingMainActivity" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bg" >
+
+        <com.aircast.photobag.widget.actionbar.ActionBar
+            android:id="@+id/actionBar"
+            style="@style/pb_actionbar" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/actionBar" >
+
+            <LinearLayout
+                android:id="@+id/pb_setting_main_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/pb_tutorial_honey_webview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/pb_how_to_get_your_honey"
+                    android:textColor="@color/setting_color_text"
+                    android:textSize="@dimen/pb_setting_cell_text_size"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/pb_bg_panel"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:background="@drawable/bg_header" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_marginLeft="@dimen/pb_setting_cell_margin_horizontal"
+                            android:text="@string/pb_setting_main_invite_group"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </LinearLayout>
+                
+                <RelativeLayout
+         android:id="@+id/content_kb_settings_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pb_bg_panel_list"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="ニックネーム"
+             android:textColor="@color/black"
+                            android:textSize="@dimen/pb_setting_cell_text_size"
+                            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/kb_settings_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentRight="true"
+             android:textColor="@color/black"
+                            android:textSize="@dimen/pb_setting_cell_text_size"
+                            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pb_bg_panel"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:background="@drawable/bg_header" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_marginLeft="@dimen/pb_setting_cell_margin_horizontal"
+                            android:text="@string/pb_setting_purchase"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/sep_background" />
+
+                    <FrameLayout
+                        android:id="@+id/getFreeDonguri"
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/pb_bg_panel_list"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="onClick"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_marginLeft="@dimen/pb_setting_cell_margin_horizontal"
+                            android:text="@string/pb_setting_purchase_donguri"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/pb_setting_cell_text_size"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pb_bg_panel"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:background="@drawable/bg_header" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_marginLeft="@dimen/pb_setting_cell_margin_horizontal"
+                            android:text="@string/pb_setting_new"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/sep_background" />
+
+                    <FrameLayout
+                        android:id="@+id/buyMapelFromShop"
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/pb_bg_panel_list"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="onClick"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_marginLeft="@dimen/pb_setting_cell_margin_horizontal"
+                            android:text="@string/pb_buy_honey_together"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/pb_setting_cell_text_size"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/sep_background" />
+
+                    <FrameLayout
+                        android:id="@+id/pb_mail_to_pc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/pb_bg_panel_list"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_marginLeft="@dimen/pb_setting_cell_margin_horizontal"
+                            android:text="@string/pb_setting_mail_to_pc"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/pb_setting_cell_text_size"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pb_bg_panel"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:background="@drawable/bg_header" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_marginLeft="@dimen/pb_setting_cell_margin_horizontal"
+                            android:text="@string/pb_migration_header"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/sep_background" />
+
+                    <FrameLayout
+                        android:id="@+id/pb_migration_code"
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/pb_bg_panel_list"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_marginLeft="@dimen/pb_setting_cell_margin_horizontal"
+                            android:text="@string/pb_setting_my_migration_code"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/pb_setting_cell_text_size"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/sep_background" />
+
+                    <FrameLayout
+                        android:id="@+id/pb_migration_code_verify"
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/pb_bg_panel_list"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_marginLeft="@dimen/pb_setting_cell_margin_horizontal"
+                            android:text="@string/pb_setting_my_migration_code_verify"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/pb_setting_cell_text_size"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pb_bg_panel"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:background="@drawable/bg_header" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_marginLeft="@dimen/pb_setting_cell_margin_horizontal"
+                            android:text="@string/pb_other"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/sep_background" />
+                    
+                    <FrameLayout
+                        android:id="@+id/pb_setting_license_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/pb_bg_panel_list"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp" >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_marginLeft="@dimen/pb_setting_cell_margin_horizontal"
+                            android:text="@string/pb_license_setting_text"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/pb_setting_cell_text_size"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/sep_background" />
+
+                    <FrameLayout
+                        android:id="@+id/pb_setting_clear_cache"
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/pb_bg_panel_list"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_marginLeft="@dimen/pb_setting_cell_margin_horizontal"
+                            android:text="@string/pb_clear_cache"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/pb_setting_cell_text_size"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/sep_background" />
+
+                    <FrameLayout
+                        android:id="@+id/pb_setting_faqFAQ"
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/pb_bg_panel_list"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_marginLeft="@dimen/pb_setting_cell_margin_horizontal"
+                            android:text="@string/pb_faq"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/pb_setting_cell_text_size"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/sep_background" />
+
+                    <FrameLayout
+                        android:id="@+id/pb_setting_contact"
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/pb_bg_panel_list"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_marginLeft="@dimen/pb_setting_cell_margin_horizontal"
+                            android:text="@string/pb_Contact"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/pb_setting_cell_text_size"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/sep_background" />
+
+                    <FrameLayout
+                        android:id="@+id/pb_setting_terms"
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/pb_bg_panel_list"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_marginLeft="@dimen/pb_setting_cell_margin_horizontal"
+                            android:text="@string/pb_terms"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/pb_setting_cell_text_size"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/sep_background" />
+
+                    <FrameLayout
+                        android:id="@+id/pb_setting_report_violation_term"
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/pb_bg_panel_list"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="onClick"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_marginLeft="@dimen/pb_setting_cell_margin_horizontal"
+                            android:text="@string/pb_contact_report_term_violation"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/pb_setting_cell_text_size"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/sep_background" />
+
+                    <FrameLayout
+                        android:id="@+id/pb_setting_notification_ctrl"
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/pb_bg_panel_list"
+                        android:focusable="true" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_marginLeft="@dimen/pb_setting_cell_margin_horizontal"
+                            android:text="@string/pb_notification_ctrl"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/pb_setting_cell_text_size"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/pb_setting_switch_notification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginRight="@dimen/pb_setting_cell_margin_horizontal"
+                            android:background="@drawable/btn_black"
+                            android:orientation="horizontal"
+                            android:padding="3dp" >
+
+                            <TextView
+                                android:id="@+id/pb_setting_switch_notification_on"
+                                android:layout_width="0dp"
+                                android:layout_height="24dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/btn_shape_orange_focusable"
+                                android:gravity="center"
+                                android:text="@string/pb_notification_on"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/pb_setting_switch_notification_off"
+                                android:layout_width="0dp"
+                                android:layout_height="24dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/btn_shape_cancel"
+                                android:gravity="center"
+                                android:text="@string/pb_notification_off"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/sep_background" />
+
+                    <FrameLayout
+                        android:id="@+id/pb_setting_version"
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/pb_bg_panel_list"
+                        android:focusable="true"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_marginLeft="@dimen/pb_setting_cell_margin_horizontal"
+                            android:text="@string/pb_version"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/pb_setting_cell_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvVersion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginRight="@dimen/pb_setting_cell_margin_horizontal"
+                            android:text="@string/pb_version_change"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/pb_setting_cell_text_size"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/pb_setting_touch_event"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#0000"
+            android:text="" />
+
+        <LinearLayout
+            android:id="@+id/ll_loading_panel_waiting"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="#8fff"
+            android:clickable="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ProgressBar
+                style="@style/costumLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</merge>

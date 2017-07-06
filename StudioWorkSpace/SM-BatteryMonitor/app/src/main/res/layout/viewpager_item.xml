@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     >
+
+<ImageView
+    android:id="@+id/wifiimage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:contentDescription="@string/app_name"
+    android:layout_margin="30dp"
+    android:src="@mipmap/ic_launcher" />
+
+<TextView
+    android:id="@+id/wifi"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@id/wifiimage"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="-10dp"
+    android:text="wifi"
+    android:textSize="20sp" />
+
+<ImageView
+    android:id="@+id/btimage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:contentDescription="@string/app_name"
+    android:layout_marginRight="60dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    android:src="@mipmap/ic_launcher" />
+
+<TextView
+    android:id="@+id/bluetooth"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_below="@id/btimage"
+    android:layout_marginRight="70dp"
+    android:layout_marginTop="-10dp"
+    android:textSize="20sp" />
+
+
+</RelativeLayout>

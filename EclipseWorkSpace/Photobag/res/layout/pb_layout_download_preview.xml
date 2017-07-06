@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/headerbar"
+        style="@style/pb_actionbar"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/headerbar"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pb_download_purchase_notice_layout_margin_top"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/pb_download_preview_tv_albuminformation"
+                android:textColor="@color/main_text_color"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingRight="20dp" >
+
+                <FrameLayout
+                    android:id="@+id/purchase_notice_thumb_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/imv_purchase_notice_thumb"
+                        android:layout_width="@dimen/pb_a02_b_bag_icon_inside_w"
+                        android:layout_height="@dimen/pb_a02_b_bag_icon_inside_h"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginBottom="@dimen/pb_purchase_notice_thumb_margin_bottom"
+                        android:layout_marginLeft="@dimen/pb_purchase_notice_thumb_margin_left"
+                        android:layout_marginRight="@dimen/pb_purchase_notice_thumb_margin_right"
+                        android:layout_marginTop="@dimen/pb_purchase_notice_thumb_margin_top"
+                        android:contentDescription="@string/pb_null" />
+
+                    <ImageView
+                        android:layout_width="@dimen/pb_a02_b_solid_bag_w"
+                        android:layout_height="@dimen/pb_a02_b_solid_bag_h"
+                        android:background="@drawable/icon_thumb"
+                        android:contentDescription="@string/pb_null" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:layout_width="120dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/pb_download_round_corner_bg" >
+
+                        <TextView
+                            android:id="@+id/thumb_count_cache"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:textColor="@color/main_text_color"
+                            android:textSize="13sp" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="120dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="top"
+                        android:background="@drawable/pb_download_round_corner_bg" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|left"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="@string/pb_download_purchase_notice_tv_numofphoto"
+                            android:textColor="@color/main_text_color"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_purchase_notice_photo_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|right"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="0"
+                            android:textColor="@color/main_text_color"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|left"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="@string/pb_download_purchase_notice_tv_numofdownload"
+                            android:textColor="@color/main_text_color"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_purchase_notice_downloaded_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="0"
+                            android:textColor="@color/main_text_color"
+                            android:textSize="13sp" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/pb_a02_b_bag_txt_desc_margin_top"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/pb_download_preview_tv_download"
+                    android:textColor="@color/main_text_color"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_purchase_have_honey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.aircast.photobag.widget.FButton
+                    android:id="@+id/btn_download_preview_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pb_btn_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/pb_a02_b_bag_btn_margin_bottom"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="@dimen/pb_a02_b_bag_btn_margin_top"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:buttonColor="#ff7a61"
+                    app:shadowEnabled="false" />
+
+                <!-- <Button
+                    android:id="@+id/btn_download_preview_cancel"
+                    style="@style/TextShadowBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pb_btn_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/pb_a02_b_bag_btn_margin_bottom"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_shape_honey"
+                    android:gravity="center"
+                    android:text="@string/uploading_cancel_btn_text"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" /> -->
+                <com.aircast.photobag.widget.FButton
+                    android:id="@+id/btn_download_preview_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pb_btn_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/pb_a02_b_bag_btn_margin_bottom"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="@string/uploading_cancel_btn_text"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:buttonColor="#bbbbbb"
+                    app:shadowEnabled="false" />  
+                    
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

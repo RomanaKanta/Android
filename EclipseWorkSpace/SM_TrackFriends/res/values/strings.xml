@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Track Friends</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_of_header_right">Friend List</string>
+    <string name="title_of_header_left">My Event</string>
+    <string name="event_name">Enter Event Name</string>
+    <string name="event_date">Date</string>
+    <string name="event_start">Start Time</string>
+    <string name="event_end">End Time</string>
+    <string name="member">Max No of Person : </string>
+    <string name="member_no">No of People</string>
+    <string name="event_description">Evant Description Goes Here</string>
+    <string name="event_address">Pick Up Event Address</string>
+    <string name="address">Address Here</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
+    <string name="user_profile">User Profile</string>
+    <string name="nickname">Enter Nick Name</string>
+    <string name="age">Enter Age</string>
+    <string name="gender">Gender : </string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="phone">Enter Phone Number</string>
+    <string name="mail">Enter Email Address</string>
+    <string name="submit">Submit</string>
+    <string name="photo">Take Photo</string>
+    <string name="event">Create Event or Search Event</string>
+    <string name="create_event">Create New Event</string>
+    <string name="search_event">Search Event</string>
+    <string name="invite">Invite Frtiends into This Event</string>
+    <string name="invite_sms">Invite Via SMS</string>
+    <string name="invite_mail">Invite Via Mail</string>
+    <string name="standard">Standard</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="satalite">Satellite</string>
+    <string name="three_d_map">Show 3D Map</string>
+    <string name="show_route">Show Routes</string>
+    <string name="friends">Friends</string>
+    <string name="map">Sorry! unable to create maps</string>
+    <string name="no_network">NETWORK ERROR !!!!</string>
+    <string name="no_gps">GPS disable !!!!</string>
+    <string name="alart_msg">Sorry, no network found. Please check your network connection.</string>
+    <string name="gps_alart">Sorry, GPS is not enabled. Do you want to go to settings menu to enable gps?</string>
+
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+    
+    <ImageView 
+        android:id="@+id/friend_image"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_launcher"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:contentDescription="@string/app_name"
+        />
+    
+    <TextView 
+        android:id="@+id/friend_name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/app_name"
+          android:padding="5dp"
+        android:layout_toRightOf="@+id/friend_image"
+        
+        />
+    
+    <TextView 
+        android:id="@+id/friend_discription"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/hello_world"
+          android:padding="5dp"
+         android:layout_toRightOf="@+id/friend_image"
+        android:layout_below="@+id/friend_name"
+        />
+
+     
+      <ImageView 
+        android:id="@+id/cancle"
+        android:layout_height="45dp"
+        android:layout_width="45dp"
+        android:src="@drawable/close"
+        android:layout_toLeftOf="@+id/add"
+         android:layout_centerVertical="true"
+        android:padding="2dp"
+        android:contentDescription="@string/app_name"
+        />
+      
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:padding="2dp"
+            android:src="@drawable/status_request" />
+
+</RelativeLayout>

@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- C-02 and C-02_b -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/bg" >
+
+    <com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/headerbar"
+        style="@style/pb_actionbar" />
+    
+     <RelativeLayout
+        android:id="@+id/home_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:visibility="gone"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/imageView_actionbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/a_open_logo" />
+
+
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:id="@+id/adstir_histroy_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black" >
+        <com.ad_stir.webview.AdstirWebView 
+	        media="MEDIA-e194dab6"
+	       spot="1"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="0dip" >
+
+        <GridView
+            android:id="@+id/gv_history_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/btn_process"
+            android:layout_gravity="center"
+            android:columnWidth="72dip"
+            android:gravity="center"
+            android:horizontalSpacing="7dp"
+            android:numColumns="auto_fit"
+            android:padding="0dip"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="7dip" />
+
+        <RelativeLayout
+            android:id="@+id/btn_process"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@android:color/black"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <View 
+                android:id="@+id/view_history_detail_center"
+                android:layout_width="2dp"
+                android:layout_height="34dp"
+                android:layout_centerHorizontal="true" />
+            
+            <!--
+                 <Button
+                android:id="@+id/btn_detail_top_left"
+                style="@style/TextShadowBlack"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@id/view_history_detail_center"
+                android:background="@drawable/pb_red_button_bg_black"
+                android:gravity="center"
+                android:text="@string/pb_add_photos"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+            -->
+
+            <com.aircast.photobag.widget.FButton
+                android:id="@+id/btn_detail_top_left"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@id/view_history_detail_center"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/pb_add_photos"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:buttonColor="#ff735a"
+                app:shadowEnabled="false" />
+
+            <!--
+                 <Button
+                android:id="@+id/btn_detail_top_right"
+                style="@style/TextShadowBlack"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/view_history_detail_center"
+                android:background="@drawable/pb_red_button_bg_black"
+                android:gravity="center"
+                android:text="@string/pb_save_all_picture"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+            -->
+
+            <com.aircast.photobag.widget.FButton
+                android:id="@+id/btn_detail_top_right"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/view_history_detail_center"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/pb_save_all_picture"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:buttonColor="#ff735a"
+                app:shadowEnabled="false" />
+
+            <!--
+                 <Button
+                android:id="@+id/btn_detail_middle"
+                style="@style/TextShadowBlack"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_dark_gray"
+                android:gravity="center"
+                android:text="@string/pb_add_photos"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+            -->
+
+            <com.aircast.photobag.widget.FButton
+                android:id="@+id/btn_detail_middle"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_margin="5dp"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/pb_add_photos"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:buttonColor="#ff735a"
+                app:shadowEnabled="false" />
+
+            <!--
+                 <Button
+                android:id="@+id/btn_detail_buttom"
+                style="@style/TextShadowBlack"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_dark_gray"
+                android:gravity="center"
+                android:text="@string/screen_confirm_password_btn"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+            -->
+
+            <com.aircast.photobag.widget.FButton
+                android:id="@+id/btn_detail_buttom"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5dp"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/screen_confirm_password_btn"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:buttonColor="#968982"
+                app:shadowEnabled="false" />
+
+            <LinearLayout
+                android:id="@+id/layout_info_download"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/bg_header"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/txt_info_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/progress_download"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="250dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

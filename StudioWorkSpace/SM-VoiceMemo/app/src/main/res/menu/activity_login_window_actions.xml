@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- New Folder -->
+    <item android:id="@+id/action_forget_password"
+          android:icon="@drawable/forgot_password"
+          android:title="@string/action_forget_password"
+          android:showAsAction="ifRoom"/>
+</menu>

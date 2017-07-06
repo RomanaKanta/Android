@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- D-input invite code -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/headerbar"
+        style="@style/pb_actionbar" />
+ 
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" android:layout_gravity="center|bottom">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="@dimen/pb_pc_setting_kuma_margin_bottom"
+            android:background="@drawable/kuma07"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="@dimen/pb_a03_bubble_margin_left"
+            android:layout_marginBottom="@dimen/pb_pc_setting_kuma_text_margin_bottom"
+            android:gravity="center"
+            android:textColor="@color/main_text_color"
+            android:text="@string/pb_setting_mail_bear" />
+        
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="@dimen/pb_a03_anim_setting_mail_text_margin_bottom"
+            android:gravity="bottom|center"
+            android:textColor="@color/main_text_color"
+            android:text="@string/pb_setting_mail_intro" />
+                
+    </FrameLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_marginBottom="70.0dp"
+        android:paddingLeft="40.0dp"
+        android:paddingRight="40.0dp" >
+
+       <!--  <Button
+            android:id="@+id/btn_setting_sendmail"
+            style="@style/TextShadowBlack"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/pb_btn_height"
+            android:background="@drawable/btn_shape_orange"
+            android:gravity="center"
+            android:text="@string/pb_setting_sending_mail"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" android:layout_marginTop="10dp"/> -->
+        <com.aircast.photobag.widget.FButton
+            android:id="@+id/btn_setting_sendmail"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/pb_btn_height"
+            android:gravity="center"
+            android:text="@string/pb_setting_sending_mail"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" 
+            android:layout_marginTop="10dp"
+            app:buttonColor="#ff735a"   
+            app:shadowEnabled="false" />
+        
+    </LinearLayout>
+
+</FrameLayout>

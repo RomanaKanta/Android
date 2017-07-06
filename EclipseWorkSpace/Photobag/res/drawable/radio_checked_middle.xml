@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- This is the line -->
+    <item android:right="-1dp" android:left="-1dp">
+      <shape  android:shape="rectangle"
+    android:padding="10dp">
+            <solid android:color="@color/radio_button_selected_color" />
+      </shape>
+    </item>
+
+</layer-list>

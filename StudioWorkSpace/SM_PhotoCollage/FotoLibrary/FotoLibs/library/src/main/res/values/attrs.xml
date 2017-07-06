@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+      <attr name="cropImageStyle" format="reference" />
+    
+      <declare-styleable name="CropImageView">
+        <attr name="guidelines">
+            <enum name="on" value="2"/>
+            <enum name="onTouch" value="1"/>
+            <enum name="off" value="0"/>
+        </attr>
+        <attr name="fixAspectRatio" format="boolean"/>
+        <attr name="aspectRatioX" format="integer"/>
+        <attr name="aspectRatioY" format= "integer"/>
+        <attr name="imageResource" format="reference"/>
+    </declare-styleable>
+
+     <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+
+ <declare-styleable name="Dialog">
+        <attr name="DialogTitleAppearance" format="reference" />
+        <attr name="DialogTitleText" format="reference|string" />
+        <attr name="DialogSpotColor" format="reference|color"/>
+        <attr name="DialogSpotCount" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="ColorSeekBar">
+        <attr name="colors" format="reference" />
+        <attr name="barHeight" format="dimension" />
+        <attr name="thumbHeight" format="dimension" />
+        <attr name="showAlphaBar" format="boolean" />
+        <attr name="alphaBarValue" format="integer" />
+        <attr name="colorBarValue" format="integer" />
+        <attr name="bgColor" format="color"/>
+        <attr name="barMargin" format="dimension"/>
+        <attr name="maxValue" format="integer"/>
+    </declare-styleable>
+
+    <!-- Progerss wheel -->
+    <declare-styleable name="ProgressWheelLib">
+        <attr name="progressIndeterminateLib" format="boolean" />
+        <attr name="barColorLib" format="color" />
+        <attr name="rimColorLib" format="color" />
+        <attr name="rimWidthLib" format="dimension" />
+        <attr name="spinSpeedLib" format="dimension" />
+        <attr name="barSpinCycleTimeLib" format="integer" />
+        <attr name="circleRadiusLib" format="dimension" />
+        <attr name="fillRadiusLib" format="boolean" />
+        <attr name="barWidthLib" format="dimension" />
+        <attr name="linearProgressLib" format="boolean" />
+        <attr name="textLib" format="string" />
+        <attr name="textColorLib" format="color" />
+        <attr name="textSizeLib" format="dimension" />
+        <attr name="delayMillisLib" format="integer" />
+        <attr name="circleColorLib" format="color" />
+        <attr name="radiusLib" format="dimension" />
+        <attr name="probarLengthLib" format="dimension" />
+        <attr name="contourColorLib" format="color"/>
+        <attr name="contourSizeLib" format="dimension"/>
+    </declare-styleable>
+
+ 
+</resources>

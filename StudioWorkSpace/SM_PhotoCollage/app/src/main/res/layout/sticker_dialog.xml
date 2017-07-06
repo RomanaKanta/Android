@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_main_color" >
+
+   <!-- <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recycler_sticker_catagory_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/effect_list_ht"
+        android:paddingLeft="@dimen/effect_list_mrgn" />-->
+
+    <LinearLayout
+        android:id="@+id/sticker_catagory_layer"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="@dimen/effect_list_ht"
+        android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <!--<com.smartux.photocollage.widget.AppButtonView
+            android:id="@+id/sticker_emoticon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Emoticon"
+            android:textColor="#ffffff"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_emoticon"
+            android:padding="5dp"
+            android:background="@drawable/round_corner"
+            android:gravity="center"
+            />-->
+
+        <FrameLayout
+            android:id="@+id/sticker_emoticon"
+            style="?android:attr/buttonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/round_corner"
+            android:padding="5dp">
+
+            <com.smartux.photocollage.widget.AppButtonView
+                style="@style/captionOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Emoticon"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_emoticon"
+                android:gravity="center"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"/>
+
+        <!--<com.smartux.photocollage.widget.AppButtonView
+            android:id="@+id/sticker_masquerade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Masqarade"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_masqarade"
+            android:padding="5dp"
+            android:background="@drawable/round_corner"
+            />-->
+
+        <FrameLayout
+            android:id="@+id/sticker_masquerade"
+            style="?android:attr/buttonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/round_corner"
+            android:padding="5dp">
+
+            <com.smartux.photocollage.widget.AppButtonView
+                style="@style/captionOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Masqarade"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_masqarade"
+                android:gravity="center"/>
+        </FrameLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <!--<com.smartux.photocollage.widget.AppButtonView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sunglass"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_sunglass"
+                android:padding="5dp"
+                android:background="@drawable/round_corner"
+                />-->
+
+            <FrameLayout
+                android:id="@+id/sticker_sunglass"
+                style="?android:attr/buttonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner"
+                android:padding="5dp">
+
+                <com.smartux.photocollage.widget.AppButtonView
+                    style="@style/captionOnly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Sunglass"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/ic_sunglass"
+                    android:gravity="center"/>
+            </FrameLayout>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+
+            <FrameLayout
+                style="?android:attr/buttonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner"
+                android:padding="5dp"
+                android:visibility="invisible">
+
+                <com.smartux.photocollage.widget.AppButtonView
+                    style="@style/captionOnly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_emoticon"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="Sunglass" />
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sticker_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/effect_list_ht"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="@dimen/sticker_item_size"
+            android:layout_height="@dimen/sticker_item_size"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_back"
+            android:layout_margin="5dp"
+            android:paddingLeft="@dimen/effect_list_mrgn"
+            />
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recycler_sticker_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/effect_list_ht"
+        android:scrollbars="horizontal"/>
+    </LinearLayout>
+
+</RelativeLayout>

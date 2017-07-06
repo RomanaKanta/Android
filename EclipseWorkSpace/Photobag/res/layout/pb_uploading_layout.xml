@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/headerbar"
+        style="@style/pb_actionbar" />
+
+    <TextView
+        android:id="@+id/textview_error_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pb_upload_error_textview_error_layout_margin_top"
+        android:gravity="center"
+        android:text="@string/uploading_error_text_guide"
+        android:textColor="@color/main_text_color"
+        android:textSize="@dimen/ul_input_bubble_text_size"
+        android:visibility="gone" />
+
+     <FrameLayout
+	        android:id="@+id/uploading_bear_normal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/pb_b05_layout_bubble_height"
+	        android:layout_marginTop="@dimen/pb_b05_layout_bubble_margin_top"
+	        android:layout_marginBottom="@dimen/pb_b05_layout_bubble_margin_bottom"
+	        android:visibility="gone"
+	        >
+	
+	        <ImageView
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:src="@drawable/kumaanimation01" />
+	
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="@dimen/pb_b05_layout_bubble_text_height"
+	            android:gravity="center"
+	            android:paddingRight="50dip"
+	            android:text="@string/uploading_normal_bear_say"
+	            android:textColor="@color/main_text_color"
+	            android:textSize="@dimen/ul_input_bubble_text_size" />
+
+       </FrameLayout>
+    
+       <!-- Atik New Advertise will be displayed as below instead of layout name  uploading_bear_normal -->
+       <FrameLayout
+	       android:id="@+id/uploading_screen_advert"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:layout_marginTop="@dimen/pb_b05_layout_bubble_margin_top_adv_adstir"
+	       android:layout_marginBottom="@dimen/pb_b05_layout_bubble_margin_bottom"
+	       >
+	
+	      <LinearLayout 
+		        android:id="@+id/layout_uploading_screen_adv"
+		        android:layout_gravity="center"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:orientation="horizontal" >
+		        
+		        <com.ad_stir.webview.AdstirWebView 
+			        media="MEDIA-e194dab6"
+			       spot="3"
+			       adsize="300,250"
+			       android:layout_width="wrap_content"
+			       android:layout_height="wrap_content" /> 
+	    </LinearLayout>
+     </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/uploading_bear_error"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/pb_b05_layout_bubble_height"
+        android:layout_marginBottom="@dimen/pb_b05_layout_bubble_error_margin_bottom"
+        android:layout_marginTop="@dimen/pb_b05_layout_bubble_error_margin_top"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/kuma09" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/pb_b05_layout_bubble_text_height"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center"
+            android:paddingRight="@dimen/pb_b05_layout_bubble_text_padding_right"
+            android:layout_marginTop="20dip"
+            android:text="@string/uploading_error_bear_say"
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/ul_input_bubble_text_size" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pb_upload_progress_margin_top"
+        android:layout_marginBottom="@dimen/pb_upload_progress_margin_bottom"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:layout_width="16dip"
+            android:layout_height="16dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="80dip"
+            android:scrollbarThumbHorizontal="@drawable/btn_default" />
+
+        <TextView
+            android:id="@+id/upload_progress_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="70dip"
+            android:gravity="left"
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/ul_input_bubble_text_size" />
+    </FrameLayout>
+
+    <TextView
+            android:id="@+id/upload_progress_video_compress_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/ul_input_bubble_text_size"
+            android:layout_marginBottom="12dip" />
+
+    <ProgressBar
+        android:id="@+id/seekbar_upload_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="@dimen/pb_b05_layout_progress_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/error_btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_marginLeft="32dip"
+        android:layout_marginRight="32dip"
+        android:layout_marginTop="@dimen/pb_upload_error_cancel_send_layout_margin_top"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <!--
+             <Button
+            android:id="@+id/btn_cancel"
+            style="@style/TextShadowBlack"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/pb_btn_height"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_shape_cancel"
+            android:gravity="center"
+            android:padding="0dip"
+            android:text="@string/uploading_cancel_btn_text"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+        -->
+
+        <com.aircast.photobag.widget.FButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/pb_btn_height"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="0dip"
+            android:text="@string/uploading_cancel_btn_text"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:buttonColor="#bbbbbb"
+            app:shadowEnabled="false" />
+
+        <!--
+             <Button
+            android:id="@+id/btn_retry"
+            style="@style/TextShadowBlack"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/pb_btn_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_shape_orange"
+            android:gravity="center"
+            android:padding="0dip"
+            android:text="@string/uploading_retry_btn_text"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+        -->
+
+        <com.aircast.photobag.widget.FButton
+            android:id="@+id/btn_retry"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/pb_btn_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="0dip"
+            android:text="@string/uploading_retry_btn_text"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:buttonColor="#ff735a"
+            app:shadowEnabled="false" />
+    </LinearLayout>
+
+    <!--
+        <Button
+        android:id="@+id/btn_cancel_upload"
+        style="@style/TextShadowBlack"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/pb_btn_height"
+        android:layout_marginLeft="@dimen/pb_b05_layout_button_margin_top"
+        android:layout_marginRight="@dimen/pb_b05_layout_button_margin_top"
+        android:layout_marginTop="@dimen/pb_b05_layout_button_margin_top"
+        android:background="@drawable/btn_shape_cancel"
+        android:gravity="center"
+        android:text="@string/uploading_cancel_btn_text"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    -->
+
+    <com.aircast.photobag.widget.FButton
+
+        android:id="@+id/btn_cancel_upload"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/pb_btn_height"
+        android:layout_marginLeft="@dimen/pb_b05_layout_button_margin_top"
+        android:layout_marginRight="@dimen/pb_b05_layout_button_margin_top"
+        android:layout_marginTop="@dimen/pb_upload_cancel_button_margin_top"
+        android:gravity="center"
+        android:text="@string/uploading_cancel_btn_text"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:buttonColor="#bbbbbb"
+        app:shadowEnabled="false" />
+   
+            
+
+</LinearLayout>

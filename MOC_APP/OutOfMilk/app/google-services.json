@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "290521264849",
+    "project_id": "firebase-out-of-milk"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:290521264849:android:701763d30358a7ac",
+        "android_client_info": {
+          "package_name": "com.smartmux.outofmilk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "290521264849-5dj2v0qsm9hj3raf6rof1i15q54fp5s8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smartmux.outofmilk",
+            "certificate_hash": "34A7B5ABC60D5901E84F1EC5718CAD498BC7A2F1"
+          }
+        },
+        {
+          "client_id": "290521264849-h1enf8fh6kdhk7v6iaevg8ae5hd4daa3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJUU7n_WYmQuQowRIjZpw8wCxT2fm0c8Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

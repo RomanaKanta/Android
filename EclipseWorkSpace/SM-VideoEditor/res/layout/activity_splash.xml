@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   
+    <RelativeLayout
+        android:id="@+id/src_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/actionbar_color" >
+
+        <TextView
+            android:id="@+id/textView_src"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="Next"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contgent_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/content_action_button"
+        android:layout_below="@+id/src_topbar"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        
+        
+        <VideoView
+            android:id="@+id/videoView_src"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/content_video_fake"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/gray_light"
+            android:orientation="horizontal" >
+
+
+        </LinearLayout>
+
+<!--         <com.smartmux.wiget.HorizoantalListView -->
+<!--             android:id="@+id/hlvSimpleList" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="100dp" -->
+<!--           > -->
+<!--         </com.smartmux.wiget.HorizoantalListView> -->
+
+<!--         <com.yahoo.mobile.client.android.util.rangeseekbar.RangeBar -->
+<!--             android:id="@+id/rangeSeekBar_frames" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="110dp" -->
+<!--             android:visibility="gone" -->
+<!--             android:layout_marginTop="20dp" -->
+<!--             android:background="#FFFFFF" /> -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/content_action_button"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/gray_light" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <com.smartmux.floating.button.ButtonFloat
+                android:id="@+id/button_capture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:background="@color/white"
+                materialdesign:animate="true"
+                materialdesign:iconDrawable="@drawable/video_record" />
+
+            <com.smartmux.floating.button.ButtonFloat
+                android:id="@+id/button_import"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@color/white"
+                materialdesign:animate="true"
+                materialdesign:iconDrawable="@drawable/video_gallery" >
+            </com.smartmux.floating.button.ButtonFloat>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

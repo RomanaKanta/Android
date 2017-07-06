@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context=".activity.PBDisplayCompleteActivity" >
+
+    <com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/headerbar"
+        style="@style/pb_actionbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/pb_pass_input_pass_exced_margin_bottom" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="@dimen/pb_a02_cp_anim_margin_bottom"
+            android:background="@drawable/kuma08"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/pb_a02_cp_bubble_margin_bottom"
+            android:layout_marginLeft="@dimen/pb_a02p_buble_marginleft"
+            android:gravity="center"
+            android:text="@string/pb_download_input_pass_exceeded_tv_talk"
+            android:textColor="@color/main_text_color" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/pb_a02_cp_text_desc_margin_bottom_1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:text="@string/pb_download_input_pass_exceeded_password_message"
+        android:textColor="@color/main_text_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_input_pass_exceeded_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/pb_a02_cp_text_count_margin_bottom_1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="#bfff"
+        android:gravity="bottom|center"
+        android:padding="5dp"
+        android:text="@string/pb_download_input_pass_exceeded_password_countdown"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/red"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_5"
+    >
+
+    <com.smartmux.shopsy.widget.AppTextViewLatoBold
+        android:id="@+id/txt_product_size"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="XXL"
+        android:textSize="@dimen/txt_size_12"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/size_row_bg"
+        android:padding="@dimen/margin_10"
+        />
+
+</LinearLayout>

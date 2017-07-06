@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+     >
+    
+    <ImageView 
+        android:id="@+id/image_sticker_item"
+        android:layout_height="@dimen/list_item_image_ht"
+        android:layout_width="@dimen/list_item_image_wt"
+        android:contentDescription="@string/app_name"
+        android:layout_centerInParent="true"
+        android:src="@drawable/illust_011"
+        android:padding="5dp"
+        />
+    
+<!--     <ImageView  -->
+<!--         android:id="@+id/image_sticker_lock" -->
+<!--         android:layout_height="@dimen/list_item_image_ht" -->
+<!--         android:layout_width="@dimen/list_item_image_wt" -->
+<!--         android:contentDescription="@string/app_name" -->
+<!--         android:src="@drawable/lock_64_64" -->
+<!--         android:layout_centerInParent="true" -->
+<!--         android:padding="@dimen/lock_padding" -->
+<!--         /> -->
+    
+
+</RelativeLayout>

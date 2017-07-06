@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background_openbag" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android:text="@string/dl_mgs"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <!-- <Button
+            android:id="@+id/button_dl_dialog_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="@string/no" /> -->
+            
+       <com.aircast.photobag.widget.FButton
+            android:id="@+id/button_dl_dialog_no"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="@string/no"
+            android:textColor="#fff"
+            app:shadowEnabled="false"
+            app:buttonColor="@color/kb_dialog_no_button_color"
+            android:layout_marginRight="10dip"
+             />     
+
+        <com.aircast.photobag.widget.FButton
+            android:id="@+id/button_dl_dialog_yes"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="@string/yes"
+            android:textColor="#fff"
+            app:shadowEnabled="false"
+            app:buttonColor="@color/flatbutton_default_color" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_add_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:text="@string/fv_mgs"
+        android:textSize="@dimen/kb_dialog_textsize" />
+
+    <com.aircast.photobag.widget.FButton
+        android:id="@+id/button_add_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/fv_add"
+        android:layout_marginBottom="20dip"
+        android:textColor="#fff"
+        app:shadowEnabled="false"
+        app:buttonColor="@color/flatbutton_default_color" 
+         />
+    
+   <TextView
+        android:id="@+id/title_remove_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="@string/fv_delete_mgs"
+        android:textSize="@dimen/kb_dialog_textsize" 
+        android:textColor="#fff"
+        android:visibility="gone"/>
+
+    <com.aircast.photobag.widget.FButton
+        android:id="@+id/button_remove_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/fv_delete"
+        android:visibility="gone"
+        android:layout_marginBottom="20dip"
+        android:textColor="#fff"
+        app:shadowEnabled="false"
+        app:buttonColor="@color/flatbutton_default_color"  />
+
+</LinearLayout>

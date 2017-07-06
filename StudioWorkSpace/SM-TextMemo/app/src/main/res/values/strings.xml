@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Text Memo</string>
+    <string name="hello_world">Action Bar</string>
+    <string name="note_list">Note List</string>
+    <string name="note_create_title">Note Title</string>
+    <string name="creat_info">Create Your Notes</string>
+
+    <dimen name="mrgn_left">15dp</dimen>
+
+    <!-- Action Bar action items -->
+    <string name="ActionBar_Title_Font">AvenirLTStd-Black.otf</string>
+    <string name="action_create_note">action_create_note</string>
+    <string name="note_title">Title : </string>
+    <string name="note_no_title">No Title</string>
+    <string name="save_menu_noteedit">Save</string>
+    <string name="action_forget_password">Forgot</string>
+    <string name="lock_info">Enter Password</string>
+    <string name="test_name1">Test(1)</string>
+    <string name="test_name2">Test(2)</string>
+    <string name="test_name3">Test(3)</string>
+    <string name="item_icon">Item_Icon</string>
+    <string name="item_name">Item_Name</string>
+    <string name="item_size">Item_Size</string>
+    <string name="item_date_time">Item_DateTime</string>
+    <string name="item_optional">Item_Optional</string>
+    <string name="show_line">Show Line Numbers</string>
+    <string name="change_pass">Change Password</string>
+    <string name="wifi_transfer">Wifi Transfer</string>
+      <string name="dropbox">Dropbox</string>
+    <string name="reset">Reset</string>
+    <string name="ok">OK</string>
+
+    <!-- Login Screen -->
+    <string name="enter_password">Enter Password</string>
+    <string name="password_length">Password Must Be 4 Digits</string>
+    <string name="invalid_Password">Invalid Password</string>
+    <string name="text_size_title">Select Text Size</string>
+    <string name="text_style_title">Select Text Font</string>
+
+    <!-- User Registration items -->
+    <string name="secret_question">Enter Secret Question</string>
+    <string name="secret_answer">Enter Answer</string>
+    <string name="secret_password">Enter Password(4 digits)</string>
+    <string name="secret_confirm_password">Confirm Password</string>
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on Color to apply</string>
+    <string name="txt_size">Text Size</string>
+    <string name="txt_style">Text Font</string>
+    <string name="color_title">Text Color</string>
+    <string name="color_summary">black color by default, set by reference</string>
+    <string name="back_title">Background Color</string>
+    <string name="back_summary">yellow color by default.</string>
+    <string name="search_hint">Enter Text Here</string>
+
+    <!-- App toast Msg -->
+      <string name="old_Password_Match">Old Password Doesn\'t Match</string>
+    <string name="empty_field">Password Field is empty</string>
+    <string name="Enter_4_Digits_Passowrd">Enter 4 Digits Passowrd</string>
+    <string name="Enter_4_Digits_Confirm_Password">Enter 4 Digits Confirm Password</string>
+    <string name="Password_Match">Password Doesn\'t Match</string>
+    <string name="Password_Change_successfully">Password Change Successfully!</string>
+    <string name="Your_password_is">Your password is %s</string>
+    <string name="Thanks">Thanks!</string>
+    <string name="Registration_Completed_successfully">Registration Completed Successfully!</string>
+    <string name="Note_Saved_successfully">Note Successfully Saved!</string>
+    <string name="Secret_Question_Empty">Secret Question can\'t be Empty</string>
+    <string name="Secret_Answer_Empty">Secret Answer can\'t be Empty</string>
+    <string name="Secret_questiony">Secret Question: %s</string>
+    <string name="note_toast_1">Please write something both in title and body!</string>
+    <string name="note_toast_2">Please write something in title!</string>
+    <string name="note_toast_3">Please write something in body!</string>
+    <string name="file_exists">File already exists.</string>
+    <string name="file_write_error">Note Write Error : </string>
+    <string name="mul_rename">Sorry, you cannot rename multiple file at a time.</string>
+    <string name="mul_share">Sorry, you cannot share multiple note at a time.</string>
+    <string name="rename_sucs">Note renamed successfully!</string>
+    <string name="title_name">Please put title name... </string>
+
+    <!-- Edit Text Hints -->
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="ans">answer...</string>
+    <string name="note_name_enter">Enter note name here</string>
+
+    <!-- Button, title text -->
+    <string name="register">Get Registered</string>
+    <string name="confirm">Confirm</string>
+    <string name="secrect_que">Secrect Question : </string>
+    <string name="forgot">Forgot Password</string>
+    <string name="password">Password is </string>
+    <string name="rename_note">Rename Note</string>
+    <string name="note_rename">Rename Your Note</string>
+    <string name="no_match_found">No Match Found</string>
+
+    <!-- purchase info -->
+    <string name="purchase_required">Purchase Required</string>
+    <string name="purch_msg">Please Upgrade Full Version to create unlimited number of Text Memo</string>
+    <string name="Purchasing_info">Purchasing info could not be retrieved</string>
+    <string name="have_upgrade">You have already Upgrade Text Memo! Enjoy recording unlimited text memo</string>
+    <string name="purchase_fail">Purchasing is failed at this time!</string>
+    <string name="file_sync">File Sync Successfully.</string>
+    <string name="dropbox_purchase_dialog">Sorry, Downloaded Files will cross App File Limit. Please Upgrade Full Version to create unlimited number of Text Memo</string>
+    <string name="dropbox_download_error">Sorry, Some error occured in file downloading, Please try again.</string>
+
+    <!-- User Registration items -->
+    <string name="registration">Registration</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="wrong_password">Answer does not matched</string>
+    <string name="registration_submit">Submit</string>
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="change_password">Change Password</string>
+
+    <!-- wifi transfer -->
+    <string name="wifi_state">WLAN Status</string>
+    <string name="no_file">No files</string>
+    <string name="no_wifi">No Wi-Fi network</string>
+    <string name="no_wifi_hint">No Wi-Fi network, press to check WiFi settings</string>
+    <string name="notif_server_starting">FTP Server started</string>
+    <string name="notif_title">FTP Server</string>
+    <string name="instruction">Type the following in PC browser</string>
+    <string name="instruction_pre">Start service to enable WiFi File Sharing</string>
+    <string name="start_server">Start Service</string>
+    <string name="stop_server">Stop Service</string>
+    <string name="storage_warning">External storage is not available or cannot be read</string>
+
+    <string-array name="listentries">
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+    </string-array>
+    <string-array name="listvalues">
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+    </string-array>
+
+    <string name="button1_large_text">1</string>
+    <string name="button2_large_text">2</string>
+    <string name="button2_small_text">ABC</string>
+    <string name="button3_large_text">3</string>
+    <string name="button3_small_text">DEF</string>
+    <string name="button4_large_text">4</string>
+    <string name="button4_small_text">GHI</string>
+    <string name="button5_large_text">5</string>
+    <string name="button5_small_text">JKL</string>
+    <string name="button6_large_text">6</string>
+    <string name="button6_small_text">MNO</string>
+    <string name="button7_large_text">7</string>
+    <string name="button7_small_text">PQRS</string>
+    <string name="button8_large_text">8</string>
+    <string name="button8_small_text">TUV</string>
+    <string name="button9_large_text">9</string>
+    <string name="button9_small_text">WXYZ</string>
+    <string name="button11_large_text">0</string>
+    <string name="pin_code_forgot_text">Forgot?</string>
+    <string name="pin_code_step_disable">Disable %d-digit Pincode</string>
+    <string name="pin_code_step_create">Create a %d-digit Pincode</string>
+    <string name="pin_code_step_change">Enter your current %d-digit Pincode</string>
+    <string name="pin_code_step_unlock">Enter your %d-digit Pincode</string>
+    <string name="pin_code_step_enable_confirm">Confirm your %d-digit Pincode</string>
+    <string name="delete_text">Want to delete ?</string>
+    <string name="by_date">By Date</string>
+    <string name="by_title">By Title</string>
+    <string name="by_size">By Size</string>
+
+    <string-array name="color_array">
+        <item>#000000</item>
+        <item>#00002c</item>
+        <item>#2b2b2b</item>
+        <item>#4a4a4a</item>
+        <item>#898c91</item>
+        <item>#989c9f</item>
+        <item>#dcdddf</item>
+        <item>#1f62f1</item>
+        <item>#1c78f3</item>
+        <item>#007aff</item>
+        <item>#5855d6</item>
+        <item>#6854da</item>
+        <item>#34aadc</item>
+        <item>#1ad6fc</item>
+        <item>#d1effa</item>
+        <item>#2a6f31</item>
+        <item>#246610</item>
+        <item>#0bd319</item>
+        <item>#5cd427</item>
+        <item>#3bff00</item>
+        <item>#00fa9a</item>
+        <item>#a5e786</item>
+        <item>#e0f7da</item>
+        <item>#4ed964</item>
+        <item>#8ed379</item>
+        <item>#89fb70</item>
+        <item>#277574</item>
+        <item>#73d4b4</item>
+        <item>#54ecc6</item>
+        <item>#8e3606</item>
+        <item>#80044a</item>
+        <item>#ff0000</item>
+        <item>#ee2f2f</item>
+        <item>#d54b4f</item>
+        <item>#ff2c3b</item>
+        <item>#ff2c55</item>
+        <item>#ff398a</item>
+        <item>#c543fb</item>
+        <item>#ce6ce7</item>
+        <item>#c86edf</item>
+        <item>#ac80c5</item>
+        <item>#ee4db5</item>
+        <item>#f992fb</item>
+        <item>#e4b7f0</item>
+        <item>#ffd3e0</item>
+        <item>#8b67a5</item>
+        <item>#b4917e</item>
+        <item>#d7d1c5</item>
+        <item>#fe5e3a</item>
+        <item>#ff4a81</item>
+        <item>#ff6a6a</item>
+        <item>#ff6434</item>
+        <item>#ff7256</item>
+        <item>#ff8247</item>
+        <item>#ff9501</item>
+        <item>#fecd04</item>
+        <item>#ffcc00</item>
+        <item>#ffda4b</item>
+        <item>#fcff00</item>
+        <item>#fff08c</item>
+        <item>#f7f6b6</item>
+        <item>#ffffff</item>
+    </string-array>
+    <string-array name="text_font">
+        <item>DEFAULT</item>
+        <item>MONOSPACE</item>
+        <item>SANS_SERIF</item>
+        <item>SERIF</item>
+        <item>helvetica-bold</item>
+        <item>HelveticaNeue_0</item>
+        <item>HelveticaNeue-Bold</item>
+        <item>HelveticaNeueBoldItalic</item>
+        <item>HelveticaNeueItalic</item>
+        <item>HelveticaNeueLight</item>
+        <item>HelveticaNeueLightItalic</item>
+        <item>HelveticaNeueLTPro-Lt</item>
+        <item>HelveticaNeueLTStd-BdCn</item>
+        <item>guilty_treasure</item>
+        <item>Montserrat-Black</item>
+        <item>Montserrat-Bold</item>
+        <item>Montserrat-ExtraBold</item>
+        <item>Montserrat-Hairline</item>
+        <item>Montserrat-Light</item>
+        <item>Montserrat-Regular</item>
+        <item>Montserrat-SemiBold</item>
+        <item>Montserrat-UltraLight</item>
+        <item>SinkinSans-100Thin</item>
+        <item>SinkinSans-300Light</item>
+    </string-array>
+
+</resources>

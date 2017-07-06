@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainpage_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/search_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+       >
+
+        <RelativeLayout
+            android:id="@+id/textfiled_content"
+            android:layout_width="68dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/button_search_password"
+            android:background="@drawable/search_content_background"
+            android:padding="5dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/editText_search_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="left"
+                android:background="#00000000"
+                android:drawableLeft="@drawable/a_open_search"
+                android:drawablePadding="10dp"
+                android:gravity="left"
+                android:hint="@string/kb_search_hint"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/textView_search_dismiss"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/kb_edittext_clear_button"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+      
+
+        <com.aircast.photobag.widget.FButton
+            android:id="@+id/button_search_password"
+            android:layout_width="95dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/search_button_text"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:buttonColor="@color/flatbutton_default_color"
+            app:shadowEnabled="false"/>
+           <!--  app:lib_buttonColor="@color/flatbutton_default_color"
+            app:lib_shadowEnabled="false" /> -->
+    </RelativeLayout>
+
+        
+     <TextView
+        android:id="@+id/kb_search_hearderView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray_dark"
+        android:paddingLeft="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/white"
+        android:textSize="10sp" /> 
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/kb_search_hearderView"
+        android:background="#D6DDD4" />
+
+    <LinearLayout
+        android:id="@+id/pull_to_refresh_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/view1"
+        android:orientation="vertical" >
+            
+            <ProgressBar
+            android:id="@+id/progressBar_refresh"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:indeterminateDrawable="@drawable/image_for_rotation" />
+
+            <!-- <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/listView_common"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:layout_marginTop="5dp"
+                 android:overScrollMode="never"
+                android:cacheColorHint="#0000"
+                android:divider="#00000000"
+                android:dividerHeight="0dp"
+                android:fadingEdgeLength="0dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+            </com.handmark.pulltorefresh.library.PullToRefreshListView> -->
+            
+            <!--  <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/listView_common"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_marginTop="5dp"
+		        android:cacheColorHint="#00000000"
+		        android:divider="#19000000"
+		        android:dividerHeight="0dp"
+                android:fadingEdgeLength="0dp"
+		        android:fastScrollEnabled="false"
+		        android:footerDividersEnabled="false"
+		        android:headerDividersEnabled="false"
+		        android:smoothScrollbar="true">
+            </com.handmark.pulltorefresh.library.PullToRefreshListView> -->
+            
+             <com.handmark.pulltorefresh.library.PullToRefreshListView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/listView_common"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_marginTop="5dp"
+		        android:cacheColorHint="#00000000"
+		        android:divider="#00000000"
+		        android:dividerHeight="0dp"
+                android:fadingEdgeLength="0dp"
+                android:focusable="true"
+		        android:fastScrollEnabled="false"
+		        android:focusableInTouchMode="true"
+		        android:footerDividersEnabled="false"
+		        android:headerDividersEnabled="false"
+		        android:smoothScrollbar="true" 
+		        ptr:ptrMode="pullFromEnd"
+				ptr:ptrHeaderTextColor="@color/flatbutton_default_color"
+				ptr:ptrHeaderSubTextColor="@color/flatbutton_default_color">
+            </com.handmark.pulltorefresh.library.PullToRefreshListView>
+        </LinearLayout>
+
+</RelativeLayout>

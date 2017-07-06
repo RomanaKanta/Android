@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- hdpi -->
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">0dp</dimen>
+    <dimen name="tost_padding">20dp</dimen>
+    <dimen name="togglebutton_width">80dp</dimen>
+    <dimen name="togglebutton_height">40dp</dimen>
+    <dimen name="pager_margin">5dp</dimen>
+    <dimen name="radio_button_conner_radius">5dp</dimen>
+    <dimen name="memorize_button_ht_wt">36dp</dimen>
+    <dimen name="memorize_button_top_margin">60dp</dimen>
+    <dimen name="memorize_button_left_margin">15dp</dimen>
+    <dimen name="memorize_button_margin">100dp</dimen>
+    <dimen name="action_item_margin">30dp</dimen>
+    <dimen name="action_item_ht">100dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_90">90dp</dimen>
+    <dimen name="game_button_wt">150dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="game_button_ht">35dp</dimen>
+    <dimen name="grid_image_ht">52dp</dimen>
+    <dimen name="grid_image_wt">69dp</dimen>
+    <dimen name="info_margin">25dp</dimen>
+    <dimen name="game_padding">2dp</dimen>
+    <dimen name="title_size">14sp</dimen>
+
+</resources>

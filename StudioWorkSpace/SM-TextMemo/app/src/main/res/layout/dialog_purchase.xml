@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <com.smartmux.textmemo.widget.AppTextViewAverinBlack
+        android:id="@+id/custom_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dialog_title_mrgn"
+        android:layout_marginTop="@dimen/dialog_title_top_mrgn"
+        android:gravity="center"
+        android:text="@string/purchase_required"
+        android:textColor="@color/app_main_color"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/app_main_color" />
+
+    <com.smartmux.textmemo.widget.AppTextViewAverinLight
+        android:id="@+id/custom_dialog_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dialog_title_mrgn"
+        android:layout_marginTop="@dimen/dialog_title_mrgn"
+        android:text="@string/purch_msg"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+ />
+
+</LinearLayout>

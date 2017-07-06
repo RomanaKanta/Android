@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smartmux.filevault" >
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO"/>
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".ApplicationClass"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme">
+
+        <activity
+            android:name="com.smartmux.filevault.SplashScreen"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.smartmux.filevault.RegistrationActivity"
+            android:windowSoftInputMode="stateUnchanged"
+
+            >
+        </activity>
+
+        <activity android:name="com.smartmux.filevault.PasswordChangeActivity" >
+        </activity>
+        <activity android:name="com.smartmux.filevault.wifitransfer.ServerControlActivity" >
+        </activity>
+        <activity android:name="com.smartmux.filevault.dropbox.DropboxActivity" >
+        </activity>
+        <activity
+            android:name="com.smartmux.filevault.SettingActivity" >
+        </activity>
+        <activity
+            android:name="com.smartmux.filevault.FolderListActivity" >
+        </activity>
+        <activity
+            android:name="com.smartmux.filevault.LoginWindowActivity"
+            >
+        </activity>
+        <activity
+            android:name="com.smartmux.filevault.SubFolderListActivity" >
+        </activity>
+
+        <activity
+            android:name="com.smartmux.filevault.note.NoteListActivity" >
+        </activity>
+        <activity
+            android:name="com.smartmux.filevault.note.NoteEditor"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name="com.smartmux.filevault.audio.AudioListActivity" >
+        </activity>
+        <activity
+            android:name="com.smartmux.filevault.audio.PlayAudioActivity" >
+        </activity>
+
+        <activity
+            android:name="com.smartmux.filevault.audio.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.smartmux.filevault.video.VideoListActivity" >
+        </activity>
+        <activity
+            android:name="com.smartmux.filevault.photo.PhotoListActivity" >
+        </activity>
+        <activity
+            android:name="com.smartmux.filevault.photo.SMImageViewerActivity" >
+        </activity>
+        <activity android:name="com.smartmux.filevault.photo.CustomGalleryActivity" >
+            <intent-filter>
+                <action android:name="ACTION_MULTIPLE_IMAGE_PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.smartmux.filevault.video.VideoViewActivity" >
+        </activity>
+
+        <service android:name="com.smartmux.filevault.wifitransfer.FTPServerService" />
+
+
+
+        <!-- dropbox -->
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask" >
+            <intent-filter>
+
+                <!-- Change this to be db- followed by your app key -->
+                <data android:scheme="db-sjyqrsbp9fsegnl" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

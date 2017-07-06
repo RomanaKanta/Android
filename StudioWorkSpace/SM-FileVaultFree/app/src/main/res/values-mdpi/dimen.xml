@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="actionbar_title_size">18sp</dimen>
+    <dimen name="actionbar_backtxt_size">13sp</dimen>
+    <dimen name="actionbar_right_btn_size">15sp</dimen>
+    <dimen name="bitmap_size">40dp</dimen>
+    <dimen name="photo_width">100dp</dimen>
+    <dimen name="photo_height">100dp</dimen>
+    <dimen name="password_text">39sp</dimen>
+
+</resources>

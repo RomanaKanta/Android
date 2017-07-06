@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!-- android:layout_width="@dimen/list_item_wt" -->
+<!-- android:layout_height="match_parent" -->
+<!-- android:background="#373737" > -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_layout"
+    android:layout_width="@dimen/list_item_wt"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#373737"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.smartmux.fotolibs.widget.AppTextView
+        android:id="@+id/text_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/text_icon"
+        android:layout_width="@dimen/logo_ht"
+        android:layout_height="@dimen/logo_ht"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/filter_tool" />
+
+    <com.smartmux.fotolibs.widget.AppTextView
+        android:id="@+id/text_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:textColor="@color/pure_white"
+        android:textSize="@dimen/row_text_size" />
+
+</LinearLayout> <!-- </RelativeLayout> -->

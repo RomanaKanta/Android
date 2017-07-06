@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_theme">#D00A19</color>
+    <color name="app_background">#F5F5F5</color>
+    <color name="app_text_color">#474747</color>
+    <color name="page_indicator">#C0202020</color>
+    <color name="busy_indicator">#C0202020</color>
+    <color name="header_color">#C6000A</color>
+    <color name="header_text_color">#FFFFFF</color>
+    <color name="search_bg">#BDBDBD</color>
+
+</resources>

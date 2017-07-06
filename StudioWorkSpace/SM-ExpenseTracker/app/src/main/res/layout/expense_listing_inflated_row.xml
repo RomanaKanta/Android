@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/**
+ * Copyright (c) 2012 Vinayak Solutions Private Limited 
+ * See the file license.txt for copying permission.
+*/     
+ -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    >   
+    
+  	<!-- type of expense icon -->
+  	<com.vinsol.expensetracker.utils.ImageViewExtended
+  		android:id="@+id/row_imageview"
+		android:layout_width="64dp"
+  		android:layout_height="59dp"
+  		android:background="@drawable/listing_row_states"
+ 		android:scaleType="centerInside"
+ 		android:padding="2dp" />
+  	
+  	<ImageView 
+ 		android:background="@drawable/horizontal_divider_list"
+ 		android:layout_width="wrap_content"
+ 		android:layout_height="fill_parent"
+		android:scaleType="fitXY" 
+		android:layout_toRightOf="@id/row_imageview"
+		android:id="@+id/row_imageview_divider" />
+	
+  	<RelativeLayout
+  	    android:layout_width="fill_parent"
+  	    android:layout_height="59dp"
+    	android:background="@drawable/listing_row_states"
+   	    android:layout_toRightOf="@id/row_imageview_divider"
+    	android:id="@+id/row_listview"
+    	>
+		
+	  	<!-- description and time-location relative layout -->
+	   	<RelativeLayout
+	   	    android:id="@+id/row_relativelayout_tag_location"
+	   	    android:layout_width="fill_parent"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_marginLeft="10dp"
+	   	    android:layout_marginRight="10dp"
+	   	    android:layout_toLeftOf="@+id/row_amount"
+	   	    >
+	   		<!-- description -->
+	   	    <TextView
+	   	        android:id="@+id/row_tag"
+	   	        android:layout_width="fill_parent"
+	   	        android:layout_height="wrap_content"
+	   	        android:layout_alignParentTop="true"
+	   	        android:textColor="@color/black"
+	           	android:textSize="16sp"
+	   	        android:singleLine="true"
+	   	        android:ellipsize="end"
+	   	        android:layout_marginTop="3dip" />
+	   	    
+	   	    <!-- time and location -->    
+	   	    <TextView 
+	   	        android:id="@+id/row_location_time"
+	   	        android:layout_width="fill_parent"
+	   	        android:layout_height="wrap_content"
+	   	        android:textSize="14sp"
+	   	        android:textColor="@color/grey"
+	   	        android:text="@string/unknown_location"
+	   	        android:singleLine="true"
+	   	        android:ellipsize="end"
+	   	        android:layout_below="@id/row_tag"
+	   	        android:layout_marginTop="5dip" />
+	   	    
+	   	</RelativeLayout>
+	   	    
+	   	<!-- favorite -->
+	   	<ImageView 
+	  		android:id="@+id/row_favorite_icon"
+	       	android:layout_width="wrap_content"
+	       	android:layout_height="wrap_content"
+	       	android:visibility="invisible"
+	       	android:layout_alignParentTop="true"
+	       	android:layout_alignParentRight="true"
+	       	android:layout_marginRight="5dp"
+	       	android:src="@drawable/listing_favorite_icon" />
+		
+		<!-- amount -->
+	    <TextView
+	        android:id="@id/row_amount"
+	        android:layout_width="56dp"
+	        android:layout_height="wrap_content"
+	    	android:layout_alignParentRight="true"
+	    	android:gravity="right"    
+	        android:maxLength="14"
+	        android:maxLines="2"
+	        android:textColor="@color/black"
+	        android:textStyle="bold"
+	        android:layout_marginRight="7dip"
+	        android:layout_centerVertical="true" />
+	    
+	</RelativeLayout>
+</RelativeLayout>

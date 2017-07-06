@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Carousel ViewPager</string>
+    <string name="title_activity_main">Multi ViewPager One</string>
+    <string name="item">Page %d</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+
+<android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragment_sticker_listview"
+        android:layout_width="match_parent"
+       android:layout_height="@dimen/bottom_ht"
+        android:layout_alignParentBottom="true"
+        android:background="@color/header_bg"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/content_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fragment_sticker_listview"
+        android:layout_centerInParent="true" >
+
+
+        <ImageView
+            android:id="@+id/sticker_Imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name" />
+
+    </RelativeLayout>
+
+ 
+
+</RelativeLayout>

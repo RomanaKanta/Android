@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_bg"
+    >
+
+    <!--<com.smartmux.sm_eproduct.widget.PagerContainer-->
+        <!--android:id="@+id/pager_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--&gt;-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="@dimen/pro_pager_wt"
+            android:layout_height="@dimen/pro_pager_ht"
+            android:layout_gravity="center_horizontal" />
+
+        <!--<cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager-->
+        <!--android:id="@+id/view_pager"-->
+        <!--android:layout_width="@dimen/pager_wt"-->
+        <!--android:layout_height="@dimen/pager_ht"-->
+        <!--android:layout_gravity="center_horizontal"  />-->
+
+    <!--</com.smartmux.sm_eproduct.widget.PagerContainer>-->
+
+
+    <RelativeLayout
+        android:id="@+id/viewPagerIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_ht"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/viewPagerCountDots"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+
+</LinearLayout>

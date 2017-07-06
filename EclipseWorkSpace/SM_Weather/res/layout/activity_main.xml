@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/bottomContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+
+        <com.smartmux.weatherapp.HorizoantalListView
+            android:id="@+id/hlvSimpleList"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomContent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <!-- Image weather condition -->
+
+        <com.smartmux.widget.AppTextView
+            android:id="@+id/temp"
+            style="@style/tempStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff" />
+
+        <RelativeLayout
+            android:id="@+id/weather_summery_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/temp"
+            android:layout_centerHorizontal="true"  
+            android:visibility="invisible"  >
+
+            <com.smartmux.widget.AppTextView
+                android:id="@+id/wind"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="12dp"
+                android:drawableTop="@drawable/wind_tmp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+               />
+
+            <com.smartmux.widget.AppTextView
+                android:id="@+id/Humidity"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="12dp"
+                android:drawableTop="@drawable/humidity_temp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <com.smartmux.widget.AppTextView
+                android:id="@+id/pressure"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="12dp"
+                android:drawableTop="@drawable/atmospheric_pressure_temp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+           
+
+            <com.smartmux.widget.AppTextView
+                android:id="@+id/cityText"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:paddingLeft="15dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

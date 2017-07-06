@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- D-01 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"    
+    android:id="@+id/mainScreen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    tools:context=".activity.PBChangeIntervalTimeActivity" >
+
+    <LinearLayout
+        android:id="@+id/moveableView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/actionBar"
+        android:layout_marginTop="@dimen/pb_timer_setting_layout_margin_top"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textviewTimeSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/gray_deep_dark" />
+
+        <TextView
+            android:id="@+id/textviewTimeDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/gray_deep_dark" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/password_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/anchorView"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/anchorView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="-10dp"
+                android:background="@drawable/round_corner_background_light"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/textPassword"
+                    style="@style/TextShadowLight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="your password"
+                    android:textSize="@dimen/pb_upload_confirm_tv_medium"
+                    android:textColor="@color/gray_deep_dark" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/kumaLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password_box"
+                android:layout_marginTop="-30dp"
+                android:layout_toLeftOf="@+id/password_box"
+                android:gravity="bottom"
+                android:src="@drawable/send_01_kuma_flipped" />
+
+            <ImageView
+                android:id="@+id/kumaRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/kumaLeft"
+                android:layout_toRightOf="@+id/password_box"
+                android:gravity="bottom"
+                android:src="@drawable/send_01_kuma" />
+
+            <LinearLayout
+                android:id="@+id/anchorView"
+                android:layout_width="230dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/kumaLeft"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/pb_bg_panel_tv"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/TextShadowLight"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/screen_confirm_password_free_time"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/pb_upload_confirm_tv_small" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_free_time"
+                    style="@style/TextShadowLight"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="00:00:00"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/pb_upload_confirm_tv_small" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp" >
+
+            <TextView
+                android:id="@+id/textviewHoneyInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageSquirrel"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textStyle="bold" 
+                android:textColor="@color/gray_deep_dark"/>
+
+            <ImageView
+                android:id="@+id/imageSquirrel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/send_01_squirrel" />
+        </RelativeLayout>
+
+        <!-- <Button
+            android:id="@+id/buttonChangeInterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_shape_brown"
+            android:onClick="onClick"
+            android:text="@string/pb_send_interval_change_interval"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" /> -->
+            
+        <com.aircast.photobag.widget.FButton
+           android:id="@+id/buttonChangeInterval"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClick"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/pb_send_interval_change_interval"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:buttonColor="#935243"
+            app:shadowEnabled="false" />    
+
+        <TextView
+            android:id="@+id/textviewCoution"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/gray_deep_dark" />
+    </LinearLayout>
+
+    <include layout="@layout/iphone_time_picker" />
+
+    <com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/actionBar"
+        style="@style/pb_actionbar"
+        android:layout_alignParentTop="true" >
+    </com.aircast.photobag.widget.actionbar.ActionBar>
+
+</RelativeLayout>

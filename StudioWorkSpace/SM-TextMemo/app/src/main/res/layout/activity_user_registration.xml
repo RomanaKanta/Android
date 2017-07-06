@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/user_secret_question"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edit_text_ht"
+        android:layout_marginBottom="@dimen/reg_edit_bottom_mrgn"
+        android:layout_marginLeft="@dimen/reg_edit_left_mrgn"
+        android:layout_marginRight="@dimen/reg_edit_left_mrgn"
+        android:layout_marginTop="@dimen/reg_edit_top_mrgn"
+        android:background="@drawable/password_field_backgroud"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hint="@string/secret_question"
+        android:maxLines="1"
+        android:textColor="@color/text_color" />
+
+    <EditText
+        android:id="@+id/user_secret_answer"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edit_text_ht"
+        android:layout_marginBottom="@dimen/reg_edit_bottom_mrgn"
+        android:layout_marginLeft="@dimen/reg_edit_left_mrgn"
+        android:layout_marginRight="@dimen/reg_edit_left_mrgn"
+        android:background="@drawable/password_field_backgroud"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hint="@string/secret_answer"
+        android:maxLines="1"
+        android:textColor="@color/text_color" />
+
+    <EditText
+        android:id="@+id/user_secret_password"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edit_text_ht"
+        android:layout_marginBottom="@dimen/reg_edit_bottom_mrgn"
+        android:layout_marginLeft="@dimen/reg_edit_left_mrgn"
+        android:layout_marginRight="@dimen/reg_edit_left_mrgn"
+        android:background="@drawable/password_field_backgroud"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hint="@string/secret_password"
+        android:inputType="numberDecimal|numberSigned"
+        android:maxLength="4"
+        android:maxLines="1"
+        android:textColor="@color/text_color" />
+
+    <EditText
+        android:id="@+id/user_secret_confirm_password"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edit_text_ht"
+        android:layout_marginBottom="@dimen/reg_edit_bottom_mrgn"
+        android:layout_marginLeft="@dimen/reg_edit_left_mrgn"
+        android:layout_marginRight="@dimen/reg_edit_left_mrgn"
+        android:background="@drawable/password_field_backgroud"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hint="@string/secret_confirm_password"
+        android:inputType="numberDecimal|numberSigned"
+        android:maxLength="4"
+        android:maxLines="1"
+        android:textColor="@color/text_color" />
+
+    <Button
+        android:id="@+id/user_registration_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edit_text_ht"
+        android:layout_marginLeft="@dimen/reg_edit_left_mrgn"
+        android:layout_marginRight="@dimen/reg_edit_left_mrgn"
+        android:layout_marginTop="@dimen/button_top_mrgn"
+        android:background="@drawable/button_corner"
+        android:text="@string/registration_submit"
+        android:textColor="#fff" />
+
+</LinearLayout>

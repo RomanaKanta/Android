@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <FrameLayout
+        android:id="@+id/catagory_layout"
+        style="?android:attr/buttonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/round_corner"
+        android:padding="5dp">
+
+        <com.smartux.photocollage.widget.AppButtonView
+            android:id="@+id/catarogy_btn"
+            style="@style/captionOnly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="5dp"
+            android:gravity="center"/>
+    </FrameLayout>
+
+
+   <!-- <com.smartux.photocollage.widget.AppButtonView
+        android:id="@+id/sticker_catagory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Emoticon"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_emoticon"
+        android:padding="5dp"
+        android:background="@drawable/round_corner"
+        />-->
+
+</LinearLayout>

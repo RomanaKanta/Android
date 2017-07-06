@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/**
+ * Copyright (c) 2012 Vinayak Solutions Private Limited 
+ * See the file license.txt for copying permission.
+*/     
+ -->
+<resources>
+    <!-- When launching the camera app first time, we will set the picture
+         size to the first one in the list that is also supported by the
+         driver -->
+    <string-array name="pref_camera_picturesize_entryvalues" translatable="false">
+        <item>2592x1944</item>
+        <item>2592x1936</item>
+        <item>2560x1920</item>
+        <item>2048x1536</item>
+        <item>1600x1200</item>
+        <item>1280x960</item>
+        <item>1024x768</item>
+        <item>640x480</item>
+        <item>320x240</item>
+    </string-array>
+
+    <!-- Report Spinner Period -->
+    <string-array name="spinner_period">
+        <item>1 Month</item>
+        <item>1 Quarter</item>
+        <item>Half Year</item>
+        <item>1 Year</item>
+        <item>Choose Period</item>
+    </string-array>
+    
+    <!-- Report Spinner Type -->
+    <string-array name="spinner_type">
+        <item>PDF</item>
+        <item>CSV</item>
+    </string-array>
+    
+    <!-- Context Menu -->
+    <string-array name="listcontextmenu">
+        <item>Edit</item>
+        <item>Delete</item>
+    </string-array>
+</resources>

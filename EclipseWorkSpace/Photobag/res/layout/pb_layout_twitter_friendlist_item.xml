@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/pb_twitter_item_profile_icon_id"
+        android:layout_width="@dimen/actionbar_height"
+        android:layout_height="@dimen/actionbar_height"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:orientation="vertical" android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/pb_twitter_item_name_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/main_text_color"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pb_twitter_item_screenname_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\@screenname"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/main_text_color" />
+    </LinearLayout>
+	<ImageView
+        android:id="@+id/pb_twitter_item_mail_icon_id"
+        android:layout_width="@dimen/actionbar_height"
+        android:layout_height="@dimen/actionbar_height"
+        android:scaleType="centerInside"
+        android:src="@drawable/twitter_mail" />
+</LinearLayout>

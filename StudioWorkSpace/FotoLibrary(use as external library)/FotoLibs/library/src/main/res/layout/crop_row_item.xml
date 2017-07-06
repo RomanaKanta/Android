@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/crop_row_layout"
+    android:layout_width="@dimen/list_item_wt"
+    android:layout_height="match_parent"
+    android:background="#373737" >
+
+    <ImageView
+        android:id="@+id/crop_row_image"
+        android:layout_width="@dimen/list_image_wt"
+        android:layout_height="@dimen/list_image_ht"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/filter_tool" />
+
+    <com.smartmux.fotolibs.widget.AppTextView
+        android:id="@+id/crop_row_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="1dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="@dimen/row_text_size" />
+
+</RelativeLayout>

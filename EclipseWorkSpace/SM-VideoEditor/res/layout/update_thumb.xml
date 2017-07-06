@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+         <include
+        android:id="@+id/topbar"
+        layout="@layout/top_bar" />
+    -->
+
+   <!--  <FrameLayout
+        android:id="@+id/videoListLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25" 
+        android:background="#000000"
+        android:visibility="gone">
+
+        <com.smartmux.videoeditingapp.HorizoantalListView
+            android:id="@+id/hlvSimpleList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@drawable/information_bg"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="30dp" >
+        </com.smartmux.videoeditingapp.HorizoantalListView>
+
+        <com.smartmux.videoeditingapp.seekbar.RangeSeekBar
+            android:id="@+id/seek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout> -->
+
+    <RelativeLayout
+        android:id="@+id/videoFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="75" >
+
+        <FrameLayout
+            android:id="@+id/videodisplayLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_margin="30dp"
+            android:background="#ffffff" >
+
+            <com.smartmux.videorecorder.video.AdaptiveSurfaceView
+                android:id="@+id/videoView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:text="&lt;"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/update_thumb"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="Update Thumb" 
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

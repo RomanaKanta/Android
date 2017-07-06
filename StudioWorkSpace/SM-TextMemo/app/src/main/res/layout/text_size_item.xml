@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+  
+
+    <TextView
+        android:id="@+id/textsize_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/chk_box_txtsize"
+        android:padding="10dp"
+        android:textColor="#6d4f42"
+        android:text="@string/purch_msg"
+        android:singleLine="true"
+        android:textSize="16sp"
+         />
+    
+      <CheckBox
+        android:id="@+id/chk_box_txtsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:button="@drawable/custom_checkbox" />
+
+</RelativeLayout>

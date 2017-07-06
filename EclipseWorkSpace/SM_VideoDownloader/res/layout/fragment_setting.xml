@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#241E2B">
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#241E2B"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_first_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#241E2B"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2F2935"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10" >
+
+            <TextView
+                android:id="@+id/textView_title_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/action_settings"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView_edit_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_5"
+                android:text="@string/edit"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="#211A26"
+            android:padding="@dimen/margin_20" >
+
+            <TextView
+                android:id="@+id/textView_setting_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/setting_play_bg"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton_settings_bg"
+                android:layout_width="@dimen/togglebutton_width"
+                android:layout_height="@dimen/togglebutton_height"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/toggle_background_selector"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_setting_browser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="#211A26"
+            android:padding="@dimen/margin_20" >
+
+            <TextView
+                android:id="@+id/textView_setting_browser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_browser_page"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView_setting_browser_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_setting_browser"
+                android:text="Browser Url"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff"
+                android:layout_marginRight="@dimen/icon_ht_wt_40" />
+
+            <ImageView
+                android:id="@+id/image_setting_browser_next"
+                android:layout_width="@dimen/icon_ht_wt"
+                android:layout_height="@dimen/icon_ht_wt"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/right_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_setting_download"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="#211A26"
+            android:padding="@dimen/margin_20" >
+
+            <TextView
+                android:id="@+id/textView_setting_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_dwn_file"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:id="@+id/image_setting_download_next"
+                android:layout_width="@dimen/icon_ht_wt"
+                android:layout_height="@dimen/icon_ht_wt"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/right_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+             android:id="@+id/layout_setting_security"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="#211A26"
+            android:padding="@dimen/margin_20" >
+
+            <TextView
+                android:id="@+id/textView_setting_security"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/setting_security"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton_settings_security"
+                android:layout_width="@dimen/togglebutton_width"
+                android:layout_height="@dimen/togglebutton_height"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/toggle_background_selector"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView_app_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_15"
+            android:text="@string/app_version"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textView_disk_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_5"
+            android:text="@string/disk_space"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textView_free_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_5"
+            android:text="@string/free_space"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

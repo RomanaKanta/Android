@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bangla Music</string>
+    <string name="menu_settings">Settings</string>
+    <string name="musicListTitle">Music Album List</string>
+    <string name="aggrement">Agreement</string>
+    <string name="playing">Now Playing:</string>
+   <string name="initial_Time">0:0</string>
+    <string name="aggrementEngTitle">Copyright and Disclaimer Related Infromation</string>
+    <string name="aggrementEngFirst">All of the contents provided in this app are hyperlinks from P2P applications and programs. No streams are created or produced by us. Our job here is to provide simple hyperlinks and easy guidance for users to find P2P channels and programs. We do not create any streams here or anywhere! We do not take any liabilities for any kind of copyright violations by the users.</string>
+    <string name="aggrementEngSecond">If you think that any streaming links that are shared in this app is infringing some copyright issues, then contact the respective broadcaster and owner. We are just sharing links. We shall not be held responsible for any consequences. If you have any legal issues please contact appropriate media file owners/hosts.</string>                         
+    
+    <string name="aggrementBengTitle">স্বত্তাধিকার ও দায়মুক্তি সম্পর্কিত তথ্যাদি</string>
+    <string name="aggrementBengFirst">এই অ্যাপে ব্যবহৃত সকল কন্টেন্টস P2P অ্যাপ্লিকেশনস ও প্রোগ্রাম থেকে সংগৃহীত হাইপারলিঙ্কস। এইখানে ব্যবহৃত কোন স্ট্রিমই আমাদের সৃষ্ট নয়। এইখানে আমাদের কাজ হলো আমাদের অ্যাপ ব্যবহারকারীদের জন্য সহজ ও সাধারণ হাইপারলিঙ্কস দিয়ে তাদের P2P চ্যানেল ও প্রোগ্রাম খুঁজে পেতে সহায়তা করা। আমরা কোন প্রকার স্ট্রিম তৈরি করি না। ব্যবহারকারীর দ্বারা কোনো ধরনের কপিরাইট লংঘনের জন্য আমরা কোনোভাবেই দায়ী থাকবো না।</string>
+    <string name="aggrementBengSecond">আপনার কাছে যদি মনে হয় আমাদের অ্যাপ্লিকেশনে ব্যবহৃত কোন স্ট্রিমিং লিঙ্ক কোন ধরনের কপিরাইট আইন লংঘন করেছে তাহলে যথাযথ কর্তৃপক্ষ ও স্বত্বাধিকারীকে অবহিত করুন। আমরা শুধুমাত্র লিঙ্ক শেয়ার করছি। কোন কিছুর জন্য আমরা দায়ী থাকবো না। আপনার যেকোন ধরনের আইনি সমস্যার জন্য মিডিয়া ফাইলের যথাযথ কর্তৃপক্ষ ও স্বত্বাধিকারীদের সাথে যোগাযোগ করুন।</string>
+    <string name="mainBelowTitle">Press List Button for Music Album List</string>
+</resources>

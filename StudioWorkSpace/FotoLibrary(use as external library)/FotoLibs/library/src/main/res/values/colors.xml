@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="white">#fafafa</color>
+
+    <!-- AlertDIalog -->
+    <color name="folating_expand_transparent_background"> #90000000</color>
+
+    <!-- listview background -->
+    <color name="pure_white">#FFFFFF</color>
+    <color name="color_1"> #D10042</color>
+    <!-- <color name="color_2"> #37259D</color> -->
+    <!-- <color name="color_3"> #DB4D01</color> -->
+    <!-- <color name="color_4"> #29A019</color> -->
+    <!-- <color name="color_5">#4F2F9E</color> -->
+    <!-- <color name="color_6"> #EF5800</color> -->
+    <color name="header_bg">#373737</color>
+    <color name="total_tranoparent_bg">#00000000</color>
+    <color name="menu_fragment_background">#B3000000</color>
+    <color name="black">#FF000000</color>
+
+    <!-- crop -->
+    <color name="highlight">#f3f3f3</color>
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+
+    <!-- Sticker / Text -->
+
+    <color name="red_e73a3d">#e73a3d</color>
+    <color name="grey_8b8b8b">#8b8b8b</color>
+
+    <!-- character picker -->
+    <color name="j_wheel_timebtn_nor">#54a3fa</color>
+    <color name="j_wheel_timebtn_pre">#CCCCCC</color>
+
+</resources>

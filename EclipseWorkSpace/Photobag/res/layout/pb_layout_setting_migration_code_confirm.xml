@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- D-input invite code -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/headerbar"
+        style="@style/pb_actionbar" />
+    
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/pb_setting_migration_code_layout_margin_top"
+        android:paddingLeft="40.0dp"
+        android:paddingRight="40.0dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_text_color"
+            android:text="@string/pb_migration_code"
+            android:gravity="left"
+            android:textSize="17sp"
+            android:textStyle="bold" 
+            android:layout_marginBottom="10dip" />
+        
+        <TextView
+            android:id="@+id/own_merge_code"
+            style="@style/TextShadowLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pb_bg_panel_tv"
+            android:layout_marginBottom="8dip"
+            android:textColor="@color/main_text_color"
+            android:text=""
+            android:gravity="center"
+            android:textSize="17sp"
+            android:lines="2" />
+        
+        <ProgressBar
+                android:id="@+id/migration_code_loading_panel_waiting"
+                style="@style/costumLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+       />
+            
+        
+        <!-- <Button
+            android:id="@+id/btn_setting_sendMergeCodeByMail"
+            style="@style/TextShadowBlack"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/pb_btn_height"
+            android:background="@drawable/btn_shape_orange"
+            android:gravity="center"
+            android:text="@string/pb_setting_sending_merge_code_by_mail"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingLeft="40.0dp"
+            android:paddingRight="40.0dp"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="40dip"
+             /> -->
+             
+        <com.aircast.photobag.widget.FButton
+            android:id="@+id/btn_setting_sendMergeCodeByMail"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/pb_btn_height"
+            android:gravity="center"
+            android:text="@string/pb_setting_sending_merge_code_by_mail"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingLeft="40.0dp"
+            android:paddingRight="40.0dp"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="40dip"
+            app:buttonColor="#ff735a"
+            app:shadowEnabled="false"
+             />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:text="@string/pb_migration_code_warning"
+            android:lines="6" 
+            android:gravity="left"
+            android:textSize="17sp"
+            android:layout_marginBottom="40dip"
+         />
+        
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,154 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.smartmux.pos.fragment.InventoryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            card_view:cardCornerRadius="2dp"
+            android:visibility="gone"
+            card_view:contentPadding="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/text_primary">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_search_black"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:id="@+id/imageView_search" />
+
+            <EditText
+                android:id="@+id/searchItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:textSize="22sp"
+                android:background="@android:color/transparent"
+                android:hint="Looking for something"
+                android:textColor="@color/text_secondary"
+                android:layout_toRightOf="@+id/imageView_search"
+                android:layout_toEndOf="@+id/imageView_search"
+                android:layout_toLeftOf="@+id/search_suggestion"
+                android:layout_toStartOf="@+id/search_suggestion"/>
+
+
+            <ImageView
+                android:id="@+id/search_suggestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@mipmap/ic_keyboard_arrow_down"
+               android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--<android.support.v7.widget.CardView
+            android:id="@+id/card_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            card_view:cardBackgroundColor="@color/LightPink"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="Label"
+                    android:gravity="center"
+                    android:textColor="@color/text_secondary"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Product"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_secondary"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Quantity"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_secondary"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Purchase"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_secondary"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Sales"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_secondary"/>
+
+            </LinearLayout>
+
+            </android.support.v7.widget.CardView>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/inventory_recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_inventory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        card_view:borderWidth="0dp"
+        android:src="@mipmap/ic_plus_white_24dp" />
+</FrameLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notEditor_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toplayer_ht"
+        android:layout_alignParentTop="true" >
+
+        <com.smartmux.textmemo.widget.AppTextViewAverinBlack
+            android:id="@+id/title_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/edit_title_margin"
+            android:text="@string/note_title"
+            android:textSize="@dimen/edit_title_size" />
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/edit_title_margin"
+            android:layout_toLeftOf="@+id/notelist_date"
+            android:layout_toRightOf="@+id/title_text1"
+            android:background="@android:color/transparent"
+            android:gravity="left"
+            android:hint="@string/note_no_title"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:textSize="@dimen/edit_title_size" />
+
+        <com.smartmux.textmemo.widget.AppTextViewAverinBlack
+            android:id="@+id/notelist_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10sp"
+            android:textColor="#000"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/toplayout"
+        android:background="#f4b5a1" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="@dimen/edit_title_margin"
+        android:background="#f4b5a1" />
+
+    <com.smartmux.textmemo.widget.AdvancedEditText
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view2"
+        android:background="@android:color/transparent"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:padding="@dimen/edit_title_margin"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarSize="@dimen/edit_title_margin"
+        android:scrollbars="horizontal|vertical"
+        android:textCursorDrawable="@null"
+        android:typeface="monospace" >
+
+        <requestFocus />
+    </com.smartmux.textmemo.widget.AdvancedEditText>
+
+</RelativeLayout>

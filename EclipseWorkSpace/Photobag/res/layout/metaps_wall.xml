@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:id="@+id/metaps_wall_layout"
+android:orientation="vertical">
+  <LinearLayout
+    android:id="@+id/metaps_titlebar_outer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+      android:visibility="gone"
+      android:id="@+id/metaps_titlebar_inner"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center">
+
+        <TextView
+            android:text="@string/pb_null"
+            android:id="@+id/metaps_app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_gravity="center|center_horizontal"></TextView>
+
+    </LinearLayout>
+  </LinearLayout>
+  <LinearLayout android:id="@+id/metaps_introduction_area"
+    android:layout_below="@+id/metaps_titlebar_outer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/forest_cave_banner_bg"
+    android:orientation="vertical"
+    android:padding="1dp">
+    <ImageView
+      android:layout_width="fill_parent"
+      android:layout_height="130dp"
+      android:contentDescription="@string/pb_null"
+      android:src="@drawable/forest_cave_banner" />
+    <TextView
+      android:visibility="gone"
+      android:id="@+id/metaps_introduction"
+      android:text="@string/metapsOfferWallExplanation"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:background="#808080"
+      android:textColor="#ffffff"
+      android:padding="10dp"/>
+  </LinearLayout>
+  <FrameLayout
+      android:id="@+id/metaps_wall_list"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_above="@+id/metaps_footer_area"
+      android:layout_below="@+id/metaps_introduction_area"
+      android:background="#F5F5F5"
+      android:fadingEdge="none"
+      android:fadingEdgeLength="0dp">
+  </FrameLayout>
+  <LinearLayout android:id="@+id/metaps_footer_area"
+    android:layout_alignParentBottom="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="1dp"
+    android:background="@drawable/border">
+      <android.webkit.WebView
+      android:id="@+id/metapsWebViewFooter"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      ></android.webkit.WebView>
+  </LinearLayout>
+</RelativeLayout>

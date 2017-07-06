@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/textView_openid_share_mail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:text="Successfully logged in."
+        android:textColor="@color/black" />
+    
+    
+
+<EditText
+          android:id="@+id/input_openid_mail"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/pb_btn_height"
+          android:layout_alignLeft="@+id/textView_openid_share_mail_title"
+          android:layout_centerVertical="true"
+          android:gravity="center"
+          android:padding="10dp"
+          android:background="@color/transparent"
+          android:textColor="@color/black"
+          android:editable="false"
+        />
+    
+
+      <com.aircast.photobag.widget.FButton
+          xmlns:app="http://schemas.android.com/apk/res-auto"
+          android:id="@+id/button_openid_mail_registration"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/pb_btn_height"
+          android:layout_alignLeft="@+id/iput_openid_mail"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="58dp"
+          android:background="@drawable/shape_share_type_background"
+          android:gravity="center"
+          android:padding="10dp"
+          android:text="@string/openid_share_mail_submmit"
+          android:textColor="@color/white"
+          android:textSize="17sp"
+          android:textStyle="bold"
+          app:buttonColor="@color/openid_share_type_mail"
+          app:shadowEnabled="false" />
+
+</RelativeLayout>
+    
+    
+    

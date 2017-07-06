@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aircast.photobag"
+    android:versionCode="127"
+    android:versionName="2.8.3">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+         android:targetSdkVersion="9" />
+
+    <!-- USER PERMISSION START -->
+    <!-- C2DM push notification support #S -->
+    <permission
+        android:name="com.aircast.photobag.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.aircast.photobag.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.SEND" />
+    <!--<uses-permission android:name="jp.co.toshiba.permission.TRANSFERJET" />-->
+    <!-- C2DM push notification support #E -->
+    
+    <!-- used by c2dm, seems useless, remove this permission? -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    
+    <!-- check phone status / save photo to local -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    
+    <!-- check / access network -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />    
+    <uses-permission android:name="android.permission.INTERNET" />
+    
+    <!-- in-app billing -->
+    <uses-permission android:name="com.android.vending.BILLING" />
+    
+    <!-- used by metaps -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- USER PERMISSION END -->
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="false" />
+
+    <application
+        android:name="com.aircast.photobag.application.PBApplication"
+        android:allowTaskReparenting="true"
+        android:configChanges="orientation|keyboard|keyboardHidden|navigation"
+        android:icon="@drawable/icon"
+        android:label="@string/pb_app_name"
+        android:hardwareAccelerated="true" >
+        
+
+        
+         <!-- HUQ COMMIT-->
+        
+<!--         <receiver -->
+<!--             android:name="com.aircast.photobag.api.gcm.GCMRegistrationReceiver" -->
+<!--             android:permission="com.google.android.c2dm.permission.SEND" > -->
+<!--             <intent-filter> -->
+<!--                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" /> -->
+
+<!--                 <category android:name="com.aircast.photobag" /> -->
+<!--             </intent-filter> -->
+<!--         </receiver> -->
+         
+<!--         <receiver android:name="com.aircast.photobag.api.gcm.GCMMessageReceiver" > -->
+<!--             <intent-filter> -->
+<!--                 <action android:name="com.google.android.c2dm.intent.RECEIVE" /> -->
+
+<!--                 <category android:name="com.aircast.photobag" /> -->
+<!--             </intent-filter> -->
+<!--         </receiver> -->
+        <!-- openId -->
+          <activity
+            android:name="com.aircast.photobag.openid.OpenIdHomeActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+          
+            <activity
+            android:name="com.aircast.photobag.openid.PBOpenIdMailActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+            
+             <activity
+            android:name="com.aircast.photobag.openid.PBOpenIDMailRegistrationResultActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+          
+        <!--   Four Digit -->
+          <activity
+            android:name="com.aircast.photobag.activity.PBFourDigitActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <!-- GCM ADDITION -->
+        <service android:name="com.aircast.photobag.gcm.GCMIntentService" />
+        <receiver
+            android:name="com.aircast.photobag.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.aircast.photobag" />
+            </intent-filter>
+        </receiver>
+        
+        <!-- GCM ADDITION DONE -->
+        
+        
+        <!-- SCREEEN ON/OFF broadcast receiver -->
+        <receiver android:name="com.aircast.photobag.gcm.ScreenReceiver">
+		    <intent-filter>
+		      <action android:name="android.intent.action.SCREEN_ON" />
+		      <action android:name="android.intent.action.SCREEN_OFF" />
+		    </intent-filter>
+	    </receiver>
+	    
+        <!-- SCREEEN ON/OFF broadcast receiver for service -->
+        <receiver android:name="com.aircast.photobag.gcm.ScreenReceiverForService">
+		    <intent-filter>
+		      <action android:name="android.intent.action.SCREEN_ON" />
+		      <action android:name="android.intent.action.SCREEN_OFF" />
+		    </intent-filter>
+	    </receiver>     
+	    <!-- SCREEEN ON/OFF broadcast receiver END -->
+        
+        
+        <activity
+            android:name="com.aircast.photobag.activity.PBSplashScreenActivity"
+            android:allowTaskReparenting="true"
+            android:configChanges="orientation|keyboard|keyboardHidden|"
+            android:label="@string/pb_app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.aircast.photobag.activity.PBMainTabBarActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" 
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="download"
+                    android:scheme="photobagin" />
+                
+                <data
+                    android:host="download"
+                    android:scheme="photobag.in" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="video/*" />
+            </intent-filter>
+        </activity>
+        
+        
+         <activity
+            android:name="com.aircast.photobag.activity.PBDownloadSecretCodeActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+           android:windowSoftInputMode="stateAlwaysHidden"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBConfirmPasswordActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        
+        <!-- Download's activity tab -->
+        <activity
+            android:name="com.aircast.photobag.activity.PBDownloadGroupActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBDownloadMainActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:launchMode= "singleInstance" 
+            android:theme="@style/Theme.PhotobagTheme"
+            android:windowSoftInputMode="stateHidden" />
+        
+       <activity
+            android:name="com.aircast.photobag.activity.PBPasswordThumbsPreviewActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme"
+            android:windowSoftInputMode="stateHidden" />
+        
+        <activity
+            android:name="com.aircast.photobag.activity.PBDownloadDownloadingActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBDownloadExceededActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBDownloadPurchaseActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBDisplayCompleteActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBImageViewerActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBDownloadCompleteActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBDownloadUpdateActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBDownloadWrongPassActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <activity
+            android:name=".activity.PBDownloadConfirmActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+
+        <!-- Upload's activity tab -->
+        <activity
+            android:name="com.aircast.photobag.activity.PBUploadMainActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+             android:launchMode= "singleInstance"
+            android:theme="@style/Theme.PhotobagTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBUploadConfirmActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBUploadKoukaibukuroActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+                
+        <activity
+            android:name="com.aircast.photobag.activity.PBUploadConpleteActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <activity
+            android:name="com.aircast.photobag.activity.UploadSetPasswordActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.aircast.photobag.activity.SelectAlbumActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <activity
+            android:name="com.aircast.photobag.activity.SelectMultipleImageActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <activity
+            android:name="com.aircast.photobag.activity.UploadingActivity"
+            android:allowTaskReparenting="true"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBUploadSelectAddibilityActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBUploadWarningActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+
+        <service android:name="com.aircast.photobag.services.UploadService" />
+         <service android:name="com.aircast.photobag.services.UpdateHistoryService" />
+
+        <!-- History's activity tab -->
+        <activity
+            android:name="com.aircast.photobag.activity.PBHistoryInboxActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBHistoryInboxDetailActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" >
+        </activity>
+        <activity
+            android:name="com.aircast.photobag.activity.PBHistoryMainActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+
+          <!-- chat activity added by Rifat -->
+          <activity
+            android:name="com.aircast.photobag.activity.PBChatActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/Theme.PhotobagTheme" >
+         </activity>
+          
+        <service android:name="com.aircast.photobag.services.ChatMgsUpadteService" >
+        </service>
+                
+        <!-- Mail Report activity tab -->
+        <activity
+            android:name="com.aircast.photobag.activity.PBSettingMainActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" >
+        </activity>
+        <!-- Setting's activity tab -->
+        <activity
+            android:name="com.aircast.photobag.activity.PBMailReportActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" >
+        </activity>
+        <activity
+            android:name="com.aircast.photobag.activity.PBSettingGetMigrationCode"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        
+        <activity
+            android:name="com.aircast.photobag.activity.PBSettingMigrationCodeVerify"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        
+        <activity
+            android:name="com.aircast.photobag.activity.PBSettingInputInvitionCodeActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBSettingInviteAcitivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBSettingMailToPCActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBWebViewActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" >
+        </activity>
+        
+        <activity
+            android:name="com.aircast.photobag.activity.PBWebViewPhotoContestActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" >
+        </activity>
+        
+        
+        <activity
+            android:name="com.aircast.photobag.activity.PBOpenPageWebViewActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" >
+        </activity>  
+        
+          <activity
+            android:name="com.aircast.koukaibukuro.KBSettingsActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" >
+        </activity>  
+        
+           <activity
+            android:name="com.aircast.photobag.openid.KBOpenIdRegistrationActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" >
+        </activity>  
+        
+        
+        <activity
+            android:name="com.aircast.photobag.activity.PBInviteTwitterActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBFacebookPreviewActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+
+        <!-- My Page Activity -->
+        <activity
+            android:name="com.aircast.photobag.activity.PBMyPageMainActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBMyPageHoneyExchangeActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBMyPageHoneyExchangeSuccessActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBMyPageHoneyNotification"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBMyPageAcornExchangeListActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <activity
+            android:name="com.aircast.photobag.activity.PBMyPageAcornExchangeMailActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        
+        <!-- honey shop -->
+        <activity
+            android:name="com.aircast.photobag.activity.PBHoneyShopActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        
+         <activity
+            android:name="com.aircast.photobag.activity.PBPurchaseActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        
+        
+        <!-- Metaps -->
+        <activity 
+            android:name="net.metaps.sdk.WallActivity" 
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.Light" />
+        <activity 
+            android:name="net.metaps.sdk.AppListActivity" 
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.Light" />
+        <activity 
+            android:name="net.metaps.sdk.AppDetailActivity" 
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.Light" />
+        <activity 
+            android:name="net.metaps.sdk.StatusActivity" 
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.Light" />
+        
+        <!-- CA -->
+        <activity 
+            android:name="jp.co.CAReward_Media.CARMIntent"
+            android:label="@string/pb_app_name"
+            android:configChanges="orientation|keyboardHidden" />
+        
+        <!-- Gree -->
+        <activity
+            android:name="net.gree.reward.sdk.GreeRewardPromotionActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- Other -->
+        <activity
+            android:name=".activity.PBAcornForestActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <activity
+            android:name=".activity.PBChangeIntervalTimeActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+        <activity android:name=".activity.AppDriverActivity" />
+        <activity
+            android:name="net.adways.appdriver.sdk.AppDriverPromotionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- Millenium SDK Implementation  -->
+        <activity 
+            android:name=".mmedia.BannerXmlActivity" 
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.Light" />
+        <!-- SDK Activities -->
+		<activity android:name="com.millennialmedia.android.MMActivity"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			android:configChanges="keyboardHidden|orientation|keyboard" >
+		</activity>
+		<activity android:name="com.millennialmedia.android.VideoPlayer"
+			android:configChanges="keyboardHidden|orientation|keyboard" >
+		</activity>
+        
+		<activity android:name=".activity.PushDialogActivity"
+    		android:theme="@style/Theme.PhotobagTheme" 
+    		android:launchMode="singleInstance">
+		</activity>
+
+        <!-- facebook activity added to use sessionlogin -->
+        <activity android:name="com.facebook.LoginActivity" />
+
+        <receiver android:name="com.aircast.photobag.services.ConnectionReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <!-- HUQ COMMIT
+        
+        <receiver
+            android:name="com.aircast.photobag.api.c2dm.C2DMRegistrationReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.aircast.photobag" />
+            </intent-filter>
+        </receiver>
+         
+        <receiver android:name="com.aircast.photobag.api.c2dm.C2DMMessageReceiver" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.aircast.photobag" />
+            </intent-filter>
+        </receiver>
+        -->
+        <!-- C2DM push notification support - register receiver #E -->
+
+        <!-- twitter oauthor -->
+        <!-- <activity
+            android:name=".twitter.TwitterHandler"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="OAuthTwitter"
+                    android:scheme="myTweet" >
+                </data>
+            </intent-filter>
+        </activity> -->
+        
+        <!-- twitter oauthor new -->
+        <activity
+            android:name=".twitter.MainActivityTwitter"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="t4jsample"
+                    android:scheme="oauth" >
+                </data>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".twitter.WebViewActivity"
+            android:theme="@style/Theme.PhotobagTheme"  />
+        
+    <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".facebook.PBFBShareActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".facebook.FB_Login_OpenId"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+        </activity>
+      <!--   <activity android:name="com.facebook.FacebookActivity"
+                  android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                  android:label="@string/app_name" />
+          <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationName"
+                   android:value="@string/app_name" />
+        <provider android:authorities="com.facebook.app.FacebookContentProvider837896309631843"
+                  android:name="com.facebook.FacebookContentProvider"
+                  android:exported="true"/>  
+        <receiver android:name=".facebook.PBFacebookBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.platform.AppCallResultBroadcast" />
+            </intent-filter>
+        </receiver> -->
+        
+         <activity
+            android:name=".activity.PBSettingLicenseActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PhotobagTheme" />
+
+        <!-- AD for astir -->
+        <!-- google admob -->
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+        <!-- InMobi -->
+        <activity
+            android:name="com.inmobi.androidsdk.IMBrowserActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard" />
+        
+        <!-- Koukaibukuro Library activity -->
+        <activity
+            android:name="com.aircast.koukaibukuro.MainTabActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/Theme.OpenbagTheme"
+           >
+        </activity>
+        
+        <!-- i-mobile -->
+        <!-- Not used in current version -->
+        <!-- Atik removed below i-Mobile SDK for advertised ID error from google play -->
+        <!-- <meta-data
+            android:name="i-mobile_Publisher_ID"
+            android:value="17197" /> -->
+
+        <!-- mediba ad -->
+        <activity android:name="mediba.ad.sdk.android.openx.MasAdClickWebview" />
+        
+        <!-- metaps -->
+        <meta-data android:name="net.metaps.sdk.CLIENT_ID" android:value="BAYCROVWSW0001" />
+        <meta-data android:name="net.metaps.sdk.APP_ID" android:value="YEODDSFECS0001" />
+        <meta-data android:name="net.metaps.sdk.APP_KEY" android:value="grq3ch4aqvv8w24" />
+        <meta-data android:name="net.metaps.sdk.PROMOTION_ID" android:value="" />
+        <meta-data android:name="net.metaps.sdk.MARKET" android:value="" />
+        <meta-data android:name="net.metaps.sdk.MODE" android:value="0" />
+        
+        <!-- GREE reward -->
+        <meta-data android:name="GREEREWARD_SITE_ID" android:value="4585" />
+        <meta-data android:name="GREEREWARD_SITE_KEY" android:value="f37f17d967c55c82b77be4998befde25" />
+        <meta-data android:name="GREEREWARD_TEST_MODE" android:value="false" />
+        
+    </application>
+</manifest>

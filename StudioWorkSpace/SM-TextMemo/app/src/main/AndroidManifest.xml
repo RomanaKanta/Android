@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smartmux.textmemo" >
+
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:name="com.smartmux.textmemo.AppClass"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme" >
+        <activity
+            android:name="com.smartmux.textmemo.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.smartmux.textmemo.AppMainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smartmux.textmemo.RegistrationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--<activity-->
+            <!--android:name="com.smartmux.textmemo.AppLockActivity"-->
+            <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <activity
+            android:name="com.smartmux.textmemo.NoteListActivity"
+            android:screenOrientation="portrait" >
+
+
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.smartmux.textmemo.NoteListActivity" >
+            </meta-data>
+
+        </activity>
+        <activity
+            android:name="com.smartmux.textmemo.ChangePasswordAvtivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smartmux.textmemo.NoteEditorActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.smartmux.textmemo.LoginWindowActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smartmux.textmemo.SettingsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- dropbox -->
+        <activity android:name="com.smartmux.textmemo.dropbox.DropboxActivity" >
+        </activity>
+
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask" >
+            <intent-filter>
+
+                <!-- Change this to be db- followed by your app key -->
+                <data android:scheme="db-d73msltjvsroyvt" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- wifi transfer -->
+        <activity android:name="com.smartmux.textmemo.wifitransfer.ServerControlActivity" >
+        </activity>
+        <service android:name="com.smartmux.textmemo.wifitransfer.FTPServerService" />
+
+
+
+    </application>
+
+</manifest>

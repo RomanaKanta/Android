@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:id="@+id/false_adjust"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_ht"
+        android:layout_alignParentBottom="true"
+        android:background="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/false_adjust" >
+
+        <SeekBar
+            android:id="@+id/seekBar_bright"
+            android:layout_width="@dimen/lib_seekbar_wt"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/seekbar_padding"
+            android:layout_marginLeft="@dimen/seekbar_side_margin"
+            android:background="@drawable/roundcorner"
+            android:rotation="270"
+            android:thumb="@drawable/brightness" />
+
+        <SeekBar
+            android:id="@+id/seekBar_contrast"
+            android:layout_width="@dimen/lib_seekbar_wt"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/seekbar_padding"
+            android:layout_marginRight="@dimen/seekbar_side_margin"
+            android:background="@drawable/roundcorner"
+            android:rotation="270"
+            android:thumb="@drawable/contrast" />
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar_saturation"
+        android:layout_width="@dimen/lib_seekbar_wt"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/false_adjust"
+        android:background="@drawable/roundcorner"
+        android:layout_marginBottom="1dp"
+        android:thumb="@drawable/saturation" />
+
+</RelativeLayout>

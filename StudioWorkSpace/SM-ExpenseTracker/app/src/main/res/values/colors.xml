@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (c) 2012 Vinayak Solutions Private Limited 
+ * See the file license.txt for copying permission.
+*/     
+-->
+<resources>
+
+    <!-- app theme -->
+    <color name="text_color">#ffffffff</color>
+    <color name="background_color">#A08774</color>
+    <color name="top_bar_color">#643A1D</color>
+     <color name="bottom_bar_color">#ffffffff</color>
+    <color name="button_volor">#643A1D</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="grey_light">#ffcccccc</color>
+    <color name="grey">#ff404040</color>
+    <color name="bg_row_selected">#ffdcff95</color>
+    <color name="bg_save_reminder">#fffaeeee</color>
+    <color name="bg_unfinished_entry">#fffaf8d3</color>
+    
+    <color name="radio_button_selected_color">#643A1D</color>
+    <color name="radio_button_unselected_color">#00000000</color>
+    
+  
+        <!--  custom Button -->
+          <color name="button_normal">#502C16</color>
+    <color name="button_pressed_or_focused">#8E7460</color>  
+      <color name="button_transparent_bg">#80ffffff</color> 
+
+</resources>

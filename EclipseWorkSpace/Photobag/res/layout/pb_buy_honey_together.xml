@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/headerbar"
+        style="@style/pb_actionbar" />
+    
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"            
+            android:orientation="vertical"
+            android:layout_weight="1" >
+    
+		 	<WebView
+		 	    android:id="@+id/webView_purchase_info"
+		 	    android:layout_width="fill_parent"
+		 	    android:layout_height="@dimen/pb_purchase_web_view_height" />
+		 	
+		    <LinearLayout
+			        android:id="@+id/layout_history_ad"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:background="@color/black"
+			        android:orientation="vertical" >
+		
+			        <com.ad_stir.webview.AdstirWebView
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            media="MEDIA-e194dab6"
+			            spot="1" />
+		 	</LinearLayout>
+ 	
+ 	   	</LinearLayout>
+ 
+	  	
+</LinearLayout>

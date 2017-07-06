@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Do not translate. Duration format for duration < 1 hour -->
+    <string name="durationformatshort" translatable="false"><g id="format">%2$d:%5$02d</g></string>
+    <!-- Do not translate. Duration format for duration >= 1 hour -->
+    <string name="durationformatlong" translatable="false"><g id="format">%1$d:%3$02d:%5$02d</g></string>
+    <string name="app_name">写真袋</string>
+    <string name="password_notification_local">パスワード</string>
+    <string name="password_notification_local_download">』の受け取りが完了したよ！</string>
+    <string name="password_notification_local_upload">』の送信が完了したよ！</string>
+    <string name="pb_download_download_complete_tv_talk">写真の受け取りが\n完了したよ！</string>
+    <string name="pb_download_downloading_tv_talk">受け取り中だよ\nもう少し待ってね</string>
+    <!-- string name="pb_download_downloading_tv_downloading_status">写真[109枚]をダウンロードする</string -->
+    <string name="pb_download_input_pass_exceeded_tv_talk">疲れたよ\nすこし休ませて</string>
+    <string name="pb_download_input_pass_exceeded_password_message">10回連続で\n合言葉が一致しなかったので\nしばらくたってからおためしください。</string>
+    <string name="pb_download_input_pass_exceeded_password_countdown">あと　 <xliff:g id="hour">%1$s</xliff:g>:<xliff:g id="min">%2$s</xliff:g>:<xliff:g id="sec">%3$s</xliff:g>  お待ちください</string>
+    <string name="pb_download_input_pwd_tv">教えてもらった合言葉を入力</string>
+    <string name="pb_download_input_pwd_tv_talk">秘密の合言葉を\n教えてね</string>
+    <string name="pb_download_purchase_notice_tv_numofphoto">枚数</string>
+    <string name="pb_download_purchase_notice_tv_numofdownload">受取り数</string>
+    <string name="pb_download_purchase_notice_tv_purchasehoney">クマにハチミツを与えると\n写真袋を受け取る事ができます。</string>
+    <string name="pb_download_purchase_notice_tv_talk_purchase">ハチミツの\nにおい…　</string>
+    <string name="pb_download_purchase_notice_tv_talk_no_honey">ハチミツが\nないで…　</string>
+    <string name="pb_download_purchase_notice_btn_purchase">ハチミツをあげる</string>
+    <string name="pb_download_purchase_notice_btn_exchange_donguri">ドングリをハチミツに交換</string>
+    <string name="pb_download_purchase_notice_btn_shop">ハチミツを購入</string>
+    <string name="pb_download_purchase_notice_btn_cancel">やめる</string>
+    <string name="pb_download_purchase_notice_tv_albuminformation">この写真袋は有効期限が切れています。</string>
+    <string name="pb_download_wrong_title">合言葉がありません</string>
+    <string name="pb_download_wrong_kuma">違うみたいやで~</string>
+    <string name="pb_download_wrong_info">入力した合言葉が間違っているか、\n合言葉が存在しません。\n\n再度お試しください。\n</string>
+    <string name="pb_download_wrong_btn_text">合言葉を入力する</string>
+    <string name="pb_download_confirm_title">注意事項</string>
+    <string name="pb_download_confirm_text_1">以下の注意事項をよく読み、ご了承の上、ダウンロードください。</string>
+    <string name="pb_download_confirm_text_21">このコンテンツは著作権保護のため、スマートフォン端末には保存できません。写真袋アプリ内でのみご覧いただけます。</string>
+    <string name="pb_download_confirm_text_22">このコンテンツは著作権保護のため、スマートフォン端末には保存できません。また、コンテンツは一定の保存期間を過ぎると、アプリから自動的に削除されます。期間内に写真袋アプリ内でのみご覧いただけます。</string>
+    <string name="pb_download_confirm_text_3">コンテンツ保存期間：%s日</string>
+    <string name="pb_download_confirm_text_4">上記に同意する</string>
+    <string name="pb_download_confirm_btn_purchase">ハチミツを購入する</string>
+    <string name="pb_download_confirm_btn_download">写真を受け取る</string>
+    <string name="pb_download_need_update_title">ダウンロードできません</string>
+    <string name="pb_download_need_update_content">この合言葉は最新のヴァージョンでダウンロードできます。</string>
+    <string name="dl_btn_input_pwd_text">写真を受け取る</string>
+    <string name="dl_btn_download_complete_text">写真を確認する</string>
+    <string name="btn_update_download_photos">写真を受け取る</string>
+    <string name="btn_update_not_now">今はやめておく</string>
+    <string name="pb_update_text">この合言葉に写真が追加されました \n 追加された写真を受け取ろう！</string>
+    <string name="pb_update_kuma_said">なんか増えたで！</string>
+    <string name="pb_dl_sdcard_checking_title">SDカードが必要です</string>
+    <string name="pb_dl_sdcard_checking_message">このアプリは大量の写真を保存するため SDカードが必要です。 SDカードを入れて再度お試してください。</string>
+    <string name="dl_alert_cannot_find_album_title">見つかりません</string>
+    <string name="dl_alert_cannot_find_album_msg">合言葉が合っているか確認してください。</string>
+    <string name="dl_alert_upload_unfinished_title">準備中</string>
+    <string name="dl_alert_upload_unfinished_msg">まだ写真の送信がおわっていないようです。しばらくして再度お試しください。</string>
+    <string name="dl_alert_sdcard_missing_title">SDカードがひつようです</string>
+    <string name="dl_alert_sdcard_missing_msg">このアプリは大量の写真を保存するため SDカードが必要です。 SDカードを入れて再度お試してください。</string>
+    <string name="dl_alert_sdcard_full_title">SDカードの容量が足りない</string>
+    <string name="dl_alert_sdcard_full_msg">SDカードの容量が足りないです、 SDカードを整理して再度お試してください。</string>
+    <string name="dl_alert_confirm_cancel_download_title">キャンセルしますか？</string>
+    <string name="dl_alert_confirm_cancel_download_msg">キャンセルすると受取りが中断されます。</string>
+    <string name="dl_downloading_process_text">Downloading <xliff:g id="\" part="">%1$s</xliff:g>/<xliff:g id="\" total="">%2$s</xliff:g></string>
+    <string name="dl_alert_unfinish_album_title">準備中</string>
+    <string name="dialog_password_error_title">エラー</string>
+    <string name="screen_title_dowload_input_pwd">写真を受け取る</string>
+    <string name="screen_title_dowload_downloading_error">受信失敗</string>
+    <string name="screen_title_dowload_downloading_complete">受け取り完了 !</string>
+    <string name="screen_title_dowload_purchase_require">有効期限切れ</string>
+    <string name="screen_title_dowload_purchase_complete">有効期限を延長しました</string>
+    <string name="screen_title_dowload_input_exceeded">しばらくお待ちください</string>
+    <string name="screen_title_dowload_update">写真が追加されました</string>
+    <string name="err_desc_dowload_not_found">見つかりません</string>
+    <string name="err_desc_dowload_unfinished">まだ写真の送信がおわっていないようです。しばらくして再度お試しください。</string>
+    <string name="err_desc_dowload_expired">コレクションが壊れています。ダウンロードすることができません</string>
+    <string name="dialog_error_title">エラー</string>
+    <string name="dialog_error_network_title">通信エラー</string>
+    <string name="err_desc_password_your_pass">その合言葉はむかし使いました。他の合言葉をお試しください</string>
+    <string name="err_desc_password_taken">その合言葉は現在使えません。別の言葉を設定してください。</string>
+    <string name="err_desc_password_to_short">合言葉が短すぎます</string>
+    <string name="err_desc_password_to_long">合言葉が長過ぎます</string>
+    <string name="err_desc_password_invalid_characters">使えない文字が含まれています\n</string>
+    <string name="err_desc_password_invalid_character_from_server">次の文字は使えません\n</string>
+
+    <!-- string for handling error desctiption for public magic phrase  S -->
+    <string name="err_desc_password_public_not_found">該当の写真袋が見つかりません</string>
+    <string name="err_desc_password_public_not_finised">アップロードは完了していません</string>
+    <string name="err_desc_password_public_not_yours">他の人の写真袋でエントリーできません</string>
+    <string name="err_desc_password_public_expired">期限切れの写真袋でエントリーできません</string>
+    <!-- string for handling error desctiption for public magic phrase  E -->
+
+
+    <!-- Urenai Screen Text -->
+    <string name="back_text">戻る</string>
+    <string name="urenai_url">http://photobag.in/</string>
+    <string name="screen_title_upload_choose_photo">写真を選択してください</string>
+    <string name="screen_title_upload_input_pwd">合言葉を決める</string>
+    <string name="screen_title_upload_confirm_pass">合言葉の確認</string>
+    <string name="screen_title_uploading">送信中</string>
+    <string name="screen_title_confirm_pass_upload">送信完了！</string>
+    <string name="screen_title_select_addiblity">あとから追加 </string>
+    <string name="upload_tab_main_title">写真を送る</string>
+    <string name="upload_main_bear_say">何枚でも \n 送れるで</string>
+    <string name="upload_main_text_guide">送りたい写真を選んで \n 合言葉で鍵をかけよう !</string>
+    <string name="upload_main_btn_text"> 写真を選ぶ</string>
+    <string name="upload_main_btn_video_compress_setting"> 動画の画質設定</string>
+    <string name="upload_main_btn_video_compress_high_quality">高画質</string>
+    <string name="upload_main_btn_video_compress_medium_quality"> 中画質(通常)</string>
+    <string name="upload_main_btn_video_compress_low_quality"> 低画質</string>
+    <string name="download_main_btn_text_transfer_jet"> TransferJetで受け取る</string>
+    <string name="upload_main_btn_text_transfer_jet"> TransferJetで送る</string>
+    <string name="upload_set_pass_bear_say">おもろい合言葉を \n 考えてみて </string>
+    <string name="upload_set_pass_text_guide1">漢字、動画、記号など何でも使えます</string>
+    <string name="upload_set_pass_text_guide2">※ ８文字以上３０文字以内で入力してください</string>
+    <string name="upload_set_pass_btn_text">合言葉を確認する</string>
+    <string name="upload_confirm_pass_bear_say">パスワードをつけると\nセキュリティが強くなるよ！ </string>
+    <string name="upload_koukaibukuro_setting_bear_say">
+<![CDATA[<font color=\'red\'>公開袋</font>" 
+          "<font color=\'#695C5C\'>に投稿すると</font>" 
+          "<font color=\'red\'>写真袋の全ユーザーにも合言<br>葉を公開する</font>" 
+          "<font color=\'#695C5C\'>ことになります。<br></font>" 
+          "<font color=\'#695C5C\'>仲間以外に公開したくない合言葉の送信時は設定<br>をお間違いにならないようお気をつけください。<br></font>" 
+          "<font color=\'#695C5C\'>また、違反画像・動画の投稿を発見した場合は規<br>約に基づき対応させていただきます。<br></font>]]>
+    </string>
+    <string name="upload_koukaibukuro_setting_bear_say_updated"><![CDATA[<font color=\'red\'>公開袋</font><font color=\'#695C5C\'>に投稿する<br> みんなと共有する？</font>]]></string>
+    <string name="upload_confirm_pass_text_guide">下の合言葉でよろしいですか？</string>
+    <string name="upload_koukaibukuro_setting_text_guide">注意：公開袋に投稿すると仲間以外のユーザーにも合言葉を公開することになります。仲間以外に公開したくない合言葉の送信時は設定をお間違いにならないよう気をつけてください。</string>
+    <string name="upload_koukaibukuro_setting_text_guide2">仲間以外に公開したくない合言葉の送信時は設定をお間違いにならないよう気をつけてください。</string>
+    <string name="upload_koukaibukuro_setting_text_guide3">また、違反画像・動画の投稿を発見した場合は規約に基づき対応させていただきます。</string>
+    <string name="upload_confirm_pass_complicate_btn">4桁パスワードを設定</string>
+    <string name="upload_confirm_pass_ok_btn">設定しないで次へ</string>
+    <string name="upload_koukaibukuro_make_password_public_btn">公開袋へ投稿する</string>
+    <string name="upload_koukaibukuro_make_password_not_public_btn">いいえ。仲間だけに送信する</string>
+    <string name="upload_addibility_fukidashi_text">友達が \n 写真を追加 \n できるようにする？</string>
+    <string name="upload_addibility_guide_text">みんなの写真を \n １つの合言葉にまとめよう！</string>
+    <string name="upload_addibility_sub_guide_text">合言葉を知っている人が写真を追加できます</string>
+    <string name="upload_addibility_no_button">自分の写真でいい</string>
+    <string name="upload_addibility_yes_button">追加してOK</string>
+    <string name="dialog_change_pass_title">合言葉を難しくしました</string>
+    <string name="uploading_normal_bear_say">送信中だよ \n もう少しまってね</string>
+    <string name="uploading_progress_text">Uploading # / $</string>
+    <string name="uploading_cancel_btn_text">キャンセル</string>
+    <string name="uploading_retry_btn_text">もう一度</string>
+    <string name="uploading_error_text_guide">電波の届く環境でもう一度お試してください</string>
+    <string name="uploading_error_bear_say">もう一度\n試してみてね！</string>
+    <string name="dialog_cancel_upload_title">キャンセルしますか</string>
+    <string name="dialog_cancel_upload_body">キャンセルすると送信が中断されます。</string>
+    <string name="pb_gallery_btn_title">[%s]枚の写真を送る</string>
+    <string name="dialog_network_error_title">通信エラー</string>
+    <string name="dialog_network_error_body">ネットワークの状態を確認して、しばらくしてから再度お試し下さい。</string>
+    <string name="tab_mnu_dowload_main">受け取る</string>
+    <string name="tab_mnu_upload_main">送る</string>
+    <string name="tab_mnu_history_main">履歴</string>
+    <string name="tab_mnu_setting_main">設定</string>
+    <string name="tab_mnu_my_page_main">マイページ</string>
+    <string name="screen_title_setting_main">設定</string>
+    <string name="screen_title_upload_main">写真を送る</string>
+    <string name="screen_title_history_main">履歴</string>
+    <string name="screen_title_my_page_main">マイページ</string>
+    <!-- <string name="pb_dialog_version_title">新しいバージョン%sがあります。アップデートしますか？</string> -->
+    <string name="pb_dialog_version_title">新しいバージョン%sがあります。</string>
+    <string name="pb_dialog_version_message">アップデートしますか？</string>
+    <string name="dialog_ok_btn">OK</string>
+    <string name="dialog_cancel_btn">キャンセル</string>
+    <string name="pb_app_name">写真袋</string>
+    <string name="pb_btn_send_history">送信箱</string>
+    <string name="pb_btn_delete_history">削除</string>
+    <string name="pb_btn_inbox_history">受信箱</string>
+    <string name="pb_history_info_date">受取り日</string>
+    <string name="pb_history_info_honey_used">ハチミツ使用数</string>
+    <string name="pb_history_info_num_download">受取り数</string>
+    <string name="pb_btn_done">完了</string>
+    <string name="pb_btn_inbox">受信箱</string>
+    <string name="pb_btn_sent">送信箱</string>
+    <string name="pb_btn_cancel">キャンセル</string>
+    <string name="pb_btn_OK">OK</string>
+    <string name="pb_btn_tweet">送信</string>
+    <string name="pb_btn_confirm_password">合言葉を確認</string>
+    <string name="pb_save_all_picture">全ての写真を保存</string>
+    <string name="pb_add_photos">写真を追加</string>
+    <string name="pb_btn_detail_delete_all">全て削除する</string>
+    <string name="pb_btn_detail_delete_part">選択して削除する</string>
+    <string name="pb_toast_detail_no_selection">削除したい写真を選択してください</string>
+    <string name="pb_title_delete_photo">削除しますか？</string>
+    <string name="pb_title_detail_select">写真を選択</string>
+    <string name="pb_title_detail_delete_confirm">選択した項目を削除します</string>
+    <string name="pb_title_detail_delete_complete">削除が完了しました</string>
+    <string name="pb_title_detail_delete_fail">削除が失敗しました</string>
+    <string name="pb_title_cache_clear">キャッシュ削除</string>
+    <string name="pb_title_migration_code_error">引き継ぎコード取得エラー</string>
+    <string name="pb_title_migration_code_verification_error">引き継ぎ確認エラー</string>
+    <string name="pb_msg_detail_ad_link_confirm">指定のリンク先に遷移します</string>
+    <string name="pb_msg_detail_delete_confirm">合言葉から%dつの項目を削除します。本当によろしいですか？</string>
+    <string name="pb_msg_detail_delete_complete">合言葉から写真を削除しました（削除前に受け取った他のユーザーの写真は削除されません）</string>
+    <string name="pb_msg_detail_delete_fail">サーバーと通信できないようです、しばらくしてから再度お試し下さい。</string>
+    <string name="pb_msg_detail_delete_impossible">この合言葉は既に期限が切れて、サーバーから削除しました。</string>
+    <string name="pb_msg_detail_cannot_add">この合言葉に写真を追加することができません。</string>
+    <string name="pb_msg_detail_cannot_save">このコンテンツは著作権保護のため、スマートフォン端末には保存できません。写真袋アプリ内でのみご覧いただけます。</string>
+    <string name="screen_title_confirm_pass_hitory">合言葉の確認</string>
+    <string name="screen_confirm_password_title_1">合言葉の確認</string>
+    <string name="screen_confirm_password_title_2">さっそく友達に合言葉を教えよう！</string>
+    <string name="screen_confirm_password_title_3">友達を招待すると\nハチミツが１個増えるよ！</string>
+    <string name="screen_confirm_password_title_4">事務局がおすすめ合言葉を\nピックアップするよ</string>
+    <string name="screen_confirm_password_btn">合言葉を教える</string>
+    <string name="screen_confirm_password_public_btn">おすすめ合言葉にエントリー</string>
+    <string name="screen_confirm_password_free_time">有効期限残り</string>
+    <string name="screen_confirm_password_btn_copy">コピー</string>
+    <string name="screen_confirm_password_btn_mail">メール</string>
+    <string name="screen_confirm_password_btn_nakamap">ナカマップでおしえる</string>
+    <string name="screen_confirm_password_btn_twitter">ツイートする</string>
+    <string name="screen_confirm_password_btn_share">他のアプリで送る</string>
+    <string name="screen_confirm_password_btn_time">変更</string>
+    <string name="screen_confirm_password_mail_subject">友達から写真がとどいているよ</string>
+    <!-- <string name="screen_confirm_password_mail_content_1">秘密の合言葉：\"%s\" \n</string>
+    <string name="screen_confirm_password_mail_content_2">期限：  %s まで \n\n</string>
+    <string name="screen_confirm_password_mail_content_3">１：簡単に大量の写真をやりとりできるアプリ「写真袋」をダウンロードしよう。 \nhttp://photobag.in/ \n\n2:秘密の合言葉を入力すると友達が送ってくれた写真を受け取ることができるよ！\n</string> -->
+    
+    <string name="screen_confirm_password_mail_content_0">写真袋で画像・動画をアップしました。\n\n</string>
+    <string name="screen_confirm_password_mail_content_1">秘密の合言葉：\"%1$s\" 合言葉は: \"%2$s\" \n</string>
+    <string name="screen_confirm_password_mail_content_2">期限：  %s まで \n\n</string>
+    <string name="screen_confirm_password_mail_content_3">１：簡単に大量の写真をやりとりできるアプリ「写真袋」をダウンロードしよう。 \nhttp://photobag.in/ \n\n2:秘密の合言葉を入力すると友達が送ってくれた写真を受け取ることができるよ！\n</string>
+    <string name="screen_confirm_password_mail_content_4">http://photobag.in/p/%s</string>
+    <string name="screen_confirm_password_mail_content_5"> \n\n写真袋をダウンロードするならこちら！\n\n</string>
+    <string name="screen_confirm_password_mail_content_6"> ・AppStore\n</string>
+    <string name="screen_confirm_password_mail_content_7">https://itunes.apple.com/app/id490537814&amp;mt=8\n</string>
+    <string name="screen_confirm_password_mail_content_8"> ・GooglePlay\n</string>
+    <string name="screen_confirm_password_mail_content_9">https://play.google.com/store/apps/details?id=com.kayac.photobag\n</string>
+    
+    <string name="screen_confirm_password_nakamap_notify_title">ナカマップアプリがみつかりません</string>
+    <string name="screen_confirm_password_nakamap_notify_message">ナカマップをインストールしましか？</string>
+    <string name="screen_confirm_password_nakamap_url">http://nakamap.com</string>
+    <string name="screen_confirm_password_pw_default">しゃしんぶくろ</string>
+    <string name="screen_confirm_password_time_default">00:00:00</string>
+    <string name="screen_confirm_password_time_hint">※残り時間を短く変更できます</string>
+    <string name="pb_upload_confirm_title">写真を追加する</string>
+    <string name="pb_upload_confirm_btn_text">写真を追加する</string>
+    <string name="pb_upload_confirm_check_hint">上の赤いチェックボックスをクリックしてください。</string>
+    <string name="pb_upload_confirm_info1">いたずら防止のため、下記注意事項へのご理解、ご協力をお願いします。</string>
+    <string name="pb_upload_confirm_info2">この写真・動画が不快なコンテンツとして通報された場合、規約に定められた通り、事務局によりあなたのアカウントを停止および取得済みのポイント、アイテムの没収をすることがあります。</string>
+    <string name="pb_upload_confirm_info3">この写真・動画は他人に不快な印象を与えません。上記の注意事項を承認します。</string>
+    <string name="pb_content_delete_photo_inbox">ギャラリーに保存していない写真は見られなくなりますので注意してください。</string>
+    <string name="pb_content_delete_photo_outbox">履歴から写真を削除します。この合言葉でダウンロードもできなくなります。</string>
+    <string name="pb_content_cache_clear">キャッシュを削除します。よろしい\nでしょうか？</string>
+    <string name="pb_content_migration_code_error">引き継ぎコードを取得できませんでした。</string>
+    <string name="pb_local_save_expire_title">閲覧期間が終了しました</string>
+    <string name="pb_local_save_expire_content">合言葉%sは閲覧期間が終了しました。</string>
+    <string name="screen_upload_choose_photo_no_photos_mess">ギャラリーに写真がありません</string>
+    <string name="screen_upload_choose_photo_no_photos_select">写真を選んでください。</string>
+    <string name="pb_invitation_code">招待コード</string>
+    <string name="pb_invitation_code_change">無し</string>
+    <string name="pb_version">バージョン</string>
+    <string name="pb_notification_ctrl">通知表示</string>
+    <string name="pb_notification_on">ON </string>
+    <string name="pb_notification_off">OFF</string>
+    <string name="pb_version_change">1.1.3</string>
+    <string name="pb_terms">ご利用規約</string>
+    <string name="pb_logout_twitter">Twitterからログアウト</string>
+    <string name="pb_twitter">写真袋についてつぶやく</string>
+    <string name="pb_Contact">お問い合わせ</string>
+    <string name="pb_faq">よくある質問</string>
+    <string name="pb_faq_donguri_hoshii">ドングリほしい?</string>
+    <string name="pb_setting_main_invite_group">招待</string>
+    <string name="pb_input_invitation_code">招待コードを入力</string>
+    <string name="pb_invite">友達に招待コードを教える</string>
+    <string name="pb_title_confirm_password">合言葉の確認</string>
+    <string name="pb_btn_setting_input_code">決定</string>
+    <string name="pb_title_setting_invite">招待する</string>
+    <string name="pb_setting_input_code_intruduction">招待してくれた友達の招待コードを入力してね！あなたとお友達にハチミツを１個プレゼント！</string>
+    <string name="pb_setting_invite_freeperiod_friend_hour">[%1$s]時間（ %2$s人招待＋%3$sボーナス）</string>
+    <string name="pb_setting_contact_detail_name">名前：</string>
+    <string name="pb_setting_copytext_to_clipboard">コピー</string>
+    <string name="pb_other">その他</string>
+    <string name="pb_null"></string>
+    <string name="pb_setting_input_code_invitation_failed_title">招待失敗</string>
+    <string name="pb_setting_input_code_invitation_failed_message">既に招待されています。招待を２度受け取ることはできません。他の人に自分の招待コードを入れてもらうと、ハチミツが1個増えます！</string>
+    <string name="pb_setting_input_code_invitation_failed_btn_ok">OK</string>
+    <string name="pb_setting_input_code_invitation_failed_btn_cance">キャンセル</string>
+    <string name="pb_setting_contactdetail_sendmail_subject">「写真袋」の招待です。</string>
+    <string name="pb_setting_contactdetail_sendsms">スマートフォン用写真交換アプリ「写真袋」\nhttp://photobag.in/\n\n招待コード : %s\nイイコトあるよ！</string>
+    <string name="pb_setting_contactdetail_sendmail_body_part1">写真を簡単＆大量に交換できるスマートフォン用アプリ「写真袋」です。¥n http://photobag.in/¥n¥n 合言葉を決めるだけで簡単に写真の交換ができます。¥n もちろん無料！¥n¥n 招待コード：foobar¥n¥n [ 招待コードの入力方法 ]¥n １.下のURLかQRコードから、アプリをダウンロードしよう。¥n http://photobag.in/¥n¥n ２.起動したら「設定」の「招待コードを入力」から「foobar」と入力してみて下さい。¥n  二人のハチミツが1個増えますよ！¥n¥n ＝＝＝＝＝＝＝＝＝＝¥n 写真を簡単＆大量に交換できるアプリ¥n http://photobag.in/¥n" </string>
+    <string name="pb_setting_url_faq">http://photobag.in/faq?platform=android&amp;version=1.0&amp;lang=ja</string>
+    <string name="pb_password_length_url">http://photobag.in/wv/pswdlength.html?lang=ja</string>
+    <string name="pb_setting_url_what_is_honey">http://photobag.in/faq?id=question-honey;platform=android</string>
+    <string name="pb_setting_url_what_is_acorn">http://photobag.in/faq?id=question-acorn;platform=android</string>
+    <string name="pb_setting_url_what_is_gold">http://photobag.in/faq?id=question-goldacorn;platform=android</string>
+    <string name="pb_setting_url_faq_donguri_hoshii">http://photobag.in/acorn?n=%d&amp;lang=ja</string>
+    <string name="pb_setting_url_faq_donguri_info">http://photobag.in/acorn/android?lang=ja</string>
+    <string name="pb_setting_contactdetail_phone_title">電話</string>
+    <string name="pb_setting_contactdetail_mail_title">メール</string>
+    <string name="pb_setting_url_term_of_use">http://photobag.in/terms?lang=ja</string>
+    <string name="pb_setting_invitecode_empty">無し</string>
+    <string name="pb_invitation_input_done">招待済み</string>
+    <string name="pb_name_contact_isempty">無し</string>
+    <string name="pb_setting_main">お友達を招待すると\n無料の保存時間が増えるよ！</string>
+    <string name="pb_hint_ed_search_setting_invite">検索</string>
+    <string name="screen_title_settings_invite">招待する</string>
+    <string name="pb_setting_invite_choose_mail">連絡先から選ぶ</string>
+    <string name="pb_setting_invite_choose_share"> 他のアプリでおしえる</string>
+    <string name="pb_setting_invite_choose_twitter">ツイートする</string>
+    <string name="screen_title_settings_invite_detail">招待の詳細</string>
+    <string name="screen_title_settings_invite_input_code">招待コードを入力</string>
+    <string name="err_desc_invite_code_title">友達を招待する</string>
+    <string name="err_desc_invite_code_success">招待OK</string>
+    <string name="err_desc_invite_code_empty">招待コードが入力されていません。招待コードを入力してください。</string>
+    <string name="err_desc_invite_code_already_input">招待コードを既に入力済みです。友だちに自分の招待コードを教えて、入れてもらおう！</string>
+    <string name="err_desc_invite_code_not_found">招待コードを確認してください</string>
+    <string name="err_desc_invite_user_not_found">招待コードを確認してください</string>
+    <string name="err_desc_invite_cant_yourself"> 自分を招待することはできません</string>
+    <string name="err_desc_invite_already_invited">既に招待コードを入力しています。招待コードを２度入力することはできません。</string>
+    <string name="pb_download_purchase_desc_first">有効期限を延長しました</string>
+    <string name="pb_download_purchase_desc_second">写真の有効期限が延びて、\n写真の受け取りが開始されました。</string>
+    <string name="pb_download_purchase_desc_third">MADA</string>
+    <string name="pb_download_purchase_complete_message">今回だけ特別やで！</string>
+    <!-- No translate -->
+    <string name="screen_gallery_no_photos_mess">ギャラリーに写真がありません</string>
+    <string name="screen_gallery_photo_no_photos_select">写真を選んでください。</string>
+    <string name="screen_title_dowload_downloading">受け取り中</string>
+    <string name="pb_network_error_content">インターネットに接続されていません</string>
+    <string name="pb_network_error">インターネットに接続されていません</string>
+    <string name="pb_msg_no_conenction">インターネットに接続されていません</string>
+    <string name="pb_imv_set_as">保存</string>
+    <string name="pb_imv_share">共有</string>
+    <string name="pb_imv_report_it">通報</string>
+    <string name="pb_download_error_desc_text">電波の届く環境で\nもう一度お試してください</string>
+    <string name="pb_download_error_bubble_text">もう一度試して\nみてね！</string>
+    <string name="pb_download_error_btn_retry_text">もう一度</string>
+    <string name="pb_history_info_date_outbox">送った日</string>
+    <string name="pb_history_item_number">項目</string>
+    <string name="pb_connecting">接続中 …</string>
+    <string name="pb_setting_contactweb_send_message">\nu:%s</string>
+    <string name="upload_confirm_pass_title">合言葉の確認</string>
+    <string name="upload_koukaibukuro_title">公開袋</string>
+    <string name="upload_koukaibukuro_title_update">写真袋or公開袋</string>
+    
+    <string name="upload_select_photo_title">写真を選択してください</string>
+    <string name="upload_fail_title">送信失敗</string>
+    <string name="upload_set_pass_title">※ ８文字以上３０文字以内で入力してください</string>
+    <string name="pn_notification_title_bar">写真袋のメッセージ</string>
+    <string name="pn_notification_btn_text">NEW</string>
+    <string name="pn_notification_content_title">Receive from server</string>
+    <string name="pb_setting_contact_mail">info@photobag.in</string>
+    <string name="pb_report_it_msg">この写真は写真袋の規則に違反しています。</string>
+    <!-- <string name="pb_setting_contact_mail">sawada@aircast.co.jp</string> -->
+    <string name="pb_setting_contact_code">0</string>
+    <string name="pb_apihelper_connecttimeout">インターネットに接続できませんでした</string>
+    <string name="pb_apihelper_password_empty">合言葉を入れてください</string>
+    <string name="pb_apihelper_token_empty">トークンがありません。インターネットに接続できる状態で、アプリを再起動してください</string>
+    <!-- string for tweet by twitter -->
+    <string name="tweet_dialog_title">ツイート</string>
+    <string name="tweet_started_photobag_success">ボーナスでハチミツが１個増えた！</string>
+    <string name="tweet_started_photobag_content">写真袋をはじめたことをつぶやこう！\nボーナスでハチミツを１個プレゼント！</string>
+    <string name="tweet_started_photobag_tutorial">写真袋、はじめました。スマホの写真・動画交換にオススメの無料アプリ！iPhone、Android対応！\nhttp://photobag.in</string>
+    <string name="pb_dl_failed_post_started_photobag_text">つぶやきによるハチミツを取得できませんでした。</string>
+    <string name="tweet_invite_friend_by_twitter_title">ツイートする</string>
+    <string name="tweet_invite_friend_by_twitter_content">無料アプリ「写真袋」でスマホで写真交換しよう！いまダウンロードして設定から招待コード【%s】を入力すると、お互いの写真の保存時間が１時間増えてお得だよ！ \n http://photobag.in</string>
+    <string name="tweet_let_ur_friend_know_twitter_content">友達から写真がとどいているよ\n秘密の合言葉：\"%s\"</string>
+    <string name="pb_dialog_fail_title">取得失敗</string>
+    <string name="err_desc_invite_failed">つぶやきによるハチミツを取得できませんでした。</string>
+    <string name="pb_billing_dl_err_title">写真袋</string>
+    <string name="pb_billing_dl_err_message">購入を開始することはできません。もう一度試してみてね！</string>
+    <string name="pb_dl_login_twitter_username_text">User name</string>
+    <string name="pb_dl_login_twitter_pwd_text">Password</string>
+    <string name="pb_dl_already_post_started_photobag_tweet_text">既につぶやきによってハチミツを取得しています。つぶやきによるハチミツのプレゼントは初回のつぶやき時のみです。</string>
+    <string name="pb_dl_already_post_status_tweet_text">既につぶやきによる無料保存時間を延長しています。</string>
+    <string name="pb_dl_post_status_tweet_ok_text">ツイートの状態が更新しました!</string>
+    <string name="pb_dl_check_username_pass_text">登録メッセージを確認してください</string>
+    <string name="tweet_btn_post_tweet_text">ツイートする</string>
+    <string name="pb_dl_failed_post_status_tweet_text">ツイートを失敗しました</string>
+    <string name="pb_twitter_app_market_link">http://twitter.com/</string>
+    <string name="pb_dl_firstclick_message_title">ありがとうございます</string>
+    <string name="pb_dl_firstclick_message_body">まずはためしに「しゃしんぶくろ」で写真を受け取ってみてください。</string>
+    <string name="pb_dl_firstclick_magicphrase_defaulse">しゃしんぶくろ</string>
+    <string name="pb_dl_firstclick_magicphrase_defaulse_other">photobox</string>
+    <string name="pb_post_twitter_wall_text">写真袋で写真をアップしました。\n合言葉は[ %1$s (%2$s) ]\n#photobag\nhttp://photobag.in</string>
+    <string name="screen_confirm_password_twitter_notify_title">公式Twitterアプリが見つかりません。</string>
+    <string name="screen_confirm_password_twitter_notify_message">公式Twitterアプリをインストールしますか？</string>
+    <string name="pb_upload_compress_photo_failed">写真を圧縮中にエラーが発生しました。写真袋を一度終了し、もう一度お試しください</string>
+    <string name="pb_dl_logout_twitter_success">ログアウトしました</string>
+    <string name="video_err">動画を再生できません</string>
+    <string name="pb_file_not_found">ファイルが見つかりません</string>
+
+    <!-- 20120426 add for support upload video feature S -->
+    <string name="pb_compress_resizing">アップロードの準備中</string>
+    <string name="pb_compress_resizing_only_video1">動画ファイルの準備中（</string>
+    <string name="pb_compress_resizing_only_image1">画像ファイルの準備中（</string>
+    <string name="pb_compress_resizing_only_video2">ファイル）</string>
+    <string name="pb_compress_resizing_only_video3">枚目の動画ファイルを処理中です・・・ (</string>
+    <string name="pb_compress_resizing_only_image3">枚目の画像ファイルを処理中です・・・ (</string>
+    <string name="pb_compress_resizing_only_video4">)</string>
+    <string name="pb_compress_msg_compress_fail">写真を圧縮中にエラーが発生しました。写真袋を一度終了し、もう一度お試しください</string>
+    <string name="pb_choose_video_msg_file_too_long_title">選択できません</string>
+    <string name="pb_choose_video_msg_file_too_long_msg">アップロードできる長さを超えています。</string>
+    <string name="pb_upload_video_msg_file_too_long_title">動画を送信できません</string>
+    <string name="pb_upload_video_msg_file_too_long_msg">アップロードできる長さを超えています。</string>
+    <!-- 20120426 add for support upload video feature E -->
+
+    <string name="pb_choose_file_fake_title">Invalid file</string>
+    <string name="pb_choose_file_fake_msg">不正ファイルであるため、選択できません。</string>
+    <string name="pb_choose_file_external_storage_title">Extrenal storage is low</string>
+    <string name="pb_choose_file_external_storage_msg">SD カードの空き容量が足りないため、処理できません。</string>
+
+    <!-- 20120612 bac honey setting UI -->
+    <string name="pb_text_in_honey_jar">もっている\nハチミツの数</string>
+    <string name="pb_text_tutorial_help">ハチミツの入手方法はこちら </string>
+    <string name="pb_text_tutorial_help_underline"><u>ハチミツの入手方法はこちら </u></string>
+    <string name="pb_url_below_honey">http://photobag.in/faq?</string>
+
+    <!-- 20121405 HaiNT15 confirm public password S -->
+    <string name="pb_public_magic_phrase">おすすめ合言葉にエントリーしてたくさんの人に見てもらおう</string>
+    <!-- 20121405 HaiNT15 confirm public password E -->
+
+
+    <!-- ban func -->
+    <string name="pb_password_banned_title">ユーザーレビュー中</string>
+    <string name="pb_password_banned_context">過去に不正なダウンロード行為が行われた可能性があります。心当たりが無い場合は、確認いたしますので恐縮ですがお問合せください。</string>
+    <string name="pb_your_honey">もっているハチミツの数</string>
+    <string name="pb_how_to_get_your_honey"><u>ハチミツの入手方法はこちら</u></string>
+    <string name="share_with_nakamap_pre">写真袋で写真をアップしました。\n合言葉は\n</string>
+    <string name="share_with_nakamap_aft">\n写真袋アプリをDLするならこちら！\nhttps://play.google.com/store/apps/details?id=com.kayac.photobag</string>
+    <string name="useragent">Photobag</string>
+    <string name="honey_remain">もっているハチミツの数: </string>
+    <string name="pb_text_in_honey_x">x</string>
+    <string name="pb_text_in_honey_default">0</string>
+    <string name="pb_upload_select_video_hint">長い動画を送るには時間がかかる場合があります</string>
+    <string name="pb_setting_new">ほかの機能</string>
+    <string name="pb_setting_mail_to_pc">PCから写真を送る</string>
+    <string name="pb_migration_header">機種変更</string>
+    <string name="pb_setting_my_migration_code">引き継ぎコード確認</string>
+    <string name="pb_setting_license_title">ライセンス情報</string>
+    <string name="pb_setting_my_migration_code_verify">データ引き継ぎ</string>
+    <string name="pb_setting_purchase">交換する</string>
+    <string name="pb_setting_purchase_donguri">金ぴかドングリをいますぐGET</string>
+    <string name="pb_setting_sending_mail">メール送信画面へ</string>
+    <string name="pb_setting_sending_merge_code_by_mail">コードをメールする</string>
+    <string name="pb_setting_mailtext_pre">宛先(To)に、PCで受け取れるメールアドレスを入れて、\n↓の内容をそのまま送信してください。\n================================\n\nPCで写真を大量に送れる！コチラのURLにアクセス！\n</string>
+    <string name="pb_setting_mailtext_pos">\n\n上記URLの有効期限は24時間です。\n有効期限を過ぎた場合は、再度アプリからメールを送信してください。\n\n\nメアド間違えへんようにな\n  クマより\n\n\n\nandroidから送信</string>
+    <string name="pb_setting_mailtext_error">接続中にエラーが発生しました。\n\nネットワークの状態を確認して、しばらくしてから再度お試し下さい。</string>
+    <string name="pb_setting_mail_title">写真袋</string>
+    <string name="pb_setting_mail_intro">PCで受け取れるアドレスにメールを送って、メールの中のURLを開こう!</string>
+    <string name="pb_setting_mail_bear">PCでも写真が\n送れるんや!</string>
+    <string name="screen_confirm_password_btn_facebook">フェイスブックでおしえる</string>
+    <string name="pb_facebook_title">写真を投稿</string>
+    <string name="pb_twitter_title">メッセージを投稿</string>
+    <string name="pb_facebook_btn_send">投稿</string>
+    <string name="pb_facebook_btn_cancel">やめる</string>
+    <string name="pb_facebook_btn_change">写真を変更</string>
+    <string name="pb_twitter_btn_do_twit">ツイートをする</string>
+    <string name="pb_twitter_btn_do_facebook_post">Facebookに投稿する</string>
+    <string name="pb_twitter_progress_do_twitting">ツイート中。。。</string>
+    <string name="pb_twitter_toast_twit_done">ツイートをしました！</string>
+    
+    <string name="pb_facebook_over">投稿完了しました!</string>
+    <string name="pb_facebook_text_pre">写真袋のアプリで写真をアップしました。ダウンロードする合言葉は [</string>
+    <string name="pb_facebook_text_post">]です。</string>
+    <string name="pb_facebook_net_error">投稿失敗しました、しばらくしてから再度お試し下さい。</string>
+    <string name="pb_facebook_auth_error">許可が失効したようです、もう一度お試して許可を取って下さい。</string>
+    <string name="pb_facebook_app_not_exists">facebookアプリを存在していません。ご確認ください。</string>
+    <string name="donguri_text_underline"><u>ドングリほしい？</u></string>
+    <string name="back_to_my_page">マイページへ</string>
+    <string name="main_setting_title">設定</string>
+
+    <!-- PAGE DOWNLOAD PURCHASE COMPLETE -->
+    <string name="pb_receive_text_third_description">クマがハチミツのお礼にドングリをくれたよ！ ドングリの数はマイページから確認できます。</string>
+    <string name="pb_receive_text_third_description_trial">おためしハチミツをあげるとドングリはもらえません。ハチミツを持っているときは、ハチミツが優先的に使われ、ドングリがもらえます。</string>
+    <string name="receive_honey_notif">ハチミツをあげました</string>
+    <string name="receive_trial_honey_notif">おためしハチミツ（ドングリなし）をあげました</string>
+    <string name="pb_receive_text_third_description_note">注）</string>
+
+    <!-- PAGE MY PAGE -->
+    <string name="pb_my_page_kumo_instruction">ドングリをためると\nハチミツに交換できるよ</string>
+    <string name="pb_my_page_notification_donguri_pre">ドングリが</string>
+    <string name="pb_my_page_notification_donguri_post">つ追加されたで~</string>
+    <string name="pb_my_page_honey_exchange_donguri_free_get">ドングリをいますぐゲット</string>
+    <string name="pb_my_page_button_trade_honey">ハチミツに交換する</string>
+    <string name="pb_my_page_button_trade_by_acorn">ドングリ交換所にいく</string>
+    <string name="pb_my_page_button_setting">設定ページへ</string>
+    <string name="hachimitsu_text_underline"><u>ハチミツって？</u></string>
+    <string name="hachimitsu_otameshi_text_pre">おためし: </string>
+    <string name="pb_my_page_exchange_intro">交換が完了しました！ハチミツが増えたことを確認しましょう！ </string>
+    <string name="pb_my_page_exchange_over">交換が完了しました！</string>
+    <string name="pb_my_page_honey_get">ハチミツGETしたで~</string>
+    <string name="pb_my_page_acorn_get">ドングリGETしたで~</string>
+    <string name="pb_my_page_gold_get">金ぴかドングリGETしたで~</string>
+    <string name="pb_my_page_sp_honey_get">おためしハチミツGETやで~</string>
+    <string name="pb_my_page_text_honey_get">ハチミツをGET！</string>
+    <string name="pb_my_page_text_acorn_get">ドングリをGET！</string>
+    <string name="pb_my_page_text_gold_get">金ぴかドングリをGET！</string>
+    <string name="pb_my_page_text_honey">ハチミツ</string>
+    <string name="pb_my_page_text_otameshi">おためしハチミツ</string>
+    <string name="pb_my_page_text_acorn">ドングリ</string>
+    <string name="pb_my_page_text_gold">金ぴかドングリ</string>
+    <string name="pb_my_page_text_count"> 個</string>
+    <string name="pb_my_page_text_qmark">？</string>
+
+    <!-- PAGE EXCHANGE HONEY -->
+    <string name="pb_exchange_honey_title">ハチミツに交換する</string>
+    <string name="pb_exchange_honey_dialog_title">ハチミツに交換する</string>
+    <string name="pb_exchange_honey_dialog_message＿pre"></string>
+    <string name="pb_exchange_honey_dialog_message＿post">個のハチミツと交換します。本当によろしいですか?</string>
+    <string name="pb_exchange_honey_button_trade">ハチミツに交換する</string>
+    <string name="pb_exchange_honey_button_get_donguri">ドングリをいますぐゲット</string>
+    <string name="pb_exchange_honey_button_get_gold">金ぴかドングリをGET</string>
+    <string name="pb_exchange_honey_text_first_pre"></string>
+    <string name="pb_exchange_honey_text_first_post">%sで１つのハチミツと交換できます</string>
+    <string name="pb_exchange_honey_text_calculate_first">持っている%sの数</string>
+    <string name="pb_exchange_honey_text_calculate_second">交換に使う%sの数</string>
+    <string name="pb_exchange_honey_text_calculate_third">残りの%sの数</string>
+    <string name="pb_exchane_honey_text_second_line_one_pre"></string>
+    <string name="pb_exchane_honey_text_second_line_one_post">個のハチミツと交換できます</string>
+    <string name="pb_exchane_honey_text_second_line_two">いくつ交換しますか?</string>
+    <string name="pb_exchange_honey_not_enough_acorn">交換できるドングリがありません。</string>
+    <string name="pb_exchange_honey_not_enough_gold">交換できる金ぴかドングリがありません。</string>
+
+    <!-- PAGE EXCHANE LIST | GOODS -->
+    <string name="pb_exchange_acorn_title">ドングリ交換所</string>
+    <string name="pb_exchange_acorn_empty">ネットワークの状態を確認して、しばらくしてから再度お試しください。</string>
+    <string name="pb_exchange_acorn_total_count">所持数　%d 個</string>
+    <string name="pb_exchange_acorn_price"> ドングリ</string>
+    <string name="pb_exchange_acorn_price_gold"> 金ぴかドングリ</string>
+    <string name="pb_exchange_acorn_price_30d">30 ドングリ</string>
+    <string name="pb_exchange_acorn_price_500g">500 金ぴかドングリ</string>
+    <string name="pb_exchange_acorn_price_1000g">1000 金ぴかドングリ</string>
+    <string name="pb_exchange_acorn_price_15g">15 金ぴかドングリ</string>
+    <string name="pb_exchange_acorn_price_500">500</string>
+    <string name="pb_exchange_acorn_price_1000">1,000</string>
+    <string name="pb_exchange_acorn_num_0">0</string>
+    <string name="pb_exchange_acorn_text_needed">必要な金ぴかドングリ</string>
+    <string name="pb_exchange_acorn_text_owned">現在の金ぴかドングリ</string>
+    <string name="pb_exchange_acorn_start">交換する</string>
+    <string name="pb_exchange_acorn_confirm">メールで申し込みをする</string>
+    <string name="pb_exchange_acorn_cancel">交換しない</string>
+    <string name="pb_exchange_acorn_sub_acorn">ドングリを交換する</string>
+    <string name="pb_exchange_acorn_sub_gold">金ぴかドングリを交換する</string>
+    <string name="pb_exchange_acorn_link_acorn"><u>ドングリをGETする</u></string>
+    <string name="pb_exchange_acorn_link_gold"><u>金ぴかドングリをGETする</u></string>
+    <string name="pb_exchange_acorn_confirm_itune">%d金ぴかドングリ\n\n↓\n\niTunes ギフトコード（500円分）</string>
+    <string name="pb_exchange_acorn_confirm_amazon">%d金ぴかドングリ\n\n↓\n\nAmazon ギフトコード（1000円分）</string>
+    <string name="pb_exchange_acorn_email_itune">PhotobagGift_iTunes</string>
+    <string name="pb_exchange_acorn_email_amazon">PhotobagGift_amazon</string>
+    <string name="pb_exchange_acorn_not_enough">ドングリの数が足りないです。</string>
+    <string name="pb_exchange_gold_not_enough">金ぴかドングリの数が足りないです。</string>
+    <string name="pb_exchange_acorn_goods_honey">ハチミツ</string>
+    <string name="pb_exchange_acorn_company_itune">iTunes 株式会社</string>
+    <string name="pb_exchange_acorn_goods_itune">iTunes ギフトコード（500円分）</string>
+    <string name="pb_exchange_acorn_detail_amazon">※ Amazon.co.jpは、本プロモーションのスポンサーではありません。\n\n※ Amazonギフトカード細則についてはhttp://www.amazon.co.jp/giftcard/tcをご確認ください。\n\n※ Amazon、Javari.jp、Amazon.co.jpおよび Amazon.co.jpのロゴはAmazon.com, Inc.またはその関連会社の商標です。</string>
+    <string name="pb_exchange_acorn_company_amazon">アマゾンジャパン 株式会社</string>
+    <string name="pb_exchange_acorn_goods_amazon">Amazon ギフトコード（1000円分）</string>
+    <string name="pb_exchange_acorn_detail_itune">※本アプリにおけるプレゼントは株式会社AIRCASTが独自に実施しており、米アップル社との関わりはございません。</string>
+    <string name="pb_exchange_acorn_goods_confirm">※毎週水曜日までの申請分を翌週木曜日に発行します。\n※ 発行時は事務局からのメール通知にてお知らせし、本人確認のため事務局が指定した合言葉をアップロードいただく必要がございます。\n※ 在庫状況によって 発行が遅れる場合があります。予めご了承ください。尚、申請より2週間経過してもコードを受け取れない場合は、アプリ内のお問い合わせよりご連絡ください。\n※ メール送信の際 は間違いのないよう、メール本文の編集はせずにお送りください。</string>
+    <string name="pb_exchange_acorn_confirm_title">下記の内容で金ぴかドングリを交換しますか?</string>
+    <string name="pb_exchange_acorn_confirm_extra">メール送信するとギフト交換のお申込みが完了します</string>
+    <string name="pb_exchange_acorn_confirm_after">【重要】水曜日までのギフトお申込み分に関して翌週木曜日にご連絡いたします。金ぴかドングリの消費はギフトをお渡しした時点となりますのでご注意ください。\n\n※メールの送信が完了していない場合、ギフトのお引き渡しのご連絡ができません。\n\n</string>
+    <string name="pb_exchange_acorn_ok_title">金ぴかドングリが不足しています</string>
+    <string name="pb_exchange_acorn_ok_content">交換に必要な金ぴかドングリの数が不足しています。</string>
+    <string name="pb_exchange_acorn_ok_button">OK</string>
+
+    <!-- HONEY SHOP -->
+    <string name="pb_honey_shop_title">ハチミツショップ</string>
+    <string name="pb_honey_shop_intro_title">特定商取引法に基づく表示</string>
+    <string name="pb_honey_shop_btn_rule"><u>特定商取引法に基づく表示</u></string>
+    <string name="pb_honey_shop_btn_back">ハチミツショップへもどる</string>
+    <string name="pb_honey_shop_intro_msg">特定商取引法に基づく表示\n\n【販売業者】\n株式会社AIRCAST(エアーキャスト)\n\n【所在地】\n〒101－0025 東京都千代田区 神田佐久間町 3－19－1\n\n【お問い合わせ先】\ninfo@photobag.in\n\n【運営統括責任者】\n代表取締役 大野光明\n\n【料金等】\n対象となるデジタルコンテンツ(以下「コンテンツ」)ごとに表示される金額。\n\n【代金の支払い方法】\nAndroidをご利用の方は、GooglePlayでの購入、 お支払となります。\n\n【代金の支払時期】\nコンテンツ提供の前\n\n【商品・役務の提供時期】\nコンテンツは、お支払手続完了後、直ちに提供いたします。\n\n【販売価格以外の費用】\n電気通信回線の通信料金等(インターネット接続料金を含む)\n\n【キャンセルポリシー】\nコンテンツの返品及び交換はできないものとします。\n\n【動作環境】\nAndroid2.3.3以上のバージョンをサポートいたします。\n\n</string>
+    <string name="pb_honey_shop_honey_count" formatted="false">もっているハチミツ：%d個、おためし：%d個</string>
+    <string name="pb_honey_shop_btn_purchase">ハチミツを購入する</string>
+    <string name="pb_honey_shop_item_btn_purchase">購入する</string>
+    <string name="pb_honey_count_0">0</string>
+    <string name="pb_honey_shop_purchase_suc">ハチミツ購入成功しました</string>
+    <string name="pb_honey_shop_error_title">通信エラー</string>
+    <string name="pb_honey_shop_error_default">通信中エラーが発生しました、もう一度ハチミツショップを開けてください。</string>
+    <string name="pb_honey_shop_error_extra">通信中エラーが発生しました、もう一度ダウンロードしてください。</string>
+    <string name="pb_honey_shop_error_init">通信中エラーが発生しました、アカウントとグーグルプレイアプリの状態を確認してください。</string>
+    <string name="pb_honey_shop_error_market_old">Playストアにアップデートする必要が有ります。</string>
+
+    <!-- Metaps -->
+    <string name="metapsLabelGoMarket">ダウンロード</string>
+    <string name="metapsLabelInstalled">インストール済</string>
+    <string name="metapsLabelAppFree"></string>
+    <string name="metapsLabelRealCurrency">￥</string>
+    <string name="metapsOfferWallExplanation">アプリのダウンロードやサービス申し込みでポイントをゲットしよう！</string>
+    <string name="metapsLabelOptionConfirm">成果再確認</string>
+    <string name="metapsLabelOptionFinish">アプリに戻る</string>
+    <string name="metapsMessageNetworkError">ネットワーク接続に失敗しました。しばらくたってからやりなおしてください。</string>
+    <string name="metapsMessageServerError">情報読み込みに失敗しました。お手数ですがしばらくたってからやり直してください。</string>
+
+    <!-- reward -->
+    <string name="pb_acorn_forest_title">ドングリの森</string>
+
+    <!-- PAGE CHANGE INTERVAL TIME -->
+    <string name="pb_change_interval_photo_title">有効期限の時間設定</string>
+    <!-- PAGE NOTIFICATION LIST -->
+    <string name="pb_notification_title">クマのメモ</string>
+    <!-- DIALOG PICKER -->
+    <string name="dialog_btn_complete">完了</string>
+    <string name="pb_contact_report_term_violation">利用規約違反を報告する</string>
+
+    <!-- TIME EXPIRATION SETTINGS -->
+    <string name="pb_send_interval_time_settings">有効期限の時間設定ができます</string>
+    <string name="pb_send_interval_time_duration">時間設定は、0時間〜有効期限残り時間の間で設定することができます。</string>
+    <string name="pb_send_interval_honey_info">自分が送った合言葉にハチミツが使われると、ドングリがもらえます。</string>
+    <string name="pb_send_interval_change_interval">有効期限を設定する</string>
+    <string name="pb_send_interval_caution">※有効期限は減らすことはできますが、延長することはできません。</string>
+    <string name="pb_button_ok">完了</string>
+    <string name="pb_button_cancel">キャンセル</string>
+    <string name="pb_text_hours">時間</string>
+    <string name="pb_text_mins">分</string>
+    <string name="pb_settings_expiration_completed">有効期限の時間設定\n設定が完了しました！</string>
+   <!--  ishti -->
+    <string name="pb_download_aikotoba_already_uptodate">すでに受け取っている合言葉です。履歴の受信箱を確認してください。</string>
+    <string name="pb_clear_cache">キャッシュ削除</string>
+    <string name="pb_license_setting_text">ライセンス</string>
+  
+    <string name="pb_migration_code">引き継ぎコード</string>
+    <string name="pb_migration_code_input">引き継ぎコードの入力</string>
+    <string name="pb_send_migration_code_verify">引き継ぎを行う</string>
+    <string name="pb_migration_code_warning">警告: 引き継ぎコードで機種変更すると、アイテムは引き継ぎ先に上書きされ、引き継ぎ元の端末はご利用いただけなくなります。写真・動画は引き継がれません。</string>
+    <string name="pb_migration_code_verify_warning">警告: 引き継ぎコードで機種変更すると、アイテムは引き継ぎ先に上書きされ、引き継ぎ元の端末はご利用いただけなくなります。写真・動画は引き継がれません。</string>
+    <string name="pb_data_migration_start">上記のデータを引き継ぎます。\n今持っているアイテムは消失します。よろしいでしょうか。</string>
+    <string name="pb_data_migration_other_error">申し訳ありません。時間を置いてもう一度お試しください。</string>
+    <string name="pb_alert_migration_honey_count">おためしハチミツ：</string>
+    <string name="pb_alert_migration_acorn_count">ドングリ：</string>
+    <string name="pb_alert_migration_mapple_count">ハチミツ：</string>
+    <string name="pb_alert_migration_goldacorn_count">金ぴかドングリ：</string>
+    <string name="pb_alert_own_migration_code_insert_kinshi">自分の引き継ぎコードは入力できません。</string>
+    <string name="pb_mail_migration_code_1">警告！必ずお読みください！:\n</string>
+    <string name="pb_mail_migration_code_2">機種変更で引き継げるデータはアイテムのみです。アプリ内の写真や動画は引き継げません。\n</string>
+    <string name="pb_mail_migration_code_3">引き継ぎ先の端末ではデータが上書きされるため加算はされません。元々所持していたアイテムは削除されます。\n</string>
+    <string name="pb_mail_migration_code_4">写真や動画のデータは別途バックアップを行ってください。</string>
+
+    <!-- Chat function -->
+    <string name="pb_chat_message_input_hint">記入スペース</string>
+    <string name="chat_password_free_time">有効期限 ： </string>
+    <string name="chat_password_default_time_expired">00：00：00</string>
+    <string name="chat_input_character_limit">100文字以内で投稿してください</string>
+    <string name="device_local_language_japanese">日本語</string>
+
+    <!-- Koukaibukuro function -->
+    <string name="pb_upload_koukaibukuro_dialog_publsh_passwd_confirmation_title">公開袋へ投稿する</string>
+    <string name="pb_upload_koukaibukuro_dialog_publsh_passwd_confirmation_message">本当に公開する？</string>
+    <string name="pb_upload_koukaibukuro_dialog_publsh_passwd_done_title">完了ダイアログ</string>
+    <string name="pb_upload_koukaibukuro_dialog_publsh_passwd_done_message">公開完了しました</string>
+    <string name="pb_koukaisetting_message_1">友人や家族と写真・動画を共有します。合言葉を知っている人だけが受取ることができます。</string>
+    <string name="pb_koukaisetting_message_2">自分の作品を一般ユーザーに見てもらいます。公開袋に合言葉が表示され、誰でも受取ることができます。</string>
+    <string name="pb_koukaisetting_checkbox_message">この写真・動画は公序良俗に反せず、他人に不快な印象を与えません。</string>
+    <string name="pb_chat_message_internet_offline_dialog_title">通信エラー</string>
+    <string name="pb_chat_message_internet_offline_dialog_message">ネットワークの状態を確認して、しばらくしてから再度お試し下さい。</string>
+
+    <!-- photobag exit dialog -->
+    <string name="app_exit_message">写真袋を終了しますか？</string>
+
+    <!-- photobag download preview -->
+    <string name="pb_download_preview_tv_albuminformation">合言葉内の写真・動画を確認できます。</string>
+    <string name="pb_download_preview_tv_download">サムネイルをタップすることでその中身の\n写真・動画のサムネイルを閲覧することが\nできます。</string>
+    <string name="pb_download_preview_title">ダウンロード確認</string>
+    <string name="pb_kumamemo_notification_text">忘れないようにメモするで</string>
+
+    <!-- photobag history item update type -->
+    <string name="review">REVIEW</string>
+    <string name="publish">OPEN</string>
+    <string name="reject">REJECT</string>
+
+    <!-- Cache clear -->
+    <string name="cache_clear_toast">キャッシュを削除しました。</string>
+
+    <!-- Chat -->
+    <string name="chat_active_status_valid">有効</string>
+    <string name="chat_active_status_end">終了</string>
+ <string name="pb_buy_honey_together">ハチミツを複数購入</string>
+ <string name="pb_buy_maple_result">ハチミツの購入が完了しました。\nハチミツ所持数：%d 個</string>
+
+
+    <!-- kb string res -->
+
+
+    <!-- main page segmented button title -->
+
+    <string name="mainpage_segmented_title1">新着順</string>
+    <string name="mainpage_segmented_title2">ランキング</string>
+    <string name="mainpage_segmented_title3">おすすめ</string>
+
+    <!-- search page segmented button title -->
+
+    <string name="searchpage_segmented_title1">新着順</string>
+    <string name="searchpage_segmented_title2">ランキング</string>
+    <string name="searchpage_segmented_title3">公式合言葉</string>
+
+    <!-- my page segmented button title -->
+
+    <string name="mypage_segmented_title1">受信箱</string>
+    <string name="mypage_segmented_title2">送信箱</string>
+    <string name="mypage_segmented_title3">お気に入り</string>
+    <string name="mainpage_seg_txt_left">最新順</string>
+    <string name="main_page_title">公開袋</string>
+    <string name="search_page_title">検索</string>
+    <string name="my_page_title">マイページ</string>
+     <string name="mypage_share_type_title">ログイン情報を変更</string>
+     
+       <!-- open id button title -->
+      <string name="openid_share_mail">メールで登録</string>
+       <string name="openid_share_facebook">FacebookのIDで登録</string>
+        <string name="openid_share_confirm">ログアウト</string>
+          <string name="openid_share_mail_submmit">登録メール送信</string>
+    
+   
+
+    <!-- exit titlr & mgs -->
+    <string name="exit_title">終了</string>
+    <string name="exit_mgs">公開袋を終了しますか？</string>
+
+    <!-- download mgs -->
+    <string name="dl_mgs">合言葉をダウンロードしますか？</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="fv_mgs">お気に入りに追加して\n
+あとでダウンロードする。</string>
+    <string name="fv_delete_mgs">お気に入りの一覧から削除する</string>
+    <string name="fv_add">お気に入りに追加する</string>
+    <string name="fv_delete">お気に入りから解除する</string>
+
+    <!-- text -->
+    <string name="donguri_button_text">ドングリ交換所へいく</string>
+    <string name="nick_registration_button_text">ニックネームを変更"</string>
+    <string name="search_button_text">キャンセル</string>
+    <string name="search_no_item_found_txt">に一致する結果は見つかりませんでした</string>
+
+    <!-- password download category -->
+    <string name="kb_open">開く</string>
+    <string name="kb_free">無料</string>
+    <string name="kb_buton_go_to_donguri_screen">ドングリ交換所へいく</string>
+    <string name="kb_nickname_exist">現在のニックネームです。</string>
+    <string name="kb_search_total_item">全て %d 合言葉があります。</string>
+    <string name="kb_search_find_item">%d 項目みつかりました。</string>
+    <string name="kb_search_first_time">合言葉を検索できます。</string>
+    <string name="kb_search_not_found">この合言葉は現在投稿されていません。</string>
+    <string name="kb_search_whitespace">空白は使用できません。</string>
+    <string name="kb_search_hint">検索</string>
+    <string name="kb_empty_nickname_warning">ニックネームを入力してください。</string>
+    <string name="kb_nickname_change">ニックネームを変更</string>
+    <string name="kb_nickname_hint">ニックネーム</string>
+    <string name="kb_kumamemo_button_text">クマメモ</string>
+    <string name="kb_history_info_sent_date">送った日</string>
+
+    <!-- pull to refresh -->
+
+   <!--  <string name="pull_to_refresh_pull_label">リフレッシュするにはプル...</string> -->
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">読み込んでいます...</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh...</string>
+
+     <!-- Twitter Configurations -->
+    <!-- <string name="twitter_callback">oauth://t4jsample</string>
+    <string name="twitter_consumer_key">oyAZiiG6Nfuq8RYR6fUK1WOR4</string>
+    <string name="twitter_consumer_secret">UKqaQtIbZE8bd0JMuxKuphy3I5Z2a4UQqprSxVXobDz8NTP2Yq</string> -->
+    <string name="twitter_callback">oauth://t4jsample</string>
+    <string name="twitter_consumer_key">jKkqSmfHcBjuazHP0f2w</string>
+    <string name="twitter_consumer_secret">5QyHAG0UUViuOEnjmgaqJkdRLo7xpBgLcClrZmmyjo</string>
+    <string name="twitter_oauth_verifier">oauth_verifier</string>
+    <string name="hello">Hello, </string>
+    
+   <!--  history item delete title -->
+   <string name="history_item_delete_title">以下の合言葉を削除します。\nよろしいですか？</string>
+   
+    <!-- <string name="facebook_app_id">779851855419788</string> -->
+    <string name="facebook_app_id">837896309631843</string>      
+    <string name="share">Share</string>
+    
+   <!-- Network error -->
+   <string name="pb_network_error_toast">通信状態を確認してください。</string>
+   
+     <!-- License Text -->
+     <string name="pb_license1_text">This software includes the work that is distributed \n in the Apache License 2.0\nhttp://www.apache.org/license/License-2.0</string>
+     
+     <string name="pb_license2_text">This software includes the work that is distributed \n in the Apache License 2.0\nhttp://www.apache.org/license/License-2.0</string>
+    
+        <string name="pb_license3_text">
+<![CDATA[
+        * MultipleOrientationSlidingDrawer \n
+        Copyright(c) 2001 - 2012 Sileria, Inc.\n\n
+* FButton  \n
+Copyright {2014} {Le Van Hoang}\n\n
+* Facebook-Android  \n
+Copyright 2010-present Facebook.\n\n
+* kankan-wheel  \n
+Copyright 2010 Yuri Kanivets.
+         ]]>
+    </string>
+    
+ <string name="pb_network_not_available_general_message">ネットワークの状況を確認して、しばらくしてから再度お試しください</string>
+ <string name="pb_chat_tap_dialog_copy">コピー</string>
+ <string name="pb_chat_tap_dialog_download">受けとる</string>
+
+ <string name="pb_PBWebViewPhotoContestActivity_screen_titile">公開袋フォトコンテスト</string>
+ 
+<string name="pb_PBUploadKoukaibukuroActivity_go_to_photobag">写真袋へ</string>
+<string name="pb_PBUploadKoukaibukuroActivity_go_to_koukaibukuro">公開袋へ</string>
+ 
+  <string name="total_chat_item">チャット　%d件</string>
+  
+ <!--  four digit -->
+  <string name="is_four_digit_set">パスワードを設定する</string>
+   <string name="hint_four_digit_set"> 4文字で設定可能。\n
+数字のみ記入可能。</string>
+    <string name="make_it_complex_title"> 文言</string>
+    
+    <string name="dl_four_digit_title">パスワードが\n
+必要だよ</string>
+    <string name="dl_four_digit_mgs">この写真をダウンロードするにはパスワードが必要です。\n
+パスワードが分からない場合、送信者の方にご確認ください。</string>
+  <string name="dl_four_digit_hint">パスワードを入力</string>
+
+  
+   <!-- new share text -->
+      <string name="pb_post_twitter_wall_text_new">写真袋で写真をアップしました。\n合言葉は [ %1$s ]  \nパスワード：[ %2$s ]\nhttp://photobag.in/p/%3$s  \n※パスワードが設定されている場合は、受け取り時にパスワード記入が必要となります。 \n写真袋アプリをDLするならこちら！https://play.google.com/store/apps/details?id=com.kayac.photobag</string>
+
+<!-- "TWEET_PASSWORD_TEXT" = "写真袋で写真をアップしました。\n合言葉は[ %@ ]\nパスワード：[ %@ ]\n#photobag"; -->
+
+<string name="twitter_post_text">写真袋で写真をアップしました。\n合言葉は[ %1$s ]\nパスワード：[ %2$s ]\n#photobag</string>
+
+</resources>

@@ -1,0 +1,33 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" >
+
+    <solid android:color="@color/red" />
+
+    <stroke
+        android:width="2dp"
+        android:color="@color/white" />
+
+
+</shape>
+<!-- 
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" >
+
+    <solid android:color="#00000000" />
+
+    <stroke
+        android:dashGap="2dp"
+        android:dashWidth="4dp"
+        android:width="4dp"
+        android:color="#990000FF" />
+
+    <padding
+        android:bottom="7dp"
+        android:left="7dp"
+        android:right="7dp"
+        android:top="7dp" />
+
+    <corners android:radius="4dp" />
+
+</shape>
+ -->

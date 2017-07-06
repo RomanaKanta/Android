@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+     <color name="gray_light">#EAEAEA</color>
+     
+        <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+    <color name="blue">#0000ff</color>
+    <color name="blue_light">#00ffff</color>
+    
+    <color name="darker_transparent">#C1000000</color>
+    <color name="default_background">#000</color>
+
+    <!-- configuration for album set page -->
+    <color name="albumset_background">#1A1A1A</color>
+    <color name="albumset_placeholder">#333</color>
+    <color name="albumset_label_background">#EE414143</color>
+    <color name="albumset_label_title">#FBFBFB</color>
+    <color name="albumset_label_count">#A9ABAD</color>
+
+    <!-- configuration for album page -->
+    <color name="album_background">#1A1A1A</color>
+    <color name="album_placeholder">#333</color>
+
+    <!-- configuration for photo page -->
+    <color name="photo_background">#1A1A1A</color>
+    <color name="photo_placeholder">#333</color>
+
+    <!-- configuration for manage cache page -->
+    <color name="cache_background">#1A1A1A</color>
+    <color name="cache_placeholder">#333</color>
+
+    <color name="bitmap_screennail_placeholder">#333</color>
+
+    <color name="slideshow_background">#1A1A1A</color>
+
+    <color name="button_dark_transparent_background">#6000</color>
+
+    <color name="ingest_highlight_semitransparent">#8833b5e5</color>
+    <color name="ingest_date_tile_text">#33b5e5</color>
+
+    <!-- Camera resources below -->
+
+    <color name="recording_time_elapsed_text">#FFFFFFFF</color>
+    <color name="recording_time_remaining_text">#FFFF0033</color>
+    <color name="on_viewfinder_label_background_color">#77333333</color>
+    <color name="review_control_pressed_color">#FF33B5E5</color>
+    <color name="review_control_pressed_fan_color">#3F33B5E5</color>
+    <color name="review_background">#FF000000</color>
+    <color name="icon_disabled_color">#DD777777</color>
+    <color name="time_lapse_arc">#FFC5C5C5</color>
+    <color name="indicator_background">#40000000</color>
+    <color name="popup_title_color">#ff33b5e5</color>
+    <color name="popup_background">#ff282828</color>
+    <color name="pano_progress_empty">#FF2E2E2E</color>
+    <color name="pano_progress_done">#FF33525E</color>
+    <color name="pano_progress_indication">#FF0099CC</color>
+    <color name="pano_progress_indication_fast">#FFFF2222</color>
+    <color name="mode_selection_border">#33B5E5</color>
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <color name="bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="bright_foreground_holo_dark">#fff3f3f3</color>
+    <color name="face_detect_start">#80ffffff</color>
+    <color name="face_detect_success">#8050d060</color>
+    <color name="face_detect_fail">#80d05060</color>
+    <color name="gray">#09AAAAAA</color>
+   <color name="color"> #90000000</color>
+    
+     <color name="actionbar_color">#3FBA91</color>
+
+    <color name="titlestrip_background_color">#DEDEDE</color>
+    <color name="titlestrip_text_color">#999999</color>
+
+    <color name="item_border_color">#666666</color>
+    <color name="item_default_color">#EEEEEE</color>
+    <color name="item_pressed_color">#CCCCCC</color>
+    <color name="item_activated_color">#77CEEE</color>
+    
+    
+</resources>

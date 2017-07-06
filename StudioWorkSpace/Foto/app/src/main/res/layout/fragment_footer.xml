@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragment_horizontal_listview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_ht"
+        android:layout_alignParentBottom="true"
+        android:background="@color/header_bg"
+        android:scrollbars="none" />
+
+    <SeekBar
+        android:id="@+id/seekBar_effect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fragment_horizontal_listview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/seekbar_padding"
+        android:layout_marginLeft="@dimen/seekbar_mrgn"
+        android:layout_marginRight="@dimen/seekbar_mrgn"
+        android:background="@color/folating_expand_transparent_background"
+        android:paddingBottom="@dimen/seekbar_mrgn"
+        android:paddingLeft="@dimen/seekbar_padding"
+        android:paddingRight="@dimen/seekbar_padding"
+        android:paddingTop="@dimen/seekbar_mrgn"
+        android:progressDrawable="@drawable/progress"
+        android:thumb="@drawable/button_seek_thumb"
+        android:visibility="gone" />
+
+</RelativeLayout>

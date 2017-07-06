@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <RelativeLayout
+        android:id="@+id/trim_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/actionbar_color" >
+
+    </RelativeLayout>
+
+     <ListView
+         android:id="@+id/listView_vedio"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:listSelector="@drawable/apptheme_list_selector_holo_light"
+         android:dividerHeight="1dp"
+         android:divider="@color/actionbar_color"
+         android:scrollbars="none" >
+     </ListView>
+
+</LinearLayout>

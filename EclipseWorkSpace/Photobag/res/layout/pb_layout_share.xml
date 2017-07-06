@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg" >
+
+    <com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/headerbar"
+        style="@style/pb_actionbar" />
+
+    <!--
+    <com.kayac.photobag.widget.FButton
+        android:id="@+id/button_facebook"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/pb_btn_height"
+        android:layout_above="@+id/button_facebook"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="38dip"
+        android:layout_marginRight="38dip"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Facebook"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:buttonColor="#4D5E9A"
+        app:shadowEnabled="false" />
+
+    <com.kayac.photobag.widget.FButton
+        android:id="@+id/button_email"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/pb_btn_height"
+        android:layout_above="@+id/button_facebook"
+        android:layout_marginLeft="38dip"
+        android:layout_marginRight="38dip"
+        android:gravity="center"
+        android:text="mail"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:buttonColor="#ff735a"
+        app:shadowEnabled="false" />
+    -->
+
+
+    <!--
+         <com.kayac.photobag.widget.FButton
+        android:id="@+id/button_gotoFourDigit"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/pb_btn_height"
+        android:layout_below="@+id/button_facebook"
+        android:layout_marginLeft="38dip"
+        android:layout_marginRight="38dip"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="go to bag"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:buttonColor="#ff735a"
+        app:shadowEnabled="false" />
+    -->
+
+    <TextView
+        android:id="@+id/textView_openid_password"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/backwithborder"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Custom Text"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="@string/com_facebook_choose_friends"
+        android:textSize="16dp" >
+    </TextView>
+
+    <com.aircast.photobag.widget.FButton
+        android:id="@+id/button_email"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/pb_btn_height"
+        android:layout_below="@+id/textView_openid_password"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="mail"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:buttonColor="#ff735a"
+        app:shadowEnabled="false" />
+
+    <com.aircast.photobag.widget.FButton
+        android:id="@+id/button_facebook"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/pb_btn_height"
+        android:layout_below="@+id/button_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Facebook"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:buttonColor="#4D5E9A"
+        app:shadowEnabled="false" />
+
+    <com.aircast.photobag.widget.FButton
+        android:id="@+id/button_gotoFourDigit"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/pb_btn_height"
+        android:layout_alignLeft="@+id/button_facebook"
+        android:layout_alignRight="@+id/button_facebook"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="@string/pb_PBUploadKoukaibukuroActivity_go_to_photobag"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:buttonColor="#ff735a"
+        app:shadowEnabled="false" />
+
+</RelativeLayout>

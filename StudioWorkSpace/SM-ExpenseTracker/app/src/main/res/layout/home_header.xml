@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Header -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_header"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/app_topbar_height"
+    android:background="@color/top_bar_color" >
+
+    <ImageView
+        android:id="@+id/home_listview"
+        android:layout_width="@dimen/app_topbar_button_width"
+        android:layout_height="@dimen/app_topbar_button_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/list_icon" />
+
+    <ImageView
+        android:id="@+id/home_generate_report"
+        android:layout_width="@dimen/app_topbar_button_width"
+        android:layout_height="@dimen/app_topbar_button_height"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/home_listview"
+        android:src="@drawable/generate_report_header"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/home_unfinished_entry_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/alert_number_icon"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/home_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="20dip"
+        android:textStyle="bold" />
+
+</RelativeLayout>

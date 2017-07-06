@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/progress_hud_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/progress_hue_layer_top_pad"
+    android:paddingLeft="@dimen/progress_hue_layer_left_pad"
+    android:paddingRight="@dimen/progress_hue_layer_left_pad"
+    android:paddingTop="@dimen/progress_hue_layer_top_pad" >
+
+    <!--
+         <ImageView
+        android:id="@+id/spinnerImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@anim/spinner" />
+    -->
+
+    <com.smartmux.widget.ProgressWheel
+        xmlns:wheel="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/progress_wheel_ht"
+        android:layout_height="@dimen/progress_wheel_ht"
+        wheel:barColor="@color/app_initial_progress_color"
+        wheel:progressIndeterminate="true" />
+
+    <com.smartmux.foto.widget.AppTextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/progress_text_top_mrgn"
+        android:text="Message"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

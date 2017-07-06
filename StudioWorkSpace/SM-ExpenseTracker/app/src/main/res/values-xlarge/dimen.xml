@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App Constant -->
+  <dimen name="app_topbar_height">44dp</dimen>
+    <dimen name="app_bottombar_height">40dp</dimen>
+    <!-- App Topbar -->
+    
+        <!-- App Home Screen -->
+        
+        <dimen name="home_item_size">50dp</dimen>
+
+        <dimen name="app_button_width">197dp</dimen>
+    <dimen name="app_button_height">35dp</dimen>
+  
+</resources>

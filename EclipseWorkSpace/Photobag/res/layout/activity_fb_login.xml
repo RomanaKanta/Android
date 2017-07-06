@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg" >
+
+    <com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/headerbar"
+        style="@style/pb_actionbar" />
+
+    <TextView
+        android:id="@+id/custom_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerbar"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dp"
+        android:background="#F16530"
+        android:hint="Custom Text"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:visibility="invisible" >
+    </TextView>
+
+    <com.facebook.widget.LoginButton
+         xmlns:facebook="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pb_btn_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        facebook:login_text="@string/openid_share_facebook"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/id_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/custom_text"
+        android:layout_below="@+id/custom_text"
+        android:layout_marginTop="30dp"
+        android:background="#F16530"
+        android:text="ID"
+       android:textColor="@color/white"
+        android:textSize="22sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/nameTextview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/id_text"
+        android:layout_below="@+id/id_text"
+        android:layout_marginTop="30dp"
+        android:background="#9A9A9A"
+        android:gravity="center"
+        android:text="Medium Text"
+      android:textColor="@color/white"
+        android:textSize="22sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/Uid_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameTextview"
+        android:layout_below="@+id/nameTextview"
+        android:layout_marginTop="30dp"
+        android:background="#F16530"
+        android:text="UID"
+      android:textColor="@color/white"
+        android:textSize="22sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/Uid_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/Uid_textView"
+        android:layout_below="@+id/Uid_textView"
+        android:layout_marginTop="20dp"
+        android:background="#9A9A9A"
+        android:gravity="center"
+        android:text="TEXT"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:visibility="invisible" />
+
+    <!--
+         <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/Uid_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#EE001A"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="submit" 
+        android:textStyle="bold"
+        android:textColor="@color/white"
+          android:visibility="visible"/>
+    -->
+
+    <com.aircast.photobag.widget.FButton
+        android:id="@+id/btn_make_password_public"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Uid_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/upload_koukaibukuro_make_password_public_btn"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:buttonColor="#ff735a"
+        android:visibility="gone"
+        app:shadowEnabled="false" />
+
+    <LinearLayout
+        android:id="@+id/ll_loading_panel_waiting"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="#8fff"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="@style/costumLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+
+    <TextView
+        android:id="@+id/textview_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="22sp"
+        android:textColor="@color/text_secondary"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="@string/quantity"
+            android:textSize="18sp"
+            android:textColor="@color/text_secondary"
+            android:id="@+id/textView_quantity" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView_quantity"
+            android:layout_toEndOf="@+id/textView_quantity"
+            android:padding="5dp"
+            android:background="@color/colorAccent"
+            android:src="@mipmap/minus_icon" />
+
+        <TextView
+            android:id="@+id/product_quantity"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_toRightOf="@+id/imageButton_minus"
+            android:layout_alignBottom="@+id/imageButton_minus"
+            android:layout_alignTop="@+id/imageButton_minus"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/text_secondary"
+            android:background="@color/colorAccent"
+            />
+
+        <ImageButton
+            android:id="@+id/imageButton_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/product_quantity"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:background="@color/colorAccent"
+            android:src="@mipmap/plus_icon" />
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageButton_plus"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:text="@string/total"
+            android:textSize="18sp"
+            android:textColor="@color/text_secondary"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/modify_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:layout_margin="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Done"
+            android:textColor="@color/text_primary"
+            android:textSize="25sp" />
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <com.aircast.photobag.widget.actionbar.ActionBar
+                android:id="@+id/headerbar"
+                style="@style/pb_actionbar" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="150dip"
+                android:layout_marginTop="@dimen/pb_b04_bubble_margin_top" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/kuma10" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dip"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:text="@string/upload_addibility_fukidashi_text"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="@dimen/dl_input_bubble_text_size" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dip"
+                android:layout_margin="@dimen/pb_b04_text_margin"
+                android:text="@string/upload_addibility_guide_text"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/dl_input_bubble_text_size"
+                android:textStyle="bold" />
+
+			<TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dip"
+                android:layout_margin="@dimen/pb_b04_text_margin"
+                android:text="@string/upload_addibility_sub_guide_text"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/dl_input_bubble_text_size" />
+            
+            <LinearLayout
+                android:id="@+id/error_btn_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dip"
+                android:layout_marginRight="32dip"
+                android:layout_marginTop="@dimen/pb_b04_button_margin_top"
+                android:orientation="vertical"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/dl_input_bubble_text_size" >
+
+                <!-- 
+                <Button
+                    android:id="@+id/btn_addibility_no"
+                    style="@style/TextShadowBlack"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/pb_btn_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_dark_gray"
+                    android:gravity="center"
+                    android:text="@string/upload_addibility_no_button"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                 -->
+                <com.aircast.photobag.widget.FButton
+                    android:id="@+id/btn_addibility_no"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/pb_btn_height"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/upload_addibility_no_button"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:buttonColor="#8A7C74"
+            		app:shadowEnabled="false"             
+                    />
+                
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:layout_weight="1" />
+
+                <!--
+                	<Button
+                    android:id="@+id/btn_addibility_yes"
+                    style="@style/TextShadowBlack"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/pb_btn_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_shape_orange"
+                    android:gravity="center"
+                    android:text="@string/upload_addibility_yes_button"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" /> 
+                 -->
+
+                <com.aircast.photobag.widget.FButton
+                    android:id="@+id/btn_addibility_yes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/pb_btn_height"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/upload_addibility_yes_button"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+       				app:buttonColor="#ff735a"
+            		app:shadowEnabled="false"                    
+                    />
+                
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_loading_panel_waiting"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="#8fff"
+            android:clickable="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ProgressBar
+                style="@style/costumLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

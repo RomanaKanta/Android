@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_game_result_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_result_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_game_result_title"
+        android:layout_below="@+id/textView_game_result_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Current Result"
+       />
+
+    <TextView
+        android:id="@+id/textView_result_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_result_title"
+        android:layout_below="@+id/textView_result_title"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_position_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_game_result_title"
+        android:layout_below="@+id/textView_result_duration"
+        android:layout_marginTop="50dp"
+        android:text="Result:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_result_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_position_title"
+        android:layout_below="@+id/textView_position_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView_result_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_result_first"
+        android:layout_below="@+id/textView_result_first"
+        android:layout_marginTop="5dp"
+         />
+    <TextView
+        android:id="@+id/textView_result_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_result_second"
+        android:layout_below="@+id/textView_result_second"
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView_result"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView_result_duration"
+        android:src="@drawable/result_img" />
+
+    <Button
+        android:id="@+id/button_result_one"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_position_title"
+        android:layout_below="@+id/textView_result_third"
+        android:layout_marginTop="40dp"
+        android:text="Play Again" />
+
+    <Button
+        android:id="@+id/button_result_second"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_result_one"
+        android:layout_below="@+id/button_result_one"
+        android:layout_marginTop="5dp"
+        android:text="Go to Category" />
+
+    <Button
+        android:id="@+id/button_result_third"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_result_second"
+        android:layout_below="@+id/button_result_second"
+        android:layout_marginTop="5dp"
+        android:text="Home" />
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FOTO</string>
+    <string name="checkout">Checkout this image!</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- Capture Screen -->
+    <string name="capture_from_camera">Capture</string>
+    <string name="Pick_from_gallery">Pick</string>
+    <string name="click">Click to start with a FOTO</string>
+    <string name="reset">Reset</string>
+
+    <!-- kanta -->
+    <string name="header_title">Edit</string>
+    <string name="done">Done</string>
+    <string name="logo_alart_title">FOTO</string>
+    <string name="logo_alart">Start with a new PHOTO?</string>
+    <string name="yes">Yes</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="resize1">Original Image Size:</string>
+    <string name="resize2">New Image Size:</string>
+    <string name="resize3"> X </string>
+    <string name="filter">Filter</string>
+    <string name="frame">Frame</string>
+    <string name="effect">Effect</string>
+    <string name="blur">Blur</string>
+    <string name="adjust">Adjustment</string>
+    <string name="rotate">Rotate</string>
+    <string name="draw">Draw</string>
+    <string name="crop">Crop</string>
+    <string name="resize">Resize</string>
+    <string name="sticker">Sticker</string>
+    <string name="text">Text</string>
+    <string name="save_alart">Image saved into FOTO folder</string>
+
+    <string-array name="filter_list_text">
+        <item>None</item>
+        <item>Linear</item>
+        <item>Vignette</item>
+        <item>Instant</item>
+        <item>Process</item>
+        <item>Transfer</item>
+        <item>Sepia</item>
+        <item>Chrome</item>
+        <item>Fade</item>
+        <item>Curve</item>
+        <item>Tonal</item>
+        <item>Nori</item>
+        <item>Mono</item>
+        <item>Invert</item>
+    </string-array>
+    <string-array name="effect_list_text">
+        <item>None</item>
+        <item>Lomo</item>
+        <!-- <item>Hue</item> -->
+        <!-- <item>Hightlight</item> -->
+        <item>Soft Glow</item>
+        <item>Posterize</item>
+        <item>Pixelate</item>
+    </string-array>
+    <string-array name="blur_list_text">
+        <item>Normal</item>
+        <item>Circle</item>
+        <item>Band</item>
+    </string-array>
+    <string-array name="rotate_list_text">
+        <item>Clockwise</item>
+        <item>Vertical</item>
+        <item>Horizontal</item>
+    </string-array>
+    <string-array name="crop_list_varti_text">
+        <item>Custom</item>
+        <item>1:1</item>
+        <item>3:4</item>
+        <item>2:3</item>
+        <item>9:16</item>
+    </string-array>
+    <string-array name="crop_list_hori_text">
+        <item>Custom</item>
+        <item>1:1</item>
+        <item>4:3</item>
+        <item>3:2</item>
+        <item>16:9</item>
+    </string-array>
+    <string-array name="resize_list_text">
+        <item>240</item>
+        <item>320</item>
+        <item>480</item>
+        <item>640</item>
+        <item>800</item>
+        <item>960</item>
+        <item>1024</item>
+        <item>2048</item>
+    </string-array>
+    <string-array name="text_list_text">
+        <item>New</item>
+        <item>Text</item>
+        <item>Color</item>
+        <item>Font</item>
+        <item>Left Align</item>
+        <item>Center Align</item>
+        <item>Right Align</item>
+    </string-array>
+    <string-array name="text_font">
+        <item>helvetica-bold</item>
+        <item>HelveticaNeue_0</item>
+        <item>HelveticaNeue-Bold</item>
+        <item>HelveticaNeue-CondensedBlack</item>
+        <item>HelveticaNeueBoldItalic</item>
+        <item>HelveticaNeueItalic</item>
+        <item>HelveticaNeueLight</item>
+        <item>HelveticaNeueLightItalic</item>
+        <item>HelveticaNeueLTPro-Lt</item>
+        <item>HelveticaNeueLTStd-BdCn</item>
+        <item>Montserrat-Black</item>
+        <item>Montserrat-Bold</item>
+        <item>Montserrat-ExtraBold</item>
+        <item>Montserrat-Hairline</item>
+        <item>Montserrat-Light</item>
+        <item>Montserrat-Regular</item>
+        <item>Montserrat-SemiBold</item>
+        <item>Montserrat-UltraLight</item>
+        <item>Oduda-Bold-Demo</item>
+        <item>SinkinSans-100Thin</item>
+        <item>SinkinSans-300Light</item>
+        <item>SinkinSans-600SemiBold</item>
+    </string-array>
+
+    <!-- crop -->
+    <string name="action_select">Pick</string>
+    <string name="crop__saving">Saving picture…</string>
+    <string name="crop__wait">Please wait…</string>
+    <string name="crop__pick_error">No image sources available</string>
+    <string name="crop__done">DONE</string>
+    <string name="crop__cancel">CANCEL</string>
+
+    <!-- Sticker/ text -->
+    <string name="double_click_input_text">Text</string>
+    <string name="publish_comment">Text</string>
+    <string name="over_text_limit">Only 33 character can be inserted</string>
+    
+
+
+
+
+</resources>

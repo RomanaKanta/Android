@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background_openbag"
+    android:orientation="vertical" >
+    
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/kb_dialog_no_button_color" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="@string/history_item_delete_title"
+        android:textColor="@color/white" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/kb_dialog_no_button_color" />
+
+    
+    <ListView
+        android:id="@+id/listView_delete_password"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:cacheColorHint="#0000"
+        android:fadingEdgeLength="0dp"
+        android:listSelector="#00000000"
+        android:overScrollMode="never" >
+    </ListView>
+
+    <com.aircast.photobag.widget.FButton
+        android:id="@+id/button_delete_ok"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/dialog_ok_btn"
+        android:textColor="@color/white"
+        app:buttonColor="@color/flatbutton_default_color"
+        app:shadowEnabled="false" />
+
+    <com.aircast.photobag.widget.FButton
+        android:id="@+id/button_delete_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/dialog_cancel_btn"
+        android:textColor="@color/white"
+        app:buttonColor="@color/kb_dialog_no_button_color"
+        app:shadowEnabled="false" />
+
+</LinearLayout>

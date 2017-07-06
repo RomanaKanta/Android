@@ -1,0 +1,292 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/titorial_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/actionbar_background"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_numberoftutorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/Button_list"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/transparent"
+            android:text="@string/card_list"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/actionbar_text_color" />
+
+        <TextView
+            android:id="@+id/textView_search_home"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/search_top"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/actionbar_text_color"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/back_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/button_back"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/TextView_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/button_back"
+                android:clickable="false"
+                android:text="@string/see_card"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/actionbar_text_color" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/option_bottom_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/titorial_topbar"
+        android:padding="2dp" >
+
+        <FrameLayout
+            android:id="@+id/framecontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never" >
+            </android.support.v4.view.ViewPager>
+
+            <!--
+            <com.smartmux.androidapp.view.MyViewPager
+                android:id="@+id/pager_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+            </com.smartmux.androidapp.view.MyViewPager>
+            -->
+
+
+            <!--
+            <RelativeLayout
+                android:id="@+id/content2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/sky_background"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/textView_subtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/textView_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView_jp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/textView_eng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+            -->
+
+
+            <!-- <ToggleButton -->
+            <!-- android:id="@+id/ToggleButton_memorize" -->
+            <!-- android:layout_width="@dimen/memorize_button_ht_wt" -->
+            <!-- android:layout_height="@dimen/memorize_button_ht_wt" -->
+            <!-- android:layout_marginLeft="@dimen/memorize_button_margin" -->
+            <!-- android:layout_marginTop="@dimen/memorize_button_margin" -->
+            <!-- android:background="@drawable/memorize_state" -->
+            <!-- android:text="" -->
+            <!-- android:textOff="" -->
+            <!-- android:textOn="" /> -->
+        </FrameLayout>
+    </FrameLayout>
+
+    <ToggleButton
+        android:id="@+id/ToggleButton_memorize"
+        android:layout_width="@dimen/memorize_button_ht_wt"
+        android:layout_height="@dimen/memorize_button_ht_wt"
+        android:layout_marginLeft="@dimen/memorize_button_left_margin"
+        android:layout_marginTop="@dimen/memorize_button_top_margin"
+        android:background="@drawable/memorize_state"
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+
+    <ImageView
+        android:id="@+id/imageview_all_selected"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/option_bottom_content"
+        android:layout_below="@+id/titorial_topbar"
+        android:layout_centerInParent="true"
+        android:background="#BBFFFF"
+        android:contentDescription="@string/app_name"
+        android:padding="2dp"
+        android:src="@drawable/all_memorization_bg"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/option_bottom_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/actionbar_background"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_opt_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/opt_txt_1"
+            android:textColor="@color/actionbar_text_color" />
+
+        <Button
+            android:id="@+id/button_opt_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/opt_txt_2"
+            android:textColor="@color/actionbar_text_color" />
+
+        <Button
+            android:id="@+id/button_opt_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/opt_txt_3"
+            android:textColor="@color/actionbar_text_color" />
+
+        <Button
+            android:id="@+id/button_opt_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/opt_txt_4"
+            android:textColor="@color/actionbar_text_color" />
+    </LinearLayout>
+
+     <RelativeLayout
+        android:id="@+id/fake_layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/option_bottom_content" 
+         android:visibility="gone">
+        </RelativeLayout>
+        
+    
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_item_ht"
+        android:layout_above="@+id/option_bottom_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/list_padding"
+        android:layout_marginRight="@dimen/list_padding"
+        android:background="@drawable/option_txt_background"
+        android:padding="@dimen/pager_margin" 
+        android:clickable="false"
+        android:visibility="gone">
+
+        <!-- <LinearLayout -->
+        <!-- android:id="@+id/tracks" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="@dimen/action_item_ht" -->
+        <!-- android:layout_marginLeft="@dimen/list_padding" -->
+        <!-- android:layout_marginRight="@dimen/list_padding" -->
+        <!-- android:background="@drawable/option_txt_background" -->
+        <!-- android:orientation="horizontal" -->
+        <!-- android:padding="@dimen/pager_margin" > -->
+
+        <TextView
+            android:id="@+id/tv_bottom_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingBottom="0dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="2dip"
+            android:textSize="@dimen/title_size"
+            android:textColor="#666" />
+        <!-- </LinearLayout> -->
+    </RelativeLayout>
+
+</RelativeLayout>

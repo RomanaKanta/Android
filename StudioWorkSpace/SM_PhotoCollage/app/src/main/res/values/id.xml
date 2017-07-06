@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="dgv_wobble_tag" type="id"/>
+    <item name="view" type="id"/>
+    <item name="view1" type="id"/>
+    <item name="view2" type="id"/>
+    <item name="holder" type="id"/>
+    <item name="twowayview_item_click_support" type="id"/>
+    <item name="twowayview_item_selection_support" type="id"/>
+
+</resources>

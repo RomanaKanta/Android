@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<RelativeLayout
+            android:id="@+id/transparentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/capture"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/btn1_mrgn"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:id="@+id/pick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/pick_layer_right_mrgn"
+                android:layout_toLeftOf="@+id/button1" >
+
+                <ImageView
+                    android:id="@+id/pickImageView"
+                    android:layout_width="@dimen/pick_btn_ht"
+                    android:layout_height="@dimen/pick_btn_ht"
+                    android:layout_marginBottom="@dimen/pick_btn_bottom_mrgn"
+                    android:src="@drawable/button_photo" />
+
+                <com.smartmux.foto.widget.AppTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pickImageView"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="PHOTO"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/blur_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/capture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/pick_layer_right_mrgn"
+                android:layout_toRightOf="@+id/button1" >
+
+                <ImageView
+                    android:id="@+id/captureImageView"
+                    android:layout_width="@dimen/pick_btn_ht"
+                    android:layout_height="@dimen/pick_btn_ht"
+                    android:layout_marginBottom="@dimen/pick_btn_bottom_mrgn"
+                    android:src="@drawable/button_camera" />
+
+               <com.smartmux.foto.widget.AppTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/captureImageView"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="CAMERA"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/blur_text_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+</LinearLayout>

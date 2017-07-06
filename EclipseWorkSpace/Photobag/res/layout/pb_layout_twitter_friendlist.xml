@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg" >
+
+    <com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/headerbar"
+        style="@style/pb_actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionbar_height" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_marginTop="@dimen/actionbar_height"
+        android:orientation="vertical" >
+
+        <!--
+             <com.kayac.photobag.widget.actionbar.ActionBar
+            android:id="@+id/headerbar"
+            style="@style/pb_actionbar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/actionbar_height" />
+        -->
+
+        <Button
+            android:id="@+id/btn_twitter_post_tweet"
+            style="@style/TextShadowBlack"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/pb_btn_height"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_twitter_write"
+            android:gravity="center"
+            android:text="@string/tweet_btn_post_tweet_text"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/lv_twitter_friend_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1" >
+        </ListView>
+
+        <Button
+            android:id="@+id/btn_twitter_pull"
+            style="@style/TextShadowBlack"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/pb_btn_height"
+            android:background="@drawable/btn_twitter_pull"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_panel_waiting"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="#8000"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="@style/costumLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center" />
+    </LinearLayout>
+
+</FrameLayout>

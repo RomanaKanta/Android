@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_game_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+    android:id="@+id/game_tutorial_topbar"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/actionbar_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_game_tutorial_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/pic_match"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+<!--     <TextView -->
+<!--         android:id="@+id/textView_top" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentRight="true" -->
+<!--         android:layout_centerVertical="true" -->
+<!--         android:layout_marginRight="10dp" -->
+<!--         android:text="検索トップへ" -->
+<!--         android:textAppearance="?android:attr/textAppearanceMedium" -->
+<!--         android:textColor="@color/actionbar_text_color" -->
+<!--         android:textStyle="bold" -->
+<!--         android:visibility="gone" /> -->
+
+    <RelativeLayout
+        android:id="@+id/layout_back_content"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:clickable="true" >
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/button_back"
+            android:clickable="false"
+            android:text="@string/go_back"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/actionbar_text_color" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/game_tutorial_topbar"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/textView_catagrory_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+       android:padding="5dp"
+        android:gravity="center"
+        android:text="@string/select_game"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <GridView
+        android:id="@+id/gridView_catagory_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/RelativeLayout_settings_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_catagrory_item_title"
+        android:focusable="true"
+         android:layout_margin="10dp"
+        android:scrollbars="none"
+        android:horizontalSpacing="5dp"
+        android:numColumns="3"
+        android:verticalSpacing="10dp" >
+    </GridView>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_settings_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/option_txt_background"
+        android:orientation="vertical"
+        android:padding="@dimen/list_padding" >
+
+        <com.roundflat.musclecard.view.SegmentedGroup
+            android:id="@+id/segemnted_level"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/segmented_btn_level_easy"
+                style="@style/RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/easy"
+                android:textColor="@color/radio_text_color"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/segmented_btn_level_medium"
+                style="@style/RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:gravity="center"
+                android:text="@string/medium"
+                android:textColor="@color/radio_text_color"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/segmented_btn_level_difficult"
+                style="@style/RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:gravity="center"
+                android:text="@string/diffcult"
+                android:textColor="@color/radio_text_color"
+                android:textStyle="bold" />
+        </com.roundflat.musclecard.view.SegmentedGroup>
+
+        <com.roundflat.musclecard.view.SegmentedGroup
+            android:id="@+id/segemnted_type"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/segemnted_level"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/segmented_btn_front"
+                style="@style/RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/front"
+                android:textColor="@color/radio_text_color"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/segmented_btn_rear"
+                style="@style/RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:gravity="center"
+                android:text="@string/rear"
+                android:textColor="@color/radio_text_color"
+                android:textStyle="bold" />
+       </com.roundflat.musclecard.view.SegmentedGroup>
+
+        <ToggleButton
+            android:id="@+id/toggleButton_settings_fav_item"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/togglebutton_height"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/segemnted_type"
+            android:background="@drawable/settings_background_selector"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+        <TextView
+            android:id="@+id/textView_settings_item_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/toggleButton_settings_fav_item"
+            android:layout_alignBottom="@+id/toggleButton_settings_fav_item"
+            android:layout_alignLeft="@+id/segemnted_type"
+            android:text="@string/settings_fav"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>

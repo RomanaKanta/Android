@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ln_adapter_setting_invite"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="3dp"
+    android:layout_marginTop="3dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/pb_tv_adapter_setting_invite_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_margin="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/pb_invite"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/pb_setting_cell_tsize_invite_detail"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/pb_tv_adapter_setting_invite"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_margin="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/pb_invite"
+        android:textColor="@color/black"
+        android:textSize="@dimen/pb_setting_cell_tsize_invite_detail"
+        android:textStyle="bold" />
+</LinearLayout>

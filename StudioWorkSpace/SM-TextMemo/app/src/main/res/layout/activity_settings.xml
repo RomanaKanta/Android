@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/server_layer"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="#000000">
+
+        <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+            android:id="@+id/view_pager"
+            android:padding="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+<ScrollView
+    android:layout_above="@id/server_layer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/txtsize_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:padding="@dimen/layout_padding" >
+
+                <com.smartmux.textmemo.widget.AppTextViewAverinBlack
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/txt_size"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.smartmux.textmemo.widget.AppTextViewAverinBlack
+                    android:id="@+id/textView_textsize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/text_right_mrgn"
+                    android:focusable="false"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/view_left_mrgn"
+                android:layout_marginRight="@dimen/view_left_mrgn"
+                android:background="#dedede" />
+
+            <RelativeLayout
+                android:id="@+id/txtfont_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:padding="@dimen/layout_padding" >
+
+                <com.smartmux.textmemo.widget.AppTextViewAverinBlack
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/txt_style"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.smartmux.textmemo.widget.AppTextViewAverinBlack
+                    android:id="@+id/textView_textfont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/text_right_mrgn"
+                    android:focusable="false"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/view_left_mrgn"
+                android:layout_marginRight="@dimen/view_left_mrgn"
+                android:background="#dedede" />
+
+            <RelativeLayout
+                android:id="@+id/txtcolor_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:padding="@dimen/layout_padding" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true" >
+
+                    <com.smartmux.textmemo.widget.AppTextViewAverinBlack
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/color_title"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <View
+                        android:id="@+id/view_txt_color"
+                        android:layout_width="@dimen/setting_btn_ht"
+                        android:layout_height="@dimen/setting_btn_ht"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/text_right_mrgn"
+                        android:focusable="false" />
+
+                    <RelativeLayout
+                        android:id="@+id/text_color_list_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/color_list_ht"
+                        android:layout_below="@+id/view_txt_color"
+                        android:layout_marginTop="@dimen/layout_padding"
+                        android:visibility="gone" >
+
+                        <com.smartmux.textmemo.widget.HorizontalListView
+                            android:id="@+id/text_color_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true" >
+                        </com.smartmux.textmemo.widget.HorizontalListView>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/view_left_mrgn"
+                android:layout_marginRight="@dimen/view_left_mrgn"
+                android:background="#dedede" />
+
+            <RelativeLayout
+                android:id="@+id/backgroundcolor_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:padding="@dimen/layout_padding" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true" >
+
+                    <com.smartmux.textmemo.widget.AppTextViewAverinBlack
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/back_title"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <View
+                        android:id="@+id/view_background_color"
+                        android:layout_width="@dimen/setting_btn_ht"
+                        android:layout_height="@dimen/setting_btn_ht"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/text_right_mrgn"
+                        android:focusable="false" />
+
+                    <RelativeLayout
+                        android:id="@+id/bg_color_list_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/color_list_ht"
+                        android:layout_below="@+id/view_background_color"
+                        android:layout_marginTop="@dimen/layout_padding"
+                        android:visibility="gone" >
+
+                        <com.smartmux.textmemo.widget.HorizontalListView
+                            android:id="@+id/bg_color_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true" >
+                        </com.smartmux.textmemo.widget.HorizontalListView>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/view_left_mrgn"
+                android:layout_marginRight="@dimen/view_left_mrgn"
+                android:background="#dedede" />
+
+            <RelativeLayout
+                android:id="@+id/line_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/layout_top_padding"
+                android:paddingLeft="@dimen/layout_padding"
+                android:paddingRight="@dimen/layout_padding"
+                android:paddingTop="@dimen/layout_top_padding" >
+
+                <com.smartmux.textmemo.widget.AppTextViewAverinBlack
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/show_line"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <ToggleButton
+                    android:id="@+id/button_line_no"
+                    android:layout_width="@dimen/setting_toggle_wt"
+                    android:layout_height="@dimen/setting_toggle_ht"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/toggle_btn_state"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/view_left_mrgn"
+                android:layout_marginRight="@dimen/view_left_mrgn"
+                android:background="#dedede" />
+
+            <RelativeLayout
+                android:id="@+id/change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layout_padding" >
+
+                <com.smartmux.textmemo.widget.AppTextViewAverinBlack
+                    android:id="@+id/change_pass_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/change_pass"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/view_left_mrgn"
+                android:layout_marginRight="@dimen/view_left_mrgn"
+                android:background="#dedede" />
+            
+                        <RelativeLayout
+                android:id="@+id/wifi_transfer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layout_padding" >
+
+                <com.smartmux.textmemo.widget.AppTextViewAverinBlack
+                    android:id="@+id/wifi_transfer_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/wifi_transfer"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/view_left_mrgn"
+                android:layout_marginRight="@dimen/view_left_mrgn"
+                android:background="#dedede" />
+            
+        </LinearLayout>
+
+
+
+</ScrollView>
+</RelativeLayout>

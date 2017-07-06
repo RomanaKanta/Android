@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bottom_bg">#2F5551</color>
+
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="black">#000000</drawable>
+    <drawable name="gray">#a9a9a9</drawable>
+
+    <color name="purple_start">#9b256b</color>
+    <color name="purple_end">#5d2761</color>
+    
+    <color name="White">#FFFFFF</color>
+    <color name="selected">#cdcdcd</color>
+
+    <color name="semi_transparent">#99000000</color>
+
+    <!-- 427BBA, 0f93b8 -->
+    <color name="blue_start">#0f93b8</color>
+    <color name="blue_end">#0f93b8</color>
+    <color name="lgrey_start">#BFC0C0</color>
+    <color name="lgrey_end">#AEB2B7</color>
+    <color name="dgrey_start">#4E4F50</color>
+    <color name="dgrey_end">#2C3137</color>
+    <color name="item_grey_start">#B4B8BA</color>
+    <color name="item_grey_end">#62707C</color>
+    <color name="black_start">#333333</color>
+    <color name="black_end">#181818</color>
+    <color name="grey_start">#CBCBCB</color>
+    <color name="grey_end">#8C9DAE</color>
+    <color name="blue_badges_mayor">#095b72</color>
+    <color name="vlgrey">#EEEEEE</color>
+    <color name="color_score_list_adapter_highlight">#EEEEEE</color>
+    <color name="color_score_mayor_section_background">#DDDDDD</color>
+    <color name="color_bright_green">#a6da00</color>
+    <color name="tip_detail_actions_background">#c7c7c7</color>
+    <color name="user_details_activity_general">#FF555555</color>
+    <color name="transparent">#00000000</color>
+    <color name="green">#FF103410</color>
+    <color name="normal">#b0b0b0</color>
+    <color name="light">#ffffff</color>
+    <color name="dark">#000000</color>
+    <color name="highlight">#FF38c0f4</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+     <color name="menu_fragment_background">#B3000000</color>
+    <color name="menu_item_background">#f2f2f2</color>
+    <color name="divider_color">#b5b5b5</color>
+    <color name="black">#FF000000</color>
+<!--     <color name="colorAccent">#FF4081</color> -->
+    <!-- Background Drawable Colors -->
+    <color name="holo_pressed">#8000B6E6</color>
+    <color name="holo_focused">#4000B6E6</color>
+    <color name="holo_checked">@color/highlight</color>
+
+    <!--///////////////////-->
+    <array name="material_colors">
+        <item>#F44336</item>
+        <item>#9C27B0</item>
+        <item>#3F51B5</item>
+        <item>#03A9F4</item>
+        <item>#009688</item>
+        <item>#8BC34A</item>
+        <item>#FFEB3B</item>
+        <item>#FF9800</item>
+        <item>#795548</item>
+        <item>#607D8B</item>
+    </array>
+</resources>

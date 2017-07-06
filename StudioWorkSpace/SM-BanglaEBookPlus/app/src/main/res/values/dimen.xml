@@ -1,0 +1,25 @@
+<resources>
+
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+  <dimen name="header_ht">48dp</dimen>
+   <dimen name="header_icon_size">25dp</dimen>
+    <integer name="num_cols">1</integer>
+    <dimen name="text_size">14sp</dimen>
+    <dimen name="feedback_button_width">72dp</dimen>
+    <dimen name="feedback_button_height">32dp</dimen>
+    
+     <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    
+      <dimen name="menu_title_text_size">10sp</dimen>
+    <dimen name="menu_sub_text_size">8sp</dimen>
+    <dimen name="menu_row_height">35dp</dimen>
+    
+     <dimen name="mrgn_left">15dp</dimen>
+
+</resources>

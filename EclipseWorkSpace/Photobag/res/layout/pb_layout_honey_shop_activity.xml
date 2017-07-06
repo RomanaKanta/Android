@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/bg" >
+    
+    <com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/headerbar"
+        style="@style/pb_actionbar" />
+    
+    <TextView 
+        android:id="@+id/text_honey_shop_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:gravity="center"
+        android:background="@color/gray_deep_dark"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="@string/pb_null" />
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="3dp" >
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            <ListView 
+                android:id="@+id/listview_honey_shop_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"            
+                android:dividerHeight="0dp"
+                android:cacheColorHint="#00000000" />
+            
+            <TextView 
+                android:id="@+id/text_show_purchase_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:textColor="@color/gray_dark"
+                android:textSize="13sp"
+                android:text="@string/pb_honey_shop_btn_rule" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/ll_honey_shop_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#8fff"
+            android:clickable="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ProgressBar
+                style="@style/costumLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </LinearLayout>
+            
+        <ScrollView 
+            android:id="@+id/ll_honey_shop_intro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:text="@string/pb_honey_shop_intro_msg" />
+        </ScrollView>
+    </FrameLayout>
+    
+    <!-- <Button
+    android:id="@+id/btn_show_purchase_info"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/btn_shape_brown"
+    android:text="@string/pb_honey_shop_btn_rule"
+    android:textColor="@color/white"
+    android:textSize="17sp"
+    android:textStyle="bold"
+    android:visibility="gone" /> -->
+
+   <com.aircast.photobag.widget.FButton
+       android:id="@+id/btn_show_purchase_info"
+       android:layout_width="match_parent"
+       android:layout_height="45dp"
+       android:layout_margin="5dp"
+       android:layout_marginLeft="30dp"
+       android:layout_marginRight="30dp"
+       android:text="@string/pb_honey_shop_btn_rule"
+       android:textColor="@color/white"
+       android:textSize="17sp"
+       android:textStyle="bold"
+       android:visibility="gone"
+       app:buttonColor="#935243"
+       app:shadowEnabled="false" />
+   
+</LinearLayout>

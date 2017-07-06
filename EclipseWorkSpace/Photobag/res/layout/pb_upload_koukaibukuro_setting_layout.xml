@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <com.aircast.photobag.widget.actionbar.ActionBar
+                android:id="@+id/headerbar"
+                style="@style/pb_actionbar" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="150dip"
+                android:layout_marginTop="@dimen/pb_b04_bubble_margin_top" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/kuma12" />
+
+                <TextView
+                    android:id="@+id/textview_upload_koukaibukuro_setting_bear_say"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dip"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:text="@string/upload_koukaibukuro_setting_bear_say_updated"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="@dimen/dl_input_bubble_text_size" />
+            </FrameLayout>
+
+               <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="35.0dp"
+                    android:paddingRight="35.0dp"
+                    android:layout_marginTop="25dip"
+                    android:orientation="vertical" >
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_margin="@dimen/pb_b04_text_margin"
+                       android:gravity="left"
+                       android:lines="4"
+                       android:text="@string/upload_koukaibukuro_setting_text_guide"
+                       android:textColor="@color/red"
+                       android:textSize="@dimen/dl_input_bubble_text_size"
+                       android:textStyle="bold" />
+                   
+                  <!-- <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_margin="@dimen/pb_b04_text_margin"
+                       android:gravity="left"
+                       android:lines="2"
+                       android:text="@string/upload_koukaibukuro_setting_text_guide2"
+                       android:textColor="@color/red"
+                       android:textSize="@dimen/dl_input_bubble_text_size"
+                       android:textStyle="bold" /> -->
+                  
+                 <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_margin="@dimen/pb_b04_text_margin"
+                       android:gravity="left"
+                       android:lines="2"
+                       android:text="@string/upload_koukaibukuro_setting_text_guide3"
+                       android:textColor="@color/red"
+                       android:textSize="@dimen/dl_input_bubble_text_size"
+                       android:textStyle="bold" /> 
+                   
+               </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/error_btn_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dip"
+                android:layout_marginRight="32dip"
+                android:layout_marginTop="@dimen/pb_b04_button_margin_top_koukaibukuro"
+                android:orientation="vertical"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/dl_input_bubble_text_size" >
+
+                <com.aircast.photobag.widget.FButton
+                    android:id="@+id/btn_make_password_public"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/upload_koukaibukuro_make_password_public_btn"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:buttonColor="#935243"                    
+                    app:shadowEnabled="false" />
+                
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    />
+
+                <com.aircast.photobag.widget.FButton
+                    android:id="@+id/btn_make_password_not_public"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/upload_koukaibukuro_make_password_not_public_btn"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:buttonColor="#935243"
+                    app:shadowEnabled="false" />
+                
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_loading_panel_waiting"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="#8fff"
+            android:clickable="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ProgressBar
+                style="@style/costumLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_layout"
+    android:layout_width="@dimen/list_item_wt"
+    android:layout_height="match_parent"
+    android:background="#373737" >
+
+    <com.smartmux.foto.widget.AppTextView
+        android:id="@+id/text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/text_icon"
+        android:layout_width="@dimen/list_item_image_wt"
+        android:layout_height="@dimen/list_item_image_ht"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/item_row_top_mrgn"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/filter_tool" />
+
+    <com.smartmux.foto.widget.AppTextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_icon"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/pure_white"
+        android:textSize="@dimen/row_text_size" />
+
+<!--     <ImageView -->
+<!--         android:id="@+id/image_text_lock" -->
+<!--         android:layout_width="@dimen/list_item_image_ht" -->
+<!--         android:layout_height="@dimen/list_item_image_ht" -->
+<!--         android:layout_centerInParent="true" -->
+<!--         android:layout_margin="@dimen/item_lock_mrgn" -->
+<!--         android:contentDescription="@string/app_name" -->
+<!--         android:src="@drawable/lock_64_64" /> -->
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- drawer -->
+
+
+    <dimen name="nav_drawer_width">240dp</dimen>
+    <dimen name="nav_header_ht">120dp</dimen>
+
+
+    <dimen name="filter_term_ht">60dp</dimen>
+    <dimen name="home_row_top_ht">50dp</dimen>
+
+    <dimen name="home_ht">235dp</dimen>
+    <dimen name="home_row_list_ht">185dp</dimen>
+
+    <!-- grid -->
+    <dimen name="grid_margin">5dp</dimen>
+
+    <dimen name="banner_ht">90dp</dimen>
+
+
+
+    <dimen name="toolbar_margin_start">72dp</dimen>
+    <dimen name="flexible_space_height">72dp</dimen>
+    <dimen name="flexible_space_image_height">300dp</dimen>
+    <dimen name="flexible_space_show_fab_offset">120dp</dimen>
+
+    <dimen name="parallax_image_height">180dp</dimen>
+    <dimen name="tab_height">48dp</dimen>
+
+    <dimen name="header_bar_height">80dp</dimen>
+    <dimen name="intersection_height">16dp</dimen>
+
+    <dimen name="sliding_slop">32dp</dimen>
+    <dimen name="sliding_overlay_blur_size">4dp</dimen>
+
+    <dimen name="margin_standard">16dp</dimen>
+    <dimen name="margin_short">8dp</dimen>
+    <dimen name="margin_extra_short">4dp</dimen>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+
+    <!-- app bar -->
+    <dimen name="cart_layer">40dp</dimen>
+    <dimen name="menu_img_ht">28dp</dimen>
+    <dimen name="cart_batch_ht">18dp</dimen>
+
+    <!-- login -->
+    <dimen name="login_header_img_ht">60dp</dimen>
+    <dimen name="signin_header_img_ht">70dp</dimen>
+
+    <!-- drawer -->
+    <dimen name="divider_height">0.5dp</dimen>
+    <dimen name="drawer_footer_img_ht">25dp</dimen>
+    <dimen name="drawer_footer_padding">40dp</dimen>
+    <dimen name="drawer_footer_gap">50dp</dimen>
+    <dimen name="drawer_hader_img">40dp</dimen>
+
+    <!-- row -->
+    <dimen name="row_ht">200dp</dimen>
+    <dimen name="row_wt">175dp</dimen>
+
+    <dimen name="home_row_ht">180dp</dimen>
+    <dimen name="home_row_wt">160dp</dimen>
+
+    <!-- wish list -->
+    <dimen name="wish_row_ht">80dp</dimen>
+    <dimen name="wish_row_img_ht">64dp</dimen>
+
+
+
+    <dimen name="thumb_grid_width">175dp</dimen>
+    <dimen name="thumb_grid_height">210dp</dimen>
+    <integer name="grid_number_cols">2</integer>
+
+    <!-- tab bar -->
+    <dimen name="tab_ht">40dp</dimen>
+    <dimen name="tab_txt_padding">35dp</dimen>
+    <!-- product detail -->
+    <dimen name="pro_pager_ht">295dp</dimen>
+    <dimen name="pro_pager_wt">240dp</dimen>
+    <dimen name="round_btn_size">52dp</dimen>
+    <dimen name="round_image_size">25dp</dimen>
+    <dimen name="round_fav_size">30dp</dimen>
+    <dimen name="scroll_ht">80dp</dimen>
+    <dimen name="image_margin">88dp</dimen>
+    <!-- filter -->
+    <dimen name="price_bar_ht">70dp</dimen>
+    <!-- home -->
+
+    <dimen name="pager_ht">150dp</dimen>
+    <dimen name="pager_wt">250dp</dimen>
+    <dimen name="indicator_ht">20dp</dimen>
+    <dimen name="catagory_ht">45dp</dimen>
+    <dimen name="catagory_btn_wt">100dp</dimen>
+
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <!-- margin -->
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_35">35dp</dimen>
+    <dimen name="margin_70">70dp</dimen>
+
+    <dimen name="txt_padding_5">5dp</dimen>
+    <dimen name="txt_padding_10">10dp</dimen>
+    <dimen name="txt_size_12">12sp</dimen>
+    <dimen name="txt_size_14">14sp</dimen>
+    <dimen name="txt_size_15">15sp</dimen>
+    <dimen name="txt_size_16">16sp</dimen>
+    <dimen name="txt_size_18">18sp</dimen>
+    <dimen name="txt_size_20">20sp</dimen>
+</resources>

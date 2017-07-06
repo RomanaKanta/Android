@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <com.smartmux.widget.SlidingUpPanelLayout
+        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        sothree:umanoDragView="@+id/dragView"
+        sothree:umanoOverlay="true"
+        sothree:umanoPanelHeight="70dp"
+        sothree:umanoParalaxOffset="44dp"
+        sothree:umanoShadowHeight="4dp" >
+
+        <!-- MAIN CONTENT -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/listViewprocess"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="80dp"
+                android:layout_marginTop="44dp"
+                android:background="#000000"
+                android:fadingEdgeLength="0dp" >
+            </ListView>
+
+            <com.smartmux.widget.AppTextView
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#3b642c"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </FrameLayout>
+
+        <!-- SLIDING LAYOUT -->
+
+        <LinearLayout
+            android:id="@+id/dragView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#3b642c"
+            android:clickable="true"
+            android:focusable="false"
+            android:orientation="vertical"
+            android:paddingBottom="20dp" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:id="@+id/arrow_indicator"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/arrow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        style="@style/ParameterRow"
+                        android:padding="5dp" >
+
+                        <com.smartmux.widget.AppTextView
+                            style="@style/FirstColumn"
+                            android:layout_marginLeft="10dp"
+                            android:singleLine="true"
+                            android:text="@string/p_memtotal"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <com.smartmux.widget.AppTextView
+                            android:id="@+id/TVMemTotal"
+                            style="@style/SecondColumn"
+                            android:text="@string/p_percentage"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LCPUTotal"
+                        style="@style/ParameterRow"
+                        android:padding="5dp" >
+
+                        <com.smartmux.widget.AppTextView
+                            style="@style/FirstColumn"
+                            android:text="@string/p_cputotalusage"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <com.smartmux.widget.AppTextView
+                            android:id="@+id/TVCPUTotalP"
+                            style="@style/SecondColumn"
+                            android:text="@string/p_percentage"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LMemUsed"
+                        style="@style/ParameterRow"
+                        android:padding="5dp" >
+
+                        <com.smartmux.widget.AppTextView
+                            style="@style/FirstColumn"
+                            android:text="@string/p_memused"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <com.smartmux.widget.AppTextView
+                            android:id="@+id/TVMemUsed"
+                            style="@style/SecondColumn"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/TVMemUsedP"
+                            style="@style/ThirdColumn"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LMemAvailable"
+                        style="@style/ParameterRow"
+                        android:padding="5dp" >
+
+                        <com.smartmux.widget.AppTextView
+                            style="@style/FirstColumn"
+                            android:text="@string/p_memavailable"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <com.smartmux.widget.AppTextView
+                            android:id="@+id/TVMemAvailable"
+                            style="@style/SecondColumn"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <com.smartmux.widget.AppTextView
+                            android:id="@+id/TVMemAvailableP"
+                            style="@style/ThirdColumn"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LMemFree"
+                        style="@style/ParameterRow"
+                        android:padding="5dp" >
+
+                        <com.smartmux.widget.AppTextView
+                            style="@style/FirstColumn"
+                            android:text="@string/p_memfree"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <com.smartmux.widget.AppTextView
+                            android:id="@+id/TVMemFree"
+                            style="@style/SecondColumn"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <com.smartmux.widget.AppTextView
+                            android:id="@+id/TVMemFreeP"
+                            style="@style/ThirdColumn"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LCached"
+                        style="@style/ParameterRow" 
+                        android:padding="5dp">
+
+                        <com.smartmux.widget.AppTextView
+                            style="@style/FirstColumn"
+                            android:text="@string/p_cached"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <com.smartmux.widget.AppTextView
+                            android:id="@+id/TVCached"
+                            style="@style/SecondColumn"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <com.smartmux.widget.AppTextView
+                            android:id="@+id/TVCachedP"
+                            style="@style/ThirdColumn"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LThreshold"
+                        style="@style/ParameterRow" 
+                        android:padding="5dp">
+
+                        <com.smartmux.widget.AppTextView
+                            style="@style/FirstColumn"
+                            android:text="@string/p_threshold"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <com.smartmux.widget.AppTextView
+                            android:id="@+id/TVThreshold"
+                            style="@style/SecondColumn"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <com.smartmux.widget.AppTextView
+                            android:id="@+id/TVThresholdP"
+                            style="@style/ThirdColumn"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </com.smartmux.widget.SlidingUpPanelLayout>
+
+</LinearLayout>

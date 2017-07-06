@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bannar_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/file_vault_banar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/bannar_right_mrgn"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ad_banner" />
+
+
+    <ImageView
+        android:id="@+id/file_vault_ad_delete"
+        android:layout_width="@dimen/delete_button_size"
+        android:layout_height="@dimen/delete_button_size"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/delete" />
+
+    <ImageView
+        android:id="@+id/file_vault_install"
+        android:layout_width="@dimen/install_button_wt"
+        android:layout_height="@dimen/install_button_ht"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+         android:layout_marginRight="@dimen/install_button_right_mrgn"
+         android:layout_marginBottom="@dimen/install_button_bottom_mrgn"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/button_install" />
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/**
+ * Copyright (c) 2012 Vinayak Solutions Private Limited 
+ * See the file license.txt for copying permission.
+*/     
+ -->
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/dialog_bg"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:paddingBottom="10dip"
+	>
+	
+	<TextView
+		android:id="@+id/textview"
+	   	android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:textColor="@color/black"
+		android:layout_alignParentTop="true"
+		android:padding="10dip"
+		android:layout_marginBottom="30dip"
+		android:textSize="18sp"
+		/>
+	
+	<LinearLayout
+	    android:id="@+id/cancel_button_view"
+	    android:layout_below="@id/textview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+		android:layout_marginBottom="10dp"
+		android:gravity="center_horizontal"
+		>
+		    
+		<Button 
+		    android:id="@+id/cancel_button"
+		    android:layout_width="wrap_content"
+            android:layout_height="@dimen/reminder_height"
+            android:layout_gravity="center"
+            android:background="@drawable/sm_custom_button"
+            android:paddingBottom="@dimen/reminder_padding_top_and_bottom"
+            android:paddingLeft="@dimen/reminder_padding_left_and_right"
+            android:paddingRight="@dimen/reminder_padding_left_and_right"
+            android:paddingTop="@dimen/reminder_padding_top_and_bottom"
+            android:text="@string/cancel"
+            android:textStyle="bold"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/reminder_text_size"
+           />
+	</LinearLayout>
+</RelativeLayout>

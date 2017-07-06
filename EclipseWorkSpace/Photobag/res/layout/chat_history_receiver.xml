@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    
+
+    <ImageView
+        android:id="@+id/imageView_owner"
+        android:layout_width="@dimen/pb_chat_icon_size"
+        android:layout_height="@dimen/pb_chat_icon_size"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/i_icon_me" />
+
+    <LinearLayout
+         android:id="@+id/LinearLayout_message_content_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/imageView_owner"
+        android:layout_toRightOf="@+id/imageView_user"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/textView_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/black"
+             android:textSize="10sp"  />
+          <LinearLayout
+        android:id="@+id/LinearLayout_message_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView_message_date_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textColor="#949395"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/textView_sender_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth = "@dimen/pb_chat_bubble_width"
+            android:layout_gravity="center_vertical"
+            android:textColor="#000" />
+
+         <TextView
+            android:id="@+id/textView_message_date_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:singleLine="true"
+            android:textColor="#949395"
+             android:textSize="8sp"  />
+
+    </LinearLayout>
+    </LinearLayout>
+
+  
+
+    <ImageView
+        android:id="@+id/imageView_user"
+        android:layout_width="@dimen/pb_chat_icon_size"
+        android:layout_height="@dimen/pb_chat_icon_size"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/i_icon_you" />
+    
+    <ImageView
+        android:id="@+id/imageView_admin"
+        android:layout_width="@dimen/pb_chat_icon_size"
+        android:layout_height="@dimen/pb_chat_icon_size"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/admine_icon" />
+
+</RelativeLayout>

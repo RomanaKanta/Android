@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- C-01 and C-01_b -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/openpage_actionbar_home"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="@drawable/bg_header" >
+
+        <RelativeLayout
+            android:id="@+id/openpage_actionbar_content"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/actionbar_home_is_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:layout_toLeftOf="@+id/actionbar_home_btn"
+                android:background="@drawable/arrow_back"
+                android:clickable="false"
+                android:padding="0dip" />
+
+            <ImageView
+                android:id="@+id/actionbar_home_logo"
+                style="@style/ActionBarHomeLogo"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@+id/actionbar_home_is_back"
+                android:src="@drawable/openbag_actionbar_icon" />
+            
+             <TextView
+                android:id="@+id/textView_actionbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/actionbar_home_logo"
+                android:textSize="20dip"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="@string/screen_title_history_main" />
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_history_ad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black" >
+
+        <com.ad_stir.webview.AdstirWebView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            media="MEDIA-e194dab6"
+            spot="1" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_list_of_history"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/list_of_history"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#0000"
+            android:divider="@color/sep_background"
+            android:dividerHeight="1dp"
+            android:fadingEdgeLength="0dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_toolbar_history"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_header" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+            <!--
+                <Button
+                android:id="@+id/toolbar_btn_inbox"
+                style="@style/TextShadowBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_shape_orange_history"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/pb_btn_inbox_history"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/white" 
+                android:layout_weight="1" />
+
+            -->
+
+            <com.aircast.photobag.widget.FButton
+                android:id="@+id/toolbar_btn_inbox"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/pb_btn_inbox_history"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:buttonColor="#ff735a"
+                app:shadowEnabled="false" />
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="40dp" />
+
+            <com.aircast.photobag.widget.FButton
+                android:id="@+id/toolbar_btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/pb_btn_send_history"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:buttonColor="#ff735a"
+                app:shadowEnabled="false" />
+
+            <!--
+                 <Button
+                android:id="@+id/toolbar_btn_send"
+                style="@style/TextShadowBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_shape_orange_history"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/pb_btn_send_history"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_weight="1" />
+
+            -->
+
+        </LinearLayout>
+    </FrameLayout>
+    
+    <FrameLayout
+        android:id="@+id/layout_toolbar_history1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_header"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+            <com.aircast.photobag.widget.FButton
+                android:id="@+id/toolbar_btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/pb_btn_delete_history"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:buttonColor="#ff735a"
+                app:shadowEnabled="false" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

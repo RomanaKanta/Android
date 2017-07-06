@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">POS</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!--  tag -->
+    <string name="fragment_cash">cash</string>
+    <string name="fragment_product">product</string>
+
+    <!--  menu -->
+    <string name="action_done">Done</string>
+    <string name="action_close">Close</string>
+    <!--  text -->
+    <string name="add_product">Add Product</string>
+    <string name="add_category">Add Category</string>
+    <string name="name">NAME</string>
+    <string name="type_product_name">Type product name</string>
+    <string name="type_category_name">Type category name</string>
+    <string name="type_supplier_name">Type supplier name</string>
+    <string name="type_phone">Type phone number</string>
+    <string name="type_address">Type address</string>
+    <string name="phone">PHONE</string>
+    <string name="address">ADDRESS</string>
+    <string name="code">CODE</string>
+    <string name="category">CATEGORY</string>
+    <string name="vaterate">VATERATE</string>
+    <string name="supplier">SUPPLIER</string>
+    <string name="quantity">QUANTITY</string>
+    <string name="price">PRICE</string>
+    <string name="unit">UNIT</string>
+    <string name="total">Total</string>
+    <string name="payment_done">Payment</string>
+    <string name="stock">Stock</string>
+    <string name="stock_unavailable_message">This product Stock has been finished.</string>
+    <string name="purchase_success_mgs">Purchase successfull.</string>
+    <string name="charge">Charge</string>
+    <string name="total_amount">৳%.2f</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="vat">Vat(%d%%)</string>
+    <string name="add_discount">Add Discount</string>
+
+    <!--  page -->
+    <string name="title_add_product">Add Product</string>
+    <string name="title_add_category">Add Category</string>
+    <string name="title_add_supplier">Add Supplier</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_add_product">AddProductActivity</string>
+    <string name="title_activity_add_item">AddItemActivity</string>
+    <string name="title_activity_add_category">AddCategoryActivity</string>
+    <string name="title_activity_add_supplier">AddSupplierActivity</string>
+    <string name="title_activity_add_customer">AddCustomerActivity</string>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/headerbar"
+        style="@style/pb_actionbar" />
+    
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+       
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp" />
+                
+
+        <TextView
+            android:id="@+id/oss_license"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pb_license1_text"
+            android:textColor="@color/gray_deep_dark"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pb_license3_text"
+            android:textColor="@color/gray_deep_dark" />
+       
+        <!-- <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_text_color"
+            android:text="@string/pb_migration_code"
+            android:gravity="left"
+            android:textSize="17sp"
+            android:textStyle="bold" 
+            android:layout_marginBottom="10dip" />
+        
+        <TextView
+            android:id="@+id/own_merge_code"
+            style="@style/TextShadowLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pb_bg_panel_tv"
+            android:layout_marginBottom="8dip"
+            android:textColor="@color/main_text_color"
+            android:text=""
+            android:gravity="center"
+            android:textSize="17sp"
+            android:lines="2" />
+
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:text="@string/pb_migration_code_warning"
+            android:lines="6" 
+            android:gravity="left"
+            android:textSize="17sp"
+            android:layout_marginBottom="40dip"
+         /> -->
+        
+    </LinearLayout>
+    
+</LinearLayout>

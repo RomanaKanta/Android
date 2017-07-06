@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/product_color"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:background="@drawable/circle_shape"
+    android:layout_margin="@dimen/margin_5"
+    >
+
+    <ImageView
+        android:id="@+id/color_selected"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/tick"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

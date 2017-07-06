@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <com.smartmux.fotolibs.widget.HorizontalListView
+        android:id="@+id/fragment_text_listview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_ht"
+        android:layout_alignParentBottom="true"
+        android:background="@color/header_bg"
+        android:choiceMode="singleChoice" >
+</com.smartmux.fotolibs.widget.HorizontalListView>
+
+    <RelativeLayout
+        android:id="@+id/rl_content_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fragment_text_listview"
+        android:layout_centerInParent="true" >
+
+
+        <ImageView
+            android:id="@+id/text_Imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_text_options"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_option_layout_ht"
+        android:layout_alignBottom="@+id/rl_content_root"
+        android:layout_alignParentLeft="true"
+        android:background="@color/folating_expand_transparent_background"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/Imageview_layout_close"
+            android:layout_width="@dimen/text_option_close_ht"
+            android:layout_height="@dimen/text_option_close_ht"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/menu_icon_close" />
+
+        <com.smartmux.fotolibs.widget.AppTextView
+            android:id="@+id/tv_action_done"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_option_close_ht"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/crop__done"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <!-- <RelativeLayout -->
+        <!-- android:id="@+id/layout_input" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_below="@+id/Imageview_layout_close"> -->
+        <!-- </RelativeLayout> -->
+
+        <EditText
+            android:id="@+id/et_bubble_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_action_done"
+            android:background="@android:color/transparent"
+            android:hint="@string/publish_comment"
+            android:imeOptions="actionDone"
+            android:inputType="text|textMultiLine"
+            android:padding="10dp"
+            android:singleLine="false"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/listview_typeface"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_option_layout_ht"
+            android:layout_below="@id/tv_action_done"
+            android:layout_margin="20dp"
+            android:choiceMode="singleChoice"
+            android:visibility="gone" >
+        </ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

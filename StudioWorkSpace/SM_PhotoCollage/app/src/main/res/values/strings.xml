@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Photo Collage</string>
+    <string name="start_new">Do you want to start with new Collage?</string>
+    <string name="top_bar_text">Style Your Photos</string>
+    <string name="gallery_top_bar_text">PHOTO COLLAGE</string>
+    <string name="select_temp">SELECT COLLAGE</string>
+    <string name="selected_number">SELECTED NUMBER</string>
+    <string name="empty"></string>
+    <string name="photo_alart">Please select maximum 10 image</string>
+    <string name="checkout">Checkout this image!</string>
+    <string name="action_multiple_image_pic">SM_ACTION_MULTIPLE_IMAGE_PICK</string>
+    <string name="action_single_image_pic">SM_ACTION_SINGLE_IMAGE_PICK</string>
+    <string name="save">Saved</string>
+
+    <string-array name="color_array">
+        <item>#ffffff</item>
+        <item>#d54b4f</item>
+        <item>#2b2b2b</item>
+        <item>#fcff00</item>
+        <item>#898c91</item>
+        <item>#4ed964</item>
+        <item>#f7f6b6</item>
+        <item>#dcdddf</item>
+        <item>#fe5e3a</item>
+        <item>#ff6434</item>
+        <item>#6854da</item>
+        <item>#34aadc</item>
+        <item>#ff8247</item>
+        <item>#1ad6fc</item>
+        <item>#d1effa</item>
+        <item>#2a6f31</item>
+        <item>#ff6a6a</item>
+        <item>#246610</item>
+        <item>#5855d6</item>
+        <item>#fecd04</item>
+        <item>#0bd319</item>
+        <item>#5cd427</item>
+        <item>#989c9f</item>
+        <item>#3bff00</item>
+        <item>#4a4a4a</item>
+        <item>#00fa9a</item>
+        <item>#a5e786</item>
+        <item>#ff398a</item>
+        <item>#e0f7da</item>
+        <item>#ffda4b</item>
+        <item>#00002c</item>
+        <item>#89fb70</item>
+        <item>#277574</item>
+        <item>#fff08c</item>
+        <item>#73d4b4</item>
+        <item>#ee4db5</item>
+        <item>#54ecc6</item>
+        <item>#1c78f3</item>
+        <item>#007aff</item>
+        <item>#8e3606</item>
+        <item>#ff9501</item>
+        <item>#80044a</item>
+        <item>#ff0000</item>
+        <item>#ee2f2f</item>
+        <item>#ff2c3b</item>
+        <item>#c543fb</item>
+        <item>#ff2c55</item>
+        <item>#ce6ce7</item>
+        <item>#ff4a81</item>
+        <item>#c86edf</item>
+        <item>#ffcc00</item>
+        <item>#ac80c5</item>
+        <item>#8ed379</item>
+        <item>#1f62f1</item>
+        <item>#f992fb</item>
+        <item>#e4b7f0</item>
+        <item>#ffd3e0</item>
+        <item>#8b67a5</item>
+        <item>#b4917e</item>
+        <item>#d7d1c5</item>
+        <item>#ff7256</item>
+        <item>#000000</item>
+    </string-array>
+    <string-array name="effects_color_array">
+        <item>#00000000</item>
+        <item>#0bd319</item>
+        <item>#00fa9a</item>
+        <item>#1ad6fc</item>
+        <item>#1f62f1</item>
+        <item>#ffd3e0</item>
+        <item>#1c78f3</item>
+        <item>#ffda4b</item>
+        <item>#fff08c</item>
+        <item>#2a6f31</item>
+        <item>#3bff00</item>
+        <item>#4ed964</item>
+        <item>#5cd427</item>
+        <item>#007aff</item>
+        <item>#8b67a5</item>
+        <item>#8e3606</item>
+        <item>#8ed379</item>
+        <item>#34aadc</item>
+        <item>#54ecc6</item>
+        <item>#73d4b4</item>
+        <item>#89fb70</item>
+        <item>#898c91</item>
+        <item>#989c9f</item>
+        <item>#5855d6</item>
+        <item>#6854da</item>
+        <item>#80044a</item>
+        <item>#246610</item>
+        <item>#277574</item>
+        <item>#a5e786</item>
+        <item>#ac80c5</item>
+        <item>#b4917e</item>
+        <item>#c86edf</item>
+        <item>#c543fb</item>
+        <item>#ce6ce7</item>
+        <item>#d1effa</item>
+        <item>#d7d1c5</item>
+        <item>#4a4a4a</item>
+        <item>#d54b4f</item>
+        <item>#dcdddf</item>
+        <item>#e0f7da</item>
+        <item>#e4b7f0</item>
+        <item>#ee2f2f</item>
+        <item>#f992fb</item>
+        <item>#fe5e3a</item>
+        <item>#fecd04</item>
+        <item>#ff0000</item>
+        <item>#ff2c3b</item>
+        <item>#ff2c55</item>
+        <item>#ff4a81</item>
+        <item>#ff6a6a</item>
+        <item>#ff398a</item>
+        <item>#ff6434</item>
+        <item>#ff7256</item>
+        <item>#2b2b2b</item>
+        <item>#ff8247</item>
+        <item>#ff9501</item>
+        <item>#ffcc00</item>
+        <item>#ffffff</item>
+        <item>#80044a</item>
+        <item>#00002c</item>
+    </string-array>
+
+    <!-- Strings used in app ui -->
+    <string name="hello">Hello, </string>
+    <string name="login_instructions">Login to twiter</string>
+    <string name="share_instructions">Enter share message</string>
+    <string name="btn_login">Login to Twitter</string>
+    <string name="btn_share">Share</string>
+    <string name="email_client">No mail client installed on this device.</string>
+    <string name="net_con">No Internet Connection.</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="facebook_app_id">1136141599737513</string>
+    <string name="facebook_default_text">Please enter your text here</string>
+    <string name="title_post_text">Share App</string>
+    <string name="post_button_text">Post</string>
+
+    <!-- purchase -->
+    <!-- <string name="purchase_required">Purchase Required!</string> -->
+    <string name="purch_alart_title">Upgrade to Full Version</string>
+    <string name="purch_alart_msg1">Unlock all Collages</string>
+    <string name="purch_alart_msg2">Unlock all Stickers</string>
+
+    <string-array name="text_list_text">
+        <item>New</item>
+        <item>Text</item>
+        <item>Color</item>
+        <item>Font</item>
+        <item>Left Align</item>
+        <item>Center Align</item>
+        <item>Right Align</item>
+    </string-array>
+
+    <string-array name="text_font">
+        <item>helvetica-bold</item>
+        <item>HelveticaNeue_0</item>
+        <item>HelveticaNeue-Bold</item>
+        <item>HelveticaNeue-CondensedBlack</item>
+        <item>HelveticaNeueBoldItalic</item>
+        <item>HelveticaNeueItalic</item>
+        <item>HelveticaNeueLight</item>
+        <item>HelveticaNeueLightItalic</item>
+        <item>HelveticaNeueLTPro-Lt</item>
+        <item>HelveticaNeueLTStd-BdCn</item>
+        <item>Montserrat-Black</item>
+        <item>Montserrat-Bold</item>
+        <item>Montserrat-ExtraBold</item>
+        <item>Montserrat-Hairline</item>
+        <item>Montserrat-Light</item>
+        <item>Montserrat-Regular</item>
+        <item>Montserrat-SemiBold</item>
+        <item>Montserrat-UltraLight</item>
+        <item>Oduda-Bold-Demo</item>
+        <item>SinkinSans-100Thin</item>
+        <item>SinkinSans-300Light</item>
+        <item>SinkinSans-600SemiBold</item>
+    </string-array>
+
+    <!-- crop -->
+    <string name="action_select">Pick</string>
+    <string name="crop__saving">Saving picture…</string>
+    <string name="crop__wait">Please wait…</string>
+    <string name="crop__pick_error">No image sources available</string>
+    <string name="crop__done">DONE</string>
+    <string name="crop__cancel">CANCEL</string>
+
+    <!-- Sticker/ text -->
+    <string name="double_click_input_text">Text</string>
+    <string name="publish_comment">Text</string>
+    <string name="over_text_limit">Only 33 character can be inserted</string>
+
+
+</resources>

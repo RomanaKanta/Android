@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SM_VideoDownloader</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="browser">Browser</string>
+    <string name="download">Downloads</string>
+    <string name="videos">Videos</string>
+    <string name="files">Files</string>
+    <string name="playlist">Playlists</string>
+    <string name="create_playlist">Create Playlist</string>
+    <string name="playlist_name">Playlists Name</string>
+    <string name="playlist_rename">Rename Playlist</string>
+    <string name="song_num">file</string>
+    <string name="hint">Type URL</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="add_bookmark">Add to bookmark</string>
+    <string name="set_home_page">Set to home page</string>
+    <string name="bookmark">Bookmarks</string>
+    <string name="done">Done</string>
+    <string name="edit">Edit</string>
+    <string name="delete_playlist">Delete</string>
+    <string name="visited_site">Visited Sites</string>
+    <string name="enter_playlist_name">Enter Playlist Title</string>
+    <string name="rename_to">Rename to</string>
+    <string name="setting_play_bg">Play video in Background</string>
+    <string name="setting_browser_page">Browser Start Page</string>
+    <string name="setting_dwn_file">Downloads and Files</string>
+    <string name="setting_security">Security</string>
+    <string name="app_version">App Version: 1.1</string>
+    <string name="disk_space">Disk Space</string>
+    <string name="free_space">Free Space</string>
+    <string name="set_home">Set HomePage</string>
+    <string name="threeD_download">Allow 3G Downloading</string>
+    <string name="clear_download_finish">Clear Finished Downloads </string>
+    <string name="sim_download">Simultaneous Downloads</string>
+    <string name="thumb">Generate Thumbnails</string>
+    <string name="capital">Capitalize First Letters</string>
+    <string name="file_name">File Name</string>
+    <string name="duration">Duration</string>
+    <string name="size">Size</string>
+    <string name="date_time">Date  Time</string>
+    <string name="rename">Rename</string>
+    <string name="add_palylist">Add to playlist</string>
+    <string name="open">Open In</string>
+    <string name="send_mail">Send Via Mail</string>
+    <string name="select">SELECT PLAYLIST</string>
+    <string name="invalid_url">Invalid URL</string>
+    <string name="empty_video">File Name Can\'t be Empty</string>
+    <string name="empty_folder">Folder Name Can\'t be Empty</string>
+    <string name="playlist_videos">Playlist Videos</string>
+    <string name="back">Back</string>
+    <string name="player">Video Player</string>
+    <string name="add_playlist_alart1">Do you want to add </string>
+    <string name="add_playlist_alart2">file in </string>
+    <string name="add_playlist_alart3">Folder</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="send">Send</string>
+    <string name="no_network">NETWORK ERROR !!!!</string>
+    <string name="alart_msg">Sorry, no network found. Please check your network connection.</string>
+    <string name="delete_alart_msg">Are you sure, you want to delete file?</string>
+
+    <string-array name="number_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string name="button1_large_text">1</string>
+    <string name="button2_large_text">2</string>
+    <string name="button2_small_text">ABC</string>
+    <string name="button3_large_text">3</string>
+    <string name="button3_small_text">DEF</string>
+    <string name="button4_large_text">4</string>
+    <string name="button4_small_text">GHI</string>
+    <string name="button5_large_text">5</string>
+    <string name="button5_small_text">JKL</string>
+    <string name="button6_large_text">6</string>
+    <string name="button6_small_text">MNO</string>
+    <string name="button7_large_text">7</string>
+    <string name="button7_small_text">PQRS</string>
+    <string name="button8_large_text">8</string>
+    <string name="button8_small_text">TUV</string>
+    <string name="button9_large_text">9</string>
+    <string name="button9_small_text">WXYZ</string>
+    <string name="button11_large_text">0</string>
+    <string name="button_clear_large_text">CLEAR</string>
+    <string name="lock_info">Enter your passcode</string>
+    <string name="re_enter">Re-enter your passcode</string>
+    <string name="change_passcode">Enter your old passcode</string>
+     <string name="new_pswd">Enter your new passcode</string>
+    <string name="re_enter_new_pswd">Re-enter your new passcode</string>
+    <string name="pin_code_forgot_text">Forgot?</string>
+    <string name="pin_code_step_disable">Disable %d-digit Pincode</string>
+    <string name="pin_code_step_create">Create a %d-digit Pincode</string>
+    <string name="pin_code_step_change">Enter your current %d-digit Pincode</string>
+    <string name="pin_code_step_unlock">Enter your %d-digit Pincode</string>
+    <string name="pin_code_step_enable_confirm">Confirm your %d-digit Pincode</string>
+
+</resources>

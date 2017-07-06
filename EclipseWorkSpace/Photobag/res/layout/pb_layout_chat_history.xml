@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- C-02 and C-02_b -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_rootview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <com.aircast.photobag.widget.actionbar.ActionBar
+        android:id="@+id/headerbar"
+        style="@style/pb_actionbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/chat_title_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/headerbar"
+        android:padding="5dp"
+        android:background="#c9393f" >
+
+         <TextView
+            android:id="@+id/textView_chat_remaingtime"
+            style="@style/TextShadowLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#fff" 
+            android:visibility="invisible"/> 
+
+        <Button
+            android:id="@+id/button_chat_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/i_enable"
+            android:text="@string/chat_active_status_valid"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+       <!--  <TextView
+            style="@style/TextShadowLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/textView_chat_remaingtime"
+            android:gravity="center_horizontal"
+            android:paddingRight="20dp"
+            android:text="@string/screen_confirm_password_free_time"
+            android:textColor="#fff"
+            android:textSize="@dimen/pb_upload_confirm_tv_small" /> -->
+
+       
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/adstir_histroy_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/black" >
+
+        <com.ad_stir.webview.AdstirWebView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            media="MEDIA-e194dab6"
+            spot="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_history_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/adstir_histroy_detail"
+        android:layout_alignParentLeft="true"
+        android:background="#383741" >
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:paddingLeft="5dip"
+            android:maxLength="100"
+            android:background="@drawable/message_field"
+            android:hint="@string/pb_chat_message_input_hint"
+            android:textColor="#000" />
+        
+         <!-- <EditText
+            android:id="@+id/message"
+            android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:isScrollContainer="true"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:paddingLeft="5dip"
+            android:maxLength="100"
+            android:background="@drawable/message_field"
+            android:hint="@string/pb_chat_message_input_hint"
+            android:textColor="#000" 
+            android:inputType="textMultiLine"
+            android:maxHeight="130dp"/> -->
+
+        <Button
+            android:id="@+id/send_chat_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_chat_send"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_messageHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_above="@id/chat_history_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/chat_title_detail"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:dividerHeight="5dp"
+        android:divider="#00000000"
+        android:background="#ededed"
+        android:listSelector="#00000000" 
+        android:cacheColorHint="#00000000">
+    </ListView>
+
+</RelativeLayout>

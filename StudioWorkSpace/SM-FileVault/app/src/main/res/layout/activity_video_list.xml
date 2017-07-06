@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VideoListActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+       <!--  <ListView
+            android:id="@+id/listviewVideoList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null" /> -->
+
+        <com.smartmux.filevault.widget.FloatingActionsMenu
+            android:id="@+id/multiple_actions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            fab:fab_addButtonColorNormal="@color/pink"
+            fab:fab_addButtonColorPressed="@color/pink_pressed"
+            fab:fab_addButtonPlusIconColor="@color/white" >
+
+            <com.smartmux.filevault.widget.FloatingActionButton
+                android:id="@+id/action_take_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ClickEvent"
+                fab:fab_colorNormal="@color/pink"
+                fab:fab_colorPressed="@color/pink_pressed"
+                fab:fab_title="Action A" />
+
+            <com.smartmux.filevault.widget.FloatingActionButton
+                android:id="@+id/action_pick_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ClickEvent"
+                fab:fab_colorNormal="@color/pink"
+                fab:fab_colorPressed="@color/pink_pressed"
+                fab:fab_title="Action with a very long name that won\&apos;t fit on the screen" />
+        </com.smartmux.filevault.widget.FloatingActionsMenu>
+    </RelativeLayout>
+
+  
+
+</LinearLayout>

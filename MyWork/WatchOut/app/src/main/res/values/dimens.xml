@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <integer name="x1">500</integer>
+    <integer name="x2">600</integer>
+    <integer name="x3">50</integer>
+    <integer name="x4">10</integer>
+    <integer name="x5">650</integer>
+    <integer name="x6">300</integer>
+
+    <integer name="y1">50</integer>
+    <integer name="y2">200</integer>
+    <integer name="y3">400</integer>
+    <integer name="y4">700</integer>
+    <integer name="y5">1000</integer>
+    <integer name="y6">800</integer>
+</resources>

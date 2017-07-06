@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pickerView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:visibility="visible" >
+
+    <RelativeLayout
+        android:id="@+id/picker_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/background_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:clickable="false"
+            android:scaleType="fitXY"
+            android:src="@drawable/bar_bg" />
+
+        <Button
+            android:id="@+id/btnPickerOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/background_bar"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_iphone_blue"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="@string/dialog_btn_complete"
+            android:textColor="@color/white"
+            android:textStyle="bold" >
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnPickerCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/background_bar"            
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_iphone_black"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="@string/dialog_cancel_btn"
+            android:textColor="@color/white"
+            android:textStyle="bold" >
+        </Button>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/picker_bar"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/bg_up"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/iphone_picker_bg_up_black" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bg_down"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/iphone_picker_bg_down_black" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/picker_bar"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <kankan.wheel.widget.WheelView
+            android:id="@+id/wheelView1"
+            android:layout_width="fill_parent"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_main_color" >
+
+    <RelativeLayout
+        android:id="@+id/seekbarview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/seekbar_layer_ht" >
+
+        <RelativeLayout
+            android:id="@+id/downArrowLayout"
+            android:layout_width="@dimen/arrow_layer_wt"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp" >
+
+            <ImageView
+                android:id="@+id/downArrow"
+                android:layout_width="@dimen/topbar_icon"
+                android:layout_height="@dimen/topbar_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:padding="5dp"
+                android:src="@drawable/down" />
+        </RelativeLayout>
+
+<!--        <SeekBar
+            android:id="@+id/borderSeekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/view2"
+            android:max="100"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:thumb="@drawable/seek" />-->
+
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+            android:id="@+id/borderSeekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/view2"
+            app:dsb_min="1"
+            app:dsb_max="100"
+            app:dsb_indicatorFormatter="%d"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/downArrowLayout"
+            android:background="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/color_list_ht"
+        android:layout_below="@+id/seekbarview"
+        android:background="@color/app_main_color" >
+
+        <!-- <com.smartux.photocollage.widget.HorizontalListView -->
+        <!-- android:id="@+id/colorList" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_centerHorizontal="true" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_margin="5dp" > -->
+        <!-- </com.smartux.photocollage.widget.HorizontalListView> -->
+
+        <android.support.v7.widget.RecyclerView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/recycler_color_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/color_list_mrgn"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+</RelativeLayout>

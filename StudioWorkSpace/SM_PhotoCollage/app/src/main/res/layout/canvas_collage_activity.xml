@@ -1,0 +1,274 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_main_color" >
+
+    <FrameLayout
+        android:id="@+id/rootlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/topbar_ht"
+            android:background="@drawable/status_bar_shadow" >
+
+            <com.smartux.photocollage.widget.AppHeaderTextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/topbar_text_top_mrgn"
+                android:text="@string/top_bar_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/topbar_text_size" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/topbar_icon"
+                android:layout_height="@dimen/topbar_icon"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/topbar_icon_left_mrgn"
+                android:layout_marginTop="@dimen/topbar_icon_top_mrgn"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/back" />
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="@dimen/topbar_icon"
+                android:layout_height="@dimen/topbar_icon"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/topbar_icon_left_mrgn"
+                android:layout_marginTop="@dimen/topbar_icon_top_mrgn"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/share" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/collageFinalImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/bottombar_ht"
+            android:layout_marginLeft="@dimen/mrgn_left"
+            android:layout_marginRight="@dimen/mrgn_left"
+            android:layout_marginTop="@dimen/topbar_ht" >
+
+            <RelativeLayout
+                android:id="@+id/collageBGLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:layout_gravity="center_horizontal" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/collageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:background="@color/white"
+                android:layout_gravity="center_horizontal" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/collageOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:layout_gravity="center_horizontal" >
+
+                <com.smartux.photocollage.widget.CircleImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <com.smartux.photocollage.widget.PinterestView
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/item_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#50000000"
+                android:visibility="gone"
+                custom:childSize="44px"
+                custom:fromDegrees="150.0"
+                custom:toDegrees="300.0" />
+
+
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottombar_ht"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bottom_bg_with_divider"
+        android:layout_alignParentBottom="true" >
+
+        <!--<View-->
+            <!--android:id="@+id/view1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginTop="1dp"-->
+            <!--android:background="@color/black" />-->
+
+        <LinearLayout
+            android:id="@+id/collage_opt_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/frame_image"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/colorPanel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/total_transparent"
+                android:src="@drawable/circle_color"/>
+
+            <ImageButton
+                android:id="@+id/shuffleImage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/total_transparent"
+                android:src="@drawable/shuffle"/>
+
+            <ImageButton
+                android:id="@+id/TextImage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/total_transparent"
+                android:src="@drawable/text_tool"/>
+
+            <ImageButton
+                android:id="@+id/stickerImage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/total_transparent"
+                android:src="@drawable/sticker_tool"/>
+
+            <ImageButton
+                android:id="@+id/colorEffect"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/total_transparent"
+                android:src="@drawable/color_image"/>
+
+
+
+            </LinearLayout>
+        <ImageView
+            android:id="@+id/frame_image"
+            android:layout_width="@dimen/topbar_icon"
+            android:layout_height="@dimen/topbar_icon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/bottombar_right_mrgn"
+
+            android:layout_marginLeft="@dimen/frame_left_mrgn"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/image_2_template_14" />
+        <!--<LinearLayout-->
+            <!--android:id="@+id/collage_opt_frame"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:orientation="horizontal">-->
+        <!--<ImageView-->
+            <!--android:id="@+id/frame_image"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:contentDescription="@string/app_name"-->
+            <!--android:background="@color/total_transparent"-->
+            <!--android:src="@drawable/image_2_template_14" />-->
+        <!--</LinearLayout>-->
+
+       <!-- <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:gravity="center" >
+
+            <View
+                android:id="@+id/colorPanel"
+                android:layout_width="@dimen/topbar_icon"
+                android:layout_height="@dimen/topbar_icon"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/bottombar_left_mrgn"
+                android:background="@drawable/circle_color_shape" />
+            <ImageView
+                android:id="@+id/frame_image"
+                android:layout_width="@dimen/topbar_icon"
+                android:layout_height="@dimen/topbar_icon"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/bottombar_right_mrgn"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/image_2_template_14" />
+            <View
+                android:id="@+id/fake_view"
+                android:layout_width="@dimen/fake_view_wt"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true" />
+            &lt;!&ndash;android:layout_width="@dimen/fake_view_wt"&ndash;&gt;
+
+            <ImageView
+                android:id="@+id/stickerImage"
+                android:layout_width="@dimen/topbar_icon"
+                android:layout_height="@dimen/topbar_icon"
+                android:layout_toRightOf="@id/fake_view"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/sticker_tool" />
+
+            <ImageView
+                android:id="@+id/TextImage"
+                android:layout_width="@dimen/topbar_icon"
+                android:layout_height="@dimen/topbar_icon"
+                android:layout_toLeftOf="@id/fake_view"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/text_tool" />
+
+            <ImageView
+                android:id="@+id/shuffleImage"
+                android:layout_width="@dimen/topbar_icon"
+                android:layout_height="@dimen/topbar_icon"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/TextImage"
+                android:layout_toRightOf="@id/colorPanel"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/shuffle" />
+
+            <ImageView
+                android:id="@+id/colorEffect"
+                android:layout_width="@dimen/topbar_icon"
+                android:layout_height="@dimen/topbar_icon"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/frame_image"
+                android:layout_toRightOf="@id/stickerImage"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/color_image" />
+
+
+        </RelativeLayout>-->
+   </RelativeLayout>
+
+</RelativeLayout>

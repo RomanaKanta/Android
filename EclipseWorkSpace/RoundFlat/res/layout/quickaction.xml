@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** /res/layout/quickaction.xml
+**
+** Author: Lorensius W. L. T <lorenz@londatiga.net>
+**
+*/ 
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/tracks"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_item_ht"
+        android:layout_marginLeft="@dimen/list_padding"
+        android:layout_marginRight="@dimen/list_padding"
+        android:background="@drawable/option_txt_background"
+        android:orientation="horizontal"
+        android:padding="@dimen/pager_margin" >
+    </LinearLayout>
+
+</RelativeLayout>

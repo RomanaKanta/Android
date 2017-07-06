@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/action_record"
+          android:icon="@drawable/ic_action_microphone"
+          android:title="@string/button_start_record_activity"
+          android:showAsAction="always" />
+</menu>

@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+        
+    <RelativeLayout 
+         android:id="@+id/adstir_space"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#000000"
+        android:layout_alignParentBottom="true"
+        >
+           <com.ad_stir.webview.AdstirWebView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            media="MEDIA-13c46081"
+            spot="1" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/adstir_space">
+
+    <com.ogaclejapan.smarttablayout.SmartTabLayout
+        android:id="@+id/viewpagertab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_ht"
+        app:stl_clickable="true"
+        app:stl_defaultTabBackground="@color/transparent"
+        app:stl_defaultTabTextAllCaps="false"
+        app:stl_defaultTabTextColor="#FC000000"
+        app:stl_defaultTabTextHorizontalPadding="@dimen/tab_text_horizontal_padding"
+        app:stl_defaultTabTextMinWidth="@dimen/tab_text_min_width"
+        app:stl_defaultTabTextSize="@dimen/tab_text_size"
+        app:stl_distributeEvenly="false"
+        app:stl_dividerColor="#4D000000"
+        app:stl_dividerThickness="@dimen/divider_thickness"
+        app:stl_drawDecorationAfterTab="false"
+        app:stl_indicatorAlwaysInCenter="false"
+        app:stl_indicatorColor="#50382e"
+        app:stl_indicatorCornerRadius="@dimen/indicator_corner_radius"
+        app:stl_indicatorGravity="bottom"
+        app:stl_indicatorInFront="false"
+        app:stl_indicatorInterpolation="smart"
+        app:stl_indicatorThickness="@dimen/indicator_thickness"
+        app:stl_indicatorWidth="auto"
+        app:stl_indicatorWithoutPadding="false"
+        app:stl_overlineColor="#4D000000"
+        app:stl_overlineThickness="0dp"
+        app:stl_titleOffset="@dimen/title_offset"
+        app:stl_underlineColor="#4D000000"
+        app:stl_underlineThickness="@dimen/underline_thickness" >
+    </com.ogaclejapan.smarttablayout.SmartTabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/viewpagertab" />
+
+    <com.smartmux.textmemo.widget.FloatingActionButton
+        android:id="@+id/fab_add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/floating_margin"
+        android:layout_marginEnd="@dimen/floating_margin"
+        android:layout_marginRight="@dimen/floating_margin"
+        android:onClick="ClickEvent"
+        android:visibility="gone"
+        fab:fab_colorNormal="@color/pink"
+        fab:fab_colorPressed="@color/pink_pressed" >
+    </com.smartmux.textmemo.widget.FloatingActionButton>
+    
+
+    <RelativeLayout
+        android:id="@+id/layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_layer_ht"
+        android:background="@color/app_main_color"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/edittext_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_ht"
+            android:layout_margin="@dimen/search_magin"
+            android:background="@drawable/search_content_background"
+            android:drawableLeft="@drawable/search_48"
+            android:drawablePadding="3dp"
+            android:hint="@string/search_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textCursorDrawable="@null" />
+
+        <ImageView
+            android:id="@+id/imageview_search_clear"
+            android:layout_width="@dimen/search_ht"
+            android:layout_height="@dimen/search_ht"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:padding="9dp"
+            android:visibility="gone"
+            android:src="@drawable/close_48" />
+    </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

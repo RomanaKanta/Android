@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    tools:context="com.smartmux.shopsy.activity.CartActivity">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.smartmux.shopsy.widget.AppButton
+        android:id="@+id/btn_get_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Checkout"
+        android:textColor="@android:color/white"
+        android:background="@drawable/login_button_background"
+        android:layout_margin="@dimen/margin_25"
+        android:layout_alignParentBottom="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/total"
+        android:layout_above="@id/btn_get_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_5"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_5"
+        >
+
+        <com.smartmux.shopsy.widget.AppTextViewLatoBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Total"
+            android:padding="@dimen/margin_5"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/txt_size_20" />
+
+        <com.smartmux.shopsy.widget.AppTextViewLatoBold
+            android:id="@+id/totalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:text="$ 1000.0"
+            android:padding="@dimen/margin_5"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/txt_size_20" />
+
+    </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/content_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/total"
+        android:layout_below="@id/top_bar" />
+
+</RelativeLayout>

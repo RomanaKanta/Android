@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="radio_button_selected_color">#EF5350</color>
+    <color name="radio_button_unselected_color">@android:color/transparent</color>
+
+    <color name="colorPrimary">#2C9F3D</color>
+    <color name="colorPrimaryDark">#228026</color>
+    <color name="colorAccent">#2C9F3D</color>
+
+    <color name="drawer_header">#B0EC80</color>
+
+    <color name="secondaryColor">#fff9c4</color>
+
+    <color name="color_bar">#90E53935</color>
+
+    <color name="buttonColor">#D92028</color>
+    <color name="fbButtonColor">#303F9F</color>
+
+    <color name="group_divider_color">#606162</color>
+    <color name="drawer_bg">#1a1a1a</color>
+    <color name="app_bg">#ededed</color>
+    <color name="zoom_bg">#90000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="icons">#FFFFFF</color>
+</resources>

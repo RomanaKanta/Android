@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <com.ksproject.krishop.widget.AppTextViewLatoBold
+                android:id="@+id/action_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/txt_size_20"/>
+
+            <ImageView
+                android:id="@+id/image_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_arrow_back_white_24dp"
+                android:layout_marginLeft="@dimen/margin_15"
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_20"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <EditText
+                    android:id="@+id/input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="E-mail"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <EditText
+                    android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.ksproject.krishop.widget.AppButton
+                android:id="@+id/btn_login"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/login"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/txt_size_16"
+                android:background="@drawable/btn_bg"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/margin_10"
+                android:orientation="horizontal">
+
+                <com.ksproject.krishop.widget.AppTextViewLatoRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forgot"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txt_size_16"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <com.ksproject.krishop.widget.AppTextViewLatoRegular
+                    android:id="@+id/txt_forgot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/click"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/txt_size_16"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_centerInParent="true"
+                    />
+
+                <com.ksproject.krishop.widget.AppTextViewLatoRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OR"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/txt_size_20"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/white"
+                    android:padding="@dimen/txt_padding_10"
+                    />
+
+            </RelativeLayout>
+
+            <com.ksproject.krishop.widget.AppButton
+                android:id="@+id/btn_signup"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/signup"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/txt_size_16"
+                android:background="@drawable/btn_bg"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+</LinearLayout>

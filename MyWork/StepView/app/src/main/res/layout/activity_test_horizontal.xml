@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+   <com.baoyachi.stepview.HorizontalStepView
+       android:id="@+id/stepview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+   <Button
+       android:id="@+id/btn_status"
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:background="@color/colorPrimary"
+       android:clickable="true"
+       android:gravity="center"
+       android:padding="16dp"
+       android:text="click horizontalStepview"
+       android:textAllCaps="true"
+       android:textAppearance="@style/TextAppearance.AppCompat.Button"
+       android:textColor="@android:color/white"
+       android:textSize="18sp"/>
+
+
+</RelativeLayout>

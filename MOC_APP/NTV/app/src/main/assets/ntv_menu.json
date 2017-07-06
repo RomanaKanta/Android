@@ -1,0 +1,285 @@
+{
+  "success": true,
+  "menu": [
+    {
+      "menu_item_name_id": "M001",
+      "rss_url": "http://en.ntvbd.com/rssfeeds/bangladesh-rss.xml",
+      "menu_item_name": "Bangladesh",
+      "sub_menu": [
+        {
+          "submenu_item_name_id": "sub001",
+          "submenu_item_name": "Politics"
+        },
+        {
+          "submenu_item_name_id": "sub002",
+          "submenu_item_name": "Society"
+        },
+        {
+          "submenu_item_name_id": "sub003",
+          "submenu_item_name": "Law"
+        },
+        {
+          "submenu_item_name_id": "sub004",
+          "submenu_item_name": "Government"
+        },
+        {
+          "submenu_item_name_id": "sub005",
+          "submenu_item_name": "Environment"
+        },
+        {
+          "submenu_item_name_id": "sub006",
+          "submenu_item_name": "Crime"
+        }
+      ]
+    },
+    {
+      "menu_item_name_id": "M002",
+      "rss_url": "http://en.ntvbd.com/rssfeeds/world-rss.xml",
+      "menu_item_name": "World",
+      "sub_menu": [
+        {
+          "submenu_item_name_id": "sub001",
+          "submenu_item_name": "Americas"
+        },
+        {
+          "submenu_item_name_id": "sub002",
+          "submenu_item_name": "Europe"
+        },
+        {
+          "submenu_item_name_id": "sub003",
+          "submenu_item_name": "Africa"
+        },
+        {
+          "submenu_item_name_id": "sub004",
+          "submenu_item_name": "South & Central Asia"
+        },
+        {
+          "submenu_item_name_id": "sub005",
+          "submenu_item_name": "Mid East"
+        },
+        {
+          "submenu_item_name_id": "sub006",
+          "submenu_item_name": "Asia Pacific"
+        }
+      ]
+    },
+    {
+      "menu_item_name_id": "M003",
+      "rss_url": "http://en.ntvbd.com/rssfeeds/sports-rss.xml",
+      "menu_item_name": "Sports",
+      "sub_menu": [
+        {
+          "submenu_item_name_id": "sub001",
+          "submenu_item_name": "Cricket"
+        },
+        {
+          "submenu_item_name_id": "sub002",
+          "submenu_item_name": "Football"
+        },
+        {
+          "submenu_item_name_id": "sub003",
+          "submenu_item_name": "Tennis"
+        },
+        {
+          "submenu_item_name_id": "sub004",
+          "submenu_item_name": "Other sports"
+        }
+      ]
+    },
+    {
+      "menu_item_name_id": "M004",
+      "rss_url": "http://en.ntvbd.com/rssfeeds/entertainment-rss.xml",
+      "menu_item_name": "Entertainment",
+      "sub_menu": [
+        {
+          "submenu_item_name_id": "sub001",
+          "submenu_item_name": "TV"
+        },
+        {
+          "submenu_item_name_id": "sub002",
+          "submenu_item_name": "Film"
+        },
+        {
+          "submenu_item_name_id": "sub003",
+          "submenu_item_name": "Music"
+        },
+        {
+          "submenu_item_name_id": "sub004",
+          "submenu_item_name": "More"
+        }
+      ]
+    },
+    {
+      "menu_item_name_id": "M005",
+      "rss_url": "http://en.ntvbd.com/rssfeeds/sci-tech-rss.xml",
+      "menu_item_name": "Sci-Tech",
+      "sub_menu": [
+        {
+          "submenu_item_name_id": "sub001",
+          "submenu_item_name": "Science"
+        },
+        {
+          "submenu_item_name_id": "sub002",
+          "submenu_item_name": "Technology"
+        }
+      ]
+    },
+    {
+      "menu_item_name_id": "M006",
+      "rss_url": "http://en.ntvbd.com/rssfeeds/life-rss.xml",
+      "menu_item_name": "Life",
+      "sub_menu": [
+        {
+          "submenu_item_name_id": "sub001",
+          "submenu_item_name": "Fashion"
+        },
+        {
+          "submenu_item_name_id": "sub002",
+          "submenu_item_name": "Food"
+        },
+        {
+          "submenu_item_name_id": "sub003",
+          "submenu_item_name": "Relation"
+        },
+        {
+          "submenu_item_name_id": "sub004",
+          "submenu_item_name": "Auto"
+        },
+        {
+          "submenu_item_name_id": "sub005",
+          "submenu_item_name": "Travel"
+        },
+        {
+          "submenu_item_name_id": "sub006",
+          "submenu_item_name": "Others"
+        }
+      ]
+    },
+    {
+      "menu_item_name_id": "M007",
+      "rss_url": "http://en.ntvbd.com/rssfeeds/business-rss.xml",
+      "menu_item_name": "Business",
+      "sub_menu": [
+        {
+          "submenu_item_name_id": "sub001",
+          "submenu_item_name": "Budget"
+        },
+        {
+          "submenu_item_name_id": "sub002",
+          "submenu_item_name": "Economy"
+        },
+        {
+          "submenu_item_name_id": "sub003",
+          "submenu_item_name": "Industry"
+        },
+        {
+          "submenu_item_name_id": "sub004",
+          "submenu_item_name": "Markets"
+        },
+        {
+          "submenu_item_name_id": "sub005",
+          "submenu_item_name": "Tech"
+        },
+        {
+          "submenu_item_name_id": "sub006",
+          "submenu_item_name": "Service"
+        },
+        {
+          "submenu_item_name_id": "sub007",
+          "submenu_item_name": "More"
+        }
+      ]
+    },
+    {
+      "menu_item_name_id": "M008",
+      "rss_url": "http://en.ntvbd.com/rssfeeds/comment-rss.xml",
+      "menu_item_name": "Comment",
+      "sub_menu": [
+        {
+          "submenu_item_name_id": "sub001",
+          "submenu_item_name": "Opinion"
+        },
+        {
+          "submenu_item_name_id": "sub002",
+          "submenu_item_name": "Interview"
+        },
+        {
+          "submenu_item_name_id": "sub003",
+          "submenu_item_name": "Issues"
+        },
+        {
+          "submenu_item_name_id": "sub004",
+          "submenu_item_name": "More"
+        }
+      ]
+    },
+    {
+      "menu_item_name_id": "M009",
+      "rss_url": "http://en.ntvbd.com/rssfeeds/art-culture-rss.xml",
+      "menu_item_name": "Art & Culture",
+      "sub_menu": [
+        {
+          "submenu_item_name_id": "sub001",
+          "submenu_item_name": "Art"
+        },
+        {
+          "submenu_item_name_id": "sub002",
+          "submenu_item_name": "Culture"
+        },
+        {
+          "submenu_item_name_id": "sub003",
+          "submenu_item_name": "Literature"
+        }
+      ]
+    },
+    {
+      "menu_item_name_id": "M010",
+      "rss_url": "http://en.ntvbd.com/rssfeeds/education-rss.xml",
+      "menu_item_name": "Education",
+      "sub_menu": []
+    },
+    {
+      "menu_item_name_id": "M011",
+      "rss_url": "http://en.ntvbd.com/rssfeeds/health-rss.xml",
+      "menu_item_name": "Health",
+      "sub_menu": []
+    },
+    {
+      "menu_item_name_id": "M012",
+      "rss_url": "http://en.ntvbd.com/rssfeeds/election-rss.xml",
+      "menu_item_name": "Election",
+      "sub_menu": []
+    },
+    {
+      "menu_item_name_id": "M013",
+      "rss_url": "http://en.ntvbd.com/rssfeeds/embassy-galore-rss.xml",
+      "menu_item_name": "Embassy Galore",
+      "sub_menu": [
+        {
+          "submenu_item_name_id": "sub001",
+          "submenu_item_name": "News & Event"
+        },
+        {
+          "submenu_item_name_id": "sub002",
+          "submenu_item_name": "Visa"
+        },
+        {
+          "submenu_item_name_id": "sub003",
+          "submenu_item_name": "Education & Scholarship"
+        },
+        {
+          "submenu_item_name_id": "sub004",
+          "submenu_item_name": "Cultural Programmes"
+        },
+        {
+          "submenu_item_name_id": "sub005",
+          "submenu_item_name": "Tourism"
+        },
+        {
+          "submenu_item_name_id": "sub006",
+          "submenu_item_name": "Job Oppertunities"
+        }
+      ]
+    }
+  ]
+}

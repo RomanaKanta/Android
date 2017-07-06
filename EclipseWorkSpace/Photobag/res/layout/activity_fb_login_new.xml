@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto" 
+	xmlns:facebook="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg" >
+    
+       <FrameLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+	      <com.aircast.photobag.widget.actionbar.ActionBar
+	          android:id="@+id/headerbar"
+	          style="@style/pb_actionbar"
+	          android:layout_width="wrap_content" />  
+	          
+	      <!-- <com.facebook.widget.LoginButton
+	    	android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:textSize="17sp" 
+            facebook:confirm_logout="false"/> -->
+	      
+	     <!-- <com.kayac.photobag.widget.FButton
+	        android:id="@+id/btn_post"
+	        android:layout_width="match_parent"
+            android:layout_height="37dp"
+      		android:layout_gravity="right"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+	        android:text="@string/pb_twitter_btn_do_facebook_post"
+	        android:textColor="@color/white"
+	        android:textSize="17sp"
+	        android:visibility="invisible"
+	        app:buttonColor="#ff735a"
+	        app:shadowEnabled="false" /> -->
+	     
+	     <com.aircast.photobag.widget.FButton
+            android:id="@+id/btn_post"
+            android:layout_width="60dp"
+            android:layout_height="37dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/pb_facebook_btn_send"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:buttonColor="#ff735a"
+            app:shadowEnabled="false" />
+	      
+	   </FrameLayout>
+	
+    <LinearLayout
+        android:id="@+id/share_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="80dip" >
+
+	    <EditText
+	    	android:id="@+id/editText_post"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Share"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:padding="10dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+	        android:visibility="invisible" >
+	    </EditText>
+	
+	    <!-- <com.kayac.photobag.widget.FButton
+	        android:id="@+id/btn_post"
+	        android:layout_width="match_parent"
+            android:layout_height="@dimen/pb_btn_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+	        android:text="@string/pb_twitter_btn_do_facebook_post"
+	        android:textColor="@color/white"
+	        android:textSize="17sp"
+	        android:visibility="invisible"
+	        app:buttonColor="#ff735a"
+	        app:shadowEnabled="false" /> -->
+	    
+  <com.facebook.widget.LoginButton
+	    	android:id="@+id/login_button"
+	        android:layout_width="match_parent"
+            android:layout_height="@dimen/pb_btn_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+	        facebook:confirm_logout="false" /> 
+	    
+	 <!--  <com.facebook.widget.LoginButton
+	    	android:id="@+id/login_button"
+	        android:layout_width="match_parent"
+            android:layout_height="@dimen/pb_btn_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+	        facebook:confirm_logout="false" /> -->
+	  
+	 <ImageView
+		    android:id="@+id/img_facebook_preview1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_gravity="center"
+		    android:layout_weight="30"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:src="@drawable/thumb_error" />
+	 
+	 <com.aircast.photobag.widget.FButton
+            android:id="@+id/btn_change_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pb_btn_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/pb_facebook_btn_change"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:buttonColor="#ff735a"
+            app:shadowEnabled="false"
+            android:visibility="gone" /> 
+    
+        </LinearLayout>
+    
+</FrameLayout>

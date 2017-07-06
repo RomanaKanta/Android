@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="8dp" >
+
+    <ImageView
+        android:id="@+id/imageView_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:contentDescription="@null"
+         />
+
+    <com.smartmux.widget.AppTextView
+        android:id="@+id/textView_pName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageView_icon"
+         android:text="P Name"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold" />
+
+    <com.smartmux.widget.AppTextView
+        android:id="@+id/textView_cpuUsage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_pName"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+         android:text="%"
+        android:textColor="@android:color/darker_gray" />
+
+    <com.smartmux.widget.AppTextView
+        android:id="@+id/textView_pId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_memoryUsage"
+        android:layout_alignBottom="@+id/textView_memoryUsage"
+        android:layout_alignLeft="@+id/textView_pName"
+        android:text="pid"
+        android:textColor="@android:color/darker_gray" />
+
+    <com.smartmux.widget.AppTextView
+        android:id="@+id/textView_memoryUsage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView_cpuUsage"
+        android:layout_marginRight="10dp"
+        android:gravity="left"
+         android:text="%"
+        android:textColor="@android:color/darker_gray" />
+
+    <com.smartmux.widget.AppTextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_memoryUsage"
+        android:layout_alignBottom="@+id/textView_memoryUsage"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/textView_memoryUsage"
+        android:gravity="left"
+        android:text="memory"
+        android:textColor="@android:color/darker_gray" />
+
+    <com.smartmux.widget.AppTextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView02"
+        android:layout_alignRight="@+id/TextView02"
+        android:text="cpu"
+        android:textColor="@android:color/darker_gray" />
+
+    <com.smartmux.widget.AppTextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/TextView02"
+        android:layout_below="@+id/TextView02"
+        android:gravity="left"
+        android:text="memory size"
+        android:textColor="@android:color/darker_gray" />
+
+    <com.smartmux.widget.AppTextView
+        android:id="@+id/textView_mSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView03"
+        android:layout_alignBottom="@+id/TextView03"
+        android:layout_alignLeft="@+id/textView_memoryUsage"
+        android:gravity="left"
+        android:textSize="9sp"
+        android:text="--"
+        android:textColor="#F7A72F" />
+
+</RelativeLayout>

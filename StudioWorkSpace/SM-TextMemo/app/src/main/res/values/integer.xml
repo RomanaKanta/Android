@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<integer name="COLOR_BLACK">0xff000000</integer>
+	<integer name="COLOR_GREEN">0xff00ff00</integer>
+	  <integer name="animation_default_duration">300</integer>
+	<integer name="COLOR_LIGHT_YELLOW">0xfff7f6b6</integer>
+	<!-- lock -->
+	   <integer name="ripple_effect_duration">200</integer>
+	
+</resources>

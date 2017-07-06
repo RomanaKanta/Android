@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- values-sw600dp -->
+    
+   <dimen name="actionbar_title_size">26sp</dimen>
+    <dimen name="actionbar_backtxt_size">14sp</dimen>
+    <dimen name="actionbar_right_btn_size">17sp</dimen>
+    <dimen name="bitmap_size">90dp</dimen>
+    <dimen name="photo_width">100dp</dimen>
+    <dimen name="photo_height">130dp</dimen>
+    <dimen name="password_text">44sp</dimen>
+    <dimen name="common_row_image_width">60dp</dimen>
+    <dimen name="common_row_image_height">60sp</dimen>
+    <dimen name="record_button_height">200dp</dimen>
+    <dimen name="record_button_width">200dp</dimen>
+    <dimen name="lock_screen_image_width">80dp</dimen>
+    <dimen name="lock_screen_image_height">80dp</dimen>
+    <!--
+    <dimen name="chronometer_height">30</dimen>
+    <dimen name="record_button_width">200dp</dimen>
+    -->
+
+
+    <!-- Setting Screen -->
+    <dimen name="setting_layer_padding">10dp</dimen>
+    <dimen name="setting_image_size">40dp</dimen>
+    <dimen name="setting_image_right_mrgn">15dp</dimen>
+    <dimen name="setting_text_size">17sp</dimen>
+
+    <!-- dropbox screen -->
+    <dimen name="db_image_size">150dp</dimen>
+    <dimen name="db_image_top_mrgn">30dp</dimen>
+    <dimen name="db_image_bottom_mrgn">15dp</dimen>
+    <dimen name="db_btn_ht">54dp</dimen>
+    <dimen name="db_btn_mrgn">15dp</dimen>
+    <dimen name="db_btn_icon_right_mrgn">5dp</dimen>
+    <dimen name="db_btn_text_size">17sp</dimen>
+    
+</resources>

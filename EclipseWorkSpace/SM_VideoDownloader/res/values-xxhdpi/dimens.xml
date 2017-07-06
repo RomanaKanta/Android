@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="icon_ht_wt">30dp</dimen>
+    <dimen name="icon_ht_wt_40">40dp</dimen>
+    <dimen name="tab_ht">60dp</dimen>
+    <dimen name="list_row_margin">5dp</dimen>
+    <dimen name="web_top_margin">60dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="togglebutton_width">60dp</dimen>
+    <dimen name="togglebutton_height">30dp</dimen>
+    <dimen name="tost_padding">20dp</dimen>
+    
+    <dimen name="keyboard_button_text_size">30sp</dimen>
+    <dimen name="keyboard_button_padding">15dp</dimen>
+    <dimen name="keyboard_button_ripple_padding">30dp</dimen>
+    <dimen name="pin_code_round_size">20dp</dimen>
+    <dimen name="pin_code_round_margin">10dp</dimen>
+    <dimen name="light_gray_bar_margin_top">20dp</dimen>
+    <dimen name="light_gray_bar_margin_bottom">5dp</dimen>
+    <dimen name="light_gray_bar_margin_sides">50dp</dimen>
+    <dimen name="pin_code_forgot_text_size">16sp</dimen>
+    <dimen name="pin_code_step_text_size">20sp</dimen>
+    <dimen name="pin_code_elements_margin">20dp</dimen>
+    <dimen name="activity_pin_code_padding">40dp</dimen>
+    <dimen name="pin_code_logo_margin">30dp</dimen>
+    <dimen name="pin_code_round_top_margin">10dp</dimen>
+    
+    <dimen name="lock_screen_image_width">80dp</dimen>
+    <dimen name="lock_screen_image_height">80dp</dimen>
+     <dimen name="default_center_margin">16dp</dimen>
+
+</resources>

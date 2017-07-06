@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">筋肉暗記</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="home">Home</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="root_title">筋肉リスト</string>
+    <string name="category">Category</string>
+    <string name="sub_category">Sub Category</string>
+    <string name="title">Title</string>
+    <string name="opt_txt_1">起始</string>
+    <string name="opt_txt_2">停止</string>
+    <string name="opt_txt_3">神経</string>
+    <string name="opt_txt_4">作用</string>
+    <string name="level">レベル：</string>
+    <string name="easy">かんたん</string>
+    <string name="medium">ふつう</string>
+    <string name="diffcult">むずかしい</string>
+    <string name="front">絵のみ</string>
+    <string name="rear">絵と名称</string>
+    <string name="info1">筋肉暗記ーMuscle Card ー</string>
+    <string name="info2">企画＝有限会社ラウンドフラット</string>
+    <string name="info3">プログラミング＝SmartMux Limited</string>
+    <string name="info4">筋肉のことなら</string>
+    <string name="info5">http://www.kinken.org/</string>
+    <string name="info6">閉じる</string>
+    <string name="credit">Credit</string>
+    <!-- <string name="search_top">検索トップへ</string> -->
+    <string name="search_top">トップへ</string>
+    <string name="btn1_title">カードを見る</string>
+    <string name="btn1_des">部位を選択してカードを見る</string>
+    <string name="settings_fav">暗記済カードを隠す</string>
+    <string name="settings_random">ランダム表示</string>
+    <string name="card_list">カード一覧</string>
+    <string name="see_card">カードを見る</string>
+    <string name="all_card_mark">すべてのカードがマークされています。</string>
+    <string name="go_back">戻る</string>
+    <string name="pic_match">絵合わせ</string>
+    <string name="select_game">部位を選択してゲームを開始</string>
+    <string name="reset">リセット</string>
+    <string name="cancel">キャンセル</string>
+    <string name="ok">OK</string>
+    <string name="reset_game">ゲームをやり直しますか？</string>
+    <string name="reset_list">暗記済みのセットをすべて未にしますか？</string>
+    <string name="quit_game">ゲームを終了しますか？</string>
+    <string name="copyright">Copyright \u00a92014 RoundFlat, Inc.All Right Reserved. </string>
+    <string name="one">1. </string>
+    <string name="two">2. </string>
+    <string name="three">3. </string>
+    <string name="dot">............. </string>
+    <string name="back">Back</string>
+
+</resources>

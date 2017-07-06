@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+<!--   <LinearLayout
+  
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_topbar_color"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <com.smartmux.filevaultfree.widget.AppTextViewAverinBlack
+        android:id="@+id/dialog_delete_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="header_title"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="header_sample"
+        android:textColor="@color/black_overlay"
+        android:textSize="@dimen/sample_text_size"/>
+
+</LinearLayout> -->
+    
+    
+    <TextView
+        android:id="@+id/alert_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+</LinearLayout>
