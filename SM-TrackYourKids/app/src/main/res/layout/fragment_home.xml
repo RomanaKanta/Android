@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    tools:context="com.smartmux.trackyourkids.fragment.HomeFragment">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button_track_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:padding="30dp"
+        android:text="Track Me"/>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button_track_someone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="Track Someone"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button_show_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="Show Map"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/button_track_someone"
+        android:layout_centerHorizontal="true"/>
+
+    <!--<Button-->
+        <!--android:text="Track Me"-->
+        <!--android:id="@+id/button_track_me"-->
+        <!--android:layout_above="@+id/button"-->
+        <!--style="@style/app_button"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:text="New Button"
+        android:visibility="invisible"
+        android:id="@+id/button"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <!--<Button-->
+        <!--android:text="Track SomeOne"-->
+        <!--android:id="@+id/button_track_someone"-->
+        <!--android:layout_below="@+id/button"-->
+        <!--style="@style/app_button"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+</RelativeLayout>

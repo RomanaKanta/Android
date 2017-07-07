@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="42dp"
+        android:layout_height="46dp"
+        android:background="@drawable/marker_bg">
+
+    <ImageView
+        android:id="@+id/marker_image"
+        android:layout_width="34dp"
+        android:layout_height="23dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+
+        />
+
+    </RelativeLayout>
+</LinearLayout>
